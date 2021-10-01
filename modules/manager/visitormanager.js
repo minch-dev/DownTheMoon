@@ -75,8 +75,10 @@ HttpVisitor.prototype = {
 									// http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.7
 		//'content-length': false,
 		'last-modified': true, // may get omitted later, but should not change
-		'content-encoding': true // must not change, or download will become
+		'content-encoding': true, // must not change, or download will become
 															// corrupt.
+		//'x-archive-orig-date': true,
+		'x-archive-orig-last-modified': true
 	},
 	QueryInterface: function(aIID) {
 		if (
@@ -245,7 +247,13 @@ HttpVisitor.prototype = {
 			}
 			catch (ex) {}
 		}
-
+		if ("x-archive-orig-last-modified" in this) {
+			try {
+				this.time = getTimestamp(this["x-archive-orig-last-modified"]);
+			}
+			catch (ex) {}
+		}
+		
 		try {
 			this._checkFileName(chan.getResponseHeader("content-disposition"));
 		}
