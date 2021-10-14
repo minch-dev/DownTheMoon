@@ -238,12 +238,12 @@ class HttpVisitor extends Visitor {
 			}
 			catch (ex) {}
 		}
-		if ("memento-datetime" in this) {
+/* 		if ("memento-datetime" in this) {
 			try {
 				this.time = getTimestamp(this["memento-datetime"]);
 			}
 			catch (ex) {}
-		}
+		} */
 		if ("x-archive-orig-last-modified" in this) {
 			try {
 				this.time = getTimestamp(this["x-archive-orig-last-modified"]);

@@ -1,7 +1,9 @@
-DownThemAll!
+DownThemAll! XUL Edition
 ==================
-
-The first and only download manager/accelerator built inside Firefox!
+(The first and only download manager/accelerator built inside Firefox!)
+This is a fork of the latest XUL (Non-WebExtension) pre-release version from 2017 that supports setting original file modified date of a downloaded file. The only change in this version is an added feature to support custom "x-archive-orig-last-modified" http header property of WebArchive.org as downloaded file's date modified value
+You can run this extension in Firefox ESR 52, Firefox 56, Basilisk and PaleMoon up to 29.1.1
+Also usable in Waterfox, but it "has been sold to System1, a U.S. pay-per-click ad company", so proceed with caution
 
 Developing
 -------------------
