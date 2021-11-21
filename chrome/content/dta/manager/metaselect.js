@@ -119,7 +119,10 @@ var MetaSelect = {
 			});
 	},
 	download: function(start) {
-		let [notifications, directory, mask] = $('notifications', 'directory', 'renaming');
+		let [notifications, directory, mask, ] = $('notifications', 'directory', 'renaming');
+		let ignoreImportedSavePath = $("ignoreImportedSavePath").checked;
+		let copyDirectoryStructure = $("copyDirectoryStructure").checked;
+		let ignoreProxyPath = $("ignoreProxyPath").checked;
 		notifications.removeAllNotifications(true);
 
 		function err(msg) {
@@ -142,8 +145,48 @@ var MetaSelect = {
 		Array.forEach(
 			document.getElementsByTagName('richlistitem'),
 			function(n) {
-				//log(LOG_DEBUG, JSON.stringify(n));
-				n.download.dirSave = n.download.destinationPath.trim() || directory.value; //  should behave according to "ignoreImportedSavePath" chbox
+				//log(LOG_DEBUG, JSON.stringify(ignoreImportedSavePath));
+				let dirSave = '';
+				let subDir = '';
+				if(ignoreImportedSavePath){
+					dirSave = directory.value;
+				} else {
+					dirSave = n.download.destinationPath.trim() || directory.value;
+				}
+				
+				//to be sure we have trailing slash [todo] detect which slash to add dep. on OS
+				if(dirSave[dirSave.length-1]!='/' && dirSave[dirSave.length-1]!='\\'){
+					dirSave+='\\';
+				}
+				if(copyDirectoryStructure){
+					//should form subdir structure OR [todo]get it from file directly
+					let url = decodeURI(n.download.url.usable);
+					if(url.indexOf('data:')==0){
+						subDir = 'base64';
+					} else {
+						//detect which part we want to treat as dir structure root
+						if(ignoreProxyPath){
+							subDir = url.substring(url.lastIndexOf("://")+3, url.length);
+						} else {
+							subDir = url.substring(url.indexOf("://")+3, url.length);
+						}
+
+						//replacing illegal symbols with fullwidth counterparts ＼／：＊？＂＜＞｜
+						subDir = subDir
+						.replace(/\*/g,'＊')
+						.replace(/\:/g,'：')
+						.replace(/\?/g,'？')
+						.replace(/\</g,'＜')
+						.replace(/\>/g,'＞')
+						.replace(/\|/g,'｜')
+						.replace(/\\/g,'＼')
+						;
+						subDir = subDir.replace(/\/+/g,'\\');
+						log(LOG_DEBUG, subDir); 
+					}
+					dirSave+=subDir;
+				}
+				n.download.dirSave = dirSave;
 				n.download.mask = mask.value;
 				n.download.selected = n.checked;
 				selected |= n.checked;

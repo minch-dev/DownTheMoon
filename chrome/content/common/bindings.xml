@@ -175,8 +175,8 @@
 								xbl:inherits="value=url" />
 						</xul:hbox>
 						<xul:hbox>
-							Save as: <xul:description flex="1" crop="center"
-								xbl:inherits="value=destinationFile" />
+							Save to: <xul:description flex="1" crop="center"
+								xbl:inherits="value=destinationPath" />
 						</xul:hbox>
 						<xul:hbox>
 							Referrer: <xul:description flex="1" crop="center"
@@ -204,7 +204,7 @@
 				this.setAttribute('identity', id);
 				this.setAttribute('iconURL', dl.logo ? dl.logo : getIcon(dl.url, false, 32));
 				this.setAttribute('url', dl.url.usable);
-				this.setAttribute('destinationFile', dl.destinationFile);
+				this.setAttribute('destinationPath', dl.destinationPath);
 				this.setAttribute('referrer', dl.referrer);
 
 				function addSimple(e) {
