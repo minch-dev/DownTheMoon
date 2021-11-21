@@ -238,12 +238,29 @@ exports.exportToMetalink4File = function exportToMetalink4File(aDownloads, aDocu
 		let f = document.createElementNS(NS_METALINK_RFC5854, 'file');
 		f.setAttribute('name', d.fileName);
 		f.setAttributeNS(NS_DTA, 'num', d.bNum);
-		f.setAttributeNS(NS_DTA, 'startDate', d.startDate.getTime());
+		
+		/* additions to include referrer and all file related params */
+		/* _fileNameAndExtension;_destinationName;_destinationPath;_destinationNameFull;_destinationFile;_destinationLocalFile; */
+		//f.setAttributeNS(NS_DTA, 'destinationLocalFile', d._destinationLocalFile);
+		//f.setAttributeNS(NS_DTA, 'fileNameAndExtension', d._fileNameAndExtension);
+		f.setAttributeNS(NS_DTA, 'destinationNameFull', d._destinationNameFull);
+		f.setAttributeNS(NS_DTA, 'destinationFile', d._destinationFile);
+
+		
+		f.setAttributeNS(NS_DTA, 'destinationName', d._destinationName);
+		f.setAttributeNS(NS_DTA, 'destinationPath', d._destinationPath);
+		f.setAttributeNS(NS_DTA, 'pathName', d._pathName);
+		f.setAttributeNS(NS_DTA, 'title', d._title);
 		if (d.referrer) {
-			/* extention to include referrer */
 			f.setAttributeNS(NS_DTA, 'referrer', d.referrer.spec);
 		}
-
+		/* end additions */
+		if(d.fileNameFromUser){
+			f.setAttributeNS(NS_DTA, 'fileNameFromUser', d.fileNameFromUser);
+		}
+		
+		f.setAttributeNS(NS_DTA, 'startDate', d.startDate.getTime());
+		
 		if (d.description) {
 			let n = document.createElementNS(NS_METALINK_RFC5854, 'description');
 			n.textContent = d.description;

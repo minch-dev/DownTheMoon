@@ -364,6 +364,41 @@ class MetalinkerRFC5854 extends Base {
 			else {
 				referrer = aReferrer;
 			}
+			/* additions to support local save path/filename */
+			let destinationNameFull = null;
+			if (file.hasAttributeNS(NS_DTA, 'destinationNameFull')) {
+				destinationNameFull = file.getAttributeNS(NS_DTA, 'destinationNameFull') || null;
+			}
+			let destinationFile = null;
+			if (file.hasAttributeNS(NS_DTA, 'destinationFile')) {
+				destinationFile = file.getAttributeNS(NS_DTA, 'destinationFile') || null;
+			}
+			let destinationPath = null;
+			if (file.hasAttributeNS(NS_DTA, 'destinationPath')) {
+				destinationPath = file.getAttributeNS(NS_DTA, 'destinationPath') || null;
+			}
+			let destinationName = null;
+			if (file.hasAttributeNS(NS_DTA, 'destinationName')) {
+				destinationName = file.getAttributeNS(NS_DTA, 'destinationName') || null;
+			}
+			let pathName = null;
+			if (file.hasAttributeNS(NS_DTA, 'pathName')) {
+				pathName = file.getAttributeNS(NS_DTA, 'pathName') || null;
+			}
+			let fileNameFromUser = null;
+			if (file.hasAttributeNS(NS_DTA, 'fileNameFromUser')) {
+				fileNameFromUser = file.getAttributeNS(NS_DTA, 'fileNameFromUser') || null;
+			}
+			let title = null;
+			if (file.hasAttributeNS(NS_DTA, 'title')) {
+				title = file.getAttributeNS(NS_DTA, 'title') || '';
+			}
+			
+			/* end additions */
+			
+		
+			
+			
 			let num = null;
 			if (file.hasAttributeNS(NS_DTA, 'num')) {
 				try {
@@ -485,12 +520,20 @@ class MetalinkerRFC5854 extends Base {
 			if (!desc) {
 				desc = this.getSingle(root, 'description');
 			}
+			
 			downloads.push({
+				//  
 				'url': new UrlManager(urls),
 				'fileName': fileName,
+				'fileNameFromUser': fileNameFromUser,
+				'destinationNameFull': destinationNameFull,
+				'destinationFile': destinationFile,
+				'destinationName': destinationName,
+				'destinationPath': destinationPath,
+				'pathName': pathName,
 				'referrer': referrer ? referrer : null,
 				'numIstance': num,
-				'title': '',
+				'title': title,
 				'description': desc,
 				'startDate': startDate,
 				'hashCollection': hash,
