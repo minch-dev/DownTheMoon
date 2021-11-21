@@ -142,7 +142,8 @@ var MetaSelect = {
 		Array.forEach(
 			document.getElementsByTagName('richlistitem'),
 			function(n) {
-				n.download.dirSave = directory.value;
+				//log(LOG_DEBUG, JSON.stringify(n));
+				n.download.dirSave = n.download.destinationPath.trim() || directory.value; //  should behave according to "ignoreImportedSavePath" chbox
 				n.download.mask = mask.value;
 				n.download.selected = n.checked;
 				selected |= n.checked;

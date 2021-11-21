@@ -171,8 +171,16 @@
 						<xul:checkbox anonid="check" xbl:inherits="label=identity,checked" />
 						<xul:hbox flex="1" anonid="additionallinks" />
 						<xul:hbox>
-							<xul:description flex="1" crop="center"
+							URL: <xul:description flex="1" crop="center"
 								xbl:inherits="value=url" />
+						</xul:hbox>
+						<xul:hbox>
+							Save as: <xul:description flex="1" crop="center"
+								xbl:inherits="value=destinationFile" />
+						</xul:hbox>
+						<xul:hbox>
+							Referrer: <xul:description flex="1" crop="center"
+								xbl:inherits="value=referrer" />
 						</xul:hbox>
 					</xul:vbox>
 					<xul:vbox class="metalinker-additional" anonid="additional" />
@@ -196,6 +204,8 @@
 				this.setAttribute('identity', id);
 				this.setAttribute('iconURL', dl.logo ? dl.logo : getIcon(dl.url, false, 32));
 				this.setAttribute('url', dl.url.usable);
+				this.setAttribute('destinationFile', dl.destinationFile);
+				this.setAttribute('referrer', dl.referrer);
 
 				function addSimple(e) {
 					if (dl[e]) {

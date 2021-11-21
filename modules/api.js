@@ -79,7 +79,7 @@ class URL {
 		return this.usable;
 	}
 };
-URL.schemes = ['http', 'https', 'ftp'];
+URL.schemes = ['http', 'https', 'ftp', 'data'];
 exports.URL = Object.freeze(URL);
 
 /**

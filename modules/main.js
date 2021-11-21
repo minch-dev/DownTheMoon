@@ -177,7 +177,7 @@ MetalinkInterceptModule.prototype = Object.freeze({
 				window.openDialog(
 					"chrome://dta/content/dta/manager/metaselect.xul",
 					"_blank",
-					"chrome,centerscreen,dialog=yes",
+					"chrome,centerscreen,resizable,dialog=yes",
 					res.downloads,
 					res.info,
 					function() {

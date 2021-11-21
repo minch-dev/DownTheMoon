@@ -3,8 +3,8 @@
 @namespace html url("http://www.w3.org/1999/xhtml");
 
 #metaselect {
-	width: 600px;
-	height: 430px;
+	min-width: 640px;
+	min-height: 430px;
 }
 #header {
 	margin: 1ex;

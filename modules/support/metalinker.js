@@ -90,7 +90,7 @@ class Base {
 				throw new Exception("file protocol invalid!");
 			}
 			// check for some popular bad links :p
-			if (!~['http', 'https', 'ftp'].indexOf(url.scheme) || !~url.host.indexOf('.')) {
+			if (!~['http', 'https', 'ftp', 'data'].indexOf(url.scheme) || !~url.host.indexOf('.')) {
 				if (!(allowed instanceof Array)) {
 					throw new Exception("bad link!");
 				}

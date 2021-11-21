@@ -1425,6 +1425,7 @@ var Metalinker = {
 		aIsPrivate = !!aIsPrivate || false;
 		let aURI = Services.io.newFileURI(aFile);
 		this.parse(aURI, aReferrer, function (res, ex) {
+			//log(LOG_DEBUG, JSON.stringify(res));
 			try {
 				if (ex) {
 					throw ex;
@@ -1442,7 +1443,7 @@ var Metalinker = {
 				window.openDialog(
 					'chrome://dta/content/dta/manager/metaselect.xul',
 					'_blank',
-					'chrome,centerscreen,dialog=yes,modal',
+					'chrome,centerscreen,resizable,dialog=yes,modal',
 					res.downloads,
 					res.info
 				);

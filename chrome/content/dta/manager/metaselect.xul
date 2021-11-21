@@ -88,6 +88,10 @@
 					<saveddropdown id="directory" preference="directory" flex="1" placeholder="&directory.placeholder;" />
 					<toolbarbutton id="browsedir" oncommand="MetaSelect.browseDir();" tooltiptext="&browse.tooltip;" />
 				</hbox>
+				<hbox>
+					<checkbox id="ignoreImportedSavePath" label="Ignore imported save path"/>
+					<checkbox id="copyDirectoryStructure" label="Copy remote directory structure"/>
+				</hbox>
 			</vbox>
 			<vbox id="renamingbox">
 				<caption label="&mask3.label;:" />
