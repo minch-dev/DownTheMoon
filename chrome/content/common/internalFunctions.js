@@ -375,13 +375,14 @@ var getDefaultDownloadsDirectory = (function() {
 	}
 })();
 
-function getDirSavePath(remoteUrl,dirSaveDefault,copyDirTree,ignoreProxyPath,dirSaveMeta,ignoreDirSaveMeta){
+function getDirSavePath(remoteUrl,dirSaveDefault,copyDirTree,ignoreProxyPath,keepWWW,dirSaveMeta,ignoreDirSaveMeta){
 	dirSaveDefault  = Utils.addFinalSlash(dirSaveDefault);
 	dirSaveMeta = Utils.isString(dirSaveMeta) ? dirSaveMeta.trim() : '';
 
 	ignoreDirSaveMeta = dirSaveMeta ? (!!ignoreDirSaveMeta) : true;
 	copyDirTree = !!copyDirTree;
 	ignoreProxyPath = !!ignoreProxyPath;
+	keepWWW = !!keepWWW;
 	
 	//console.log(remoteUrl,dirSaveDefault,copyDirTree,ignoreProxyPath,dirSaveMeta,ignoreDirSaveMeta);
 	
@@ -405,7 +406,7 @@ function getDirSavePath(remoteUrl,dirSaveDefault,copyDirTree,ignoreProxyPath,dir
 		if(url.indexOf('data:')==0){
 			dirTree = 'base64';
 		} else {
-			//(not) ignoring proxy
+			//(not)ignoring proxy
 			if(ignoreProxyPath){
 				url = url.substring(url.lastIndexOf("://"), url.length);
 				url = 'https'+url;
@@ -422,8 +423,14 @@ function getDirSavePath(remoteUrl,dirSaveDefault,copyDirTree,ignoreProxyPath,dir
 			let pathname = url_parts.pathname;
 			pathname = pathname.substring(0, pathname.lastIndexOf("/")+1);
 			
+			//(not)cutting off www.
+			let hostname = url_parts.hostname;
+			if(!keepWWW && hostname.indexOf('www.')==0){
+				hostname = hostname.substring(4, hostname.length);
+			}
+			
 			//assembling without url params etc
-			let str = url_parts.hostname+port+pathname;
+			let str = hostname+port+pathname;
 			
 			//replacing illegal symbols with fullwidth counterparts ＼／：＊？＂＜＞｜
 			str = str

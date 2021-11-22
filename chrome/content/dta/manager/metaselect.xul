@@ -92,6 +92,7 @@
 					<checkbox persist="checked" id="ignoreDirSaveMeta" label="&directory.ignore.imported;"/>
 					<checkbox persist="checked" id="copyDirTree" label="&directory.copy.structure;"/>
 					<checkbox persist="checked" id="ignoreProxyPath" label="&directory.ignore.proxy;"/>
+					<checkbox persist="checked" id="keepWWW" label="www."/>
 				</hbox>
 			</vbox>
 			<vbox id="renamingbox">

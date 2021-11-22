@@ -123,6 +123,7 @@ var MetaSelect = {
 		let ignoreDirSaveMeta = $("ignoreDirSaveMeta").checked;
 		let copyDirTree = $("copyDirTree").checked;
 		let ignoreProxyPath = $("ignoreProxyPath").checked;
+		let keepWWW = $("keepWWW").checked;
 		notifications.removeAllNotifications(true);
 
 		function err(msg) {
@@ -145,7 +146,7 @@ var MetaSelect = {
 		Array.forEach(
 			document.getElementsByTagName('richlistitem'),
 			function(n) {
-				n.download.dirSave = getDirSavePath(n.download.url.usable,directory.value,copyDirTree,ignoreProxyPath,n.download.destinationPath,ignoreDirSaveMeta);
+				n.download.dirSave = getDirSavePath(n.download.url.usable,directory.value,copyDirTree,ignoreProxyPath,keepWWW,n.download.destinationPath,ignoreDirSaveMeta);
 				n.download.mask = mask.value;
 				n.download.selected = n.checked;
 				selected |= n.checked;

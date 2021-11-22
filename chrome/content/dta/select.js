@@ -428,6 +428,7 @@ Dialog = {
 	download: function(start) {
 		let copyDirTree = $("copyDirTree").checked;
 		let ignoreProxyPath = $("ignoreProxyPath").checked;
+		let keepWWW = $("keepWWW").checked;
 		function prepare(link, dir, counter, mask) {
 			link.dirSave = dir;
 			link.numIstance = counter;
@@ -454,7 +455,7 @@ Dialog = {
 					if (!i.checked.length) {
 						continue;
 					}
-					out.push( prepare(i,getDirSavePath(i.url.usable,dir,copyDirTree,ignoreProxyPath),counter,mask) );
+					out.push( prepare(i,getDirSavePath(i.url.usable,dir,copyDirTree,ignoreProxyPath,keepWWW),counter,mask) );
 				}
 				catch (ex) {
 					log(LOG_ERROR, "err: " + i.toSource(), ex);
