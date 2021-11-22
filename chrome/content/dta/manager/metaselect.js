@@ -145,21 +145,31 @@ var MetaSelect = {
 		Array.forEach(
 			document.getElementsByTagName('richlistitem'),
 			function(n) {
-				//log(LOG_DEBUG, JSON.stringify(ignoreImportedSavePath));
-				let dirSave = '';
-				let subDir = '';
-				if(ignoreImportedSavePath){
-					dirSave = directory.value;
-				} else {
-					dirSave = n.download.destinationPath.trim() || directory.value;
-				}
-				
 				//to be sure we have trailing slash [todo] detect which slash to add dep. on OS
-				if(dirSave[dirSave.length-1]!='/' && dirSave[dirSave.length-1]!='\\'){
-					dirSave+='\\';
+				function trailing_slash(local_url){
+					if(local_url[local_url.length-1]!='/' && local_url[local_url.length-1]!='\\'){
+						local_url+='\\';
+					}
+					return local_url;
 				}
+				//log(LOG_DEBUG, JSON.stringify(ignoreImportedSavePath));
+				let subDir = '';
+				let dirSave = '';
+				let dirSaveDefault = trailing_slash(directory.value);
+				let destinationPath = trailing_slash(n.download.destinationPath.trim());
+				if(ignoreImportedSavePath){
+					dirSave = dirSaveDefault;
+				} else {
+					if(destinationPath.indexOf('.')==0 || destinationPath.indexOf('..')==0){
+						//it's subfolder
+						dirSave = dirSaveDefault+destinationPath;
+					} else {
+						dirSave = destinationPath || dirSaveDefault;
+					}
+				}
+
 				if(copyDirectoryStructure){
-					//should form subdir structure OR [todo]get it from file directly
+					//should form subdir structure
 					let url = decodeURI(n.download.url.usable);
 					if(url.indexOf('data:')==0){
 						subDir = 'base64';
