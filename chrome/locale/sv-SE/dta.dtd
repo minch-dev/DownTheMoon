@@ -10,6 +10,11 @@
 <!ENTITY override.filename.tip "Ange nytt filnamn eller lämna tomt för standardnamnet">
 <!ENTITY directory.caption "Spara filer i:">
 <!ENTITY directory.placeholder "Ange eller välj mapp">
+
+<!ENTITY directory.ignore.imported "Ignorera importerad sparsökväg">
+<!ENTITY directory.copy.structure "Kopiera fjärrkatalogstruktur">
+<!ENTITY directory.ignore.proxy "Ignorera proxysökvägsdelen (t.ex. web.archive.org)">
+
 <!ENTITY mirrors.value "Speglar:">
 <!ENTITY referrer.value "Hänvisningssida:">
 <!ENTITY referrer.placeholder "Ange hänvisnings-URI">

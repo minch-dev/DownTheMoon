@@ -12,6 +12,11 @@
 <!ENTITY override.filename.tip "Enter new file name, or empty as is for default name">
 <!ENTITY directory.caption "Save files in:">
 <!ENTITY directory.placeholder "Enter or select folder">
+
+<!ENTITY directory.ignore.imported "Ignore imported save path">
+<!ENTITY directory.copy.structure "Copy remote directory structure">
+<!ENTITY directory.ignore.proxy "Ignore proxy path part (e.g web.archive.org)">
+
 <!ENTITY mirrors.value "Mirrors:">
 <!ENTITY referrer.value "Referring page:">
 <!ENTITY referrer.placeholder "Enter referrer URI">

@@ -89,9 +89,9 @@
 					<toolbarbutton id="browsedir" oncommand="MetaSelect.browseDir();" tooltiptext="&browse.tooltip;" />
 				</hbox>
 				<hbox>
-					<checkbox persist="checked" id="ignoreImportedSavePath" label="Ignore imported save path"/>
-					<checkbox persist="checked" id="copyDirectoryStructure" label="Copy remote directory structure"/>
-					<checkbox persist="checked" id="ignoreProxyPath" label="Ignore proxy path part (e.g web.archive.org)"/>
+					<checkbox persist="checked" id="ignoreImportedSavePath" label="&directory.ignore.imported;"/>
+					<checkbox persist="checked" id="copyDirectoryStructure" label="&directory.copy.structure;"/>
+					<checkbox persist="checked" id="ignoreProxyPath" label="&directory.ignore.proxy;"/>
 				</hbox>
 			</vbox>
 			<vbox id="renamingbox">

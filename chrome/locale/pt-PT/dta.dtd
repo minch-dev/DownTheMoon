@@ -10,6 +10,11 @@
 <!ENTITY override.filename.tip "Insira novo nome do ficheiro, ou vazio como está para nome padrão">
 <!ENTITY directory.caption "Guardar ficheiros em:">
 <!ENTITY directory.placeholder "Insira ou selecione pasta">
+
+<!ENTITY directory.ignore.imported "Ignorar caminho de salvamento importado">
+<!ENTITY directory.copy.structure "Copiar estrutura de diretório remoto">
+<!ENTITY directory.ignore.proxy "Ignorar parte do caminho do proxy (por exemplo, web.archive.org)">
+
 <!ENTITY mirrors.value "Espelhos:">
 <!ENTITY referrer.value "Página referida:">
 <!ENTITY referrer.placeholder "Insira o URI de referimento">

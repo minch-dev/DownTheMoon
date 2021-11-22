@@ -10,6 +10,11 @@
 <!ENTITY override.filename.tip "Podaj nową nazwę pliku lub pozostaw pole puste, by użyć domyslnej nazwy">
 <!ENTITY directory.caption "Zapisz pliki w:">
 <!ENTITY directory.placeholder "Podaj lub wybierz folder">
+
+<!ENTITY directory.ignore.imported "Ignoruj importowaną ścieżkę zapisu">
+<!ENTITY directory.copy.structure "Skopiuj strukturę katalogu zdalnego">
+<!ENTITY directory.ignore.proxy "Ignoruj część ścieżki proxy (np. web.archive.org)">
+
 <!ENTITY mirrors.value "Mirrory:">
 <!ENTITY referrer.value "Strona odniesienia:">
 <!ENTITY referrer.placeholder "Podaj referrer URI">

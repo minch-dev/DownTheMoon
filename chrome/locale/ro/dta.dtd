@@ -10,6 +10,11 @@
 <!ENTITY override.filename.tip "Specificați o nouă denumire de fișier sau lăsați necompletat pentru denumirea prestabilită">
 <!ENTITY directory.caption "Se salvează fișierul în:">
 <!ENTITY directory.placeholder "Specificați sau selectați un dosar">
+
+<!ENTITY directory.ignore.imported "Ignorați calea de salvare importată">
+<!ENTITY directory.copy.structure "Copiați structura directorului de la distanță">
+<!ENTITY directory.ignore.proxy "Ignorați partea de cale proxy (de ex. web.archive.org)">
+
 <!ENTITY mirrors.value "Saituri alternative:">
 <!ENTITY referrer.value "Pagină de origine:">
 <!ENTITY referrer.placeholder "Specificați adresa de origine">

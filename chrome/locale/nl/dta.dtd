@@ -10,6 +10,11 @@
 <!ENTITY override.filename.tip "Voer een nieuwe bestandsnaam in, of laat leeg voor standaardnaam">
 <!ENTITY directory.caption "Bestanden opslaan in:">
 <!ENTITY directory.placeholder "Selecteer of voer map in">
+
+<!ENTITY directory.ignore.imported "Geïmporteerd opslagpad negeren">
+<!ENTITY directory.copy.structure "Externe mapstructuur kopiëren">
+<!ENTITY directory.ignore.proxy "Negeer het proxypadgedeelte (bijv. web.archive.org)">
+
 <!ENTITY mirrors.value "Mirrors:">
 <!ENTITY referrer.value "Verwijzende pagina:">
 <!ENTITY referrer.placeholder "Voer verwijzende URI in">

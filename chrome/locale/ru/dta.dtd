@@ -10,6 +10,11 @@
 <!ENTITY override.filename.tip "Введите имя нового файла, или оставьте это поле пустым для имени по умолчанию">
 <!ENTITY directory.caption "Сохранить файлы в:">
 <!ENTITY directory.placeholder "Введите или выберите папку">
+
+<!ENTITY directory.ignore.imported "Игнорировать импортированный путь сохранения">
+<!ENTITY directory.copy.structure "Скопировать структуру удаленного каталога">
+<!ENTITY directory.ignore.proxy "Игнорировать часть пути прокси (например, web.archive.org)">
+
 <!ENTITY mirrors.value "Зеркала:">
 <!ENTITY referrer.value "Ссылающаяся страница:">
 <!ENTITY referrer.placeholder "Введите ссылающийся URI">

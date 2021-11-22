@@ -10,6 +10,11 @@
 <!ENTITY override.filename.tip "Masukkan nama berkas baru, atau kosongkan untuk nama bawaan">
 <!ENTITY directory.caption "Simpan berkas di:">
 <!ENTITY directory.placeholder "Masukkan atau pilih folder">
+
+<!ENTITY directory.ignore.imported "Abaikan jalur penyimpanan yang diimpor">
+<!ENTITY directory.copy.structure "Salin struktur direktori jarak jauh">
+<!ENTITY directory.ignore.proxy "Abaikan bagian jalur proxy (mis. web.archive.org)">
+
 <!ENTITY mirrors.value "Mirror:">
 <!ENTITY referrer.value "Halaman rujukan:">
 <!ENTITY referrer.placeholder "Masukkan URI perujuk">

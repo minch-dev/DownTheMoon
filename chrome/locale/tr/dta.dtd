@@ -10,6 +10,12 @@
 <!ENTITY override.filename.tip "Yeni dosya adı gir ya da varsayılan dosya adı için boş bırak">
 <!ENTITY directory.caption "Dosya kaydedilen yer:">
 <!ENTITY directory.placeholder "Klasör gir ya da seç">
+
+
+<!ENTITY directory.ignore.imported "İçe aktarılan kaydetme yolunu yoksay">
+<!ENTITY directory.copy.structure "Uzak dizin yapısını kopyala">
+<!ENTITY directory.ignore.proxy "Proxy yolu bölümünü yoksay (ör. web.archive.org)">
+
 <!ENTITY mirrors.value "Yansılar:">
 <!ENTITY referrer.value "Geliş sayfası:">
 <!ENTITY referrer.placeholder "Geliş URI gir">

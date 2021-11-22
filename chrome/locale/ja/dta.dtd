@@ -10,6 +10,11 @@
 <!ENTITY override.filename.tip "新しいファイル名を入力してください。空欄にすると既定のファイル名が使用されます。">
 <!ENTITY directory.caption "ファイルの保存先:">
 <!ENTITY directory.placeholder "フォルダー名を入力するか選択してください">
+
+<!ENTITY directory.ignore.imported "インポートされた保存パスを無視する">
+<!ENTITY directory.copy.structure "リモートディレクトリ構造をコピーする">
+<!ENTITY directory.ignore.proxy "プロキシパス部分を無視する（例：web.archive.org）">
+
 <!ENTITY mirrors.value "ミラーサーバー:">
 <!ENTITY referrer.value "参照元ページ(リファラー):">
 <!ENTITY referrer.placeholder "参照元の URI を入力してください">

@@ -10,6 +10,11 @@
 <!ENTITY override.filename.tip "輸入新的檔名，或保持此欄位為空而使用預設名稱">
 <!ENTITY directory.caption "儲存檔案於：">
 <!ENTITY directory.placeholder "輸入或選擇資料夾">
+
+<!ENTITY directory.ignore.imported "忽略導入的保存路徑">
+<!ENTITY directory.copy.structure "複製遠程目錄結構">
+<!ENTITY directory.ignore.proxy "忽略代理路徑部分（例如 web.archive.org）">
+
 <!ENTITY mirrors.value "鏡射：">
 <!ENTITY referrer.value "引用頁面：">
 <!ENTITY referrer.placeholder "輸入引用頁面網址">

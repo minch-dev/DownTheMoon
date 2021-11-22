@@ -10,6 +10,11 @@
 <!ENTITY override.filename.tip "Neuen Dateinamen eingeben, oder leer lassen für automatischen Namen">
 <!ENTITY directory.caption "Datein speichern in:">
 <!ENTITY directory.placeholder "Verzeichnis eingeben oder auswählen">
+
+<!ENTITY directory.ignore.imported "Importierten Speicherpfad ignorieren">
+<!ENTITY directory.copy.structure "Kopieren Sie die Remote-Verzeichnisstruktur">
+<!ENTITY directory.ignore.proxy "Proxy-Pfadteil ignorieren (z. B. web.archive.org)">
+
 <!ENTITY mirrors.value "Spiegelserver:">
 <!ENTITY referrer.value "Verweisende Seite:">
 <!ENTITY referrer.placeholder "URI der verweisenden Seite">

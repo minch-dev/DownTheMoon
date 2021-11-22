@@ -10,6 +10,12 @@
 <!ENTITY override.filename.tip "Sisesta uus failinimi või jäta tühjaks selle vaikimisi nime jaoks">
 <!ENTITY directory.caption "Salveta failid kausta:">
 <!ENTITY directory.placeholder "Sisesta või vali kaust">
+
+<!ENTITY directory.ignore.imported "Ignoreeri imporditud salvestusteed">
+<!ENTITY directory.copy.structure "Kopeeri kaugkataloogi struktuur">
+<!ENTITY directory.ignore.proxy "Ignoreeri puhverserveri teeosa (nt web.archive.org)">
+
+
 <!ENTITY mirrors.value "Peeglid:">
 <!ENTITY referrer.value "Viitav leht:">
 <!ENTITY referrer.placeholder "Sisesta viitav URI">

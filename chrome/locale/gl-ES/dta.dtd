@@ -10,6 +10,11 @@
 <!ENTITY override.filename.tip "Introducir un novo nome do ficheiro ou deixar baleiro para o nome predeterminado">
 <!ENTITY directory.caption "Gardar os ficheiros en:">
 <!ENTITY directory.placeholder "Introducir ou seleccionar cartafol">
+
+<!ENTITY directory.ignore.imported "Ignorar a ruta de gardar importada">
+<!ENTITY directory.copy.structure "Copiar a estrutura do directorio remoto">
+<!ENTITY directory.ignore.proxy "Ignorar a parte da ruta do proxy (por exemplo, web.archive.org)">
+
 <!ENTITY mirrors.value "Espellos:">
 <!ENTITY referrer.value "Páxina de referencia:">
 <!ENTITY referrer.placeholder "Introducir o URI r">

@@ -10,6 +10,11 @@
 <!ENTITY override.filename.tip "Vnesite novo ime datoteke ali pustite razno za privzeto">
 <!ENTITY directory.caption "Shrani datoteke v:">
 <!ENTITY directory.placeholder "Vnesite ali izberite mapo">
+
+<!ENTITY directory.ignore.imported "Prezrite uvoženo pot shranjevanja">
+<!ENTITY directory.copy.structure "Kopiraj oddaljeno strukturo imenika">
+<!ENTITY directory.ignore.proxy "Prezri del poti proxy (npr. web.archive.org)">
+
 <!ENTITY mirrors.value "Zrcalni strežniki:">
 <!ENTITY referrer.value "Stran sklicatelja:">
 <!ENTITY referrer.placeholder "Vnesite sklicni URI">

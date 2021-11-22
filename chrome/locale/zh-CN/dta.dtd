@@ -10,6 +10,11 @@
 <!ENTITY override.filename.tip "输入新文件名，放空则使用默认文件名">
 <!ENTITY directory.caption "保存文件到：">
 <!ENTITY directory.placeholder "输入或选择文件夹">
+
+<!ENTITY directory.ignore.imported "忽略导入的保存路径">
+<!ENTITY directory.copy.structure "复制远程目录结构">
+<!ENTITY directory.ignore.proxy "忽略代理路径部分（例如 web.archive.org）">
+
 <!ENTITY mirrors.value "镜像：">
 <!ENTITY referrer.value "引用页面：">
 <!ENTITY referrer.placeholder "输入引用页面地址">
