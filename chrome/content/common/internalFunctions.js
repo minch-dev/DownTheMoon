@@ -405,15 +405,28 @@ function getDirSavePath(remoteUrl,dirSaveDefault,copyDirTree,ignoreProxyPath,dir
 		if(url.indexOf('data:')==0){
 			dirTree = 'base64';
 		} else {
-			//detect which part we want to treat as dir structure root
+			//(not) ignoring proxy
 			if(ignoreProxyPath){
-				dirTree = url.substring(url.lastIndexOf("://")+3, url.length);
-			} else {
-				dirTree = url.substring(url.indexOf("://")+3, url.length);
+				url = url.substring(url.lastIndexOf("://"), url.length);
+				url = 'https'+url;
 			}
-
+			let url_parts = new URL(url);
+			//removing ugly :80 parts, but keeping other ports
+			let port = url_parts.port;
+			if(port && port != 80){
+				port = ':'+port;
+			} else {
+				port = '';
+			}
+			 //cutting off filename
+			let pathname = url_parts.pathname;
+			pathname = pathname.substring(0, pathname.lastIndexOf("/")+1);
+			
+			//assembling without url params etc
+			let str = url_parts.hostname+port+pathname;
+			
 			//replacing illegal symbols with fullwidth counterparts ＼／：＊？＂＜＞｜
-			dirTree = dirTree
+			str = str
 			.replace(/\*/g,'＊')
 			.replace(/\:/g,'：')
 			.replace(/\?/g,'？')
@@ -422,7 +435,7 @@ function getDirSavePath(remoteUrl,dirSaveDefault,copyDirTree,ignoreProxyPath,dir
 			.replace(/\|/g,'｜')
 			.replace(/\\/g,'＼')
 			;
-			dirTree = dirTree.replace(/\/+/g,'\\');
+			dirTree = str.replace(/\/+/g,'\\');
 		}
 		dirSave+=dirTree;
 	}
