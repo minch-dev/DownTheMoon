@@ -89,8 +89,8 @@
 					<toolbarbutton id="browsedir" oncommand="MetaSelect.browseDir();" tooltiptext="&browse.tooltip;" />
 				</hbox>
 				<hbox>
-					<checkbox persist="checked" id="ignoreImportedSavePath" label="&directory.ignore.imported;"/>
-					<checkbox persist="checked" id="copyDirectoryStructure" label="&directory.copy.structure;"/>
+					<checkbox persist="checked" id="ignoreDirSaveMeta" label="&directory.ignore.imported;"/>
+					<checkbox persist="checked" id="copyDirTree" label="&directory.copy.structure;"/>
 					<checkbox persist="checked" id="ignoreProxyPath" label="&directory.ignore.proxy;"/>
 				</hbox>
 			</vbox>

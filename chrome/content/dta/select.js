@@ -426,6 +426,8 @@ Dialog = {
 
 	// user decided to start the selection
 	download: function(start) {
+		let copyDirTree = $("copyDirTree").checked;
+		let ignoreProxyPath = $("ignoreProxyPath").checked;
 		function prepare(link, dir, counter, mask) {
 			link.dirSave = dir;
 			link.numIstance = counter;
@@ -452,7 +454,7 @@ Dialog = {
 					if (!i.checked.length) {
 						continue;
 					}
-					out.push(prepare(i, dir, counter, mask));
+					out.push( prepare(i,getDirSavePath(i.url.usable,dir,copyDirTree,ignoreProxyPath),counter,mask) );
 				}
 				catch (ex) {
 					log(LOG_ERROR, "err: " + i.toSource(), ex);

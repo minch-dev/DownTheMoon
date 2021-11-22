@@ -120,8 +120,8 @@ var MetaSelect = {
 	},
 	download: function(start) {
 		let [notifications, directory, mask, ] = $('notifications', 'directory', 'renaming');
-		let ignoreImportedSavePath = $("ignoreImportedSavePath").checked;
-		let copyDirectoryStructure = $("copyDirectoryStructure").checked;
+		let ignoreDirSaveMeta = $("ignoreDirSaveMeta").checked;
+		let copyDirTree = $("copyDirTree").checked;
 		let ignoreProxyPath = $("ignoreProxyPath").checked;
 		notifications.removeAllNotifications(true);
 
@@ -145,58 +145,7 @@ var MetaSelect = {
 		Array.forEach(
 			document.getElementsByTagName('richlistitem'),
 			function(n) {
-				//to be sure we have trailing slash [todo] detect which slash to add dep. on OS
-				function trailing_slash(local_url){
-					if(local_url[local_url.length-1]!='/' && local_url[local_url.length-1]!='\\'){
-						local_url+='\\';
-					}
-					return local_url;
-				}
-				//log(LOG_DEBUG, JSON.stringify(ignoreImportedSavePath));
-				let subDir = '';
-				let dirSave = '';
-				let dirSaveDefault = trailing_slash(directory.value);
-				let destinationPath = trailing_slash(n.download.destinationPath.trim());
-				if(ignoreImportedSavePath){
-					dirSave = dirSaveDefault;
-				} else {
-					if(destinationPath.indexOf('.')==0 || destinationPath.indexOf('..')==0){
-						//it's subfolder
-						dirSave = dirSaveDefault+destinationPath;
-					} else {
-						dirSave = destinationPath || dirSaveDefault;
-					}
-				}
-
-				if(copyDirectoryStructure){
-					//should form subdir structure
-					let url = decodeURI(n.download.url.usable);
-					if(url.indexOf('data:')==0){
-						subDir = 'base64';
-					} else {
-						//detect which part we want to treat as dir structure root
-						if(ignoreProxyPath){
-							subDir = url.substring(url.lastIndexOf("://")+3, url.length);
-						} else {
-							subDir = url.substring(url.indexOf("://")+3, url.length);
-						}
-
-						//replacing illegal symbols with fullwidth counterparts ＼／：＊？＂＜＞｜
-						subDir = subDir
-						.replace(/\*/g,'＊')
-						.replace(/\:/g,'：')
-						.replace(/\?/g,'？')
-						.replace(/\</g,'＜')
-						.replace(/\>/g,'＞')
-						.replace(/\|/g,'｜')
-						.replace(/\\/g,'＼')
-						;
-						subDir = subDir.replace(/\/+/g,'\\');
-						log(LOG_DEBUG, subDir); 
-					}
-					dirSave+=subDir;
-				}
-				n.download.dirSave = dirSave;
+				n.download.dirSave = getDirSavePath(n.download.url.usable,directory.value,copyDirTree,ignoreProxyPath,n.download.destinationPath,ignoreDirSaveMeta);
 				n.download.mask = mask.value;
 				n.download.selected = n.checked;
 				selected |= n.checked;

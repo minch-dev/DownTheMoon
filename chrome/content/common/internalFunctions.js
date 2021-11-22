@@ -209,7 +209,13 @@ var Utils = {
 		}
 		return _('sizeKB', [aNumber.toFixed(decimalPlace || 1)]);
 	},
-
+	isString: function(who) {
+		if (typeof who === 'string' || who instanceof String){
+			return true;
+		} else {
+			return false;
+		}
+	},
 	formatConflictName: function(basename, conflicts) {
 		if (!conflicts) {
 			return basename;
@@ -368,6 +374,60 @@ var getDefaultDownloadsDirectory = (function() {
 		return oldFallback;
 	}
 })();
+
+function getDirSavePath(remoteUrl,dirSaveDefault,copyDirTree,ignoreProxyPath,dirSaveMeta,ignoreDirSaveMeta){
+	dirSaveDefault  = Utils.addFinalSlash(dirSaveDefault);
+	dirSaveMeta = Utils.isString(dirSaveMeta) ? dirSaveMeta.trim() : '';
+
+	ignoreDirSaveMeta = dirSaveMeta ? (!!ignoreDirSaveMeta) : true;
+	copyDirTree = !!copyDirTree;
+	ignoreProxyPath = !!ignoreProxyPath;
+	
+	//console.log(remoteUrl,dirSaveDefault,copyDirTree,ignoreProxyPath,dirSaveMeta,ignoreDirSaveMeta);
+	
+	let dirSave = '';
+	if(ignoreDirSaveMeta || !dirSaveMeta){
+		dirSave = dirSaveDefault;
+	} else {
+		dirSaveMeta = Utils.addFinalSlash(dirSaveMeta);
+		if(dirSaveMeta.indexOf('.')==0 || dirSaveMeta.indexOf('..')==0){
+			//it's subfolder
+			dirSave = dirSaveDefault+dirSaveMeta;
+		} else {
+			dirSave = dirSaveMeta;
+		}
+	}
+	
+	if(copyDirTree){
+		//forms directory tree part of the final path
+		let dirTree = '';
+		let url = decodeURI(remoteUrl);
+		if(url.indexOf('data:')==0){
+			dirTree = 'base64';
+		} else {
+			//detect which part we want to treat as dir structure root
+			if(ignoreProxyPath){
+				dirTree = url.substring(url.lastIndexOf("://")+3, url.length);
+			} else {
+				dirTree = url.substring(url.indexOf("://")+3, url.length);
+			}
+
+			//replacing illegal symbols with fullwidth counterparts ＼／：＊？＂＜＞｜
+			dirTree = dirTree
+			.replace(/\*/g,'＊')
+			.replace(/\:/g,'：')
+			.replace(/\?/g,'？')
+			.replace(/\</g,'＜')
+			.replace(/\>/g,'＞')
+			.replace(/\|/g,'｜')
+			.replace(/\\/g,'＼')
+			;
+			dirTree = dirTree.replace(/\/+/g,'\\');
+		}
+		dirSave+=dirTree;
+	}
+	return dirSave;
+};
 
 Object.defineProperty(window, "setTimeoutOnlyFun", {
 	value: function setTimeoutFun(cb, delay, p1, p2, p3) {

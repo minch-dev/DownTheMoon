@@ -162,6 +162,10 @@
 					<saveddropdown id="directory" preference="directory" flex="1" placeholder="&directory.placeholder;"/>
 					<toolbarbutton id="browsedir" command="cmdBrowseDirectory" tooltiptext="&browse.tooltip;" />
 				</hbox>
+				<hbox>
+					<checkbox persist="checked" id="copyDirTree" label="&directory.copy.structure;"/>
+					<checkbox persist="checked" id="ignoreProxyPath" label="&directory.ignore.proxy;"/>
+				</hbox>
 			</vbox>
 			<vbox id="renamingbox">
 				<caption label="&mask3.label;:" />
