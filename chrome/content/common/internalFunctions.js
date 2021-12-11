@@ -402,7 +402,7 @@ function getDirSavePath(remoteUrl,dirSaveDefault,copyDirTree,ignoreProxyPath,kee
 	if(copyDirTree){
 		//forms directory tree part of the final path
 		let dirTree = '';
-		let url = decodeURI(remoteUrl);
+		let url = decodeURI(unescape(remoteUrl));
 		if(url.indexOf('data:')==0){
 			dirTree = 'base64';
 		} else {
