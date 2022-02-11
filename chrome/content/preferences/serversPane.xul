@@ -53,6 +53,11 @@
 						<menulist preference="dtaarinterval">
 							<menupopup>
 								<menuitem label="&advancedpane.chunksdisabled;" value="0" />
+								<menuitem label="1 &advancedpane.seconds;" value="1" />
+								<menuitem label="3 &advancedpane.seconds;" value="3" />
+								<menuitem label="5 &advancedpane.seconds;" value="5" />
+								<menuitem label="10 &advancedpane.seconds;" value="10" />
+								<menuitem label="30 &advancedpane.seconds;"  value="30"/>
 								<menuitem label="1 &advancedpane.minute;" value="60" />
 								<menuitem label="5 &advancedpane.minutes;" value="300" />
 								<menuitem label="10 &advancedpane.minutes;" value="600" />
