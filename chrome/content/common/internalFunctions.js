@@ -425,8 +425,8 @@ function getDirSavePath(remoteUrl,dirSaveDefault,copyDirTree,ignoreProxyPath,kee
 			
 			//(not)cutting off www.
 			let hostname = url_parts.hostname;
-			if(!keepWWW && hostname.indexOf('www.')==0){
-				hostname = hostname.substring(4, hostname.length);
+			if(!keepWWW){
+				hostname = hostname.replace(/^www[0-9]*[\.]/,'');//.substring(4, hostname.length);
 			}
 			
 			//assembling without url params etc
