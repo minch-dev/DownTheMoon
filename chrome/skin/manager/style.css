@@ -274,8 +274,9 @@ toolbox {
 
 /** :: Tooltip :: **/
 #tooltip{
-	width: 540px;
+	width: 920px;
 	padding: 1em;
+	max-width: 920px;
 }
 #infoIcon {
 	margin: 1ex;

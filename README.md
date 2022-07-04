@@ -1,10 +1,17 @@
-DownThemAll! XUL Edition
+DownThemAll! XUL/WebArchive Edition
 ==================
 (The first and only download manager/accelerator built inside Firefox!)
 
-This is a fork of the latest XUL (Non-WebExtension) pre-release version from 2017 that supports setting original file modified date of a downloaded file. A few features are added in this version, it supports custom "x-archive-orig-last-modified" http header property of WebArchive.org as date modified, also it extends import/export functionality for download lists (allows to specify/export/import local download path), and finally allows to replicate remote website's directory structure (not yet in every dialogue window, they are so many, jeez).
+This is a fork of the latest XUL (Non-WebExtension) pre-release version from 2017 that supports setting original file modified date of a downloaded file. A few features are added in this version:
+	takes "x-archive-orig-last-modified" http header property of WebArchive.org as file's modification date (or "x-archive-orig-date" / "memento-datetime" when not available)
+	allows to export/import local download path in a download list, so when you save file list and load it back it has the correct save paths
+	allows to replicate remote website's directory structure, useful for mirroring
+	some improvements to webarchive.org that allow you to open first/last/specific year snapshots from search results, also useful for downloading files and pages as-is
+	at a webarchive.org snapshots page for specific url you can apply custom download filenames with datestamp to download all versions of a webpage or a file you need (using "DownThemAll selection" option)
 
-You can run this extension in Firefox ESR 52.x, Firefox up to 56.x, Basilisk, SeaMonkey and PaleMoon up to 29.1.1, also Waterfox.
+
+You can run this extension in Firefox ESR 52.x, Firefox up to 56.x, Basilisk, SeaMonkey and PaleMoon, also Waterfox. Basically any browser that has xul extensions support should be okay.
+(WebArchive's search results pages won't work in Firefox as of now and it's a reoccuring issue, so for WebArchive `PaleMoon` is the best choise for now)
 
 Installation
 -------------------
@@ -14,7 +21,7 @@ Open `about:config`, find `xpinstall.signatures.required` and switch it to `fals
 The other method is to install unpacked extension via `about:debugging#addons`. Download the source code as zip, unzip it somewhere, press `Load Temporary Add-on` button, locate your unpacked extension and choose `install.rdf` file.
 The only downside to this is that it only lasts one session, so you have to manually load it each time browser starts.
 
-The legacy text below is still relevant, but not maintaned.
+The legacy text below might still be relevant, although it's not maintaned by me.
 ==================
 
 Developing

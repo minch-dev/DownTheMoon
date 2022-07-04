@@ -238,15 +238,20 @@ class HttpVisitor extends Visitor {
 			}
 			catch (ex) {}
 		}
-/* 		if ("memento-datetime" in this) {
-			try {
-				this.time = getTimestamp(this["memento-datetime"]);
-			}
-			catch (ex) {}
-		} */
+
 		if ("x-archive-orig-last-modified" in this) {
 			try {
 				this.time = getTimestamp(this["x-archive-orig-last-modified"]);
+			}
+			catch (ex) {}
+		} else if ("x-archive-orig-date" in this){
+			try {
+				this.time = getTimestamp(this["x-archive-orig-date"]);
+			}
+			catch (ex) {}
+		} else if ("memento-datetime" in this) {
+			try {
+				this.time = getTimestamp(this["memento-datetime"]);
 			}
 			catch (ex) {}
 		}
@@ -287,9 +292,9 @@ Object.assign(HttpVisitor.prototype, {
 		'etag': true, // must not be modified from 200 to 206:
 									// http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.7
 		//'content-length': false,
-		//'x-archive-orig-date': true,
-		'memento-datetime': true,	//for webarchive files
 		'x-archive-orig-last-modified': true,	//for webarchive files
+		'x-archive-orig-date': true,	//for webarchive files that don't have modified date
+		'memento-datetime': true,	//for webarchive files that don't have any other dates
 		'last-modified': true, // may get omitted later, but should not change
 		'content-encoding': true // must not change, or download will become
 															// corrupt.

@@ -2076,7 +2076,7 @@ Object.assign(TreeManager.prototype, {
 			return !!d.curFile;
 		}},
 		{items: ["cmdOpenFolder", "folder"], f: function(d) {
-			return !!d.curFolder;
+			return true;//!!d.curFolder;
 		}},
 	],
 });
