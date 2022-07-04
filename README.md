@@ -3,11 +3,11 @@ DownThemAll! XUL/WebArchive Edition
 (The first and only download manager/accelerator built inside Firefox!)
 
 This is a fork of the latest XUL (Non-WebExtension) pre-release version from 2017 that supports setting original file modified date of a downloaded file. A few features are added in this version:
-	takes "x-archive-orig-last-modified" http header property of WebArchive.org as file's modification date (or "x-archive-orig-date" / "memento-datetime" when not available)
-	allows to export/import local download path in a download list, so when you save file list and load it back it has the correct save paths
-	allows to replicate remote website's directory structure, useful for mirroring
-	some improvements to webarchive.org that allow you to open first/last/specific year snapshots from search results, also useful for downloading files and pages as-is
-	at a webarchive.org snapshots page for specific url you can apply custom download filenames with datestamp to download all versions of a webpage or a file you need (using "DownThemAll selection" option)
+- takes "x-archive-orig-last-modified" http header property of WebArchive.org as file's modification date (or "x-archive-orig-date" / "memento-datetime" when not available)
+- allows to export/import local download path in a download list, so when you save file list and load it back it has the correct save paths
+- allows to replicate remote website's directory structure, useful for mirroring
+- [later] some improvements to webarchive.org that allow you to open first/last/specific year snapshots from search results, also useful for downloading files and pages as-is
+- [later] at a webarchive.org snapshots page for specific url you can apply custom download filenames with datestamp to download all versions of a webpage or a file you need (using "DownThemAll selection" option)
 
 
 You can run this extension in Firefox ESR 52.x, Firefox up to 56.x, Basilisk, SeaMonkey and PaleMoon, also Waterfox. Basically any browser that has xul extensions support should be okay.
