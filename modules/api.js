@@ -8,6 +8,7 @@ const Preferences = require("preferences");
 const {isWindowPrivate} = require("support/pbm");
 const Mediator = require("support/mediator");
 const Histories = require("support/historymanager");
+const {isString,addFinalSlash} = require("support/stringfuncs");
 
 /* global FilterManager */
 lazy(this, "FilterManager", () => require("support/filtermanager").FilterManager);
@@ -30,14 +31,15 @@ function _decodeCharset(text, charset) {
 	}
 	return rv;
 }
-class URL {
+
+class _URL {
 	constructor(url, preference, _fast) {
 		this.preference = preference || 100;
 
 		if (!(url instanceof Ci.nsIURL)) {
 			throw new Exception("You must pass a nsIURL");
 		}
-		if (!_fast && URL.schemes.indexOf(url.scheme) === -1) {
+		if (!_fast && _URL.schemes.indexOf(url.scheme) === -1) {
 			throw new Exception("Not a supported URL");
 		}
 
@@ -79,8 +81,8 @@ class URL {
 		return this.usable;
 	}
 };
-URL.schemes = ['http', 'https', 'ftp', 'data'];
-exports.URL = Object.freeze(URL);
+_URL.schemes = ['http', 'https', 'ftp', 'data'];
+exports.URL = Object.freeze(_URL);
 
 /**
  * Checks if a provided strip has the correct hash format Supported are: md5,
@@ -267,7 +269,7 @@ exports.getLinkPrintMetalink = function getLinkPrintMetalink(url) {
 	if (lp) {
 		let rv = lp[1];
 		try {
-			return new URL(Services.io.newURI(rv, url.originCharset, url)).url;
+			return new _URL(Services.io.newURI(rv, url.originCharset, url)).url;
 		}
 		catch (ex) {
 			// not a valid link, ignore it.
@@ -299,6 +301,90 @@ exports.getProfileFile = (function() {
 	};
 })();
 
+/*
+ * Get all folder params and compose local save path accordingly
+ * 
+ * 
+ * 
+ * 
+ * 
+*/
+exports.getDirSavePath = function getDirSavePath(remoteUrl,dirSaveDefault,copyDirTree,ignoreProxyPath,keepWWW,dirSaveMeta,ignoreDirSaveMeta){
+	dirSaveDefault  = addFinalSlash(dirSaveDefault);
+	dirSaveMeta = isString(dirSaveMeta) ? dirSaveMeta.trim() : '';
+
+	ignoreDirSaveMeta = dirSaveMeta ? (!!ignoreDirSaveMeta) : true;
+	copyDirTree = !!copyDirTree;
+	ignoreProxyPath = !!ignoreProxyPath;
+	keepWWW = !!keepWWW;
+	
+	let dirSave = '';
+	if(ignoreDirSaveMeta || !dirSaveMeta){
+		dirSave = dirSaveDefault;
+	} else {
+		dirSaveMeta = addFinalSlash(dirSaveMeta);
+		if(dirSaveMeta.indexOf('.')==0 || dirSaveMeta.indexOf('..')==0){
+			//it's subfolder
+			dirSave = dirSaveDefault+dirSaveMeta;
+		} else {
+			dirSave = dirSaveMeta;
+		}
+	}
+	
+	if(copyDirTree){
+		//forms directory tree part of the final path
+		let dirTree = '';
+		let url = unescape(decodeURI(remoteUrl));
+		if(url.indexOf('data:')==0){
+			dirTree = 'base64';
+		} else {
+			//(not)ignoring proxy
+			if(ignoreProxyPath){
+				let endProxy = url.lastIndexOf("://");
+				if(endProxy >9){
+					url = url.substring(endProxy, url.length);
+					url = 'https'+url;
+				}
+			}
+			let url_parts = new URL(url);
+			//removing ugly :80 parts, but keeping other ports
+			let port = url_parts.port;
+			if(port && port != 80 && port != 8080){
+				port = ':'+port;
+			} else {
+				port = '';
+			}
+			 //cutting off filename
+			let pathname = url_parts.pathname;
+			pathname = pathname.substring(0, pathname.lastIndexOf("/")+1);
+			
+			//(not)cutting off www.
+			let hostname = url_parts.hostname;
+			if(!keepWWW){
+				hostname = hostname.replace(/^www[0-9]*[\.]/,'');//.substring(4, hostname.length);
+			}
+			
+			//assembling without url params etc
+			let str = hostname+port+pathname;
+			
+			//replacing illegal symbols with fullwidth counterparts ＼／：＊？＂＜＞｜
+			str = str
+			.replace(/\*/g,'＊')
+			.replace(/\:/g,'：')
+			.replace(/\?/g,'？')
+			.replace(/\</g,'＜')
+			.replace(/\>/g,'＞')
+			.replace(/\|/g,'｜')
+			.replace(/\\/g,'＼')
+			;
+			dirTree = str.replace(/\/+/g,'\\');
+		}
+		dirSave+=dirTree;
+	}
+	return dirSave;
+};
+
+
 
 exports.composeURL = function composeURL(doc, rel) {
 	// find <base href>
@@ -316,7 +402,7 @@ exports.composeURL = function composeURL(doc, rel) {
 exports.getRef = function getRef(doc) {
 	try {
 		log(LOG_DEBUG, "getting ref for" + doc.URL);
-		return (new URL(Services.io.newURI(doc.URL, doc.characterSet, null))).url.spec;
+		return (new _URL(Services.io.newURI(doc.URL, doc.characterSet, null))).url.spec;
 	}
 	catch (ex) {
 		let b = doc.getElementsByTagName('base');
@@ -386,7 +472,13 @@ exports.turboSendLinksToManager = function turboSendLinksToManager(window, urlsA
 
 	for (let u of urlsArray) {
 		u.mask = mask;
-		u.dirSave = dir;
+		u.dirSave = exports.getDirSavePath(
+			u.url.usable || u.url,
+			dir,
+			Services.prefs.getBoolPref('extensions.dta.copyDirTree'),
+			Services.prefs.getBoolPref('extensions.dta.ignoreProxyPath'),
+			Services.prefs.getBoolPref('extensions.dta.keepWWW')
+		);
 		u.numIstance = u.numIstance || (num === null ? num = exports.incrementSeries() : num);
 	}
 

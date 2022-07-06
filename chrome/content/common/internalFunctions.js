@@ -209,13 +209,6 @@ var Utils = {
 		}
 		return _('sizeKB', [aNumber.toFixed(decimalPlace || 1)]);
 	},
-	isString: function(who) {
-		if (typeof who === 'string' || who instanceof String){
-			return true;
-		} else {
-			return false;
-		}
-	},
 	formatConflictName: function(basename, conflicts) {
 		if (!conflicts) {
 			return basename;
@@ -375,79 +368,6 @@ var getDefaultDownloadsDirectory = (function() {
 	}
 })();
 
-function getDirSavePath(remoteUrl,dirSaveDefault,copyDirTree,ignoreProxyPath,keepWWW,dirSaveMeta,ignoreDirSaveMeta){
-	dirSaveDefault  = Utils.addFinalSlash(dirSaveDefault);
-	dirSaveMeta = Utils.isString(dirSaveMeta) ? dirSaveMeta.trim() : '';
-
-	ignoreDirSaveMeta = dirSaveMeta ? (!!ignoreDirSaveMeta) : true;
-	copyDirTree = !!copyDirTree;
-	ignoreProxyPath = !!ignoreProxyPath;
-	keepWWW = !!keepWWW;
-	
-	//console.log(remoteUrl,dirSaveDefault,copyDirTree,ignoreProxyPath,dirSaveMeta,ignoreDirSaveMeta);
-	
-	let dirSave = '';
-	if(ignoreDirSaveMeta || !dirSaveMeta){
-		dirSave = dirSaveDefault;
-	} else {
-		dirSaveMeta = Utils.addFinalSlash(dirSaveMeta);
-		if(dirSaveMeta.indexOf('.')==0 || dirSaveMeta.indexOf('..')==0){
-			//it's subfolder
-			dirSave = dirSaveDefault+dirSaveMeta;
-		} else {
-			dirSave = dirSaveMeta;
-		}
-	}
-	
-	if(copyDirTree){
-		//forms directory tree part of the final path
-		let dirTree = '';
-		let url = decodeURI(unescape(remoteUrl));
-		if(url.indexOf('data:')==0){
-			dirTree = 'base64';
-		} else {
-			//(not)ignoring proxy
-			if(ignoreProxyPath){
-				url = url.substring(url.lastIndexOf("://"), url.length);
-				url = 'https'+url;
-			}
-			let url_parts = new URL(url);
-			//removing ugly :80 parts, but keeping other ports
-			let port = url_parts.port;
-			if(port && port != 80){
-				port = ':'+port;
-			} else {
-				port = '';
-			}
-			 //cutting off filename
-			let pathname = url_parts.pathname;
-			pathname = pathname.substring(0, pathname.lastIndexOf("/")+1);
-			
-			//(not)cutting off www.
-			let hostname = url_parts.hostname;
-			if(!keepWWW){
-				hostname = hostname.replace(/^www[0-9]*[\.]/,'');//.substring(4, hostname.length);
-			}
-			
-			//assembling without url params etc
-			let str = hostname+port+pathname;
-			
-			//replacing illegal symbols with fullwidth counterparts ＼／：＊？＂＜＞｜
-			str = str
-			.replace(/\*/g,'＊')
-			.replace(/\:/g,'：')
-			.replace(/\?/g,'？')
-			.replace(/\</g,'＜')
-			.replace(/\>/g,'＞')
-			.replace(/\|/g,'｜')
-			.replace(/\\/g,'＼')
-			;
-			dirTree = str.replace(/\/+/g,'\\');
-		}
-		dirSave+=dirTree;
-	}
-	return dirSave;
-};
 
 Object.defineProperty(window, "setTimeoutOnlyFun", {
 	value: function setTimeoutFun(cb, delay, p1, p2, p3) {

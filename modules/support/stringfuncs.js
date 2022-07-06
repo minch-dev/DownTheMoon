@@ -133,4 +133,11 @@ exports.toURL = memoize(function toURL(str, charset, baseURI) {
 	return toURI(str, charset, baseURI).QueryInterface(Ci.nsIURL);
 }, 1000);
 
+exports.isString = function(who) {
+	if (typeof who === 'string' || who instanceof String){
+		return true;
+	}
+	return false;
+}
+
 Object.freeze(exports);

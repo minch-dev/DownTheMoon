@@ -56,6 +56,14 @@ var MetaSelect = {
 		catch (ex) {
 			// no-op
 		}
+		this.ddCopyDirTree = $("copyDirTree");
+		this.ddIgnoreProxyPath = $("ignoreProxyPath");
+		this.ddKeepWWW = $("keepWWW");
+
+		this.ddCopyDirTree.checked = Services.prefs.getBoolPref('extensions.dta.copyDirTree');
+		this.ddIgnoreProxyPath.checked = Services.prefs.getBoolPref('extensions.dta.ignoreProxyPath');
+		this.ddKeepWWW.checked = Services.prefs.getBoolPref('extensions.dta.keepWWW');
+		
 		$('identity').value = info.identity;
 		$('desc').appendChild(document.createTextNode(info.description));
 		let logo = new Image();
@@ -121,9 +129,7 @@ var MetaSelect = {
 	download: function(start) {
 		let [notifications, directory, mask, ] = $('notifications', 'directory', 'renaming');
 		let ignoreDirSaveMeta = $("ignoreDirSaveMeta").checked;
-		let copyDirTree = $("copyDirTree").checked;
-		let ignoreProxyPath = $("ignoreProxyPath").checked;
-		let keepWWW = $("keepWWW").checked;
+
 		notifications.removeAllNotifications(true);
 
 		function err(msg) {
@@ -141,12 +147,20 @@ var MetaSelect = {
 			err(_(directory.value ? 'alert.invaliddir' : 'alert.nodir'));
 			return false;
 		}
-
+		
 		let selected = false;
 		Array.forEach(
 			document.getElementsByTagName('richlistitem'),
 			function(n) {
-				n.download.dirSave = getDirSavePath(n.download.url.usable,directory.value,copyDirTree,ignoreProxyPath,keepWWW,n.download.destinationPath,ignoreDirSaveMeta);
+				n.download.dirSave = DTA.getDirSavePath(
+					n.download.url.usable,
+					directory.value,
+					this.ddCopyDirTree.checked,
+					this.ddIgnoreProxyPath.checked,
+					this.ddKeepWWW.checked,
+					n.download.destinationPath,
+					ignoreDirSaveMeta
+				);
 				n.download.mask = mask.value;
 				n.download.selected = n.checked;
 				selected |= n.checked;
@@ -157,6 +171,13 @@ var MetaSelect = {
 			err(_('no.links'));
 			return false;
 		}
+		// save history
+		mask.save($("renamingOnce").checked);
+		directory.save();
+		Services.prefs.setBoolPref('extensions.dta.copyDirTree',this.ddCopyDirTree.checked);
+		Services.prefs.setBoolPref('extensions.dta.ignoreProxyPath',this.ddIgnoreProxyPath.checked);
+		Services.prefs.setBoolPref('extensions.dta.keepWWW',this.ddKeepWWW.checked);
+		
 		window.arguments[1].start = start;
 		close();
 		if (window.arguments[2]) {

@@ -68,6 +68,9 @@ pref("extensions.dta.usesysalerts", true);
 pref("extensions.dta.seriesdigits", 3);
 pref("extensions.dta.usecleanrequests", false);
 pref("extensions.dta.showactions", true);
+pref("extensions.dta.copyDirTree", false);
+pref("extensions.dta.ignoreProxyPath", false);
+pref("extensions.dta.keepWWW", false);
 
 // Non-customizable-toolbar specific
 pref("extensions.dta.tb.buttons", "1,1,0");

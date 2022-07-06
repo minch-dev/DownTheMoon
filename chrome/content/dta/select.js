@@ -303,6 +303,15 @@ Dialog = {
 			this.ddDirectory.isPrivate = isPrivate;
 			this.ddRenaming = $('renaming');
 			this.ddRenaming.isPrivate = isPrivate;
+			
+			this.ddCopyDirTree = $("copyDirTree");
+			this.ddIgnoreProxyPath = $("ignoreProxyPath");
+			this.ddKeepWWW = $("keepWWW");
+
+			this.ddCopyDirTree.checked = Services.prefs.getBoolPref('extensions.dta.copyDirTree');
+			this.ddIgnoreProxyPath.checked = Services.prefs.getBoolPref('extensions.dta.ignoreProxyPath');
+			this.ddKeepWWW.checked = Services.prefs.getBoolPref('extensions.dta.keepWWW');
+
 			$("maskeditor-selector").isPrivate = isPrivate;
 
 			if (!this.ddDirectory.value) {
@@ -426,9 +435,6 @@ Dialog = {
 
 	// user decided to start the selection
 	download: function(start) {
-		let copyDirTree = $("copyDirTree").checked;
-		let ignoreProxyPath = $("ignoreProxyPath").checked;
-		let keepWWW = $("keepWWW").checked;
 		function prepare(link, dir, counter, mask) {
 			link.dirSave = dir;
 			link.numIstance = counter;
@@ -455,7 +461,20 @@ Dialog = {
 					if (!i.checked.length) {
 						continue;
 					}
-					out.push( prepare(i,getDirSavePath(i.url.usable,dir,copyDirTree,ignoreProxyPath,keepWWW),counter,mask) );
+					out.push(
+						prepare(
+							i,
+							DTA.getDirSavePath(
+								i.url.usable,
+								dir,
+								this.ddCopyDirTree.checked,
+								this.ddIgnoreProxyPath.checked,
+								this.ddKeepWWW.checked
+							),
+							counter,
+							mask
+						)
+					);
 				}
 				catch (ex) {
 					log(LOG_ERROR, "err: " + i.toSource(), ex);
@@ -475,7 +494,10 @@ Dialog = {
 			this.ddRenaming.save($("renamingOnce").checked);
 			this.ddDirectory.save();
 			this.ddFilter.save();
-
+			Services.prefs.setBoolPref('extensions.dta.copyDirTree',this.ddCopyDirTree.checked);
+			Services.prefs.setBoolPref('extensions.dta.ignoreProxyPath',this.ddIgnoreProxyPath.checked);
+			Services.prefs.setBoolPref('extensions.dta.keepWWW',this.ddKeepWWW.checked);
+			
 			// save the counter, queued state
 			let clq = start;
 			if (!clq) {

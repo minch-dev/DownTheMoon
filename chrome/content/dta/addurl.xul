@@ -101,11 +101,19 @@
 			</row>
 			<row align="center">
 				<label control="directory" id="destinationPath">&directory.caption;</label>
-				<hbox flex="1">
-					<saveddropdown id="directory" preference="directory" flex="1" placeholdertext="&directory.placeholder;"/>
-					<toolbarbutton id="browsedir" class="toolbarbutton-1" oncommand="Dialog.browseDir();" tooltiptext="&browse.tooltip;" />
-				</hbox>
+				<vbox>
+					<hbox flex="1">
+						<saveddropdown id="directory" preference="directory" flex="1" placeholdertext="&directory.placeholder;"/>
+						<toolbarbutton id="browsedir" class="toolbarbutton-1" oncommand="Dialog.browseDir();" tooltiptext="&browse.tooltip;" />
+					</hbox>
+					<hbox>
+						<checkbox preference="copyDirTree" id="copyDirTree" label="&directory.copy.structure;"/>
+						<checkbox preference="ignoreProxyPath" id="ignoreProxyPath" label="&directory.ignore.proxy;"/>
+						<checkbox preference="keepWWW" id="keepWWW" label="www."/>
+					</hbox>
+				</vbox>
 			</row>
+
 			<row align="center">
 				<label control="renaming" id="infoDestTitle">&mask3.label;:</label>
 				<vbox>
