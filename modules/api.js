@@ -334,7 +334,8 @@ exports.getDirSavePath = function getDirSavePath(remoteUrl,dirSaveDefault,copyDi
 	if(copyDirTree){
 		//forms directory tree part of the final path
 		let dirTree = '';
-		let url = unescape(decodeURI(remoteUrl));
+		let url = remoteUrl;
+		log(LOG_ERROR, url);
 		if(url.indexOf('data:')==0){
 			dirTree = 'base64';
 		} else {
@@ -355,7 +356,7 @@ exports.getDirSavePath = function getDirSavePath(remoteUrl,dirSaveDefault,copyDi
 				port = '';
 			}
 			 //cutting off filename
-			let pathname = url_parts.pathname;
+			let pathname = unescape(url_parts.pathname); //unescape also includes decodeURIComponent
 			pathname = pathname.substring(0, pathname.lastIndexOf("/")+1);
 			
 			//(not)cutting off www.
@@ -381,6 +382,7 @@ exports.getDirSavePath = function getDirSavePath(remoteUrl,dirSaveDefault,copyDi
 		}
 		dirSave+=dirTree;
 	}
+	log(LOG_ERROR, dirSave);
 	return dirSave;
 };
 
