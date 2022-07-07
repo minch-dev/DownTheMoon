@@ -1,26 +1,41 @@
-DownThemAll! XUL/WebArchive Edition
+DownThemAll! XUL Edition
 ==================
 `The first and only download manager/accelerator built inside Firefox!`
 
-This is a fork of the latest upstream XUL (Non-WebExtension) pre-release version from 2017 that supports setting original file modified dates of downloaded files. A few features were added in this version:
+This is a fork of the original XUL-based DownThemAll! extension. It's a latest upstream pre-release version from 2017 that supports setting original file modified dates of downloaded files. A few features were added in this fork:
 - takes "x-archive-orig-last-modified" http header property of WebArchive.org as file's modification date (or "x-archive-orig-date" / "memento-datetime" when not available)
-- allows to export/import local download path in a download list, so when you save a file list and load it back it has the correct save paths
+- allows to export/import local save paths in a download list
 - allows to copy a remote website's directory structure, quite useful for mirroring
-- allows to ignore the 'proxy' part of the url while replicating, removes www. by default
-- [later] checkbox that enables files without extension to be treated as folders and being provided the correct index.htm name and local path. 
+- allows to ignore the 'proxy' part of the url while replicating, removes "www." part by default
+- [later] checkbox for files without extension to be treated as folders and given the correct `index.htm` name and local path. 
 - all of the above works in DTA OneClick mode according to the most recent settings (as expected)
 
-You can run this extension in PaleMoon, Firefox ESR 52.x, Firefox up to 56.x, Basilisk, SeaMonkey and Waterfox. Basically any browser that has xul extensions support should be okay.
-(Note that WebArchive's search results pages might not work in those two Firefoxes though, that's a reoccuring issue)
+You can run this extension in Pale Moon, Basilisk, Waterfox Classic, Firefox ESR 52.x & Firefox Developer Edition 56.x. Live version of Waterfox kinda supports XUL, but not  XPCOM, so of no use for us. SeaMonkey needs some fixes, so maybe [later].
+(Note that WebArchive's search results pages might not work in those Firefox versions though, that's a reoccuring issue with some of the webarchive's libraries, sometimes one of the components breaks the show for the older browsers)
 
 Installation
+==================
+Pale Moon, Basilisk
 -------------------
-[later] Detailed instructions for each browser
-Since the extension cannot be possibly signed at this point of XUL deprecation process, we need to allow a browser(e.g. FF ESR 52) to load unsigned extensions.
+
+Simply install .xpi from releases section of this page.
+
+Firefox ESR 52.x, Firefox Developer Edition 56.x
+-------------------
+
+`We need to allow our browser to load unsigned extensions, since our extension cannot be possibly signed by Mozilla at this point of XUL deprecation process.`
+
 Open `about:config`, find `xpinstall.signatures.required` and switch it to `false`. Now you can download the .xpi from `releases` section and install it.
 
-The other method is to install unpacked extension via `about:debugging#addons`. Download the source code as zip, unzip it somewhere, press `Load Temporary Add-on` button, locate your unpacked extension and choose `install.rdf` file.
-The only downside to this is that it only lasts one session, so you have to manually load it each time browser starts.
+Firefox 56.x
+-------------------
+
+If `xpinstall.signatures.required` is not available, one can install an unpacked extension via `about:debugging#addons`, but only `for 1 session`. Download the source code as zip, unzip it somewhere, press `Load Temporary Add-on` button, locate your unpacked extension and choose `install.rdf` file.
+
+SeaMonkey, Waterfox
+-------------------
+
+Not supported (yet).
 
 The legacy text below might still be relevant, although it's not maintaned by me.
 ==================
