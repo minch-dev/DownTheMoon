@@ -309,14 +309,15 @@ exports.getProfileFile = (function() {
  * 
  * 
 */
-exports.getDirSavePath = function getDirSavePath(remoteUrl,dirSaveDefault,copyDirTree,ignoreProxyPath,keepWWW,dirSaveMeta,ignoreDirSaveMeta){
-	dirSaveDefault  = addFinalSlash(dirSaveDefault);
-	dirSaveMeta = isString(dirSaveMeta) ? dirSaveMeta.trim() : '';
+//remoteUrl,dirSaveDefault,copyDirTree,ignoreProxyPath,keepWWW,dirSaveMeta,ignoreDirSaveMeta
 
-	ignoreDirSaveMeta = dirSaveMeta ? (!!ignoreDirSaveMeta) : true;
-	copyDirTree = !!copyDirTree;
-	ignoreProxyPath = !!ignoreProxyPath;
-	keepWWW = !!keepWWW;
+exports.getDirSavePath = function getDirSavePath(_){
+	let dirSaveDefault  = addFinalSlash(_.dirSaveDefault);
+	let dirSaveMeta = isString(_.dirSaveMeta) ? _.dirSaveMeta.trim() : '';
+	let copyDirTree = !!_.copyDirTree;
+	let ignoreProxyPath = !!_.ignoreProxyPath;
+	let keepWWW = !!_.keepWWW;
+	let ignoreDirSaveMeta = !!_.ignoreDirSaveMeta;
 	
 	let dirSave = '';
 	if(ignoreDirSaveMeta || !dirSaveMeta){
@@ -334,8 +335,8 @@ exports.getDirSavePath = function getDirSavePath(remoteUrl,dirSaveDefault,copyDi
 	if(copyDirTree){
 		//forms directory tree part of the final path
 		let dirTree = '';
-		let url = remoteUrl;
-		log(LOG_ERROR, url);
+		let url = _.remoteUrl;
+
 		if(url.indexOf('data:')==0){
 			dirTree = 'base64';
 		} else {
@@ -382,7 +383,7 @@ exports.getDirSavePath = function getDirSavePath(remoteUrl,dirSaveDefault,copyDi
 		}
 		dirSave+=dirTree;
 	}
-	log(LOG_ERROR, dirSave);
+
 	return dirSave;
 };
 
@@ -474,13 +475,13 @@ exports.turboSendLinksToManager = function turboSendLinksToManager(window, urlsA
 
 	for (let u of urlsArray) {
 		u.mask = mask;
-		u.dirSave = exports.getDirSavePath(
-			u.url.usable || u.url,
-			dir,
-			Services.prefs.getBoolPref('extensions.dta.copyDirTree'),
-			Services.prefs.getBoolPref('extensions.dta.ignoreProxyPath'),
-			Services.prefs.getBoolPref('extensions.dta.keepWWW')
-		);
+		u.dirSave = exports.getDirSavePath({
+			remoteUrl: u.url.usable || u.url,
+			dirSaveDefault: dir,
+			copyDirTree: Services.prefs.getBoolPref('extensions.dta.copyDirTree'),
+			ignoreProxyPath: Services.prefs.getBoolPref('extensions.dta.ignoreProxyPath'),
+			keepWWW: Services.prefs.getBoolPref('extensions.dta.keepWWW')
+		});
 		u.numIstance = u.numIstance || (num === null ? num = exports.incrementSeries() : num);
 	}
 

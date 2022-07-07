@@ -152,15 +152,15 @@ var MetaSelect = {
 		Array.forEach(
 			document.getElementsByTagName('richlistitem'),
 			function(n) {
-				n.download.dirSave = DTA.getDirSavePath(
-					n.download.url.usable,
-					directory.value,
-					this.ddCopyDirTree.checked,
-					this.ddIgnoreProxyPath.checked,
-					this.ddKeepWWW.checked,
-					n.download.destinationPath,
-					ignoreDirSaveMeta
-				);
+				n.download.dirSave = DTA.getDirSavePath({
+					remoteUrl: n.download.url.usable,
+					dirSaveDefault: directory.value,
+					copyDirTree: this.ddCopyDirTree.checked,
+					ignoreProxyPath: this.ddIgnoreProxyPath.checked,
+					keepWWW: this.ddKeepWWW.checked,
+					dirSaveMeta: n.download.destinationPath,
+					ignoreDirSaveMeta: ignoreDirSaveMeta
+				});
 				n.download.mask = mask.value;
 				n.download.selected = n.checked;
 				selected |= n.checked;

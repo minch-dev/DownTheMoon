@@ -464,13 +464,13 @@ Dialog = {
 					out.push(
 						prepare(
 							i,
-							DTA.getDirSavePath(
-								i.url.usable,
-								dir,
-								this.ddCopyDirTree.checked,
-								this.ddIgnoreProxyPath.checked,
-								this.ddKeepWWW.checked
-							),
+							DTA.getDirSavePath({
+								remoteUrl: i.url.usable,
+								dirSaveDefault: dir,
+								copyDirTree: this.ddCopyDirTree.checked,
+								ignoreProxyPath: this.ddIgnoreProxyPath.checked,
+								keepWWW: this.ddKeepWWW.checked
+							}),
 							counter,
 							mask
 						)

@@ -325,13 +325,13 @@ var Dialog = {
 		item.referrer = $('URLref').value;
 		item.numIstance = DTA.currentSeries();
 		item.mask = this.ddRenaming.value;
-		item.dirSave = DTA.getDirSavePath(
-			item.url.usable,
-			this.ddDirectory.value,
-			this.ddCopyDirTree.checked,
-			this.ddIgnoreProxyPath.checked,
-			this.ddKeepWWW.checked
-		);
+		item.dirSave = DTA.getDirSavePath({
+			remoteUrl: item.url.usable,
+			dirSaveDefault: this.ddDirectory.value,
+			copyDirTree: this.ddCopyDirTree.checked,
+			ignoreProxyPath: this.ddIgnoreProxyPath.checked,
+			keepWWW: this.ddKeepWWW.checked
+		});
 		item.url.hash = item.url.hash || hash;
 
 		return this.sendDownloads(start, [item], item.isPrivate);
