@@ -8,7 +8,7 @@ const Preferences = require("preferences");
 const {isWindowPrivate} = require("support/pbm");
 const Mediator = require("support/mediator");
 const Histories = require("support/historymanager");
-const {isString,addFinalSlash} = require("support/stringfuncs");
+const {SYSTEMSLASH,isString,addFinalSlash} = require("support/stringfuncs");
 
 /* global FilterManager */
 lazy(this, "FilterManager", () => require("support/filtermanager").FilterManager);
@@ -378,7 +378,7 @@ exports.getDirSavePath = function getDirSavePath(remoteUrl,dirSaveDefault,copyDi
 			.replace(/\|/g,'｜')
 			.replace(/\\/g,'＼')
 			;
-			dirTree = str.replace(/\/+/g,'\\');
+			dirTree = str.replace(/\/+/g,SYSTEMSLASH);
 		}
 		dirSave+=dirTree;
 	}

@@ -1,6 +1,7 @@
 DownThemAll! XUL Edition
 ==================
-`The first and only download manager/accelerator built inside Firefox!`
+Probably the first and only download manager/accelerator built inside Pale Moon!
+-------------------
 
 This is a fork of the original XUL-based DownThemAll! extension. It's based on latest upstream pre-release version from 2017. XUL version is unique as it supports setting original file modified dates of downloaded files. A few features were added in this fork:
 - takes "x-archive-orig-last-modified" http header property of WebArchive.org as file's modification date (or "x-archive-orig-date" / "memento-datetime" when not available)
@@ -30,10 +31,17 @@ Firefox 56.x
 
 If `xpinstall.signatures.required` is not available, one can install an unpacked extension via `about:debugging#addons`, but only `for 1 session`. Download the source code as zip, unzip it somewhere, press `Load Temporary Add-on` button, locate your unpacked extension and choose `install.rdf` file.
 
-SeaMonkey, Waterfox
+SeaMonkey
 -------------------
 
 Not supported (yet).
+
+Waterfox
+-------------------
+
+Live version is incompatible, use Waterfox Classic.
+
+
 
 The legacy text below might still be relevant, although it's not maintaned by me.
 ==================
