@@ -34,7 +34,7 @@ const Renamer = {
 	get subdirs() { return this._o.maskURLPath; },
 	get flatsubdirs() { return getUsableFileNameWithFlatten(this._o.maskURLPath); },
 	get qstring() { return this._o.maskURL.query ? ('？'+this._o.maskURL.query) : ''; },
-	get curl() { return getUsablePath(this._o.maskCURL); },
+	get curl() { return this._o.maskCURL.endsWith('/') ? (getUsablePath(this._o.maskCURL)+'index.htm') : getUsablePath(this._o.maskCURL); },
 	get flatcurl() { return getUsableFileNameWithFlatten(this._o.maskCURL); },
 	get refer() { return this._o.referrer ? this._o.referrer.host.toString() : ''; },
 	get crefer() {
