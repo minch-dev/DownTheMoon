@@ -2,7 +2,7 @@ DownThemAll! XUL Edition
 ==================
 `The first and only download manager/accelerator built inside Firefox!`
 
-This is a fork of the original XUL-based DownThemAll! extension. It's a latest upstream pre-release version from 2017 that supports setting original file modified dates of downloaded files. A few features were added in this fork:
+This is a fork of the original XUL-based DownThemAll! extension. It's based on latest upstream pre-release version from 2017. XUL version is unique as it supports setting original file modified dates of downloaded files. A few features were added in this fork:
 - takes "x-archive-orig-last-modified" http header property of WebArchive.org as file's modification date (or "x-archive-orig-date" / "memento-datetime" when not available)
 - allows to export/import local save paths in a download list
 - allows to copy a remote website's directory structure, quite useful for mirroring
@@ -15,15 +15,13 @@ You can run this extension in Pale Moon, Basilisk, Waterfox Classic, Firefox ESR
 
 Installation
 ==================
-Pale Moon, Basilisk
+Pale Moon, Waterfox Classic, Basilisk
 -------------------
 
 Simply install .xpi from releases section of this page.
 
 Firefox ESR 52.x, Firefox Developer Edition 56.x
 -------------------
-
-`We need to allow our browser to load unsigned extensions, since our extension cannot be possibly signed by Mozilla at this point of XUL deprecation process.`
 
 Open `about:config`, find `xpinstall.signatures.required` and switch it to `false`. Now you can download the .xpi from `releases` section and install it.
 
