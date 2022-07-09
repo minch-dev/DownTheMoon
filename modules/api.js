@@ -309,14 +309,14 @@ exports.getProfileFile = (function() {
  * 
  * 
 */
-//remoteUrl,dirSaveDefault,copyDirTree,ignoreProxyPath,keepWWW,dirSaveMeta,ignoreDirSaveMeta
+//remoteUrl,dirSaveDefault,copyDirTree,ignoreProxyPath,ignoreWWW,dirSaveMeta,ignoreDirSaveMeta
 
 exports.getDirSavePath = function getDirSavePath(_){
 	let dirSaveDefault  = addFinalSlash(_.dirSaveDefault);
 	let dirSaveMeta = isString(_.dirSaveMeta) ? _.dirSaveMeta.trim() : '';
 	let copyDirTree = !!_.copyDirTree;
 	let ignoreProxyPath = !!_.ignoreProxyPath;
-	let keepWWW = !!_.keepWWW;
+	let ignoreWWW = !!_.ignoreWWW;
 	let ignoreDirSaveMeta = !!_.ignoreDirSaveMeta;
 	
 	let dirSave = '';
@@ -332,7 +332,9 @@ exports.getDirSavePath = function getDirSavePath(_){
 		}
 	}
 	
-	if(copyDirTree){
+	// this is basically what *curl**qstring* filter does except it can't ignore www and proxy parts
+	// also it removes all ports, which might be a problem in some tiny edge cases
+	if(copyDirTree){ //	useful parts of this section should be ported to native filter functions
 		//forms directory tree part of the final path
 		let dirTree = '';
 		let url = _.remoteUrl;
@@ -362,7 +364,7 @@ exports.getDirSavePath = function getDirSavePath(_){
 			
 			//(not)cutting off www.
 			let hostname = url_parts.hostname;
-			if(!keepWWW){
+			if(ignoreWWW){
 				hostname = hostname.replace(/^www[0-9]*[\.]/,'');//.substring(4, hostname.length);
 			}
 			
@@ -480,7 +482,7 @@ exports.turboSendLinksToManager = function turboSendLinksToManager(window, urlsA
 			dirSaveDefault: dir,
 			copyDirTree: Services.prefs.getBoolPref('extensions.dta.copyDirTree'),
 			ignoreProxyPath: Services.prefs.getBoolPref('extensions.dta.ignoreProxyPath'),
-			keepWWW: Services.prefs.getBoolPref('extensions.dta.keepWWW')
+			ignoreWWW: Services.prefs.getBoolPref('extensions.dta.ignoreWWW')
 		});
 		u.numIstance = u.numIstance || (num === null ? num = exports.incrementSeries() : num);
 	}

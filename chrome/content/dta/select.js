@@ -306,11 +306,11 @@ Dialog = {
 			
 			this.ddCopyDirTree = $("copyDirTree");
 			this.ddIgnoreProxyPath = $("ignoreProxyPath");
-			this.ddKeepWWW = $("keepWWW");
+			this.ddIgnoreWWW = $("ignoreWWW");
 
 			this.ddCopyDirTree.checked = Services.prefs.getBoolPref('extensions.dta.copyDirTree');
 			this.ddIgnoreProxyPath.checked = Services.prefs.getBoolPref('extensions.dta.ignoreProxyPath');
-			this.ddKeepWWW.checked = Services.prefs.getBoolPref('extensions.dta.keepWWW');
+			this.ddIgnoreWWW.checked = Services.prefs.getBoolPref('extensions.dta.ignoreWWW');
 
 			$("maskeditor-selector").isPrivate = isPrivate;
 
@@ -469,7 +469,7 @@ Dialog = {
 								dirSaveDefault: dir,
 								copyDirTree: this.ddCopyDirTree.checked,
 								ignoreProxyPath: this.ddIgnoreProxyPath.checked,
-								keepWWW: this.ddKeepWWW.checked
+								ignoreWWW: this.ddIgnoreWWW.checked
 							}),
 							counter,
 							mask
@@ -496,7 +496,7 @@ Dialog = {
 			this.ddFilter.save();
 			Services.prefs.setBoolPref('extensions.dta.copyDirTree',this.ddCopyDirTree.checked);
 			Services.prefs.setBoolPref('extensions.dta.ignoreProxyPath',this.ddIgnoreProxyPath.checked);
-			Services.prefs.setBoolPref('extensions.dta.keepWWW',this.ddKeepWWW.checked);
+			Services.prefs.setBoolPref('extensions.dta.ignoreWWW',this.ddIgnoreWWW.checked);
 			
 			// save the counter, queued state
 			let clq = start;

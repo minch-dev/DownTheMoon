@@ -31,11 +31,11 @@ var Dialog = {
 			
 			this.ddCopyDirTree = $("copyDirTree");
 			this.ddIgnoreProxyPath = $("ignoreProxyPath");
-			this.ddKeepWWW = $("keepWWW");
+			this.ddIgnoreWWW = $("ignoreWWW");
 
 			this.ddCopyDirTree.checked = Services.prefs.getBoolPref('extensions.dta.copyDirTree');
 			this.ddIgnoreProxyPath.checked = Services.prefs.getBoolPref('extensions.dta.ignoreProxyPath');
-			this.ddKeepWWW.checked = Services.prefs.getBoolPref('extensions.dta.keepWWW');
+			this.ddIgnoreWWW.checked = Services.prefs.getBoolPref('extensions.dta.ignoreWWW');
 
 			if (!this.ddDirectory.value) {
 				log(LOG_DEBUG, "Using default download directory, value was " + this.ddDirectory.value);
@@ -330,7 +330,7 @@ var Dialog = {
 			dirSaveDefault: this.ddDirectory.value,
 			copyDirTree: this.ddCopyDirTree.checked,
 			ignoreProxyPath: this.ddIgnoreProxyPath.checked,
-			keepWWW: this.ddKeepWWW.checked
+			ignoreWWW: this.ddIgnoreWWW.checked
 		});
 		item.url.hash = item.url.hash || hash;
 
@@ -367,7 +367,7 @@ var Dialog = {
 		this.ddDirectory.save();
 		Services.prefs.setBoolPref('extensions.dta.copyDirTree',this.ddCopyDirTree.checked);
 		Services.prefs.setBoolPref('extensions.dta.ignoreProxyPath',this.ddIgnoreProxyPath.checked);
-		Services.prefs.setBoolPref('extensions.dta.keepWWW',this.ddKeepWWW.checked);
+		Services.prefs.setBoolPref('extensions.dta.ignoreWWW',this.ddIgnoreWWW.checked);
 		
 		DTA.sendLinksToManager(window, start, downloads);
 

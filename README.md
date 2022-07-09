@@ -8,7 +8,8 @@ This is a fork of the original XUL-based DownThemAll! extension. It's based on l
 - allows to export/import local save paths in a download list
 - allows to copy a remote website's directory structure, quite useful for mirroring
 - allows to ignore the 'proxy' part of the url while replicating, removes "www." part by default
-- [later] checkbox for files without extension to be treated as folders and given the correct `index.htm` name and local path. 
+- differentiates between files without extension `\example` and folder indexes `\example\`, providing the correct `index.htm` name and local path.
+- [in progress] replaces illegal symbols with their full-width counterparts: 	＼／：＊？＂＜＞｜
 - all of the above works in DTA OneClick mode according to the most recent settings (as expected)
 
 You can run this extension in Pale Moon, Basilisk, Waterfox Classic, Firefox ESR 52.x & Firefox Developer Edition 56.x. Live version of Waterfox kinda supports XUL, but not  XPCOM, so of no use for us. SeaMonkey needs some fixes, so maybe [later].

@@ -58,11 +58,11 @@ var MetaSelect = {
 		}
 		this.ddCopyDirTree = $("copyDirTree");
 		this.ddIgnoreProxyPath = $("ignoreProxyPath");
-		this.ddKeepWWW = $("keepWWW");
+		this.ddIgnoreWWW = $("ignoreWWW");
 
 		this.ddCopyDirTree.checked = Services.prefs.getBoolPref('extensions.dta.copyDirTree');
 		this.ddIgnoreProxyPath.checked = Services.prefs.getBoolPref('extensions.dta.ignoreProxyPath');
-		this.ddKeepWWW.checked = Services.prefs.getBoolPref('extensions.dta.keepWWW');
+		this.ddIgnoreWWW.checked = Services.prefs.getBoolPref('extensions.dta.ignoreWWW');
 		
 		$('identity').value = info.identity;
 		$('desc').appendChild(document.createTextNode(info.description));
@@ -157,7 +157,7 @@ var MetaSelect = {
 					dirSaveDefault: directory.value,
 					copyDirTree: this.ddCopyDirTree.checked,
 					ignoreProxyPath: this.ddIgnoreProxyPath.checked,
-					keepWWW: this.ddKeepWWW.checked,
+					ignoreWWW: this.ddIgnoreWWW.checked,
 					dirSaveMeta: n.download.destinationPath,
 					ignoreDirSaveMeta: ignoreDirSaveMeta
 				});
@@ -176,7 +176,7 @@ var MetaSelect = {
 		directory.save();
 		Services.prefs.setBoolPref('extensions.dta.copyDirTree',this.ddCopyDirTree.checked);
 		Services.prefs.setBoolPref('extensions.dta.ignoreProxyPath',this.ddIgnoreProxyPath.checked);
-		Services.prefs.setBoolPref('extensions.dta.keepWWW',this.ddKeepWWW.checked);
+		Services.prefs.setBoolPref('extensions.dta.ignoreWWW',this.ddIgnoreWWW.checked);
 		
 		window.arguments[1].start = start;
 		close();

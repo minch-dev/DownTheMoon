@@ -109,7 +109,7 @@
 					<hbox>
 						<checkbox preference="copyDirTree" id="copyDirTree" label="&directory.copy.structure;"/>
 						<checkbox preference="ignoreProxyPath" id="ignoreProxyPath" label="&directory.ignore.proxy;"/>
-						<checkbox preference="keepWWW" id="keepWWW" label="www."/>
+						<checkbox preference="ignoreWWW" id="ignoreWWW" label="ignore www."/>
 					</hbox>
 				</vbox>
 			</row>

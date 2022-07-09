@@ -70,7 +70,7 @@ pref("extensions.dta.usecleanrequests", false);
 pref("extensions.dta.showactions", true);
 pref("extensions.dta.copyDirTree", false);
 pref("extensions.dta.ignoreProxyPath", false);
-pref("extensions.dta.keepWWW", false);
+pref("extensions.dta.ignoreWWW", false);
 
 // Non-customizable-toolbar specific
 pref("extensions.dta.tb.buttons", "1,1,0");

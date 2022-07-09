@@ -439,7 +439,7 @@ def devrdf(fp, **kw):
     kw = kw
     rdf = XML(fp.read())
     node = rdf.getElementsByTagNameNS(NS_EM, 'name')[0].childNodes[0]
-    node.data += " XUL "
+    node.data += " *DEV BUILD* "
 
     io = BytesIO()
     with Reset(io):
