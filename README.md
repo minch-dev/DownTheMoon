@@ -5,7 +5,7 @@ Probably the first and only download manager/accelerator built inside Pale Moon!
 
 This is a fork of the original XUL-based DownThemAll! extension. It's based on latest upstream pre-release version from 2017. XUL version is unique as it supports setting original file modified dates of downloaded files. A few features were added in this fork:
 - takes "x-archive-orig-last-modified" http header property of WebArchive.org as file's modification date (or "x-archive-orig-date" / "memento-datetime" when not available)
-- allows to export/import local save paths in a download list
+- allows to export/import relative local save paths in a download list
 - allows to copy a remote website's directory structure, quite useful for mirroring
 - allows to ignore the 'proxy' part of the url while replicating, removes "www." part by default
 - differentiates between files without extension `\example` and folder indexes `\example\`, providing the correct `index.htm` name and local path.
