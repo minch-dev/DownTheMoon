@@ -12,7 +12,7 @@ This is a fork of the original XUL-based DownThemAll! extension. It's based on l
 - [in progress] replaces illegal symbols with their full-width counterparts: 	＼／：＊？＂＜＞｜
 - all of the above works in DTA OneClick mode according to the most recent settings (as expected)
 
-You can run this extension in Pale Moon, Basilisk, Waterfox Classic, Firefox ESR 52.x & Firefox Developer Edition 56.x. Live version of Waterfox kinda supports XUL, but not  XPCOM, so of no use for us. SeaMonkey needs some fixes, so maybe [later].
+You can run this extension in Pale Moon, Waterfox *Classic*, Basilisk, Firefox ESR 52.x & Firefox Developer Edition 56.x. _Live_ version of Waterfox kinda supports XUL, but not  XPCOM, so of no use for us. SeaMonkey needs some fixes, so maybe [later].
 (Note that WebArchive's search results pages might not work in those Firefox versions though, that's a reoccuring issue with some of the webarchive's libraries, sometimes one of the components breaks the show for the older browsers)
 
 Installation

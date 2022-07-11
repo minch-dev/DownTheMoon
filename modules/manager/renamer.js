@@ -23,7 +23,7 @@ Prefs.addObserver("extensions.dta.seriesdigits", ({
 const expr = /\*\w+\*/gi;
 
 const Renamer = {
-	get nameext() {  },
+	get filename() {  },
 	get name() { return this._o.fileNameAndExtension.name; },
 	get ext() { return this._o.fileNameAndExtension.extension; },
 	get text() { return replaceSlashes(this._o.description, " ").trim(); },
@@ -38,7 +38,8 @@ const Renamer = {
 	get subdirs() { return this._o.maskURLPath; },
 	get subdirsxproxy() {  },
 	get flatsubdirs() { return getUsableFileNameWithFlatten(this._o.maskURLPath); },
-	get qstring() { return this._o.maskURL.query ? ('？'+this._o.maskURL.query) : ''; },
+	get qstring() { return this._o.maskURL.query || ''; },
+	get qmark() { return (this._o.maskURL.query || this._o.maskCURL.endsWith('?')) ? '？' : ''; },
 	get curl() { return this._o.maskCURL.endsWith('/') ? (getUsablePath(this._o.maskCURL)+'index.htm') : getUsablePath(this._o.maskCURL); },
 	get flatcurl() { return getUsableFileNameWithFlatten(this._o.maskCURL); },
 	get refer() { return this._o.referrer ? this._o.referrer.host.toString() : ''; },
