@@ -5,7 +5,7 @@
 
 const {memoize} = require("./memoize");
 
-const rbc_u = /[\n\r\v?:<>*|"]/g;
+const rbc_u = /[\n\r\v?:<>*|"]/g; //
 const rbc_w = /%(?:25)?20/g;
 const rsl_r = /[\/\\]/g;
 
@@ -30,7 +30,22 @@ exports.getCURL = function getCURL(u) {
 };
 
 exports.removeBadChars = function removeBadChars(str) {
-	return str.replace(rbc_u, '_').replace(rbc_w, ' ');
+	//str.replace(rbc_u, '_').replace(rbc_w, ' ');
+	//rbc_w creates double unescape effect on filenames, so ditch it anyway
+	//if a filename actually has %2520 in name I want that to stay as-is
+	//I want special symbols to stay as accurate as possible so I replace them by full-width symbols instead of underscore
+	return str
+			.replace(/[\n\r]/g,'')
+			.replace(/[\v]/g,' ')
+			.replace(/\"/g,'＂')
+			.replace(/\*/g,'＊')
+			.replace(/\:/g,'：')
+			.replace(/\?/g,'？')
+			.replace(/\</g,'＜')
+			.replace(/\>/g,'＞')
+			.replace(/\|/g,'｜')
+			//.replace(/\\/g,'＼')
+			;
 };
 
 exports.addFinalSlash = function addFinalSlash(str) {

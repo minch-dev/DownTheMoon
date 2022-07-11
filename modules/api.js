@@ -343,6 +343,7 @@ exports.getDirSavePath = function getDirSavePath(_){
 			dirTree = 'base64';
 		} else {
 			//(not)ignoring proxy
+			//http://a/http://		minimal example
 			if(ignoreProxyPath){
 				let endProxy = url.lastIndexOf("://");
 				if(endProxy >9){

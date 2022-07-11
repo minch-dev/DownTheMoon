@@ -8,7 +8,8 @@ const Prefs = require("preferences");
 const {
 	replaceSlashes,
 	getUsablePath,
-	getUsableFileNameWithFlatten
+	getUsableFileNameWithFlatten,
+	SYSTEMSLASH
 } = require("support/stringfuncs");
 
 var seriesDigits;
@@ -21,9 +22,17 @@ Prefs.addObserver("extensions.dta.seriesdigits", ({
 }).observe());
 
 const expr = /\*\w+\*/gi;
+const xwww = /^www[0-9]*[\.]/i;
 
 const Renamer = {
-	get filename() {  },
+	get filename() {
+		let url = this._o.maskCURL;
+		if(url.endsWith('/')){
+			return 'index.htm';
+		} else {
+			return url.substring(url.lastIndexOf("/")+1,url.length);
+		}
+	},
 	get name() { return this._o.fileNameAndExtension.name; },
 	get ext() { return this._o.fileNameAndExtension.extension; },
 	get text() { return replaceSlashes(this._o.description, " ").trim(); },
@@ -32,15 +41,53 @@ const Renamer = {
 	get flattitle() { return getUsableFileNameWithFlatten(this._o.title); },
 	get url() { return this._o.maskURL.host; },
 	get domain() { return this._o.urlManager.domain; },
-	get domainxwww() {  },
-	get domainxproxy() {  },
-	get domainxproxyxwww() {  },
-	get subdirs() { return this._o.maskURLPath; },
-	get subdirsxproxy() {  },
+	get site(){	
+		let url_parts = new URL(this._o.urlManager.usable);
+		return url_parts.hostname;
+	},
+	get sitenowww() { return this.site.replace(xwww,''); },
+	get sitenoproxy() {
+		let url = this.urlnoproxy;
+		url = url.substring(url.indexOf("://")+3, url.length);
+		let endDomain = url.indexOf(":");
+		if(endDomain == -1){
+			endDomain = url.indexOf("/");
+		}
+		if(endDomain != -1){
+			url = url.substring(0, endDomain);
+		}
+		return url;
+	},
+	get sitenoproxynowww() { return this.sitenoproxy.replace(xwww,''); },
+	get subdirs() { return SYSTEMSLASH+this._o.maskURLPath+SYSTEMSLASH; },
+	get subdirsnoproxy() {
+		let url_parts = new URL(this.urlnoproxy);
+		let pathname = url_parts.pathname.substring(0, url_parts.pathname.lastIndexOf("/")+1);
+		pathname = getUsablePath(pathname);
+		return pathname;
+	},
 	get flatsubdirs() { return getUsableFileNameWithFlatten(this._o.maskURLPath); },
-	get qstring() { return this._o.maskURL.query || ''; },
-	get qmark() { return (this._o.maskURL.query || this._o.maskCURL.endsWith('?')) ? '？' : ''; },
-	get curl() { return this._o.maskCURL.endsWith('/') ? (getUsablePath(this._o.maskCURL)+'index.htm') : getUsablePath(this._o.maskCURL); },
+	get qstring() { return this._o.maskURL.query; },
+	get qmark() {
+		return (this._o.maskURL.query || this._o.urlManager.usable.endsWith('?')) ? '？' : '';
+	},
+	get curl() {
+		let url = this._o.maskCURL;
+		if(url.endsWith('/')){
+			url = url+'index.htm';
+		}
+		return getUsablePath(url);
+	},
+	get urlnoproxy() {
+		let url = this._o.urlManager.usable;//this._o.urlManager.usable;
+		//log('INFO',this._o.urlManager.usable,this._o.urlManager.url);
+		let endProxy = url.lastIndexOf("://");
+		url = 'https' + url.substring(endProxy, url.length);
+		if(url.endsWith('/')){
+			url = url+'index.htm';
+		}
+		return url; //RAW!!!
+	},
 	get flatcurl() { return getUsableFileNameWithFlatten(this._o.maskCURL); },
 	get refer() { return this._o.referrer ? this._o.referrer.host.toString() : ''; },
 	get crefer() {
