@@ -41,7 +41,7 @@ const Renamer = {
 	get flattitle() { return getUsableFileNameWithFlatten(this._o.title); },
 	get url() { return this._o.maskURL.host; },
 	get domain() { return this._o.urlManager.domain; },
-	get site(){	
+	get site(){
 		let url_parts = new URL(this._o.urlManager.usable);
 		return url_parts.hostname;
 	},

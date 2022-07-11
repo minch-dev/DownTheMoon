@@ -31,8 +31,7 @@ exports.getCURL = function getCURL(u) {
 
 exports.removeBadChars = function removeBadChars(str) {
 	//str.replace(rbc_u, '_').replace(rbc_w, ' ');
-	//rbc_w creates double unescape effect on filenames, so ditch it anyway
-	//if a filename actually has %2520 in name I want that to stay as-is
+	//rbc_w creates double unescape effect on filenames, so ditch it anyway, if a filename actually has %2520 in name I want that to stay as-is
 	//I want special symbols to stay as accurate as possible so I replace them by full-width symbols instead of underscore
 	return str
 			.replace(/[\n\r]/g,'')
