@@ -23,7 +23,7 @@
 		<em:homepageURL>https://github.com/minch-yoda/downthemall-archivist-xul</em:homepageURL>
 		<em:homepageURL>http://downthemall.net/</em:homepageURL>
 		<em:optionsURL>chrome://dta/content/preferences/prefs.xul</em:optionsURL>
-		<em:updateURL>https://github.com/minch-yoda/downthemall-archivist-xul/raw/master/install.rdf</em:updateURL>
+		<em:updateURL>https://github.com/minch-yoda/downthemall-archivist-xul/raw/master/update.rdf</em:updateURL>
 
 
 		<!-- Firefox, Firefox ESR, Firefox DEV Edition, Basilisk, Waterfox Classic -->
