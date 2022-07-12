@@ -107,9 +107,9 @@
 						<toolbarbutton id="browsedir" class="toolbarbutton-1" oncommand="Dialog.browseDir();" tooltiptext="&browse.tooltip;" />
 					</hbox>
 					<hbox>
-						<checkbox preference="copyDirTree" id="copyDirTree" label="&directory.copy.structure;"/>
-						<checkbox preference="ignoreProxyPath" id="ignoreProxyPath" label="&directory.ignore.proxy;"/>
-						<checkbox preference="ignoreWWW" id="ignoreWWW" label="ignore www."/>
+						<checkbox persist="checked" id="copyDirTree" label="&directory.copy.structure;"/>
+						<checkbox persist="checked" id="ignoreProxyPath" label="&directory.ignore.proxy;"/>
+						<checkbox persist="checked" id="ignoreWWW" label="ignore www."/>
 					</hbox>
 				</vbox>
 			</row>

@@ -303,14 +303,6 @@ Dialog = {
 			this.ddDirectory.isPrivate = isPrivate;
 			this.ddRenaming = $('renaming');
 			this.ddRenaming.isPrivate = isPrivate;
-			
-			this.ddCopyDirTree = $("copyDirTree");
-			this.ddIgnoreProxyPath = $("ignoreProxyPath");
-			this.ddIgnoreWWW = $("ignoreWWW");
-
-			this.ddCopyDirTree.checked = Services.prefs.getBoolPref('extensions.dta.copyDirTree');
-			this.ddIgnoreProxyPath.checked = Services.prefs.getBoolPref('extensions.dta.ignoreProxyPath');
-			this.ddIgnoreWWW.checked = Services.prefs.getBoolPref('extensions.dta.ignoreWWW');
 
 			$("maskeditor-selector").isPrivate = isPrivate;
 
@@ -464,13 +456,7 @@ Dialog = {
 					out.push(
 						prepare(
 							i,
-							DTA.getDirSavePath({
-								remoteUrl: i.url.usable,
-								dirSaveDefault: dir,
-								copyDirTree: this.ddCopyDirTree.checked,
-								ignoreProxyPath: this.ddIgnoreProxyPath.checked,
-								ignoreWWW: this.ddIgnoreWWW.checked
-							}),
+							dir,
 							counter,
 							mask
 						)
@@ -494,9 +480,6 @@ Dialog = {
 			this.ddRenaming.save($("renamingOnce").checked);
 			this.ddDirectory.save();
 			this.ddFilter.save();
-			Services.prefs.setBoolPref('extensions.dta.copyDirTree',this.ddCopyDirTree.checked);
-			Services.prefs.setBoolPref('extensions.dta.ignoreProxyPath',this.ddIgnoreProxyPath.checked);
-			Services.prefs.setBoolPref('extensions.dta.ignoreWWW',this.ddIgnoreWWW.checked);
 			
 			// save the counter, queued state
 			let clq = start;

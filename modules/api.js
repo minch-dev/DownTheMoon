@@ -63,7 +63,7 @@ class _URL {
 		return this._url.spec;
 	}
 	_getUsable() {
-		return _decodeCharset(this.spec, this._urlCharset);
+		return _decodeCharset(this.spec, this._urlCharset || '');
 	}
 
 	get url() {
@@ -304,19 +304,16 @@ exports.getProfileFile = (function() {
 /*
  * Get all folder params and compose local save path accordingly
  * 
- * 
- * 
- * 
+ * This is a previous take on remote structure replication
+ * it's mostly obsolete now
+ * DirSaveMeta should still work though
  * 
 */
-//remoteUrl,dirSaveDefault,copyDirTree,ignoreProxyPath,ignoreWWW,dirSaveMeta,ignoreDirSaveMeta
+//dirSaveDefault,dirSaveMeta,ignoreDirSaveMeta
 
 exports.getDirSavePath = function getDirSavePath(_){
 	let dirSaveDefault  = addFinalSlash(_.dirSaveDefault);
 	let dirSaveMeta = isString(_.dirSaveMeta) ? _.dirSaveMeta.trim() : '';
-	let copyDirTree = !!_.copyDirTree;
-	let ignoreProxyPath = !!_.ignoreProxyPath;
-	let ignoreWWW = !!_.ignoreWWW;
 	let ignoreDirSaveMeta = !!_.ignoreDirSaveMeta;
 	
 	let dirSave = '';
@@ -331,62 +328,6 @@ exports.getDirSavePath = function getDirSavePath(_){
 			dirSave = dirSaveMeta;
 		}
 	}
-	
-	// this is basically what *curl**qstring* filter does except it can't ignore www and proxy parts
-	// also it removes all ports, which might be a problem in some tiny edge cases
-	if(copyDirTree){ //	useful parts of this section should be ported to native filter functions
-		//forms directory tree part of the final path
-		let dirTree = '';
-		let url = _.remoteUrl;
-
-		if(url.indexOf('data:')==0){
-			dirTree = 'base64';
-		} else {
-			//(not)ignoring proxy
-			//http://a/http://		minimal example
-			if(ignoreProxyPath){
-				let endProxy = url.lastIndexOf("://");
-				if(endProxy >9){
-					url = url.substring(endProxy, url.length);
-					url = 'https'+url;
-				}
-			}
-			let url_parts = new URL(url);
-			//removing ugly :80 parts, but keeping other ports
-			let port = url_parts.port;
-			if(port && port != 80 && port != 8080){
-				port = ':'+port;
-			} else {
-				port = '';
-			}
-			 //cutting off filename
-			let pathname = unescape(url_parts.pathname); //unescape also includes decodeURIComponent
-			pathname = pathname.substring(0, pathname.lastIndexOf("/")+1);
-			
-			//(not)cutting off www.
-			let hostname = url_parts.hostname;
-			if(ignoreWWW){
-				hostname = hostname.replace(/^www[0-9]*[\.]/,'');//.substring(4, hostname.length);
-			}
-			
-			//assembling without url params etc
-			let str = hostname+port+pathname;
-			
-			//replacing illegal symbols with fullwidth counterparts ＼／：＊？＂＜＞｜
-			str = str
-			.replace(/\*/g,'＊')
-			.replace(/\:/g,'：')
-			.replace(/\?/g,'？')
-			.replace(/\</g,'＜')
-			.replace(/\>/g,'＞')
-			.replace(/\|/g,'｜')
-			.replace(/\\/g,'＼')
-			;
-			dirTree = str.replace(/\/+/g,SYSTEMSLASH);
-		}
-		dirSave+=dirTree;
-	}
-
 	return dirSave;
 };
 
@@ -478,13 +419,7 @@ exports.turboSendLinksToManager = function turboSendLinksToManager(window, urlsA
 
 	for (let u of urlsArray) {
 		u.mask = mask;
-		u.dirSave = exports.getDirSavePath({
-			remoteUrl: u.url.usable || u.url,
-			dirSaveDefault: dir,
-			copyDirTree: Services.prefs.getBoolPref('extensions.dta.copyDirTree'),
-			ignoreProxyPath: Services.prefs.getBoolPref('extensions.dta.ignoreProxyPath'),
-			ignoreWWW: Services.prefs.getBoolPref('extensions.dta.ignoreWWW')
-		});
+		u.dirSave = dir;
 		u.numIstance = u.numIstance || (num === null ? num = exports.incrementSeries() : num);
 	}
 

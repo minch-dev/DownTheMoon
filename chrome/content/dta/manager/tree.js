@@ -541,7 +541,7 @@ class TreeManager {
 			case 3:  return d.percent;
 			case 4:  return d.dimensionString;
 			case 5:  return d.status;
-			case 6:  return d.speed;
+			case 6:  return d.speed === undefined ? '' : d.speed;
 			case 7:  return d.parts;
 			case 8:  return d.mask;
 			case 9:  return d.destinationPath;

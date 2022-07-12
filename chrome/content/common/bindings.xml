@@ -260,7 +260,7 @@
 		<implementation>
 			<constructor><![CDATA[
 				this._typemap = {};
-				for (x in DTA.SUPPORTED_HASHES) {
+				for (let x in DTA.SUPPORTED_HASHES) {
 					var e = document.createElement('menuitem');
 					e.setAttribute('value', x);
 					e.setAttribute('label', x);

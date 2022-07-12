@@ -28,14 +28,6 @@ var Dialog = {
 			this.ddDirectory.isPrivate = isPrivate;
 			this.ddRenaming = $("renaming");
 			this.ddRenaming.isPrivate = isPrivate;
-			
-			this.ddCopyDirTree = $("copyDirTree");
-			this.ddIgnoreProxyPath = $("ignoreProxyPath");
-			this.ddIgnoreWWW = $("ignoreWWW");
-
-			this.ddCopyDirTree.checked = Services.prefs.getBoolPref('extensions.dta.copyDirTree');
-			this.ddIgnoreProxyPath.checked = Services.prefs.getBoolPref('extensions.dta.ignoreProxyPath');
-			this.ddIgnoreWWW.checked = Services.prefs.getBoolPref('extensions.dta.ignoreWWW');
 
 			if (!this.ddDirectory.value) {
 				log(LOG_DEBUG, "Using default download directory, value was " + this.ddDirectory.value);
@@ -325,13 +317,7 @@ var Dialog = {
 		item.referrer = $('URLref').value;
 		item.numIstance = DTA.currentSeries();
 		item.mask = this.ddRenaming.value;
-		item.dirSave = DTA.getDirSavePath({
-			remoteUrl: item.url.usable,
-			dirSaveDefault: this.ddDirectory.value,
-			copyDirTree: this.ddCopyDirTree.checked,
-			ignoreProxyPath: this.ddIgnoreProxyPath.checked,
-			ignoreWWW: this.ddIgnoreWWW.checked
-		});
+		item.dirSave = this.ddDirectory.value;
 		item.url.hash = item.url.hash || hash;
 
 		return this.sendDownloads(start, [item], item.isPrivate);
@@ -365,10 +351,7 @@ var Dialog = {
 
 		this.ddRenaming.save($("renamingOnce").checked);
 		this.ddDirectory.save();
-		Services.prefs.setBoolPref('extensions.dta.copyDirTree',this.ddCopyDirTree.checked);
-		Services.prefs.setBoolPref('extensions.dta.ignoreProxyPath',this.ddIgnoreProxyPath.checked);
-		Services.prefs.setBoolPref('extensions.dta.ignoreWWW',this.ddIgnoreWWW.checked);
-		
+
 		DTA.sendLinksToManager(window, start, downloads);
 
 		close();

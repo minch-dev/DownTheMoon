@@ -189,7 +189,7 @@ var Dialog = {
 	_maxObservedSpeed: 0,
 
 	get offline() {
-		return this._offline || this._offlineForced;
+		return this._offline || this._offlineForced || false;
 	},
 	set offline(nv) {
 		this._offline = !!nv;
@@ -1360,9 +1360,9 @@ var Dialog = {
 	unload: function() {
 		Limits.killServerBuckets();
 
-		clearInterval(this._timerRunning);
-		clearInterval(this._timerSave);
-		clearInterval(this._timerProcess);
+		if(!!this._timerRunning){ clearInterval(this._timerRunning) };
+		if(!!this._timerSave)	{ clearInterval(this._timerSave) 	};
+		if(!!this._timerProcess){ clearInterval(this._timerProcess) };
 		Prefs.shutdown();
 		try {
 			this._cleanTmpDir();
@@ -2720,7 +2720,7 @@ var QueueItem = class QueueItem {
 		let p = Object.getPrototypeOf(this);
 		for (let u of Dialog_serialize_props) {
 			// only save what is changed
-			if (p[u] !== this[u]) {
+			if ( !!p[u] && !!this[u] && (p[u] !== this[u])) {
 				rv[u] = this[u];
 			}
 		}
