@@ -26,7 +26,7 @@
 					<em:updateLink>https://github.com/minch-yoda/downthemall-archivist-xul/releases/download/3.14/down-the-mall.xpi</em:updateLink>
 
 					<!-- A page describing what is new in this updated version -->
-					<em:updateInfoURL>https://github.com/minch-yoda/downthemall-archivist-xul/raw/3.14/README.md</em:updateInfoURL>
+					<!--em:updateInfoURL>https://github.com/minch-yoda/downthemall-archivist-xul/raw/3.14/README.md</em:updateInfoURL-->
 				</Description>
 			</em:targetApplication>
 			
@@ -39,7 +39,7 @@
 					<em:updateLink>https://github.com/minch-yoda/downthemall-archivist-xul/releases/download/3.14/down-the-mall.xpi</em:updateLink>
 
 					<!-- A page describing what is new in this updated version -->
-					<em:updateInfoURL>https://github.com/minch-yoda/downthemall-archivist-xul/raw/3.14/README.md</em:updateInfoURL>
+					<!--em:updateInfoURL>https://github.com/minch-yoda/downthemall-archivist-xul/raw/3.14/README.md</em:updateInfoURL-->
 				</Description>
 			</em:targetApplication>
 
