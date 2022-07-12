@@ -280,11 +280,31 @@ Dialog = {
 	get boxen() {
 		return $('checkcontainer').getElementsByTagName('checkbox');
 	},
-
+	change: function(){
+		let copyDirTree = $("copyDirTree");
+		let ignoreProxyPath = $("ignoreProxyPath");
+		let ignoreWWW = $("ignoreWWW");
+		
+		let filter = DTA.formatFilter({
+			filter: this.ddRenaming.value,
+			copyDirTree: copyDirTree.checked,
+			ignoreProxyPath: ignoreProxyPath.checked,
+			ignoreWWW: ignoreWWW.checked
+		});
+		
+		if(copyDirTree.checked){
+			ignoreProxyPath.disabled=false;
+			ignoreWWW.disabled=false;
+		} else {
+			ignoreProxyPath.disabled=true;
+			ignoreWWW.disabled=true;
+		}
+		this.ddRenaming.value = filter;
+	},
 	// will be called to initialize the dialog
 	load: function() {
-		this.unload = unloadWindow(window, this.unload.bind(this));
 
+		this.unload = unloadWindow(window, this.unload.bind(this));
 		$('maskeditor-accept').label = _('button-accept');
 		$('cancelbutton').label = $('maskeditor-cancel').label = _('button-cancel');
 
@@ -303,6 +323,7 @@ Dialog = {
 			this.ddDirectory.isPrivate = isPrivate;
 			this.ddRenaming = $('renaming');
 			this.ddRenaming.isPrivate = isPrivate;
+			this.change();
 
 			$("maskeditor-selector").isPrivate = isPrivate;
 

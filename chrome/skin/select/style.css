@@ -2,8 +2,9 @@
 @import 'chrome://dta-platform/skin/common.css';
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
-#renamingbox {
-	min-width: 200px;
+window {
+	min-width: 600px;
+	margin: 0px;
 }
 
 caption {

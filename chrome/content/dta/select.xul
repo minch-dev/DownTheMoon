@@ -30,12 +30,10 @@
 <window
 	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
 	title="DownThemAll! - &title;"
-	width="675" height="575"
 	id="DownThemAll"
 	class="selectlinks"
 	onload="Dialog.load();"
 	persist="width height screenX screenY"
-	style="margin: 0px;"
 >
 	<script type="application/x-javascript" src="chrome://global/content/globalOverlay.js"/>
 
@@ -154,49 +152,50 @@
 				<treechildren/>
 			</tree>
 		</notificationbox>
+		<vbox style="margin:7px;">
 
-		<hbox style="margin:7px 7px 3px 7px;" >
 			<vbox autostretch="never" flex="1">
-				<caption label="&directory.caption;" />
+				<caption label="&directory.caption;"/>
 				<hbox>
 					<saveddropdown id="directory" preference="directory" flex="1" placeholder="&directory.placeholder;"/>
 					<toolbarbutton id="browsedir" command="cmdBrowseDirectory" tooltiptext="&browse.tooltip;" />
 				</hbox>
 				<hbox>
-					<checkbox persist="checked" id="copyDirTree" label="&directory.copy.structure;"/>
-					<checkbox persist="checked" id="ignoreProxyPath" label="&directory.ignore.proxy;"/>
-					<checkbox persist="checked" id="ignoreWWW" label="ignore www."/>
+					<checkbox persist="checked" oncommand="Dialog.change();" id="copyDirTree" label="&directory.copy.structure;"/>
+					<checkbox persist="checked" oncommand="Dialog.change();" id="ignoreProxyPath" label="&directory.ignore.proxy;"/>
+					<checkbox persist="checked" oncommand="Dialog.change();" id="ignoreWWW" label="ignore www."/>
 				</hbox>
 			</vbox>
-			<vbox id="renamingbox">
-				<caption label="&mask3.label;:" />
+
+			<vbox autostretch="never" flex="1">
+				<caption label="&mask3.label;:"/>
 				<hbox>
 					<saveddropdown id="renaming" preference="renaming" flex="1" tooltiptext="&mask.tip;"/>
 					<maskbutton/>
 				</hbox>
 				<checkbox id="renamingOnce" label="&mask.once.label;"/>
-			</vbox>
-		</hbox>
 
-		<box style="margin:3px 7px;" orient="vertical" id="filterbox" class="closer" autostretch="never" closed="true" persist="closed" caption="&filters.caption;">
-			<grid flex="1" id="checkcontainer">
-				<columns id="checkcontainercols"/>
-				<rows id="checkcontainerrows"/>
-			</grid>
-		</box>
-		<vbox style="margin:3px 7px;" class="closer" id="regexcontainer" closed="true" persist="closed" caption="&additional.caption;" tooltiptext="&additional.tip;">
-			<hbox flex="1">
-				<saveddropdown id="filter" flex="1" tooltiptext="&filter.tip;" preference="filter" allowempty="true" onchange="Dialog.notify();"/>
-				<checkbox id="disableothers" label="&disableother.label;" tooltiptext="&disableother.tooltip;" oncommand="Dialog.notify();"/>
+			</vbox>
+
+			<vbox class="closer" id="filterbox" closed="true" persist="closed" caption="&filters.caption;">
+				<grid flex="1" id="checkcontainer">
+					<columns id="checkcontainercols"/>
+					<rows id="checkcontainerrows"/>
+				</grid>
+			</vbox>
+			<vbox class="closer" id="regexcontainer" closed="true" persist="closed" caption="&additional.caption;" tooltiptext="&additional.tip;">
+				<hbox flex="1">
+					<saveddropdown id="filter" flex="1" tooltiptext="&filter.tip;" preference="filter" allowempty="true" onchange="Dialog.notify();"/>
+					<checkbox id="disableothers" label="&disableother.label;" tooltiptext="&disableother.tooltip;" oncommand="Dialog.notify();"/>
+				</hbox>
+			</vbox>
+			<hbox align="baseline" pack="end" style="margin-top:7px;">
+				<button accesskey="&start.key;" label="&start.label;" id="startbutton" command="cmdStart" default="true"/>
+				<button accesskey="&queue.key;" label="&queue.label;" id="queuebutton" command="cmdQueue" />
+				<button id="cancelbutton" command="cmdClose" />
 			</hbox>
 		</vbox>
-
-		<hbox align="baseline" pack="end" style="margin: 2px 7px 4px 7px" >
-			<button accesskey="&start.key;" label="&start.label;" id="startbutton" command="cmdStart" default="true"/>
-			<button accesskey="&queue.key;" label="&queue.label;" id="queuebutton" command="cmdQueue" />
-			<button id="cancelbutton" command="cmdClose" />
-		</hbox>
-
+		
 		<statusbar id="footer">
 			<statusbarpanel id="status" flex="1" />
 			<statusbarpanel id="preferences" class="statusbarpanel-iconic-text text-link" label="&options.label;" command="cmdPreferences"/>

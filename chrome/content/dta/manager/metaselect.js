@@ -9,6 +9,7 @@ var hidpi = window.matchMedia && window.matchMedia("(min-resolution: 2dppx)").ma
 var METALINK_LOGO = hidpi ? 'chrome://dta/skin/common/metalink64.png' : 'chrome://dta/skin/common/metalink32.png';
 
 var Version = require("version");
+var {isWindowPrivate} = require("support/pbm");
 
 var MetaSelect = {
 	_insertDownload: function(d) {
@@ -25,7 +26,44 @@ var MetaSelect = {
 			log(LOG_ERROR, "Failed to add download from metalink", ex);
 		}
 	},
+	change: function(){
+		let ignoreDirSaveMeta = $("ignoreDirSaveMeta");
+		let copyDirTree = $("copyDirTree");
+		let ignoreProxyPath = $("ignoreProxyPath");
+		let ignoreWWW = $("ignoreWWW");
+		
+		if(ignoreDirSaveMeta.checked){
+			copyDirTree.disabled=false;
+		} else {
+			copyDirTree.disabled=true;
+		}
+		if(copyDirTree.checked && !copyDirTree.disabled){
+			ignoreProxyPath.disabled=false;
+			ignoreWWW.disabled=false;
+		} else {
+			ignoreProxyPath.disabled=true;
+			ignoreWWW.disabled=true;
+		}
+		
+		let filter = DTA.formatFilter({
+			filter: this.ddRenaming.value,
+			copyDirTree: copyDirTree.checked && !copyDirTree.disabled,
+			ignoreProxyPath: ignoreProxyPath.checked,
+			ignoreWWW: ignoreWWW.checked
+		});
+		
+		this.ddRenaming.value = filter;
+	},
 	load: function() {
+		let isPrivate = this.isPrivate = isWindowPrivate(window.opener);
+		if (window.arguments) {
+			isPrivate = this.isPrivate = window.arguments[0].isPrivate;
+		}
+		this.ddDirectory = $("directory");
+		this.ddDirectory.isPrivate = isPrivate;
+		this.ddRenaming = $("renaming");
+		this.ddRenaming.isPrivate = isPrivate;
+		this.change();
 		$('cancelbutton').label = _('button-cancel');
 
 		try {

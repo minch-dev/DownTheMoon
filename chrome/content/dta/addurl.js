@@ -18,6 +18,27 @@ XPCOMUtils.defineLazyGetter(window, "BatchGenerator", function() {
 
 
 var Dialog = {
+	change: function(){
+		let copyDirTree = $("copyDirTree");
+		let ignoreProxyPath = $("ignoreProxyPath");
+		let ignoreWWW = $("ignoreWWW");
+		
+		let filter = DTA.formatFilter({
+			filter: this.ddRenaming.value,
+			copyDirTree: copyDirTree.checked,
+			ignoreProxyPath: ignoreProxyPath.checked,
+			ignoreWWW: ignoreWWW.checked
+		});
+		
+		if(copyDirTree.checked){
+			ignoreProxyPath.disabled=false;
+			ignoreWWW.disabled=false;
+		} else {
+			ignoreProxyPath.disabled=true;
+			ignoreWWW.disabled=true;
+		}
+		this.ddRenaming.value = filter;
+	},
 	load: function() {
 		try {
 			let isPrivate = this.isPrivate = isWindowPrivate(window.opener);
@@ -28,6 +49,7 @@ var Dialog = {
 			this.ddDirectory.isPrivate = isPrivate;
 			this.ddRenaming = $("renaming");
 			this.ddRenaming.isPrivate = isPrivate;
+			this.change();
 
 			if (!this.ddDirectory.value) {
 				log(LOG_DEBUG, "Using default download directory, value was " + this.ddDirectory.value);

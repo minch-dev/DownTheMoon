@@ -3,7 +3,7 @@
 @namespace html url("http://www.w3.org/1999/xhtml");
 
 #metaselect {
-	min-width: 920px;
+	min-width: 675px;
 	min-height: 430px;
 }
 #header {
@@ -13,6 +13,14 @@
 #header label, #downloads label {
 	font-weight: bold;
 }
+.checkboxes checkbox{
+	max-width:150px;
+	word-wrap:wrap;
+}
+grid{
+	margin:7px;
+}
+
 .icon, html|*.icon {
 	margin: 1ex;
 	margin-top: 0.5ex;

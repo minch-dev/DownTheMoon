@@ -80,35 +80,36 @@
 	</hbox>
 	<notificationbox id="notifications" flex="1">
 		<richlistbox context="context" id="downloads" class="metalinker" flex="1" suppressonselect="true" />
-
-		<hbox style="margin:7px 7px 3px 7px;">
-			<vbox autostretch="never" flex="1">
-				<caption label="&directory.caption;" />
-				<hbox>
-					<saveddropdown id="directory" preference="directory" flex="1" placeholder="&directory.placeholder;" />
-					<toolbarbutton id="browsedir" oncommand="MetaSelect.browseDir();" tooltiptext="&browse.tooltip;" />
-				</hbox>
-				<hbox>
-					<checkbox persist="checked" id="ignoreDirSaveMeta" label="&directory.ignore.imported;"/>
-					<checkbox persist="checked" id="copyDirTree" label="&directory.copy.structure;"/>
-					<checkbox persist="checked" id="ignoreProxyPath" label="&directory.ignore.proxy;"/>
-					<checkbox persist="checked" id="ignoreWWW" label="ignore www."/>
-				</hbox>
-			</vbox>
-			<vbox id="renamingbox">
-				<caption label="&mask3.label;:" />
-				<hbox>
-					<saveddropdown id="renaming" preference="renaming" flex="1" tooltiptext="&mask.tip;" />
-					<maskbutton />
-				</hbox>
-				<checkbox id="renamingOnce" label="&mask.once.label;"/>
-			</vbox>
-		</hbox>
 	</notificationbox>
+	<vbox style="margin:7px;">
+		<vbox autostretch="never" flex="1">
+			<caption label="&directory.caption;"/>
+			<hbox>
+				<saveddropdown id="directory" preference="directory" flex="1" placeholder="&directory.placeholder;" />
+				<toolbarbutton id="browsedir" oncommand="MetaSelect.browseDir();" tooltiptext="&browse.tooltip;" />
+			</hbox>
+			<hbox class="checkboxes">
+				<checkbox persist="checked" oncommand="MetaSelect.change();" id="ignoreDirSaveMeta" label="&directory.ignore.imported;"/>
+				<checkbox persist="checked" oncommand="MetaSelect.change();" id="copyDirTree" label="&directory.copy.structure;"/>
+				<checkbox persist="checked" oncommand="MetaSelect.change();" id="ignoreProxyPath" label="&directory.ignore.proxy;"/>
+				<checkbox persist="checked" oncommand="MetaSelect.change();" id="ignoreWWW" label="ignore www."/>
+			</hbox>
+		</vbox>
 
-	<hbox pack="end" align="baseline" style="margin: 2px 7px 4px 7px">
-		<button accesskey="&start.key;" label="&start.label;" id="startbutton" oncommand="MetaSelect.download(true);" default="true" />
-		<button accesskey="&queue.key;" label="&queue.label;" id="queuebutton" oncommand="MetaSelect.download(false);" />
-		<button id="cancelbutton" oncommand="MetaSelect.cancel();" />
-	</hbox>
+		<vbox autostretch="never" flex="1">
+			<caption label="&mask3.label;:"/>
+			<hbox>
+				<saveddropdown id="renaming" preference="renaming" flex="1" tooltiptext="&mask.tip;" />
+				<maskbutton />
+			</hbox>
+			<checkbox id="renamingOnce" label="&mask.once.label;"/>
+		</vbox>
+
+
+		<hbox pack="end" align="baseline" style="margin: 2px 7px 4px 7px">
+			<button accesskey="&start.key;" label="&start.label;" id="startbutton" oncommand="MetaSelect.download(true);" default="true" />
+			<button accesskey="&queue.key;" label="&queue.label;" id="queuebutton" oncommand="MetaSelect.download(false);" />
+			<button id="cancelbutton" label="&cancel.label;" oncommand="MetaSelect.cancel();" />
+		</hbox>
+	</vbox>
 </window>

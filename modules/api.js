@@ -331,7 +331,62 @@ exports.getDirSavePath = function getDirSavePath(_){
 	return dirSave;
 };
 
-
+exports.formatFilter = function formatFilter(_){
+	let filter = _.filter;
+	let copyDirTree = !!_.copyDirTree;
+	let ignoreProxyPath = !!_.ignoreProxyPath;
+	let ignoreWWW = !!_.ignoreWWW;
+	
+	let hasSite = filter.indexOf('*site') == -1 ? false : true;
+	let hasDirs = filter.indexOf('*subdirs') == -1 ? false : true;
+	let needSite = hasSite || (!hasSite && !hasDirs);
+	let needDirs = hasDirs || (!hasSite && !hasDirs);
+	
+	filter = filter
+		.replace(/\*site[a-z]*\*/gi,'')
+		.replace(/\*subdirs[a-z]*\*/gi,'')
+		.replace(/\*url\*/gi,'');
+	if(filter.indexOf('*curl*')!=-1){
+		filter = filter.replace(/\*curl\*/gi,'*filename*');
+	}
+	
+	if(copyDirTree){
+		let prepend = '';
+		if(ignoreProxyPath){
+			if(needSite){
+				if(ignoreWWW){
+					prepend = '*sitenoproxynowww*';
+				} else {
+					prepend = '*sitenoproxy*';
+				}
+			}
+			if(needDirs){
+				prepend += '*subdirsnoproxy*';
+			}
+		} else {
+			if(needSite){
+				if(ignoreWWW){
+					prepend = '*sitenowww*';
+				} else {
+					prepend = '*site*';
+				}
+			}
+			if(needDirs){
+				prepend += '*subdirs*';
+			}
+		}
+		let append = '';
+		if(filter.indexOf('*qstring*')==-1){
+			if(filter.indexOf('*qmark*')==-1){
+				append = '*qmark*';
+			}
+			append += '*qstring*';
+		}
+		filter = prepend + filter + append;
+		
+	}
+	return filter;
+}
 
 exports.composeURL = function composeURL(doc, rel) {
 	// find <base href>
