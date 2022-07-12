@@ -6,11 +6,11 @@ Probably the first and only download manager/accelerator built inside Pale Moon!
 This is a fork of the original XUL-based DownThemAll! extension. It's based on latest upstream pre-release version from 2017. XUL version is unique as it supports setting original file modified dates of downloaded files. A few features were added in this fork:
 - takes "x-archive-orig-last-modified" http header property of WebArchive.org as file's modification date (or "x-archive-orig-date" / "memento-datetime" when not available)
 - allows to export/import relative local save paths in a download list
-- allows to copy a remote website's directory structure, quite useful for mirroring
-- allows to ignore the 'proxy' part of the url while replicating, removes "www." part by default
+- allows to copy a remote website's directory structure (easier and with more options)
+- allows to ignore the 'proxy' part and "www." part of the url while replicating
 - differentiates between files without extension `\example` and folder indexes `\example\`, providing the correct `index.htm` name and local path.
-- [in progress] replaces illegal symbols with their full-width counterparts: 	＼／：＊？＂＜＞｜
-- all of the above works in DTA OneClick mode according to the most recent settings (as expected)
+- replaces illegal symbols with their full-width counterparts: 	：＊？＂＜＞｜
+- all of the above works in DTA OneClick mode via the most recent filter used (as expected)
 
 You can run this extension in Pale Moon, Waterfox *Classic*, Basilisk, Firefox ESR 52.x & Firefox Developer Edition 56.x. _Live_ version of Waterfox kinda supports XUL, but not  XPCOM, so of no use for us. SeaMonkey needs some fixes, so maybe [later].
 (Note that WebArchive's search results pages might not work in those Firefox versions though, that's a reoccuring issue with some of the webarchive's libraries, sometimes one of the components breaks the show for the older browsers)

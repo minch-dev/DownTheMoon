@@ -32,14 +32,19 @@
 						<column/>
 					</columns>
 					<rows>
+						<row tag="*filename*" desc="Raw filename" tag2="*referqstring*" desc2="&mask.referqstring;"/>
 						<row tag="*name*" desc="&mask.name;" tag2="*refername*" desc2="&mask.refername;"/>
 						<row tag="*ext*" desc="&mask.ext;" tag2="*referext*" desc2="&mask.referext;"/>
 						<row tag="*url*" desc="&mask.url;" tag2="*refer*" desc2="&mask.refer;"/>
 						<row tag="*curl*" desc="&mask.curl;" tag2="*crefer*" desc2="&mask.crefer;"/>
 						<row tag="*flatcurl*" desc="&mask.flatcurl;" tag2="*flatcrefer*" desc2="&mask.flatcrefer;"/>
-						<row tag="*subdirs*" desc="&mask.subdirs;" tag2="*referdirs*" desc2="&mask.referdirs;"/>
 						<row tag="*flatsubdirs*" desc="&mask.flatsubdirs;" tag2="*flatreferdirs*" desc2="&mask.flatreferdirs;"/>
-						<row tag="*qstring*" desc="&mask.qstring;" tag2="*referqstring*" desc2="&mask.referqstring;"/>
+						<row tag="*qstring*" desc="&mask.qstring;" tag2="*referdirs*" desc2="&mask.referdirs;"/>
+						<row tag="*qmark*" desc="？" tag2="" desc2=""/>
+						<separator/>
+						<row tag="*site*" desc="website" tag2="*sitenowww*" desc2="website -www."/>
+						<row tag="*sitenoproxy*" desc="website -proxy" tag2="*sitenoproxynowww*" desc2="website -proxy -www."/>
+						<row tag="*subdirs*" desc="&mask.subdirs;" tag2="*subdirsnoproxy*" desc2="&mask.subdirs; -proxy" />
 						<separator/>
 						<row tag="*text*" desc="&mask.linktext;" tag2="*hh*" desc2="&mask.hh;"/>
 						<row tag="*flattext*" desc="&mask.flatlinktext;" tag2="*mm*" desc2="&mask.mm;"/>
