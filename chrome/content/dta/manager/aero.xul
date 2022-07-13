@@ -2,7 +2,7 @@
 <!-- ***** BEGIN LICENSE BLOCK *****
  * Version: GPL 2.0
  *
- * This code is part of DownThemAll! - dTa!
+ * This code is part of DownTheMoon! - dTa!
  * Copyright © 2010
  *
  * See LICENSE and GPL for details.
@@ -12,7 +12,7 @@
 <?xml-stylesheet href="chrome://dta-platform/skin/manager-aero.css" type="text/css" ?>
 
 <overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-	<window id="DownThemAll" chromemargin="0,-1,-1,-1" lightweightthemes="true" lightweightthemesfooter="footer">
+	<window id="DownTheMoon" chromemargin="0,-1,-1,-1" lightweightthemes="true" lightweightthemesfooter="footer">
 		<vbox id="titlebar" insertbefore="toolbox">
 			<hbox id="titlebar-content">
 				<spacer flex="1"/>

@@ -10,11 +10,11 @@
 <!ENTITY add.label "Ajouter un nouveau filtre">
 <!ENTITY dtacontext2.label "Préférences">
 <!ENTITY buttonlabelextra2 "Rétablir les paramètres par défaut">
-<!ENTITY dtaPreferences.title "Préférences de DownThemAll!…">
+<!ENTITY dtaPreferences.title "Préférences de DownTheMoon!…">
 <!ENTITY manager "Gestionnaire de dTa!">
 <!ENTITY mainpane.label "Principales">
 <!ENTITY mainpane.defaults.caption "Par défaut">
-<!ENTITY mainpane.defaults.desc "Le répertoire de téléchargement, masque de renommage et filtres utilisés par OneClick! peuvent être configurés dans la boîte de dialogue habituelle de DownThemAll!.">
+<!ENTITY mainpane.defaults.desc "Le répertoire de téléchargement, masque de renommage et filtres utilisés par OneClick! peuvent être configurés dans la boîte de dialogue habituelle de DownTheMoon!.">
 <!ENTITY mainpane.nameclash.caption "Lorsqu'un fichier avec le même nom existe déjà :">
 <!ENTITY mainpane.rename.label "Renommer">
 <!ENTITY mainpane.overwrite.label "Remplacer">
@@ -28,7 +28,7 @@
 <!ENTITY mainpane.alertnotifications2.label "Utilisations des notifications sur le bureau">
 <!ENTITY mainpane.alertnone.label "Ne pas me prévenir">
 <!ENTITY mainpane.sounddone.label "Jouer un son pour annoncer la fin de tous les téléchargements">
-<!ENTITY mainpane.closedta.label "Fermer DownThemAll! lorsque les téléchargements sont terminés">
+<!ENTITY mainpane.closedta.label "Fermer DownTheMoon! lorsque les téléchargements sont terminés">
 <!ENTITY mainpane.settime.label "Définir la date de création du fichier à la date de dernière modification (serveur) ou à la date de mise en attente de téléchargement">
 <!ENTITY mainpane.rememberoneclick.label "Faire en sorte que dTa OneClick! mémorise s'il s'applique à tous les onglets ou à l'onglet courant">
 <!ENTITY mainpane.confirmremove2.label "Confirmer la suppression des téléchargements">
@@ -49,7 +49,7 @@
 <!ENTITY privacypane.logs.caption "Journal de diagnostic">
 <!ENTITY privacypane.enablelogs.label "Activer l'écriture dans le journal de diagnostic">
 <!ENTITY privacypane.notice.caption "Notification">
-<!ENTITY privacypane.notice.desc "DownThemAll! est également incluse dans la fonctionnalité « Effacer mes traces… » du menu « Outils » (si disponible).">
+<!ENTITY privacypane.notice.desc "DownTheMoon! est également incluse dans la fonctionnalité « Effacer mes traces… » du menu « Outils » (si disponible).">
 <!ENTITY privacypane.privacynotice.label "Notre politique de confidentialité">
 <!ENTITY serverspane.label "Réseau">
 <!ENTITY serverspane.downloads.caption "Téléchargements">
@@ -101,14 +101,14 @@
 <!ENTITY advancedpane.scheduler.fast "Rapide - dès l'ajout dans la file d'attente">
 <!ENTITY advancedpane.scheduler.fair "Convenable + lent - distribué uniformément">
 <!ENTITY advancedpane.scheduler.legacy "Hérité - aucune limite">
-<!ENTITY advancedpane.exposeinua.label "Exposer DownThemAll! dans le User-Agent">
+<!ENTITY advancedpane.exposeinua.label "Exposer DownTheMoon! dans le User-Agent">
 <!ENTITY advancedpane.sparsefiles.caption "Fichiers éclatés">
 <!ENTITY advancedpane.sparsefiles.label "Utiliser des fichiers éclatés si pris en charge">
 <!ENTITY advancedpane.sparsefiles.tooltip "Les fichiers éclatés sont des fichiers qui ne sont pas tout de suite réservés sur le disque-dur. Les fichiers éclatés peuvent accélérer la pré-allocation, mais également baisser la performance d'écriture et/ou davantage de fragmentation de fichier !">
 <!ENTITY uipane.label "Interface utilisateur">
 <!ENTITY uipane.namesonly.label "N'afficher que le nom des fichiers dans la fenêtre du gestionnaire">
 <!ENTITY uipane.integration.caption "Intégration">
-<!ENTITY uipane.downloadwin.label "Ajouter DownThemAll! à la fenêtre d'enregistrement">
+<!ENTITY uipane.downloadwin.label "Ajouter DownTheMoon! à la fenêtre d'enregistrement">
 <!ENTITY uipane.context.caption "Menu contextuel">
 <!ENTITY uipane.tools.caption "Menu « Outils »">
 <!ENTITY uipane.compact.label "Utiliser un menu compact">

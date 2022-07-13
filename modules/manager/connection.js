@@ -293,7 +293,7 @@ Connection.prototype = {
 		return null;
 	},
 	contractID: null,
-	classDescription: "DownThemAll! connection",
+	classDescription: "DownTheMoon! connection",
 	classID: null,
 	flags: Ci.nsIClassInfo.MAIN_THREAD_ONLY,
 

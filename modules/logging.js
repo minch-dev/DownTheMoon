@@ -174,7 +174,7 @@ exports.log = function(level, message, exception, force) {
 				levelMsg = "debug";
 		}
 
-		message = `DownThemAll! (${levelMsg}) - ${message}`;
+		message = `DownTheMoon! (${levelMsg}) - ${message}`;
 
 		const scriptError = new Instances.ScriptError(
 			message,

@@ -30,7 +30,7 @@ if (available) {
 
 		QueryInterface: QI([Ci.dhIProcessor, Ci.sehISecretHelperProcessorExtra]),
 
-		get provider() { return "DownThemAll!"; },
+		get provider() { return "DownTheMoon!"; },
 		get enabled() { return true; },
 
 		canHandle: function(desc) { return desc.has("media-url") || desc.has("links"); },

@@ -10,11 +10,11 @@
 <!ENTITY add.label "Lisa uus filter">
 <!ENTITY dtacontext2.label "Eelistused">
 <!ENTITY buttonlabelextra2 "Taasta vaikimisi sätted">
-<!ENTITY dtaPreferences.title "DownThemAll! - Eelistused">
+<!ENTITY dtaPreferences.title "DownTheMoon! - Eelistused">
 <!ENTITY manager "dTa! Haldur">
 <!ENTITY mainpane.label "Üldised">
 <!ENTITY mainpane.defaults.caption "Vaikimisi sätted">
-<!ENTITY mainpane.defaults.desc "Allalaadimiste kausta, nimemuutmismaski ja OneClick!-i kasutatavaid filtreid saab muuta tavalises DownThemAll!-i dialoogiaknas.">
+<!ENTITY mainpane.defaults.desc "Allalaadimiste kausta, nimemuutmismaski ja OneClick!-i kasutatavaid filtreid saab muuta tavalises DownTheMoon!-i dialoogiaknas.">
 <!ENTITY mainpane.nameclash.caption "Kui sama nimega fail on juba olemas:">
 <!ENTITY mainpane.rename.label "Muuda nime">
 <!ENTITY mainpane.overwrite.label "Kirjuta üle">
@@ -28,7 +28,7 @@
 <!ENTITY mainpane.alertnotifications2.label "Töölauateavitusi kasutades">
 <!ENTITY mainpane.alertnone.label "Ära teavita mind">
 <!ENTITY mainpane.sounddone.label "Esita heli, kui kõik allalaadimised valmis saavad">
-<!ENTITY mainpane.closedta.label "Sulge DownThemAll, kui allalaadimised valmis saavad">
+<!ENTITY mainpane.closedta.label "Sulge DownTheMoon, kui allalaadimised valmis saavad">
 <!ENTITY mainpane.settime.label "Määra faili ajaks viimatise muutmise aeg (server) või järjekorda panemise aeg">
 <!ENTITY mainpane.rememberoneclick.label "dTa OneClick jätab meelde, kas see käib kõikide kaartide või aktiivse kaardi kohta">
 <!ENTITY mainpane.confirmremove2.label "Küsi allalaadimiste eemaldamisel kinnitust">
@@ -49,7 +49,7 @@
 <!ENTITY privacypane.logs.caption "Diagnostiline logi">
 <!ENTITY privacypane.enablelogs.label "Luba diagnostiline logi">
 <!ENTITY privacypane.notice.caption "Teavitus">
-<!ENTITY privacypane.notice.desc "DownThemAll integreerub ka sisseehitatud ajaloo kustutamise aknaga (kui saadaval).">
+<!ENTITY privacypane.notice.desc "DownTheMoon integreerub ka sisseehitatud ajaloo kustutamise aknaga (kui saadaval).">
 <!ENTITY privacypane.privacynotice.label "Meie privaatsusavaldus">
 <!ENTITY serverspane.label "Võrk">
 <!ENTITY serverspane.downloads.caption "Allalaadimised">
@@ -101,14 +101,14 @@
 <!ENTITY advancedpane.scheduler.fast "Kiire - Nagu järjekorras">
 <!ENTITY advancedpane.scheduler.fair "Mõõdukas+Aeglane - Võrdselt jaotatud">
 <!ENTITY advancedpane.scheduler.legacy "Pärand - piiranguteta">
-<!ENTITY advancedpane.exposeinua.label "Paljasta DownThemAll! kasutajaagendis">
+<!ENTITY advancedpane.exposeinua.label "Paljasta DownTheMoon! kasutajaagendis">
 <!ENTITY advancedpane.sparsefiles.caption "Hajusfailid">
 <!ENTITY advancedpane.sparsefiles.label "Kasuta hajusfaile, kui toetatakse">
 <!ENTITY advancedpane.sparsefiles.tooltip "Hajusfailid on failid, mida kõvakettal koheselt ei reserveerita. Hajusfailid võivad põhjustada kiiremat etteeraldust, kuid ka vähenenud kirjutamisjõudlust ja/või suuremat failide killustatust kettal!">
 <!ENTITY uipane.label "Liides">
 <!ENTITY uipane.namesonly.label "Halduri aknas näita ainult failinimesid">
 <!ENTITY uipane.integration.caption "Integreerimine">
-<!ENTITY uipane.downloadwin.label "Lisa DownThemAll! 'Faili salvestamise' aknasse">
+<!ENTITY uipane.downloadwin.label "Lisa DownTheMoon! 'Faili salvestamise' aknasse">
 <!ENTITY uipane.context.caption "Kontekstimenüü">
 <!ENTITY uipane.tools.caption "Tööriistade menüü">
 <!ENTITY uipane.compact.label "Kasuta kompaktset menüüd">

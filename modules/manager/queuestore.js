@@ -348,7 +348,7 @@ unload(function() {
 
 function VacuumParticipant() {}
 VacuumParticipant.prototype = Object.freeze({
-	classDescription: "DownThemAll! QueueStore Vacuum Participant",
+	classDescription: "DownTheMoon! QueueStore Vacuum Participant",
 	classID: Components.ID("{c2f27651-9db2-438a-bcc7-f9e9bb2e3393}"),
 	contractID: "@downthemall.net/vacuum-participant;1",
 	xpcom_categories: ["vacuum-participant"],

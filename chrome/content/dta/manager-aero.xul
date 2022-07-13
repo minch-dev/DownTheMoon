@@ -3,4 +3,4 @@
 <?xul-overlay href="chrome://dta/content/dta/manager/aero.xul"?>
 <!DOCTYPE dialog>
 
-<window id="DownThemAll" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"/>
+<window id="DownTheMoon" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"/>

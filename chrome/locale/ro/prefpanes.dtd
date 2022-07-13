@@ -10,11 +10,11 @@
 <!ENTITY add.label "Adaugă filtru nou">
 <!ENTITY dtacontext2.label "Preferințe">
 <!ENTITY buttonlabelextra2 "Restaurează setările prestabilite">
-<!ENTITY dtaPreferences.title "Preferințe DownThemAll!">
+<!ENTITY dtaPreferences.title "Preferințe DownTheMoon!">
 <!ENTITY manager "Gestionar dTa!">
 <!ENTITY mainpane.label "General">
 <!ENTITY mainpane.defaults.caption "Setări prestabilite">
-<!ENTITY mainpane.defaults.desc "Dosarul de descărcare, șablonul de redenumire și filtrele utilizate de OneClick! pot fi configurate în mod normal în caseta de selecție DownThemAll!.">
+<!ENTITY mainpane.defaults.desc "Dosarul de descărcare, șablonul de redenumire și filtrele utilizate de OneClick! pot fi configurate în mod normal în caseta de selecție DownTheMoon!.">
 <!ENTITY mainpane.nameclash.caption "Dacă un fișier cu aceeași denumire există deja:">
 <!ENTITY mainpane.rename.label "Redenumește">
 <!ENTITY mainpane.overwrite.label "Înlocuiește">
@@ -28,7 +28,7 @@
 <!ENTITY mainpane.alertnotifications2.label "notificări de Desktop">
 <!ENTITY mainpane.alertnone.label "nimic">
 <!ENTITY mainpane.sounddone.label "Emite un sunet după terminarea tuturor descărcărilor">
-<!ENTITY mainpane.closedta.label "Închide DownThemAll! după terminarea tuturor descărcărilor">
+<!ENTITY mainpane.closedta.label "Închide DownTheMoon! după terminarea tuturor descărcărilor">
 <!ENTITY mainpane.settime.label "Stabilește data fișierului ca fiind data ultimei modificări (pe server) sau data puneri în lista de descărcări">
 <!ENTITY mainpane.rememberoneclick.label "Stabilește ca dTa OneClick să rețină dacă se aplică la toate filele sau doar la fila curentă">
 <!ENTITY mainpane.confirmremove2.label "Confirmă eliminarea descărcărilor">
@@ -49,7 +49,7 @@
 <!ENTITY privacypane.logs.caption "Jurnal de diagnosticare">
 <!ENTITY privacypane.enablelogs.label "Activează jurnalizarea">
 <!ENTITY privacypane.notice.caption "Notă:">
-<!ENTITY privacypane.notice.desc "DownThemAll! este compatibil cu modul de „Navigare fără urme” al Firefox (dacă este activat).">
+<!ENTITY privacypane.notice.desc "DownTheMoon! este compatibil cu modul de „Navigare fără urme” al Firefox (dacă este activat).">
 <!ENTITY privacypane.privacynotice.label "Politică de confidențialitate">
 <!ENTITY serverspane.label "Rețea">
 <!ENTITY serverspane.downloads.caption "Descărcări">
@@ -101,14 +101,14 @@
 <!ENTITY advancedpane.scheduler.fast "Rapid - în ordinea adăugării adreselor">
 <!ENTITY advancedpane.scheduler.fair "Normal + lent - distribuție uniformă">
 <!ENTITY advancedpane.scheduler.legacy "Moștenit - fără limite">
-<!ENTITY advancedpane.exposeinua.label "Afișează DownThemAll! în șirul User-Agent">
+<!ENTITY advancedpane.exposeinua.label "Afișează DownTheMoon! în șirul User-Agent">
 <!ENTITY advancedpane.sparsefiles.caption "Fișiere rare">
 <!ENTITY advancedpane.sparsefiles.label "Folosește fișiere rare dacă sunt acceptate">
 <!ENTITY advancedpane.sparsefiles.tooltip "Fișierele rare sunt fișiere cu porțiuni vide pentru care nu se rezervă tot spațiul necesar pe disc. Aceasta poate duce la o pre-alocare mai rapidă dar poate cauza performanță scăzută la scriere și fragmentare ridicată a fișierului!">
 <!ENTITY uipane.label "Interfață">
 <!ENTITY uipane.namesonly.label "Afișează numai denumirea fișierelor în fereastra gestionarului">
 <!ENTITY uipane.integration.caption "Integrare">
-<!ENTITY uipane.downloadwin.label "Integrează DownThemAll! în caseta „Deschidere...”">
+<!ENTITY uipane.downloadwin.label "Integrează DownTheMoon! în caseta „Deschidere...”">
 <!ENTITY uipane.context.caption "Afișare în meniul contextual">
 <!ENTITY uipane.tools.caption "Afișare în meniul „Unelte”">
 <!ENTITY uipane.compact.label "Afișare ca submeniu">

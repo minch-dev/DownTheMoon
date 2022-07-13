@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" Build a DownThemAll! xpi"""
+""" Build a DownTheMoon! xpi"""
 
 # pylint: disable=too-few-public-methods,broad-except,invalid-name,missing-docstring
 

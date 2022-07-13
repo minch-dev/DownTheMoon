@@ -10,11 +10,11 @@
 <!ENTITY add.label "Añadir nuevo filtro">
 <!ENTITY dtacontext2.label "Preferencias">
 <!ENTITY buttonlabelextra2 "Restablecer predisposiciones predeterminadas">
-<!ENTITY dtaPreferences.title "Preferencias de DownThemAll!...">
+<!ENTITY dtaPreferences.title "Preferencias de DownTheMoon!...">
 <!ENTITY manager "Administrador de dTa!">
 <!ENTITY mainpane.label "Principal">
 <!ENTITY mainpane.defaults.caption "Predeterminados">
-<!ENTITY mainpane.defaults.desc "El directorio de descargas, la máscara de renombrado y los filtros utilizados por OneClick! puede configurarse en la ventana de selección de DownThemAll!">
+<!ENTITY mainpane.defaults.desc "El directorio de descargas, la máscara de renombrado y los filtros utilizados por OneClick! puede configurarse en la ventana de selección de DownTheMoon!">
 <!ENTITY mainpane.nameclash.caption "Cuando ya existe un archivo con el mismo nombre:">
 <!ENTITY mainpane.rename.label "Renombrar">
 <!ENTITY mainpane.overwrite.label "Sobrescribir">
@@ -28,7 +28,7 @@
 <!ENTITY mainpane.alertnotifications2.label "Usar notificaciones de escritorio">
 <!ENTITY mainpane.alertnone.label "No avisar">
 <!ENTITY mainpane.sounddone.label "Emitir un sonido tras completar todas las descargas">
-<!ENTITY mainpane.closedta.label "Cerrar DownThemAll tras completar todas las descargas">
+<!ENTITY mainpane.closedta.label "Cerrar DownTheMoon tras completar todas las descargas">
 <!ENTITY mainpane.settime.label "Poner como fecha/hora del archivo la de la última modificación (servidor) o la de puesta en cola">
 <!ENTITY mainpane.rememberoneclick.label "Hacer que dTa OneClick recuerde si aplica a todas las pestañas o a la actual">
 <!ENTITY mainpane.confirmremove2.label "Confirmar eliminación de descargas">
@@ -49,7 +49,7 @@
 <!ENTITY privacypane.logs.caption "Registro de diagnóstico">
 <!ENTITY privacypane.enablelogs.label "Habilitar registro de diagnóstico">
 <!ENTITY privacypane.notice.caption "Aviso">
-<!ENTITY privacypane.notice.desc "DownThemAll se integra con la función del navegador de Limpiar el historial reciente (si está disponible).">
+<!ENTITY privacypane.notice.desc "DownTheMoon se integra con la función del navegador de Limpiar el historial reciente (si está disponible).">
 <!ENTITY privacypane.privacynotice.label "Nuestro aviso sobre privacidad">
 <!ENTITY serverspane.label "Red">
 <!ENTITY serverspane.downloads.caption "Descargas">
@@ -101,14 +101,14 @@
 <!ENTITY advancedpane.scheduler.fast "Rápido - Según la cola">
 <!ENTITY advancedpane.scheduler.fair "Equilibrado y lento - Distribuido equitativamente">
 <!ENTITY advancedpane.scheduler.legacy "Heredado - sin límites">
-<!ENTITY advancedpane.exposeinua.label "Incluir DownThemAll! en el User-Agent">
+<!ENTITY advancedpane.exposeinua.label "Incluir DownTheMoon! en el User-Agent">
 <!ENTITY advancedpane.sparsefiles.caption "Archivos dispersos">
 <!ENTITY advancedpane.sparsefiles.label "Usar archivos dispersos si están soportados">
 <!ENTITY advancedpane.sparsefiles.tooltip "Los archivos dispersos no se reservan de inmediato en el disco duro. Pueden conseguir una preubicación más rápida, pero también peor rendimiento de escritura y/o mayor fragmentación de archivos.">
 <!ENTITY uipane.label "Interfaz usuario">
 <!ENTITY uipane.namesonly.label "Mostrar solamente nombres de archivo en la ventana del Administrador">
 <!ENTITY uipane.integration.caption "Integración">
-<!ENTITY uipane.downloadwin.label "Añadir DownThemAll! a la ventana de 'Guardar archivo'">
+<!ENTITY uipane.downloadwin.label "Añadir DownTheMoon! a la ventana de 'Guardar archivo'">
 <!ENTITY uipane.context.caption "Menú contextual">
 <!ENTITY uipane.tools.caption "Menú herramientas">
 <!ENTITY uipane.compact.label "Usar menú compacto">

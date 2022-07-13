@@ -10,11 +10,11 @@
 <!ENTITY add.label "新建过滤器">
 <!ENTITY dtacontext2.label "选项">
 <!ENTITY buttonlabelextra2 "恢复默认设置">
-<!ENTITY dtaPreferences.title "DownThemAll! 选项">
+<!ENTITY dtaPreferences.title "DownTheMoon! 选项">
 <!ENTITY manager "dTa 管理器">
 <!ENTITY mainpane.label "常规">
 <!ENTITY mainpane.defaults.caption "默认">
-<!ENTITY mainpane.defaults.desc "OneClick! 所使用的下载文件夹，重命名掩码和过滤器可以在普通 DownThemAll! 选择窗口中配置。">
+<!ENTITY mainpane.defaults.desc "OneClick! 所使用的下载文件夹，重命名掩码和过滤器可以在普通 DownTheMoon! 选择窗口中配置。">
 <!ENTITY mainpane.nameclash.caption "当同名文件存在时：">
 <!ENTITY mainpane.rename.label "重命名">
 <!ENTITY mainpane.overwrite.label "覆盖">
@@ -28,7 +28,7 @@
 <!ENTITY mainpane.alertnotifications2.label "使用桌面通知">
 <!ENTITY mainpane.alertnone.label "不提示">
 <!ENTITY mainpane.sounddone.label "全部下载完成时播放声音">
-<!ENTITY mainpane.closedta.label "下载结束时关闭 DownThemAll">
+<!ENTITY mainpane.closedta.label "下载结束时关闭 DownTheMoon">
 <!ENTITY mainpane.settime.label "设置文件时间为上次修改时间(服务器)或队列时间">
 <!ENTITY mainpane.rememberoneclick.label "如果应用到所有标签页或当前标签页,让 dTa OneClick 记住设置">
 <!ENTITY mainpane.confirmremove2.label "移除下载需要确认">
@@ -49,7 +49,7 @@
 <!ENTITY privacypane.logs.caption "诊断日志">
 <!ENTITY privacypane.enablelogs.label "启用诊断日志">
 <!ENTITY privacypane.notice.caption "注意">
-<!ENTITY privacypane.notice.desc "DownThemAll 将集成到 Firefox 的隐私数据清理功能中(如果可用)">
+<!ENTITY privacypane.notice.desc "DownTheMoon 将集成到 Firefox 的隐私数据清理功能中(如果可用)">
 <!ENTITY privacypane.privacynotice.label "我们的隐私声明">
 <!ENTITY serverspane.label "网络">
 <!ENTITY serverspane.downloads.caption "下载">
@@ -101,14 +101,14 @@
 <!ENTITY advancedpane.scheduler.fast "快速-按队列">
 <!ENTITY advancedpane.scheduler.fair "公平+慢速-平均分布">
 <!ENTITY advancedpane.scheduler.legacy "旧方式-无限制">
-<!ENTITY advancedpane.exposeinua.label "在 User-Agent 中暴露 DownThemAll!">
+<!ENTITY advancedpane.exposeinua.label "在 User-Agent 中暴露 DownTheMoon!">
 <!ENTITY advancedpane.sparsefiles.caption "稀疏文件">
 <!ENTITY advancedpane.sparsefiles.label "当可用时使用稀疏文件">
 <!ENTITY advancedpane.sparsefiles.tooltip "稀疏文件是非预先分配空间的文件。稀疏文件有较快的预分配速度，但写入性能低，以及带来更多文件碎片！">
 <!ENTITY uipane.label "界面">
 <!ENTITY uipane.namesonly.label "在管理窗口中只显示文件名">
 <!ENTITY uipane.integration.caption "集成">
-<!ENTITY uipane.downloadwin.label "增加 DownThemAll! 到&quot;保存文件&quot;窗口">
+<!ENTITY uipane.downloadwin.label "增加 DownTheMoon! 到&quot;保存文件&quot;窗口">
 <!ENTITY uipane.context.caption "右键菜单">
 <!ENTITY uipane.tools.caption "工具菜单">
 <!ENTITY uipane.compact.label "使用紧凑菜单">

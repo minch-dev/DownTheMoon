@@ -74,7 +74,7 @@ const asyncShutdown = function() {
 
 obs.addExit(asyncShutdown);
 unload(asyncShutdown);
-AsyncShutdown.webWorkersShutdown.addBlocker("DownThemAll! moveFile workers", asyncShutdown);
+AsyncShutdown.webWorkersShutdown.addBlocker("DownTheMoon! moveFile workers", asyncShutdown);
 
 exports.moveFile = function(from, to, overwriteOk) {
 	let jobid = ++_jobid;

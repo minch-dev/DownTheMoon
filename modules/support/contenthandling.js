@@ -57,7 +57,7 @@ class ContextLRUMap {
  */
 exports.ContentHandling = new class {
 	constructor() {
-		this.classDescription = "DownThemAll! ContentHandling";
+		this.classDescription = "DownTheMoon! ContentHandling";
 		this.classID = Components.ID("366982b8-9db9-4383-aae7-dbc2f40ba6f6");
 		this.contractID = "@downthemall.net/content/redirects;1";
 		this.xpcom_categories = ["net-channel-event-sinks"];

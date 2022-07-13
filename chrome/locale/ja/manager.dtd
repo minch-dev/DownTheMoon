@@ -1,6 +1,6 @@
 <!ENTITY tooladddownload.label "ダウンロードを追加">
-<!ENTITY tooladd.tooltip "DownThemAll にダウンロードするファイルを追加します">
-<!ENTITY tooldonate.tooltiptext "少額の寄付で DownThemAll の開発を支援できます!">
+<!ENTITY tooladd.tooltip "DownTheMoon にダウンロードするファイルを追加します">
+<!ENTITY tooldonate.tooltiptext "少額の寄付で DownTheMoon の開発を支援できます!">
 <!ENTITY movetop.label "先頭へ">
 <!ENTITY movebottom.label "最後へ">
 <!ENTITY moveup.label "上へ">

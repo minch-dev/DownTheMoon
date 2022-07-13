@@ -10,11 +10,11 @@
 <!ENTITY add.label "Tambah Filter Baru">
 <!ENTITY dtacontext2.label "Preferensi">
 <!ENTITY buttonlabelextra2 "Kembalikan Pengaturan Bawaan">
-<!ENTITY dtaPreferences.title "Preferensi DownThemAll!">
+<!ENTITY dtaPreferences.title "Preferensi DownTheMoon!">
 <!ENTITY manager "Pengelola dTa!">
 <!ENTITY mainpane.label "Umum">
 <!ENTITY mainpane.defaults.caption "Bawaan">
-<!ENTITY mainpane.defaults.desc "Direktori unduhan, pola ubah nama dan filter yang digunakan oleh OneClick! bisa diatur di jendela pilihan DownThemAll! yang ada">
+<!ENTITY mainpane.defaults.desc "Direktori unduhan, pola ubah nama dan filter yang digunakan oleh OneClick! bisa diatur di jendela pilihan DownTheMoon! yang ada">
 <!ENTITY mainpane.nameclash.caption "Ketika berkas dengan nama yang sama sudah ada:">
 <!ENTITY mainpane.rename.label "Ubah Nama">
 <!ENTITY mainpane.overwrite.label "Timpa">
@@ -28,7 +28,7 @@
 <!ENTITY mainpane.alertnotifications2.label "Menggunakan Notifikasi Desktop">
 <!ENTITY mainpane.alertnone.label "Jangan Ingatkan Saya">
 <!ENTITY mainpane.sounddone.label "Putar suara saat semua unduhan selesai">
-<!ENTITY mainpane.closedta.label "Tutup DownThemAll saat unduhan selesai">
+<!ENTITY mainpane.closedta.label "Tutup DownTheMoon saat unduhan selesai">
 <!ENTITY mainpane.settime.label "Tetapkan waktu berkas ke saat diubah (server) atau waktu saat ditambahkan">
 <!ENTITY mainpane.rememberoneclick.label "Pastikan dTa OneClick mengingat apakah diterapkan pada Semua Tab atau Tab Saat Ini">
 <!ENTITY mainpane.confirmremove2.label "Konfirmasi penghapusan unduhan">
@@ -49,7 +49,7 @@
 <!ENTITY privacypane.logs.caption "Log Diagnostik">
 <!ENTITY privacypane.enablelogs.label "Aktifkan pencatatan diagnostik">
 <!ENTITY privacypane.notice.caption "Pemberitahuan">
-<!ENTITY privacypane.notice.desc "DownThemAll juga terintegrasi dengan fitur Pembersihan Data Privat bawaan (jika tersedia).">
+<!ENTITY privacypane.notice.desc "DownTheMoon juga terintegrasi dengan fitur Pembersihan Data Privat bawaan (jika tersedia).">
 <!ENTITY privacypane.privacynotice.label "Pemberitahuan Privasi Kami">
 <!ENTITY serverspane.label "Jaringan">
 <!ENTITY serverspane.downloads.caption "Unduhan">
@@ -101,14 +101,14 @@
 <!ENTITY advancedpane.scheduler.fast "Cepat - Sesuai urutan">
 <!ENTITY advancedpane.scheduler.fair "Wajar+Pelan - Distribusi seimbang">
 <!ENTITY advancedpane.scheduler.legacy "Legacy - tak terbatas">
-<!ENTITY advancedpane.exposeinua.label "Singkap DownThemAll! di User-Agent">
+<!ENTITY advancedpane.exposeinua.label "Singkap DownTheMoon! di User-Agent">
 <!ENTITY advancedpane.sparsefiles.caption "Berkas-cicil">
 <!ENTITY advancedpane.sparsefiles.label "Gunakan berkas cicilan ketika tersedia">
 <!ENTITY advancedpane.sparsefiles.tooltip "Berkas cicilan adalah berkas yang tidak secara seketika tersedia di harddisk. Berkas cicilan mungkin akan menyebabkan pra-alokasi yang lebih cepat, tetapi juga performa penulisan yang lebih sedikit dan/atau lebih banyak fragmentasi berkas!">
 <!ENTITY uipane.label "Antarmuka">
 <!ENTITY uipane.namesonly.label "Hanya tampilkan nama berkas di jendela Pengelola">
 <!ENTITY uipane.integration.caption "Integrasi">
-<!ENTITY uipane.downloadwin.label "Tambahkan DownThemAll! ke jendela 'Simpan Berkas'">
+<!ENTITY uipane.downloadwin.label "Tambahkan DownTheMoon! ke jendela 'Simpan Berkas'">
 <!ENTITY uipane.context.caption "Menu Konteks">
 <!ENTITY uipane.tools.caption "Menu Alat">
 <!ENTITY uipane.compact.label "Gunakan menu ringkas">

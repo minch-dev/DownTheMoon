@@ -49,7 +49,7 @@ exports.exportToTextFile = function exportToTextFile(aDownloads, aFile, aPermiss
 
 exports.exportToHtmlFile = function exportToHtmlFile(aDownloads, aDocument, aFile, aPermissions) {
 	// do not localize?!
-	let title = "DownThemAll: exported on " + (new Date).toUTCString();
+	let title = "DownTheMoon: exported on " + (new Date).toUTCString();
 
 	let doctype = aDocument.implementation.createDocumentType('html', null, null);
 	let document = aDocument.implementation.createDocument('http://www.w3.org/1999/xhtml', 'html', doctype);
@@ -130,7 +130,7 @@ exports.exportToHtmlFile = function exportToHtmlFile(aDownloads, aDocument, aFil
 		foot.appendChild(document.createTextNode('Exported by '));
 		n = document.createElement('a');
 		n.setAttribute('href', 'http://www.downthemall.net/');
-		n.textContent = 'DownThemAll! ' + Version.VERSION;
+		n.textContent = 'DownTheMoon! ' + Version.VERSION;
 		foot.appendChild(n);
 		body.appendChild(foot);
 
@@ -148,14 +148,14 @@ exports.exportToMetalinkFile = function exportToMetalinkFile(aDownloads, aDocume
 	let root = document.documentElement;
 	root.setAttribute('type', 'static');
 	root.setAttribute('version', '3.0');
-	root.setAttribute('generator', 'DownThemAll!/' + Version.BASE_VERSION);
+	root.setAttribute('generator', 'DownTheMoon!/' + Version.BASE_VERSION);
 	root.setAttributeNS(NS_DTA, 'version', Version.VERSION);
 	root.setAttribute('pubdate', new Date().toUTCString());
 
 	root.appendChild(document.createComment(
-			"metalink as exported by DownThemAll! on " +
+			"metalink as exported by DownTheMoon! on " +
 			Version.APP_NAME + "/" + Version.APP_VERSION +
-			"\r\nMay contain DownThemAll! specific information in the DownThemAll! namespace: " +
+			"\r\nMay contain DownTheMoon! specific information in the DownTheMoon! namespace: " +
 			NS_DTA
 			));
 
@@ -220,14 +220,14 @@ exports.exportToMetalink4File = function exportToMetalink4File(aDownloads, aDocu
 	root.setAttributeNS(NS_DTA, 'version', Version.VERSION);
 
 	root.appendChild(document.createComment(
-			"metalink as exported by DownThemAll! on " +
+			"metalink as exported by DownTheMoon! on " +
 			Version.APP_NAME + "/" + Version.APP_VERSION +
-			"\r\nMay contain DownThemAll! specific information in the DownThemAll! namespace: " +
+			"\r\nMay contain DownTheMoon! specific information in the DownTheMoon! namespace: " +
 			NS_DTA
 			));
 
 	let generator = document.createElementNS(NS_METALINK_RFC5854, 'generator');
-	generator.textContent = 'DownThemAll!/' + Version.BASE_VERSION;
+	generator.textContent = 'DownTheMoon!/' + Version.BASE_VERSION;
 	root.appendChild(generator);
 
 	let published = document.createElementNS(NS_METALINK_RFC5854, "published");

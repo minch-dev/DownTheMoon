@@ -92,7 +92,7 @@ class MemoryReporter {
 			Ci.nsIMemoryReporter.KIND_OTHER,
 			Ci.nsIMemoryReporter.UNITS_COUNT,
 			this.chunks.length,
-			"Total number of connections that are currently in use by DownThemAll!.",
+			"Total number of connections that are currently in use by DownTheMoon!.",
 			closure
 			);
 		callback.callback(

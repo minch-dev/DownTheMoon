@@ -10,11 +10,11 @@
 <!ENTITY add.label "Nieuw filter toevoegen">
 <!ENTITY dtacontext2.label "Voorkeuren">
 <!ENTITY buttonlabelextra2 "Standaardinstellingen terugzetten">
-<!ENTITY dtaPreferences.title "DownThemAll!-voorkeuren">
+<!ENTITY dtaPreferences.title "DownTheMoon!-voorkeuren">
 <!ENTITY manager "dTa!-beheerder">
 <!ENTITY mainpane.label "Algemeen">
 <!ENTITY mainpane.defaults.caption "Standaardwaarden">
-<!ENTITY mainpane.defaults.desc "De downloadmap, het hernoemmasker en filters zoals gebruikt door OneClick! kunnen in het algemene DownThemAll!-selectievenster worden geconfigureerd.">
+<!ENTITY mainpane.defaults.desc "De downloadmap, het hernoemmasker en filters zoals gebruikt door OneClick! kunnen in het algemene DownTheMoon!-selectievenster worden geconfigureerd.">
 <!ENTITY mainpane.nameclash.caption "Als er al een bestand met dezelfde naam bestaat:">
 <!ENTITY mainpane.rename.label "Hernoemen">
 <!ENTITY mainpane.overwrite.label "Overschrijven">
@@ -28,7 +28,7 @@
 <!ENTITY mainpane.alertnotifications2.label "Via desktopnotificaties">
 <!ENTITY mainpane.alertnone.label "Niet waarschuwen">
 <!ENTITY mainpane.sounddone.label "Een geluid afspelen als alle downloads zijn voltooid">
-<!ENTITY mainpane.closedta.label "DownThemAll! sluiten als downloads zijn voltooid">
+<!ENTITY mainpane.closedta.label "DownTheMoon! sluiten als downloads zijn voltooid">
 <!ENTITY mainpane.settime.label "Bestandstijd instellen op tijd van laatste wijziging (server) of op tijd van in wachtrij plaatsen">
 <!ENTITY mainpane.rememberoneclick.label "dTa OneClick laten onthouden of het op alle tabbladen of het huidige tabblad van toepassing is">
 <!ENTITY mainpane.confirmremove2.label "Verwijdering van downloads bevestigen">
@@ -49,7 +49,7 @@
 <!ENTITY privacypane.logs.caption "Diagnostisch logboek">
 <!ENTITY privacypane.enablelogs.label "Diagnostisch logboek inschakelen">
 <!ENTITY privacypane.notice.caption "Opmerking">
-<!ENTITY privacypane.notice.desc "DownThemAll! integreert ook met de ingebouwde functie Privégegevens wissen (wanneer beschikbaar).">
+<!ENTITY privacypane.notice.desc "DownTheMoon! integreert ook met de ingebouwde functie Privégegevens wissen (wanneer beschikbaar).">
 <!ENTITY privacypane.privacynotice.label "Onze Privacyverklaring">
 <!ENTITY serverspane.label "Netwerk">
 <!ENTITY serverspane.downloads.caption "Downloads">
@@ -101,14 +101,14 @@
 <!ENTITY advancedpane.scheduler.fast "Snel - volgens wachtrij">
 <!ENTITY advancedpane.scheduler.fair "Verdeeld+langzaam - gelijkmatig verdeeld">
 <!ENTITY advancedpane.scheduler.legacy "Geen beperkingen">
-<!ENTITY advancedpane.exposeinua.label "DownThemAll! in de useragent weergeven">
+<!ENTITY advancedpane.exposeinua.label "DownTheMoon! in de useragent weergeven">
 <!ENTITY advancedpane.sparsefiles.caption "Sparse-bestanden">
 <!ENTITY advancedpane.sparsefiles.label "Sparse-bestanden gebruiken wanneer ondersteund">
 <!ENTITY advancedpane.sparsefiles.tooltip "Sparse-bestanden zijn bestanden die niet meteen op de harde schijf worden gereserveerd. Sparse-bestanden zouden snellere toewijzing vooraf kunnen opleveren, maar ook mindere schrijfprestaties en/of meer bestandsfragmentatie!">
 <!ENTITY uipane.label "Interface">
 <!ENTITY uipane.namesonly.label "Alleen bestandsnamen in venster Beheerder tonen">
 <!ENTITY uipane.integration.caption "Integratie">
-<!ENTITY uipane.downloadwin.label "DownThemAll! aan het venster ‘Bestand opslaan’ toevoegen">
+<!ENTITY uipane.downloadwin.label "DownTheMoon! aan het venster ‘Bestand opslaan’ toevoegen">
 <!ENTITY uipane.context.caption "Contextmenu">
 <!ENTITY uipane.tools.caption "Menu Extra">
 <!ENTITY uipane.compact.label "Compact menu gebruiken">

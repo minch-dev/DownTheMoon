@@ -2,7 +2,7 @@
 <!-- ***** BEGIN LICENSE BLOCK *****
  * Version: GPL 2.0
  *
- * This code is part of DownThemAll! - dTa!
+ * This code is part of DownTheMoon! - dTa!
  * Copyright © 2010 Nils Maier
  *
  * See LICENSE and GPL for details.
@@ -23,7 +23,7 @@
 
 <overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="dtamanagerplatformoverlay">
 	<!-- XXX: re-enable fullscreenbutton once more stable -->
-	<window id="DownThemAll" fullscreenbutton="false">
+	<window id="DownTheMoon" fullscreenbutton="false">
 		<stringbundleset id="stringbundleset" />
 		<keyset id="baseMenuKeyset" />
 		<commandset id="baseMenuCommandSet" />

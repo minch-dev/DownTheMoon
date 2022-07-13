@@ -2,7 +2,7 @@
 <!-- ***** BEGIN LICENSE BLOCK *****
  * Version: GPL 2.0
  *
- * This code is part of DownThemAll! - dTa!
+ * This code is part of DownTheMoon! - dTa!
  * Copyright © 2009 Nils Maier
  *
  * See LICENSE and GPL for details.
@@ -27,7 +27,7 @@
 	<!ENTITY % defmirrorsDTD SYSTEM "chrome://dta-locale/content/mirrors.dtd">
 	%defmirrorsDTD;
 ]>
-<dialog title="&title;" id="DownThemAllMirrors" windowtype="DTA:mirrors" flex="1" persist="width height screenX screenY" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<dialog title="&title;" id="DownTheMoonMirrors" windowtype="DTA:mirrors" flex="1" persist="width height screenX screenY" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
 	<script type="application/x-javascript" src="chrome://global/content/globalOverlay.js" />
 	<script type="application/javascript" src="chrome://dta/content/common/internalFunctions.js" />

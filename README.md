@@ -1,9 +1,9 @@
-DownThemAll! XUL Edition
+DownTheMoon! XUL Edition
 ==================
 Probably the first and only download manager/accelerator built inside Pale Moon!
 -------------------
 
-This is a continuation of the original XUL-based DownThemAll! extension. It's an update of the last upstream pre-release 3.1.1pre version from 2017. XUL version is unique as it supports setting original file modified dates of downloaded files. I didn't change extension id or any settings, so uninstall any extensions that share the same codebase before installing this one. A few features were added in this version:
+This is a continuation of the original XUL-based DownTheMoon! extension. It's an update of the last upstream pre-release 3.1.1pre version from 2017. XUL version is unique as it supports setting original file modified dates of downloaded files. I didn't change extension id or any settings, so uninstall any extensions that share the same codebase before installing this one. A few features were added in this version:
 - takes "x-archive-orig-last-modified" http header property of WebArchive.org as file's modification date (or "x-archive-orig-date" / "memento-datetime" when not available)
 - allows to export/import relative local save paths in a download list
 - allows to copy a remote website's directory structure (easier and with more options)
@@ -68,7 +68,7 @@ Important bits of code
 
 - `modules/glue.jsm` - This is basically the main module, also specifying the general environment for all modules and window scopes.
 - `modules/main.js` - General setup.
-- `modules/loaders/` - "overlay" scripts. Different to traditional Firefox add-ons, DownThemAll! does not use real overlays and overlay scripts, but kind of simulates overlays via modules.
+- `modules/loaders/` - "overlay" scripts. Different to traditional Firefox add-ons, DownTheMoon! does not use real overlays and overlay scripts, but kind of simulates overlays via modules.
 - `chrome/content/` - UI. Right now, due to historical reasons and some too-tight coupling the UI JS also contains some of the important data structures such as `QueueItem` (representing a single queued download)
 
 - Please note that being restartless requires code to clean up after itself, i.e. if you modify something global you need to reverse the modifications when the add-on is unloaded. See `unload()`and `unloadWindow()` (in glue.jsm and/or support/overlays.js)

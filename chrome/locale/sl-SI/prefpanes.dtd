@@ -10,11 +10,11 @@
 <!ENTITY add.label "Dodaj nov filter">
 <!ENTITY dtacontext2.label "Nastavitve">
 <!ENTITY buttonlabelextra2 "Obnovi privzete nastavitve">
-<!ENTITY dtaPreferences.title "Nastavitve za DownThemAll! ...">
+<!ENTITY dtaPreferences.title "Nastavitve za DownTheMoon! ...">
 <!ENTITY manager "Upravitelj dTa!">
 <!ENTITY mainpane.label "Splošno">
 <!ENTITY mainpane.defaults.caption "Privzeto">
-<!ENTITY mainpane.defaults.desc "Mapo za prenos, masko za preimenovanje in filtre, ki jih uporablja OneClick!, lahko nastavite v običajnem pogovornem oknu za izbiro DownThemAll!">
+<!ENTITY mainpane.defaults.desc "Mapo za prenos, masko za preimenovanje in filtre, ki jih uporablja OneClick!, lahko nastavite v običajnem pogovornem oknu za izbiro DownTheMoon!">
 <!ENTITY mainpane.nameclash.caption "Ko datoteka z enakim imenom že obstaja:">
 <!ENTITY mainpane.rename.label "Preimenuj">
 <!ENTITY mainpane.overwrite.label "Prepiši">
@@ -28,7 +28,7 @@
 <!ENTITY mainpane.alertnotifications2.label "z uporabo namiznih obvestil">
 <!ENTITY mainpane.alertnone.label "ne opozarjaj me">
 <!ENTITY mainpane.sounddone.label "predvajaj zvočno datoteko, ko so vsi prenosi dokončani">
-<!ENTITY mainpane.closedta.label "zapri DownThemAll, ko so prenosi dokončani">
+<!ENTITY mainpane.closedta.label "zapri DownTheMoon, ko so prenosi dokončani">
 <!ENTITY mainpane.settime.label "Določi čas datoteke na čas zadnje spremembe (strežnik) ali čas postavitve v vrsto">
 <!ENTITY mainpane.rememberoneclick.label "dTa OneClick si naj zapomni, ali velja za vse zavihke ali za trenutni zavihek">
 <!ENTITY mainpane.confirmremove2.label "Potrdi odstranitev prenosov">
@@ -49,7 +49,7 @@
 <!ENTITY privacypane.logs.caption "Diagnostični zapisnik">
 <!ENTITY privacypane.enablelogs.label "Omogoči diagnostično zapisovanje">
 <!ENTITY privacypane.notice.caption "Opozorilo">
-<!ENTITY privacypane.notice.desc "DownThemAll lahko vključi tudi vgrajeno funkcionalnost 'Počisti zasebne podatke' (če je na voljo).">
+<!ENTITY privacypane.notice.desc "DownTheMoon lahko vključi tudi vgrajeno funkcionalnost 'Počisti zasebne podatke' (če je na voljo).">
 <!ENTITY privacypane.privacynotice.label "Naše Opozorilo o zasebnosti">
 <!ENTITY serverspane.label "Omrežje">
 <!ENTITY serverspane.downloads.caption "Prenosi">
@@ -101,14 +101,14 @@
 <!ENTITY advancedpane.scheduler.fast "Hitro - kot v vrsti">
 <!ENTITY advancedpane.scheduler.fair "Pošteno in počasi - porazdeljeno">
 <!ENTITY advancedpane.scheduler.legacy "Zastarelo - brez omejitev">
-<!ENTITY advancedpane.exposeinua.label "Razkrij DownThemAll! v uporabniškem agentu">
+<!ENTITY advancedpane.exposeinua.label "Razkrij DownTheMoon! v uporabniškem agentu">
 <!ENTITY advancedpane.sparsefiles.caption "Redke datoteke">
 <!ENTITY advancedpane.sparsefiles.label "Uporabi redke datoteke, kadar so podprte">
 <!ENTITY advancedpane.sparsefiles.tooltip "Redke datoteke niso takoj rezervirane na trdem disku. Lahko povzročijo hitrejše vnaprejšnje dodeljevanje, vendar manj zmogljivosti pri pisanju in/ali več več razdrobljenosti!">
 <!ENTITY uipane.label "Up. vmesnik">
 <!ENTITY uipane.namesonly.label "V oknu upravitelja pokaži le imena datotek">
 <!ENTITY uipane.integration.caption "Vključitev">
-<!ENTITY uipane.downloadwin.label "Dodaj DownThemAll! v okno 'Shrani datoteko'">
+<!ENTITY uipane.downloadwin.label "Dodaj DownTheMoon! v okno 'Shrani datoteko'">
 <!ENTITY uipane.context.caption "Pojavni meni">
 <!ENTITY uipane.tools.caption "Meni Orodja">
 <!ENTITY uipane.compact.label "Uporabi strnjeni meni">

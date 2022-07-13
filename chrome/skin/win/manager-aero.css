@@ -131,7 +131,7 @@ treecol:-moz-lwtheme-brighttext {
 @media all and (-moz-windows-compositor) {
 
 	/* specifity issues ahead; beware */
-	#DownThemAll {
+	#DownTheMoon {
 		-moz-appearance: -moz-win-glass;
 	}
 	#downloads {

@@ -21,7 +21,7 @@ Object.defineProperties(exports, {
 	APP_ID: {value: Services.appinfo.ID, enumerable: true},
 	VERSION: {value: "0.0", enumerable: true, writable: true},
 	BASE_VERSION: {value: "0.0", enumerable: true, writable: true},
-	NAME: {value: "DownThemAll!", enumerable: true, writable: true},
+	NAME: {value: "DownTheMoon!", enumerable: true, writable: true},
 	ready: {value: false, enumerable: true, writable: true},
 	showAbout: {value: null, enumerable: true, writable: true},
 	compareVersion: {value: function(version, cmp) {

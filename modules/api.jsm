@@ -12,7 +12,7 @@ let api = require("api");
 
 let wrap = (_k, _v) => {
 	return function() {
-		Cu.reportError("deprecated DownThemAll! API access; see glue.jsm/require(). Symbol was " + _k);
+		Cu.reportError("deprecated DownTheMoon! API access; see glue.jsm/require(). Symbol was " + _k);
 		return _v;
 	};
 };

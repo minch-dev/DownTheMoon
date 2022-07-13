@@ -11,7 +11,7 @@
 	<!ENTITY % defmenuDTD SYSTEM "chrome://dta-locale/content/menu.dtd">
 	%defmenuDTD;
 ]>
-<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" title="&dta-tbinstall;" id="DownThemAll" windowtype="DTA:TBInstall">
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" title="&dta-tbinstall;" id="DownTheMoon" windowtype="DTA:TBInstall">
 		<script type="text/javascript" src="toolbarinstall.js"/>
 		<grid>
 			<columns><column/><column flex="1"/></columns>

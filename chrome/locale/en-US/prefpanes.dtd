@@ -10,12 +10,12 @@
 <!ENTITY add.label "Add New Filter">
 <!ENTITY dtacontext2.label "Preferences">
 <!ENTITY buttonlabelextra2 "Restore Default Settings">
-<!ENTITY dtaPreferences.title "DownThemAll! Preferences">
+<!ENTITY dtaPreferences.title "DownTheMoon! Preferences">
 <!ENTITY manager "dTa! Manager">
 
 <!ENTITY mainpane.label "General">
 <!ENTITY mainpane.defaults.caption "Defaults">
-<!ENTITY mainpane.defaults.desc "The download directory, renaming mask and filters as used by OneClick! can be configured in the regular DownThemAll! selection dialog.">
+<!ENTITY mainpane.defaults.desc "The download directory, renaming mask and filters as used by OneClick! can be configured in the regular DownTheMoon! selection dialog.">
 <!ENTITY mainpane.nameclash.caption "When a file with the same name already exists:">
 <!ENTITY mainpane.rename.label "Rename">
 <!ENTITY mainpane.overwrite.label "Overwrite">
@@ -29,7 +29,7 @@
 <!ENTITY mainpane.alertnotifications2.label "Using Desktop Notifications">
 <!ENTITY mainpane.alertnone.label "Don't Alert Me">
 <!ENTITY mainpane.sounddone.label "Play a sound when all downloads are complete">
-<!ENTITY mainpane.closedta.label "Close DownThemAll when downloads are complete">
+<!ENTITY mainpane.closedta.label "Close DownTheMoon when downloads are complete">
 <!ENTITY mainpane.settime.label "Set file time to last modified time (server) or time of queuing">
 <!ENTITY mainpane.rememberoneclick.label "Have dTa OneClick remember if it applies to All Tabs or Current Tab">
 <!ENTITY mainpane.confirmremove2.label "Confirm removal of downloads">
@@ -51,7 +51,7 @@
 <!ENTITY privacypane.logs.caption "Diagnostic Log">
 <!ENTITY privacypane.enablelogs.label "Enable diagnostic logging">
 <!ENTITY privacypane.notice.caption "Notice">
-<!ENTITY privacypane.notice.desc "DownThemAll also integrates with the built-in Clear Private Data feature (if available).">
+<!ENTITY privacypane.notice.desc "DownTheMoon also integrates with the built-in Clear Private Data feature (if available).">
 <!ENTITY privacypane.privacynotice.label "Our Privacy Notice">
 
 <!ENTITY serverspane.label "Network">
@@ -109,7 +109,7 @@
 <!ENTITY advancedpane.scheduler.fast "Fast - As queued">
 <!ENTITY advancedpane.scheduler.fair "Fair+Slow - Evenly distributed">
 <!ENTITY advancedpane.scheduler.legacy "Legacy - no limits">
-<!ENTITY advancedpane.exposeinua.label "Expose DownThemAll! in the User-Agent">
+<!ENTITY advancedpane.exposeinua.label "Expose DownTheMoon! in the User-Agent">
 <!ENTITY advancedpane.sparsefiles.caption "Sparse-files">
 <!ENTITY advancedpane.sparsefiles.label "Use sparse files when supported">
 <!ENTITY advancedpane.sparsefiles.tooltip "Sparse files are files that are not immediately reserved on the harddisk. Sparse files might cause faster pre-allocation, but also less write performance and/or more file fragmentation!">
@@ -117,7 +117,7 @@
 <!ENTITY uipane.label "Interface">
 <!ENTITY uipane.namesonly.label "Show only file names in Manager window">
 <!ENTITY uipane.integration.caption "Integration">
-<!ENTITY uipane.downloadwin.label "Add DownThemAll! to the 'Save File' window">
+<!ENTITY uipane.downloadwin.label "Add DownTheMoon! to the 'Save File' window">
 <!ENTITY uipane.context.caption "Context Menu">
 <!ENTITY uipane.tools.caption "Tools Menu">
 <!ENTITY uipane.compact.label "Use a compact menu">

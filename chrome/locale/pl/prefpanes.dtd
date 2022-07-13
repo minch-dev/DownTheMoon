@@ -10,11 +10,11 @@
 <!ENTITY add.label "Dodaj nowy filtr">
 <!ENTITY dtacontext2.label "Ustawienia">
 <!ENTITY buttonlabelextra2 "Przywróć ustawienia domyślne">
-<!ENTITY dtaPreferences.title "DownThemAll! - ustawienia">
+<!ENTITY dtaPreferences.title "DownTheMoon! - ustawienia">
 <!ENTITY manager "Menedżer pobrań">
 <!ENTITY mainpane.label "Główne">
 <!ENTITY mainpane.defaults.caption "Domyślne">
-<!ENTITY mainpane.defaults.desc "Katalog pobierania, maska zmiany nazwy i filtry używane przez OneClick! mogą być konfigurowane w normalnym oknie wyboru DownThemAll!">
+<!ENTITY mainpane.defaults.desc "Katalog pobierania, maska zmiany nazwy i filtry używane przez OneClick! mogą być konfigurowane w normalnym oknie wyboru DownTheMoon!">
 <!ENTITY mainpane.nameclash.caption "Jeżeli nazwa pliku już istnieje:">
 <!ENTITY mainpane.rename.label "zmień nazwę">
 <!ENTITY mainpane.overwrite.label "nadpisz">
@@ -28,7 +28,7 @@
 <!ENTITY mainpane.alertnotifications2.label "za pomocą slajdu">
 <!ENTITY mainpane.alertnone.label "nie powiadamiaj">
 <!ENTITY mainpane.sounddone.label "Odtwarzaj dźwięk po zakończeniu pobierania">
-<!ENTITY mainpane.closedta.label "Zamykaj DownThemAll! po zakończeniu pobierania">
+<!ENTITY mainpane.closedta.label "Zamykaj DownTheMoon! po zakończeniu pobierania">
 <!ENTITY mainpane.settime.label "Ustaw ostatnio zmodyfikowany czas pliku na czas serwera lub czas kolejki">
 <!ENTITY mainpane.rememberoneclick.label "dTa OneClick! ma zapamiętać czy ma to zastosowanie do wszystkich kart, czy do aktywnej karty">
 <!ENTITY mainpane.confirmremove2.label "Użytkownik musi potwierdzać usunięcie pobrań">
@@ -49,7 +49,7 @@
 <!ENTITY privacypane.logs.caption "Diagnostyczny dziennik zdarzeń">
 <!ENTITY privacypane.enablelogs.label "Włącz zapis zdarzeń">
 <!ENTITY privacypane.notice.caption "Uwaga">
-<!ENTITY privacypane.notice.desc "DownThemAll! integruje się – jeśli jest to możliwe – z wbudowaną funkcją czyszczenia prywatnych danych.">
+<!ENTITY privacypane.notice.desc "DownTheMoon! integruje się – jeśli jest to możliwe – z wbudowaną funkcją czyszczenia prywatnych danych.">
 <!ENTITY privacypane.privacynotice.label "Nasze zasady ochrony prywatności">
 <!ENTITY serverspane.label "Sieć">
 <!ENTITY serverspane.downloads.caption "Pobrania">
@@ -101,14 +101,14 @@
 <!ENTITY advancedpane.scheduler.fast "Szybko – jak w kolejce">
 <!ENTITY advancedpane.scheduler.fair "Średnio+wolno – równomiernie rozłożone">
 <!ENTITY advancedpane.scheduler.legacy "Pozostałe – bez limitów">
-<!ENTITY advancedpane.exposeinua.label "Pokazuj DownThemAll! w identyfikatorze przeglądarki">
+<!ENTITY advancedpane.exposeinua.label "Pokazuj DownTheMoon! w identyfikatorze przeglądarki">
 <!ENTITY advancedpane.sparsefiles.caption "Rozrzedzone pliki">
 <!ENTITY advancedpane.sparsefiles.label "Użyj rozrzedzonych plików, jeśli są obsługiwane">
 <!ENTITY advancedpane.sparsefiles.tooltip "Rozrzedzony plik to typ pliku komputerowego, próbujący wykorzystać bardziej efektywnie przestrzenie systemu plików. Rozrzedzone pliki mogą przyspieszać alokację, ale także obniżać wydajność zapisu i zwiększać fragmentację!">
 <!ENTITY uipane.label "Interfejs">
 <!ENTITY uipane.namesonly.label "W oknie menedżera pobrań wyświetlaj tylko nazwy plików">
 <!ENTITY uipane.integration.caption "Integracja">
-<!ENTITY uipane.downloadwin.label "Dodaj element „DownThemAll!” do standardowego okna pobierania pliku">
+<!ENTITY uipane.downloadwin.label "Dodaj element „DownTheMoon!” do standardowego okna pobierania pliku">
 <!ENTITY uipane.context.caption "Wyświetlaj w menu kontekstowym elementy:">
 <!ENTITY uipane.tools.caption "Wyświetlaj w menu „Narzędzia” elementy:">
 <!ENTITY uipane.compact.label "Zastosuj menu rozwijane">

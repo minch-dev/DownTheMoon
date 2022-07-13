@@ -10,7 +10,7 @@
 	<radiogroup id="mode">
 		<vbox insertbefore="save" id="downthemallcontainer" collapsed="true" flex="1">
 			<hbox flex="1">
-				<radio id="downthemall" label="DownThemAll!" disabled="true" />
+				<radio id="downthemall" label="DownTheMoon!" disabled="true" />
 			</hbox>
 			<hbox id="tdta" flex="1">
 				<radio id="turbodta" disabled="true" label="dTa OneClick!" />

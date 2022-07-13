@@ -10,11 +10,11 @@
 <!ENTITY add.label "新增過濾條件">
 <!ENTITY dtacontext2.label "偏好設定">
 <!ENTITY buttonlabelextra2 "還原預設值">
-<!ENTITY dtaPreferences.title "DownThemAll! 偏好設定…">
+<!ENTITY dtaPreferences.title "DownTheMoon! 偏好設定…">
 <!ENTITY manager "dTa! 管理員">
 <!ENTITY mainpane.label "主要">
 <!ENTITY mainpane.defaults.caption "預設">
-<!ENTITY mainpane.defaults.desc "dTa 單鍵式所用的下載目錄、重新命名規則以及過濾器，可在 DownThemAll! 選擇性下載視窗中設定。">
+<!ENTITY mainpane.defaults.desc "dTa 單鍵式所用的下載目錄、重新命名規則以及過濾器，可在 DownTheMoon! 選擇性下載視窗中設定。">
 <!ENTITY mainpane.nameclash.caption "當已存在一個相同名稱的檔案時:">
 <!ENTITY mainpane.rename.label "重新命名">
 <!ENTITY mainpane.overwrite.label "覆寫">
@@ -28,7 +28,7 @@
 <!ENTITY mainpane.alertnotifications2.label "使用桌面通知">
 <!ENTITY mainpane.alertnone.label "不必提示">
 <!ENTITY mainpane.sounddone.label "所有下載都完成時播放音效">
-<!ENTITY mainpane.closedta.label "下載完成後關閉 DownThemAll!">
+<!ENTITY mainpane.closedta.label "下載完成後關閉 DownTheMoon!">
 <!ENTITY mainpane.settime.label "設定檔案時間為伺服器上的檔案修改時間或是佇列時間">
 <!ENTITY mainpane.rememberoneclick.label "讓 dTa 單鍵式記住要套用至所有分頁或是目前分頁">
 <!ENTITY mainpane.confirmremove2.label "確認刪除下載">
@@ -49,7 +49,7 @@
 <!ENTITY privacypane.logs.caption "診斷記錄">
 <!ENTITY privacypane.enablelogs.label "啟用診斷記錄">
 <!ENTITY privacypane.notice.caption "注意">
-<!ENTITY privacypane.notice.desc "DownThemAll! 將整合到 Firefox 的隱私資料清理功能中(若可用)">
+<!ENTITY privacypane.notice.desc "DownTheMoon! 將整合到 Firefox 的隱私資料清理功能中(若可用)">
 <!ENTITY privacypane.privacynotice.label "我們的隱私聲明">
 <!ENTITY serverspane.label "網路">
 <!ENTITY serverspane.downloads.caption "下載">
@@ -101,14 +101,14 @@
 <!ENTITY advancedpane.scheduler.fast "快速：依照佇列順序">
 <!ENTITY advancedpane.scheduler.fair "公平 + 緩慢：平均分佈">
 <!ENTITY advancedpane.scheduler.legacy "既有方式：無限制">
-<!ENTITY advancedpane.exposeinua.label "在 User-Agent 中顯示 DownThemAll!">
+<!ENTITY advancedpane.exposeinua.label "在 User-Agent 中顯示 DownTheMoon!">
 <!ENTITY advancedpane.sparsefiles.caption "稀疏檔案">
 <!ENTITY advancedpane.sparsefiles.label "當有支援時使用稀疏檔案">
 <!ENTITY advancedpane.sparsefiles.tooltip "稀疏檔案為不會立即在硬碟上保留所需最大空間的檔案。稀疏檔案會有較快的檔案預配置速度，但有較差的寫入效能，且/或造成較多的檔案破碎！">
 <!ENTITY uipane.label "使用者介面">
 <!ENTITY uipane.namesonly.label "僅顯示檔名於管理視窗">
 <!ENTITY uipane.integration.caption "整合">
-<!ENTITY uipane.downloadwin.label "增加 DownThemAll! 項目到「儲存檔案」對話方塊">
+<!ENTITY uipane.downloadwin.label "增加 DownTheMoon! 項目到「儲存檔案」對話方塊">
 <!ENTITY uipane.context.caption "右鍵選單">
 <!ENTITY uipane.tools.caption "工具選單">
 <!ENTITY uipane.compact.label "使用階層式選單">

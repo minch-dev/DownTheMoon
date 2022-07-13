@@ -1,6 +1,6 @@
 <!ENTITY tooladddownload.label "Ajouter des téléchargements">
-<!ENTITY tooladd.tooltip "Ajouter manuellement une URL de téléchargement à DownThemAll!">
-<!ENTITY tooldonate.tooltiptext "Vous pouvez nous aider à améliorer DownThemAll! en faisant un petit don !">
+<!ENTITY tooladd.tooltip "Ajouter manuellement une URL de téléchargement à DownTheMoon!">
+<!ENTITY tooldonate.tooltiptext "Vous pouvez nous aider à améliorer DownTheMoon! en faisant un petit don !">
 <!ENTITY movetop.label "Haut">
 <!ENTITY movebottom.label "Bas">
 <!ENTITY moveup.label "Monter">

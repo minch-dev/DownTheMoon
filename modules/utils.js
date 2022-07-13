@@ -16,7 +16,7 @@ const NS_XUL = 'http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul';
 exports.NS_XUL = NS_XUL;
 
 /**
- * DownThemAll! Properties namespace
+ * DownTheMoon! Properties namespace
  */
 const NS_DTA = 'http://www.downthemall.net/properties#';
 exports.NS_DTA = NS_DTA;

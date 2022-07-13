@@ -64,7 +64,7 @@
 	</commandset>
 
 
-	<menu id="dtaCtxCompact" label="DownThemAll!" class="menu-iconic dta-menuitem dta-normal">
+	<menu id="dtaCtxCompact" label="DownTheMoon!" class="menu-iconic dta-menuitem dta-normal">
 		<menupopup id="dtaCtxSubmenu">
 			<menuseparator class="thin" id="dtaCtxSepFront" />
 			<menuitem class="menuitem-iconic dta-menuitem dta-normal" id="dtaCtxDTA" accesskey="n" label="&dta-regular2.label;" command="dta:regular" />
@@ -96,8 +96,8 @@
 
 	<toolbarbutton id="dta-button" class="chromeclass-toolbar-additional toolbarbutton-1 dta-toolbarbutton" label="&dta-regular2.label;" tooltiptext="&dta-regular.desc;" type="menu-button" buttoncommand="dta:regular" widget-type="view" panelview="PanelUI-downthemall">
 		<menupopup  id="dta-button-popup">
-			<menuitem id="dta-tb-dta" label="DownThemAll! (&dta-tb-single.label;)" class="menuitem-iconic dta-menuitem dta-normal" tooltiptext="&dta-regular2.label;" command="dta:regular"/>
-			<menuitem id="dta-tb-all" label="DownThemAll! (&dta-tb-all.label;)" class="menuitem-iconic dta-menuitem dta-normal" tooltiptext="&dta-regular2.label;" command="dta:regular-all"/>
+			<menuitem id="dta-tb-dta" label="DownTheMoon! (&dta-tb-single.label;)" class="menuitem-iconic dta-menuitem dta-normal" tooltiptext="&dta-regular2.label;" command="dta:regular"/>
+			<menuitem id="dta-tb-all" label="DownTheMoon! (&dta-tb-all.label;)" class="menuitem-iconic dta-menuitem dta-normal" tooltiptext="&dta-regular2.label;" command="dta:regular-all"/>
 			<menuseparator />
 			<menuitem id="dta-tb-manager" label="&dta-manager-button;" class="menuitem-iconic dta-menuitem dta-manager" tooltiptext="&dta-manager-button;" command="dta:manager" />
 		</menupopup>
@@ -119,7 +119,7 @@
 	<toolbarbutton id="dta-turboselect-button" class="chromeclass-toolbar-additional toolbarbutton-1 dta-toolbarbutton" label="&dta-selector-button2.label;" tooltiptext="&dta-selector-button.desc;" type="checkbox" command="dta:turboselect" />
 	<toolbarbutton id="dta-manager-button" class="chromeclass-toolbar-additional toolbarbutton-1 dta-toolbarbutton" label="&dta-manager-button;" tooltiptext="&dta-manager-button;" command="dta:manager"/>
 
-	<menu id="dtaToolsMenu" label="DownThemAll!" class="menu-iconic dta-menuitem dta-normal">
+	<menu id="dtaToolsMenu" label="DownTheMoon!" class="menu-iconic dta-menuitem dta-normal">
 		<menupopup id="dtaToolsPopup">
 			<menuitem id="dtaToolsDTA" label="&dta-regular2.label;" class="menuitem-iconic dta-menuitem dta-normal" command="dta:regular"/>
 			<menuitem id="dtaToolsTDTA" label="&dta-regular-turbo2.label;" class="menuitem-iconic dta-menuitem dta-turbo" command="dta:turbo"/>
@@ -132,7 +132,7 @@
 	</menu>
 
 	<vbox id="appmenuSecondaryPane">
-		<menu id="dtaAppMenu" label="DownThemAll!" class="menu-iconic dta-menuitem dta-normal" insertafter="appmenu_downloads">
+		<menu id="dtaAppMenu" label="DownTheMoon!" class="menu-iconic dta-menuitem dta-normal" insertafter="appmenu_downloads">
 			<menupopup id="dtaAppMenuPopup">
 				<menuitem id="dtaAppMenuDTA" label="&dta-regular2.label;" class="menuitem-iconic dta-menuitem dta-normal" command="dta:regular"/>
 				<menuitem id="dtaAppMenuTDTA" label="&dta-regular-turbo2.label;" class="menuitem-iconic dta-menuitem dta-turbo" command="dta:turbo"/>

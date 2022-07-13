@@ -187,7 +187,7 @@ exports.load = function load(window, outerEvent) {
 		case 2:
 		/* jshint strict:true, globalstrict:true, +W086 */
 			require("support/alertservice")
-				.show("DownThemAll!", message, null, "chrome://dtaicon/content/icon64.png");
+				.show("DownTheMoon!", message, null, "chrome://dtaicon/content/icon64.png");
 			return;
 		default:
 			// no notification

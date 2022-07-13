@@ -41,7 +41,7 @@ test("http", function() {
 	modifyHttp(chan);
 	throws(() => chan.getRequestHeader("Referer"));
 	throws(() => chan.getRequestHeader("Cookie"));
-	ok(chan.getRequestHeader("User-Agent").indexOf("DownThemAll") !== -1);
+	ok(chan.getRequestHeader("User-Agent").indexOf("DownTheMoon") !== -1);
 	ok(chan.getRequestHeader("User-Agent").indexOf("wget") !== -1);
 	ok(chan.getRequestHeader("User-Agent").indexOf("Firefox") === -1);
 	ok(chan.isChannelPrivate);

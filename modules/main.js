@@ -28,7 +28,7 @@ const ABOUT_URI =
 function AboutModule() {
 }
 AboutModule.prototype = Object.freeze({
-	classDescription: "DownThemAll! about module",
+	classDescription: "DownTheMoon! about module",
 	classID: Components.ID('{bbaedbd9-9567-4d11-9255-0bbae236ecab}'),
 	contractID: '@mozilla.org/network/protocol/about;1?what=downthemall',
 
@@ -76,7 +76,7 @@ AboutModule.prototype = Object.freeze({
 function AboutTestsModule() { // dta-tests
 } // dta-tests
 AboutTestsModule.prototype = Object.freeze({ // dta-tests
-	classDescription: "DownThemAll! Tests about module", // dta-tests
+	classDescription: "DownTheMoon! Tests about module", // dta-tests
 	classID: Components.ID('{6b5f6ca0-6a19-11e4-9803-0800200c9a66}'), // dta-tests
 	contractID: '@mozilla.org/network/protocol/about;1?what=dta-tests', // dta-tests
 
@@ -104,7 +104,7 @@ AboutTestsModule.prototype = Object.freeze({ // dta-tests
 
 function MetalinkInterceptModule() {}
 MetalinkInterceptModule.prototype = Object.freeze({
-	classDescription: "DownThemAll! metalink integration",
+	classDescription: "DownTheMoon! metalink integration",
 	classID: Components.ID('{4b048560-c789-11e1-9b21-0800200c9a67}'),
 	contractID: '@mozilla.org/streamconv;1?from=application/metalink4+xml&to=*/*',
 	QueryInterface: QI([

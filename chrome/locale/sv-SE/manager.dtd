@@ -1,6 +1,6 @@
 <!ENTITY tooladddownload.label "Lägg till nedladdningar">
-<!ENTITY tooladd.tooltip "Lägg till en nedladdning manuellt i DownThemAll">
-<!ENTITY tooldonate.tooltiptext "Du kan hjälpa oss att göra DownThemAll! ännu bättre. Överväg att göra en liten donation!">
+<!ENTITY tooladd.tooltip "Lägg till en nedladdning manuellt i DownTheMoon">
+<!ENTITY tooldonate.tooltiptext "Du kan hjälpa oss att göra DownTheMoon! ännu bättre. Överväg att göra en liten donation!">
 <!ENTITY movetop.label "Längst upp">
 <!ENTITY movebottom.label "Längst ned">
 <!ENTITY moveup.label "Upp">

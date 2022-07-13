@@ -30,7 +30,7 @@ function XULAlertsService() {
 	// The implementation should be kept in sync.
 }
 XULAlertsService.prototype = Object.freeze({
-	classDescription: "DownThemAll! xul alerts service",
+	classDescription: "DownTheMoon! xul alerts service",
 	classID: Components.ID('{066c7f30-ba84-11e3-a5e2-0800200c9a66}'),
 	contractID: '@downthemall.net/xul-alerts-service;1',
 

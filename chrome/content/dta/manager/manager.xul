@@ -2,7 +2,7 @@
 <!-- ***** BEGIN LICENSE BLOCK *****
  * Version: GPL 2.0
  *
- * This code is part of DownThemAll! - dTa!
+ * This code is part of DownTheMoon! - dTa!
  * Copyright © 2004-2006 Federico Parodi and Stefano Verna.
  *
  * See LICENSE and GPL for details.
@@ -27,7 +27,7 @@
 ]>
 
 <overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="dtamanagermainoverlay">
-<window windowtype="DTA:Manager" title="DownThemAll!" id="DownThemAll" class="downlinks" flex="1" persist="width height screenX screenY sizemode dtaAutofitted">
+<window windowtype="DTA:Manager" title="DownTheMoon!" id="DownTheMoon" class="downlinks" flex="1" persist="width height screenX screenY sizemode dtaAutofitted">
 
 	<audio xmlns="http://www.w3.org/1999/xhtml" src="chrome://dta/skin/sounds/done.ogg" id="sound_done"></audio>
 	<audio xmlns="http://www.w3.org/1999/xhtml" src="chrome://dta/skin/sounds/error.ogg" id="sound_error"></audio>
