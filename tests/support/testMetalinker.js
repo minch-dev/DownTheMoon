@@ -8,7 +8,7 @@ test("exports", function() {
 	checkExports("support/metalinker", [
 		"parse",
 		"Metalink",
-		"NS_DTA",
+		"NS_DTM",
 		"NS_HTML",
 		"NS_METALINKER3",
 		"NS_METALINK_RFC5854"

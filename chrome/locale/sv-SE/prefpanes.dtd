@@ -8,9 +8,9 @@
 <!ENTITY filter.images.label "Bildfilter">
 <!ENTITY filter.links.label "Länkfilter">
 <!ENTITY add.label "Lägg till nytt filter">
-<!ENTITY dtacontext2.label "Inställningar">
+<!ENTITY dtmcontext2.label "Inställningar">
 <!ENTITY buttonlabelextra2 "Återställ standardinställningar">
-<!ENTITY dtaPreferences.title "Inställningar för DownTheMoon!...">
+<!ENTITY dtmPreferences.title "Inställningar för DownTheMoon!...">
 <!ENTITY manager "Hanterare">
 <!ENTITY mainpane.label "Allmänt">
 <!ENTITY mainpane.defaults.caption "Standardvärden">
@@ -28,7 +28,7 @@
 <!ENTITY mainpane.alertnotifications2.label "Med skrivbordsnotifikationer">
 <!ENTITY mainpane.alertnone.label "Meddela inte">
 <!ENTITY mainpane.sounddone.label "Spela upp ett ljud när samtliga filhämtningar är slutförda">
-<!ENTITY mainpane.closedta.label "Stäng DownTheMoon! när alla nedladdningar är slutförda">
+<!ENTITY mainpane.closedtm.label "Stäng DownTheMoon! när alla nedladdningar är slutförda">
 <!ENTITY mainpane.settime.label "Ange filens tid till senast ändrad (server) eller tid vid köläggning">
 <!ENTITY mainpane.rememberoneclick.label "Låt dTm! OneClick komma ihåg om det gäller alla flikar eller aktuell flik">
 <!ENTITY mainpane.confirmremove2.label "Bekräfta borttagning av nedladdningar">

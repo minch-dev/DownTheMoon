@@ -8,9 +8,9 @@
 <!ENTITY filter.images.label "Filtro de imaxes">
 <!ENTITY filter.links.label "Filtro de ligazóns">
 <!ENTITY add.label "Engadir un novo filtro">
-<!ENTITY dtacontext2.label "Preferencias">
+<!ENTITY dtmcontext2.label "Preferencias">
 <!ENTITY buttonlabelextra2 "Restaurar a configuración predeterminada">
-<!ENTITY dtaPreferences.title "Preferencias do DownTheMoon!">
+<!ENTITY dtmPreferences.title "Preferencias do DownTheMoon!">
 <!ENTITY manager "Xestor de dTm">
 <!ENTITY mainpane.label "Xeral">
 <!ENTITY mainpane.defaults.caption "Predefinicións">
@@ -28,7 +28,7 @@
 <!ENTITY mainpane.alertnotifications2.label "Usando notificacións de escritorio">
 <!ENTITY mainpane.alertnone.label "Non avisarme">
 <!ENTITY mainpane.sounddone.label "Avisar cun son ao rematar todas as descargas">
-<!ENTITY mainpane.closedta.label "Pechar DownTheMoon ao rematar as descargas">
+<!ENTITY mainpane.closedtm.label "Pechar DownTheMoon ao rematar as descargas">
 <!ENTITY mainpane.settime.label "Establecer como data/hora do ficheiro a última modificación (servidor) ou a da incorporación á cola">
 <!ENTITY mainpane.rememberoneclick.label "Ten que indiarlle a dTm OneClick se aplicalo a todas as lapelas ou só á actual">
 <!ENTITY mainpane.confirmremove2.label "Confirmar a eliminación das descargas">

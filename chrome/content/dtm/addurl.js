@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 "use strict";
-/* global _, DTA, $, $$, Utils, Preferences, getDefaultDownloadsDirectory, unloadWindow */
+/* global _, DTM, $, $$, Utils, Preferences, getDefaultDownloadsDirectory, unloadWindow */
 /* jshint globalstrict:true, strict:true, browser:true */
 var prompts = require("prompts");
 var Version = require("version");
@@ -23,7 +23,7 @@ var Dialog = {
 		let ignoreProxyPath = $("ignoreProxyPath");
 		let ignoreWWW = $("ignoreWWW");
 		
-		let filter = DTA.formatFilter({
+		let filter = DTM.formatFilter({
 			filter: this.ddRenaming.value,
 			copyDirTree: copyDirTree.checked,
 			ignoreProxyPath: ignoreProxyPath.checked,
@@ -118,7 +118,7 @@ var Dialog = {
 					}
 					else if (typeof(a.url) === 'object' && 'url' in a.url) {
 						address._item = a;
-						// we've got a DTA.URL.
+						// we've got a DTM.URL.
 						// In this case it is not safe to modify it because of encoding
 						// issues.
 						address.value = a.url.usable;
@@ -132,7 +132,7 @@ var Dialog = {
 					}
 				}
 				try {
-					let referrer = (new DTA.URL(Services.io.newURI(a.referrer, null, null))).url.spec;
+					let referrer = (new DTM.URL(Services.io.newURI(a.referrer, null, null))).url.spec;
 					try {
 						referrer = decodeURIComponent(referrer);
 					} catch (ex) {}
@@ -156,7 +156,7 @@ var Dialog = {
 					let str = {}, len = {};
 					trans.getTransferData("text/unicode", str, len);
 					if (len.value && (str.value instanceof Ci.nsISupportsString)) {
-						let url = new DTA.URL(Services.io.newURI(str.value.data, null, null));
+						let url = new DTM.URL(Services.io.newURI(str.value.data, null, null));
 						if (url.hash) {
 							hash = url.hash;
 							delete url.hash;
@@ -213,7 +213,7 @@ var Dialog = {
 				catch (ex) {
 					url = uri.spec;
 				}
-				url = new DTA.URL(Services.io.newURI(url, null, null));
+				url = new DTM.URL(Services.io.newURI(url, null, null));
 				if (url.hash) {
 					$('hash').value = hash;
 				}
@@ -259,7 +259,7 @@ var Dialog = {
 		return this.downloadPlain(start, url, hash);
 	},
 	downloadPlain: function(start, url, hash) {
-		let num = DTA.currentSeries();
+		let num = DTM.currentSeries();
 		let batch;
 		try {
 			batch = new BatchGenerator(url);
@@ -299,7 +299,7 @@ var Dialog = {
 			let filename = $("filename").value || null;
 			let desc = $('description').value;
 			let ref = $('URLref').value;
-			let URL = DTA.URL;
+			let URL = DTM.URL;
 			let newURI = Services.io.newURI;
 
 			function QueueItem(url, fn) {
@@ -337,7 +337,7 @@ var Dialog = {
 		item.fileName = $("filename").value || null;
 		item.description = $('description').value;
 		item.referrer = $('URLref').value;
-		item.numIstance = DTA.currentSeries();
+		item.numIstance = DTM.currentSeries();
 		item.mask = this.ddRenaming.value;
 		item.dirSave = this.ddDirectory.value;
 		item.url.hash = item.url.hash || hash;
@@ -345,7 +345,7 @@ var Dialog = {
 		return this.sendDownloads(start, [item], item.isPrivate);
 	},
 	sendDownloads: function(start, downloads, isPrivate) {
-		DTA.incrementSeries();
+		DTM.incrementSeries();
 		let clq = start;
 		if (!clq) {
 			clq = Preferences.getExt("confirmlastqueued", 0);
@@ -374,7 +374,7 @@ var Dialog = {
 		this.ddRenaming.save($("renamingOnce").checked);
 		this.ddDirectory.save();
 
-		DTA.sendLinksToManager(window, start, downloads);
+		DTM.sendLinksToManager(window, start, downloads);
 
 		close();
 		return false;

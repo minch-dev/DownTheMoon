@@ -8,9 +8,9 @@
 <!ENTITY filter.images.label "Filtre image">
 <!ENTITY filter.links.label "Filtre liens">
 <!ENTITY add.label "Ajouter un nouveau filtre">
-<!ENTITY dtacontext2.label "Préférences">
+<!ENTITY dtmcontext2.label "Préférences">
 <!ENTITY buttonlabelextra2 "Rétablir les paramètres par défaut">
-<!ENTITY dtaPreferences.title "Préférences de DownTheMoon!…">
+<!ENTITY dtmPreferences.title "Préférences de DownTheMoon!…">
 <!ENTITY manager "Gestionnaire de dTm!">
 <!ENTITY mainpane.label "Principales">
 <!ENTITY mainpane.defaults.caption "Par défaut">
@@ -28,7 +28,7 @@
 <!ENTITY mainpane.alertnotifications2.label "Utilisations des notifications sur le bureau">
 <!ENTITY mainpane.alertnone.label "Ne pas me prévenir">
 <!ENTITY mainpane.sounddone.label "Jouer un son pour annoncer la fin de tous les téléchargements">
-<!ENTITY mainpane.closedta.label "Fermer DownTheMoon! lorsque les téléchargements sont terminés">
+<!ENTITY mainpane.closedtm.label "Fermer DownTheMoon! lorsque les téléchargements sont terminés">
 <!ENTITY mainpane.settime.label "Définir la date de création du fichier à la date de dernière modification (serveur) ou à la date de mise en attente de téléchargement">
 <!ENTITY mainpane.rememberoneclick.label "Faire en sorte que dTm OneClick! mémorise s'il s'applique à tous les onglets ou à l'onglet courant">
 <!ENTITY mainpane.confirmremove2.label "Confirmer la suppression des téléchargements">

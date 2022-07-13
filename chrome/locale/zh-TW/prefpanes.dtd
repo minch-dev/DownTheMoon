@@ -8,9 +8,9 @@
 <!ENTITY filter.images.label "圖片過濾條件">
 <!ENTITY filter.links.label "鏈結過濾條件">
 <!ENTITY add.label "新增過濾條件">
-<!ENTITY dtacontext2.label "偏好設定">
+<!ENTITY dtmcontext2.label "偏好設定">
 <!ENTITY buttonlabelextra2 "還原預設值">
-<!ENTITY dtaPreferences.title "DownTheMoon! 偏好設定…">
+<!ENTITY dtmPreferences.title "DownTheMoon! 偏好設定…">
 <!ENTITY manager "dTm! 管理員">
 <!ENTITY mainpane.label "主要">
 <!ENTITY mainpane.defaults.caption "預設">
@@ -28,7 +28,7 @@
 <!ENTITY mainpane.alertnotifications2.label "使用桌面通知">
 <!ENTITY mainpane.alertnone.label "不必提示">
 <!ENTITY mainpane.sounddone.label "所有下載都完成時播放音效">
-<!ENTITY mainpane.closedta.label "下載完成後關閉 DownTheMoon!">
+<!ENTITY mainpane.closedtm.label "下載完成後關閉 DownTheMoon!">
 <!ENTITY mainpane.settime.label "設定檔案時間為伺服器上的檔案修改時間或是佇列時間">
 <!ENTITY mainpane.rememberoneclick.label "讓 dTm 單鍵式記住要套用至所有分頁或是目前分頁">
 <!ENTITY mainpane.confirmremove2.label "確認刪除下載">

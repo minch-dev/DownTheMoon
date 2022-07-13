@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 "use strict";
-/* global _, DTA, $, $$, Utils, Preferences */
+/* global _, DTM, $, $$, Utils, Preferences */
 /* global getDefaultDownloadsDirectory, unloadWindow, getIcon, getFavIcon */
 /* global mapInSitu, setTimeoutOnlyFun, FilterManager, openUrl */
 /* jshint globalstrict:true, strict:true, browser:true */
@@ -285,7 +285,7 @@ Dialog = {
 		let ignoreProxyPath = $("ignoreProxyPath");
 		let ignoreWWW = $("ignoreWWW");
 		
-		let filter = DTA.formatFilter({
+		let filter = DTM.formatFilter({
 			filter: this.ddRenaming.value,
 			copyDirTree: copyDirTree.checked,
 			ignoreProxyPath: ignoreProxyPath.checked,
@@ -464,7 +464,7 @@ Dialog = {
 
 			let dir = this.ddDirectory.value;
 			let mask = this.ddRenaming.value;
-			let counter = DTA.currentSeries();
+			let counter = DTM.currentSeries();
 
 			// build the actual array holding all selected links
 			let links = this.current._links;
@@ -533,10 +533,10 @@ Dialog = {
 				boxen[i].filter.active = boxen[i].checked;
 			}
 			FilterManager.save();
-			DTA.incrementSeries();
+			DTM.incrementSeries();
 
 			// actually start the crap.
-			DTA.sendLinksToManager(window, start, out);
+			DTM.sendLinksToManager(window, start, out);
 
 			// unload ourselves.
 			return this.unload();
@@ -881,7 +881,7 @@ Dialog = {
 	// nsIObserver::observe
 	observe : function(subject, topic, prefName) {
 		// filterManager will throw this topic at us.
-		if (topic === 'DTA:filterschanged') {
+		if (topic === 'DTM:filterschanged') {
 			// the heavy work will be performed by changeTab..
 			// it will create the filter boxen for us, and furthermore do another
 			// selection
@@ -892,6 +892,6 @@ Dialog = {
 	// * filterManager
 	registerObserver: function() {
 		Preferences.makeObserver(this);
-		Services.obs.addObserver(this, 'DTA:filterschanged', true);
+		Services.obs.addObserver(this, 'DTM:filterschanged', true);
 	}
 };

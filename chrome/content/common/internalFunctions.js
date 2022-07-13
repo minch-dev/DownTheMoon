@@ -26,7 +26,7 @@ var Mediator = require("support/mediator");
 var {FilterManager} = require("support/filtermanager");
 var {toURI, toURL} = require("support/stringfuncs");
 var {unloadWindow} = require("support/overlays");
-var DTA = require("api");
+var DTM = require("api");
 
 function showPreferences(pane, command) {
 	return Mediator.showPreferences(window, pane, command);

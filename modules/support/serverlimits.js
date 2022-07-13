@@ -11,7 +11,7 @@ const {filterInSitu, shuffle} = require("utils");
 const obs = require("./observers");
 const domainprefs = require("./domainprefs");
 
-const TOPIC = 'DTA:serverlimits-changed';
+const TOPIC = 'DTM:serverlimits-changed';
 const PREFS = 'extensions.dtm.serverlimit.';
 const LIMITS_PREF  = 'extensions.dtm.serverlimit.limits.';
 
@@ -576,7 +576,7 @@ const Observer = {
 	}
 };
 Prefs.addObserver(PREFS, Observer);
-require("./observers").add(Observer, "DTA:domain-prefs");
+require("./observers").add(Observer, "DTM:domain-prefs");
 unload(() => Observer.unload());
 Observer.observe();
 

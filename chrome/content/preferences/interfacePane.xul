@@ -18,37 +18,37 @@
 
 	<prefpane id="paneInterface" label="&uipane.label;" onpaneload="Interface.init();">
 		<preferences id="prefsInterface">
-			<preference id="dtaShowInDown" name="extensions.dtm.downloadWin" type="bool" />
-			<preference id="dtaHideUrl" name="extensions.dtm.showonlyfilenames" type="bool" />
-			<preference id="dtaContextSub" name="extensions.dtm.ctxcompact" type="bool" />
-			<preference id="dtaToolHide" name="extensions.dtm.toolshidden" type="bool" />
-			<preference id="dtaContext" name="extensions.dtm.ctxmenu" type="string" />
-			<preference id="dtaTool" name="extensions.dtm.toolsmenu" type="string" />
-			<preference id="dtaShowTooltip" name="extensions.dtm.showtooltip" type="bool" />
-			<preference id="dtaStartMinimized" name="extensions.dtm.startminimized" type="bool" />
-			<preference id="dtaMinimizeToTray" name="extensions.mintrayr.downthemall.watchmanager" type="bool" />
-			<preference id="dtaNotification" name="extensions.dtm.notification2" type="int" />
-			<preference id="dtaShowActions" name="extensions.dtm.showactions" type="bool" />
+			<preference id="dtmShowInDown" name="extensions.dtm.downloadWin" type="bool" />
+			<preference id="dtmHideUrl" name="extensions.dtm.showonlyfilenames" type="bool" />
+			<preference id="dtmContextSub" name="extensions.dtm.ctxcompact" type="bool" />
+			<preference id="dtmToolHide" name="extensions.dtm.toolshidden" type="bool" />
+			<preference id="dtmContext" name="extensions.dtm.ctxmenu" type="string" />
+			<preference id="dtmTool" name="extensions.dtm.toolsmenu" type="string" />
+			<preference id="dtmShowTooltip" name="extensions.dtm.showtooltip" type="bool" />
+			<preference id="dtmStartMinimized" name="extensions.dtm.startminimized" type="bool" />
+			<preference id="dtmMinimizeToTray" name="extensions.mintrayr.downthemoon.watchmanager" type="bool" />
+			<preference id="dtmNotification" name="extensions.dtm.notification2" type="int" />
+			<preference id="dtmShowActions" name="extensions.dtm.showactions" type="bool" />
 		</preferences>
 
 		<groupbox>
 			<caption label="&uipane.manager.caption;" />
-			<checkbox label="&uipane.startminimized.label;" preference="dtaStartMinimized" />
+			<checkbox label="&uipane.startminimized.label;" preference="dtmStartMinimized" />
 			<hbox>
-				<checkbox flex="1" id="minimizetotray" label="&uipane.minimizetotray.label;" preference="dtaMinimizeToTray" />
+				<checkbox flex="1" id="minimizetotray" label="&uipane.minimizetotray.label;" preference="dtmMinimizeToTray" />
 				<label id="minimizetotray_link" value="&uipane.getmintrayr.label;" onclick="Interface.openMinTrayR();" hidden="true" class="text-link" />
 			</hbox>
-			<checkbox label="&uipane.sidebar.label;" preference="dtaShowActions" />
-			<checkbox label="&uipane.namesonly.label;" preference="dtaHideUrl" />
-			<checkbox label="&uipane.showtooltip.label;" preference="dtaShowTooltip" />
+			<checkbox label="&uipane.sidebar.label;" preference="dtmShowActions" />
+			<checkbox label="&uipane.namesonly.label;" preference="dtmHideUrl" />
+			<checkbox label="&uipane.showtooltip.label;" preference="dtmShowTooltip" />
 		</groupbox>
 
 		<groupbox>
 			<caption label="&uipane.integration.caption;" />
-			<checkbox id="downloadWin" label="&uipane.downloadwin.label;" preference="dtaShowInDown" />
+			<checkbox id="downloadWin" label="&uipane.downloadwin.label;" preference="dtmShowInDown" />
 			<separator class="thin"/>
 			<label control="notification" value="&uipane.notification.label;"/>
-			<radiogroup id="notification" preference="dtaNotification" orient="horizontal">
+			<radiogroup id="notification" preference="dtmNotification" orient="horizontal">
 				<radio value="0" label="&uipane.notification.nonotification.radio;"/>
 				<radio value="1" label="&uipane.notification.doorhangernotification.radio;"/>
 				<radio value="2" label="&uipane.notification.desktopnotification.radio;"/>
@@ -63,19 +63,19 @@
 				<row id="rowItems">
 					<groupbox>
 						<caption label="&uipane.context.caption;" />
-						<checkbox id="dtaContext0" preference="dtaContext" label="DownTheMoon!" class="moreLeft" onsyncfrompreference="return Interface.getMenu('dtaContext', 0);" onsynctopreference="return Interface.setMenu('dtaContext', 0);" />
-						<checkbox id="dtaContext1" preference="dtaContext" label="dTm OneClick!" onsyncfrompreference="return Interface.getMenu('dtaContext', 1);" onsynctopreference="return Interface.setMenu('dtaContext', 1);" class="moreLeft" />
-						<checkbox id="dtaContext2" preference="dtaContext" label="&dtacontext2.label;" onsyncfrompreference="return Interface.getMenu('dtaContext', 2);" onsynctopreference="return Interface.setMenu('dtaContext', 2);" class="moreLeft" />
+						<checkbox id="dtmContext0" preference="dtmContext" label="DownTheMoon!" class="moreLeft" onsyncfrompreference="return Interface.getMenu('dtmContext', 0);" onsynctopreference="return Interface.setMenu('dtmContext', 0);" />
+						<checkbox id="dtmContext1" preference="dtmContext" label="dTm OneClick!" onsyncfrompreference="return Interface.getMenu('dtmContext', 1);" onsynctopreference="return Interface.setMenu('dtmContext', 1);" class="moreLeft" />
+						<checkbox id="dtmContext2" preference="dtmContext" label="&dtmcontext2.label;" onsyncfrompreference="return Interface.getMenu('dtmContext', 2);" onsynctopreference="return Interface.setMenu('dtmContext', 2);" class="moreLeft" />
 						<separator class="thin" />
-						<checkbox label="&uipane.compact.label;" preference="dtaContextSub" />
+						<checkbox label="&uipane.compact.label;" preference="dtmContextSub" />
 					</groupbox>
 					<groupbox>
 						<caption label="&uipane.tools.caption;" />
-						<checkbox id="dtaTool0" preference="dtaTool" label="DownTheMoon!" onsyncfrompreference="return Interface.getMenu('dtaTool', 0);" onsynctopreference="return Interface.setMenu('dtaTool', 0);" class="moreLeft" />
-						<checkbox id="dtaTool1" preference="dtaTool" label="dTm OneClick!" onsyncfrompreference="return Interface.getMenu('dtaTool', 1);" onsynctopreference="return Interface.setMenu('dtaTool', 1);" class="moreLeft" />
-						<checkbox id="dtaTool2" preference="dtaTool" label="&manager;" onsyncfrompreference="return Interface.getMenu('dtaTool', 2);" onsynctopreference="return Interface.setMenu('dtaTool', 2);" class="moreLeft" />
+						<checkbox id="dtmTool0" preference="dtmTool" label="DownTheMoon!" onsyncfrompreference="return Interface.getMenu('dtmTool', 0);" onsynctopreference="return Interface.setMenu('dtmTool', 0);" class="moreLeft" />
+						<checkbox id="dtmTool1" preference="dtmTool" label="dTm OneClick!" onsyncfrompreference="return Interface.getMenu('dtmTool', 1);" onsynctopreference="return Interface.setMenu('dtmTool', 1);" class="moreLeft" />
+						<checkbox id="dtmTool2" preference="dtmTool" label="&manager;" onsyncfrompreference="return Interface.getMenu('dtmTool', 2);" onsynctopreference="return Interface.setMenu('dtmTool', 2);" class="moreLeft" />
 						<separator class="thin" />
-						<checkbox label="&uipane.hide.label;" preference="dtaToolHide" />
+						<checkbox label="&uipane.hide.label;" preference="dtmToolHide" />
 					</groupbox>
 				</row>
 			</rows>

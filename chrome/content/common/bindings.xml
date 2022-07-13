@@ -260,7 +260,7 @@
 		<implementation>
 			<constructor><![CDATA[
 				this._typemap = {};
-				for (let x in DTA.SUPPORTED_HASHES) {
+				for (let x in DTM.SUPPORTED_HASHES) {
 					var e = document.createElement('menuitem');
 					e.setAttribute('value', x);
 					e.setAttribute('label', x);
@@ -283,7 +283,7 @@
 				<getter><![CDATA[
 					try {
 						if (this._hash.value.length) {
-							new DTA.Hash(this._hash.value, this._type.value);
+							new DTM.Hash(this._hash.value, this._type.value);
 						}
 						return true;
 					}
@@ -295,7 +295,7 @@
 			<property name="value">
 				<getter><![CDATA[
 					if (this._hash.value.length) {
-						return new DTA.Hash(this._hash.value, this._type.value);
+						return new DTM.Hash(this._hash.value, this._type.value);
 					}
 					return null;
 				]]></getter>

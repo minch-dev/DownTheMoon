@@ -1,6 +1,6 @@
 "use strict";
 /* globals module, test, asyncTest, checkExports, QUnit, equal, strictEqual, ok, throws */
-/* globals createTestHttpChannel, DTA */
+/* globals createTestHttpChannel, DTM */
 module("manager/visitormanager.js");
 
 test("exports", function() {
@@ -51,7 +51,7 @@ test("real world http visit", function() {
 	strictEqual(visit.time, getTimestamp(response["Last-Modified"].toLowerCase()), "time");
 });
 (function() {
-	const DTA = require("api");
+	const DTM = require("api");
 	const digestRequest = {
 		"User-Agent": "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:16.0) Gecko/16.0 Firefox/16.0",
 		"Referer": "http://example.com",
@@ -60,7 +60,7 @@ test("real world http visit", function() {
 		"Accept-Language": "en-US,en;q=0.5",
 		"Accept-Encoding": "gzip, deflate",
 		"Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-		"Want-Digest": DTA.WANT_DIGEST_STRING
+		"Want-Digest": DTM.WANT_DIGEST_STRING
 	};
 	test("http digests visit", function() {
 		const {VisitorManager} = require("manager/visitormanager");
@@ -172,7 +172,7 @@ test("real world http visit", function() {
 		"Accept-Encoding": "gzip, deflate",
 		"Accept": "text/html,application/xhtml+xml,application/xml,application/metalink," +
 			"application/metalink4+xml;q=0.9,*/*;q=0.8",
-		"Want-Digest": DTA.WANT_DIGEST_STRING
+		"Want-Digest": DTM.WANT_DIGEST_STRING
 	};
 	test("http duplicate links visit", function() {
 		const {VisitorManager} = require("manager/visitormanager");

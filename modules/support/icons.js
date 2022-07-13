@@ -15,7 +15,7 @@ const favCache = new LRUMap(200);
  * @author Nils
  * @author Stefano
  * @param link
- *          Some sort of DTA.URL, nsIURI or string to get the icon for
+ *          Some sort of DTM.URL, nsIURI or string to get the icon for
  * @param metalink
  *          Is it a metalink?
  * @param size

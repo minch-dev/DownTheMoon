@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" xmlns:html="http://www.w3.org/1999/xhtml" flex="1" title="DownTheMoon! self tests">
 	<html:head>
-		<html:link rel="icon" href="chrome://dtaicon/content/icon.png"/>
+		<html:link rel="icon" href="chrome://dtmicon/content/icon.png"/>
 	</html:head>
 	<browser flex="1" remote="false" type="chrome" src="chrome://dtm-tests/content/index.html"/>
 </window>

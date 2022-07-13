@@ -11,7 +11,7 @@ const NS_ERROR_NET_TIMEOUT = NS_ERROR_MODULE_NETWORK + 14;
 const NS_ERROR_NET_RESET = NS_ERROR_MODULE_NETWORK + 20;
 const NS_ERROR_FTP_CWD = NS_ERROR_MODULE_NETWORK + 22;
 
-let DTA = require("api");
+let DTM = require("api");
 /* global RUNNING, CANCELED, PAUSED, FINISHING, ArrayBuffer */
 requireJoined(this, "constants");
 const {formatNumber, StringBundles, getTimestamp} = require("utils");
@@ -203,7 +203,7 @@ Connection.prototype = {
 								true
 								);
 						}
-						chan.setRequestHeader('Want-Digest', DTA.WANT_DIGEST_STRING, false);
+						chan.setRequestHeader('Want-Digest', DTM.WANT_DIGEST_STRING, false);
 					}
 
 					if (Preferences.getExt('nokeepalive', true)) {
@@ -353,7 +353,7 @@ Connection.prototype = {
 			return;
 		}
 		try {
-			let newurl = new DTA.URL(newChannel.URI.QueryInterface(Ci.nsIURL), this.url.preference);
+			let newurl = new DTM.URL(newChannel.URI.QueryInterface(Ci.nsIURL), this.url.preference);
 			d.fileName = getUsableFileName(newurl.usable);
 			if (oldChannel instanceof Ci.nsIHttpChannel) {
 				try {
@@ -741,7 +741,7 @@ Connection.prototype = {
 						newHash.partials = d.hashCollection.partials;
 					}
 					try {
-						download.hashCollection = DTA.HashCollection.load(newHash);
+						download.hashCollection = DTM.HashCollection.load(newHash);
 					}
 					catch (e) {
 						log(LOG_ERROR, "Rejecting describedby metalink due to corrupted hashes");
@@ -908,7 +908,7 @@ Connection.prototype = {
 		}
 
 		if (visitor.hash && (!d.hashCollection || !d.hashCollection.full || d.hashCollection.full.q < visitor.hash.q)) {
-			d.hashCollection = new DTA.HashCollection(visitor.hash);
+			d.hashCollection = new DTM.HashCollection(visitor.hash);
 		}
 
 		// accept range

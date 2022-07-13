@@ -28,7 +28,7 @@
 	ondialogcancel="return false;"
 	width="460px"
 	>
-		<stringbundleset xmlns="http://www.downthemall.net/properties#">
+		<stringbundleset xmlns="http://www.downthemoon.nope/properties#">
 			<stringbundle src="chrome://dtm/locale/conflicts.properties"/>
 		</stringbundleset>
 		<script type="application/javascript" src="chrome://dtm/content/common/internalFunctions.js"/>

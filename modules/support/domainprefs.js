@@ -31,7 +31,7 @@ class Saver extends DeferredSave {
 	}
 	_deferredSave() {
 		super._deferredSave();
-		notifyLocal("DTA:domain-prefs", null, null);
+		notifyLocal("DTM:domain-prefs", null, null);
 	}
 	serialize() {
 		let rv = [];

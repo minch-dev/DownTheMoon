@@ -21,7 +21,7 @@
 	%defmanagerDTD;
 ]>
 
-<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="dtamanagerplatformoverlay">
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="dtmmanagerplatformoverlay">
 	<!-- XXX: re-enable fullscreenbutton once more stable -->
 	<window id="DownTheMoon" fullscreenbutton="false">
 		<stringbundleset id="stringbundleset" />

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 "use strict";
-/* global _, $, Tooltip, DTA, Utils, Preferences, setTimeoutOnlyFun, toURL */
+/* global _, $, Tooltip, DTM, Utils, Preferences, setTimeoutOnlyFun, toURL */
 /* global COMPLETE, FINISHING */
 /* jshint strict:true, globalstrict:true, browser:true */
 
@@ -148,7 +148,7 @@ var Dialog = {
 				else if (!d.hashCollection ||
 					h.sum !== d.hashCollection.full.sum ||
 					h.type !== d.hashCollection.full.type) {
-					d.hashCollection = new DTA.HashCollection(h);
+					d.hashCollection = new DTM.HashCollection(h);
 					if (h && d.state === COMPLETE) {
 						// have to manually start this guy ;)
 						d.verifyHash();

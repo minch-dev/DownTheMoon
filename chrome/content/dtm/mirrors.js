@@ -3,7 +3,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 /* jshint browser:true */
 "use strict";
-/* global _, DTA, $, $$, Utils, Preferences, getDefaultDownloadsDirectory, unloadWindow */
+/* global _, DTM, $, $$, Utils, Preferences, getDefaultDownloadsDirectory, unloadWindow */
 /* global toURI, toURL, setTimeoutOnlyFun */
 var Prompts = require("prompts");
 
@@ -35,7 +35,7 @@ function accept() {
 	}
 	let rv = window.arguments[0];
 	for (let m of allMirrors) {
-		rv.push(new DTA.URL(toURL(m.mirror, m.charset), m.preference));
+		rv.push(new DTM.URL(toURL(m.mirror, m.charset), m.preference));
 	}
 	return true;
 }
@@ -97,7 +97,7 @@ function addMirror() {
 		let str = {}, len = {};
 		trans.getTransferData("text/unicode", str, len);
 		if (len.value && (str.value instanceof Ci.nsISupportsString)) {
-			url = (new DTA.URL(Services.io.newURI(str.value.data, null, null))).url.spec;
+			url = (new DTM.URL(Services.io.newURI(str.value.data, null, null))).url.spec;
 		}
 	}
 	catch (ex) {

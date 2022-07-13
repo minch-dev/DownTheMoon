@@ -32,7 +32,7 @@ function XULAlertsService() {
 XULAlertsService.prototype = Object.freeze({
 	classDescription: "DownTheMoon! xul alerts service",
 	classID: Components.ID('{066c7f30-ba84-11e3-a5e2-0800200c9a66}'),
-	contractID: '@downthemall.net/xul-alerts-service;1',
+	contractID: '@downthemoon.nope/xul-alerts-service;1',
 
 	QueryInterface: QI([Ci.nsIAlertsService]),
 
@@ -89,7 +89,7 @@ let supportsClickable = true;
 	catch (ex) {
 		log(LOG_DEBUG, "Using xul alerts service because: ", ex);
 		supportsClickable = true;
-		service = Cc['@downthemall.net/xul-alerts-service;1'].getService(Ci.nsIAlertsService);
+		service = Cc['@downthemoon.nope/xul-alerts-service;1'].getService(Ci.nsIAlertsService);
 	}
 })();
 
@@ -109,13 +109,13 @@ exports.show = function alertservice_show(title, msg, callback, icon) {
 		}
 
 		service.showAlertNotification(
-			icon || "chrome://dtaicon/content/icon64.png",
+			icon || "chrome://dtmicon/content/icon64.png",
 			title,
 			msg,
 			clickable,
-			"downthemall",
+			"downthemoon",
 			obs,
-			"@downthemall.net/" + Date.now().toString()
+			"@downthemoon.nope/" + Date.now().toString()
 			);
 	}
 	catch (ex if ex.result === Cr.NS_ERROR_NOT_IMPLEMENTED) {

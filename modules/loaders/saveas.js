@@ -6,8 +6,8 @@
 /* **
  * Lazy getters
  */
-/* global DTA, ContentHandling, Preferences, isWindowPrivate, gFlashGotDMDialog */
-lazy(this, 'DTA', () => require("api"));
+/* global DTM, ContentHandling, Preferences, isWindowPrivate, gFlashGotDMDialog */
+lazy(this, 'DTM', () => require("api"));
 lazy(this, 'ContentHandling', () => require("support/contenthandling").ContentHandling);
 lazy(this, 'Preferences', () => require("preferences"));
 lazy(this, "isWindowPrivate", () => require("support/pbm").isWindowPrivate);
@@ -39,13 +39,13 @@ function load(window, document) {
 
 		const basicBox = $('basicBox');
 		const normalBox = $('normalBox');
-		const normal = $('downthemall');
-		const turbo = $('turbodta');
-		const turboExec = $('turbodtaexec');
+		const normal = $('downthemoon');
+		const turbo = $('turbodtm');
+		const turboExec = $('turbodtmexec');
 		const mode = $('mode');
 		const remember = $("rememberChoice");
 		const settingsChange = $("settingsChange");
-		const ddDirectory = $('tdtalist');
+		const ddDirectory = $('tdtmlist');
 
 		const revertUI = () => {
 			let nodes = normalBox.querySelectorAll("separator");
@@ -100,7 +100,7 @@ function load(window, document) {
 				"isPrivate": isPrivate
 			};
 
-			DTA.saveSingleItem(window, turbo, item);
+			DTM.saveSingleItem(window, turbo, item);
 			let de = document.documentElement;
 			try {
 				de.removeAttribute('ondialogaccept');
@@ -133,7 +133,7 @@ function load(window, document) {
 
 		// Overlay dialog.initDialog as it might be called... somewhen... after us,
 		// reverting our revertUI changed, which causes
-		// https://github.com/downthemall/downthemall/issues/36
+		// https://github.com/downthemoon/downthemoon/issues/36
 		// dtm-2 did not have this problem as it was quaranteed we run after
 		// initDialog due to the different loading mechanism
 		window.dialog = Object.create(dialog, {
@@ -157,7 +157,7 @@ function load(window, document) {
 			log(LOG_DEBUG, "not overlaying");
 			return;
 		}
-		$('downthemallcontainer').collapsed = false;
+		$('downthemooncontainer').collapsed = false;
 		normal.disabled = false;
 
 		isPrivate = isWindowPrivate(dialog.mContext);
@@ -170,12 +170,12 @@ function load(window, document) {
 			referrer = url.spec;
 		}
 
-		let ml = DTA.getLinkPrintMetalink(url);
-		url = new DTA.URL(ml ? ml : url);
+		let ml = DTM.getLinkPrintMetalink(url);
+		url = new DTM.URL(ml ? ml : url);
 
 		ddDirectory.isPrivate = isPrivate;
-		mask = DTA.getDropDownValue('renaming', isPrivate);
-		if (!($("tdta").hidden = (!DTA.getDropDownValue('directory', isPrivate) || !mask))) {
+		mask = DTM.getDropDownValue('renaming', isPrivate);
+		if (!($("tdtm").hidden = (!DTM.getDropDownValue('directory', isPrivate) || !mask))) {
 			turbo.disabled = false;
 			turboExec.disabled = false;
 		}

@@ -18,19 +18,19 @@
 
 	<prefpane id="paneAdvanced" label="&advancedpane.label;" orient="vertical" onpaneload="Advanced.load();">
 		<preferences>
-			<preference id="dtamaxchunks" name="extensions.dtm.maxchunks" type="int" />
-			<preference id="dtatemporary" name="extensions.dtm.saveTemp" type="bool" />
-			<preference id="dtatimeout" name="extensions.dtm.timeout" type="int" />
-			<preference id="dtatemplocation" name="extensions.dtm.tempLocation" type="unichar" />
-			<preference id="dtapermissions" name="extensions.dtm.permissions" type="int" />
-			<preference id="dtaloadendfirst" name="extensions.dtm.loadendfirst" type="int" />
-			<preference id="dtascheduler" name="extensions.dtm.serverlimit.connectionscheduler" type="string" />
-			<preference id="dtaexposeinua" name="extensions.dtm.exposeInUA" type="bool" />
-			<preference id="dtasettime" name="extensions.dtm.settime" type="bool" />
-			<preference id="dtarememberoneclick" name="extensions.dtm.rememberoneclick" type="bool" />
-			<preference id="dtaconfirmremove" name="extensions.dtm.confirmremove" type="bool" />
-			<preference id="dtasparsefiles" name="extensions.dtm.sparsefiles" type="bool" />
-			<preference id="dtaautosegments" name="extensions.dtm.autosegments" type="bool" />
+			<preference id="dtmmaxchunks" name="extensions.dtm.maxchunks" type="int" />
+			<preference id="dtmtemporary" name="extensions.dtm.saveTemp" type="bool" />
+			<preference id="dtmtimeout" name="extensions.dtm.timeout" type="int" />
+			<preference id="dtmtemplocation" name="extensions.dtm.tempLocation" type="unichar" />
+			<preference id="dtmpermissions" name="extensions.dtm.permissions" type="int" />
+			<preference id="dtmloadendfirst" name="extensions.dtm.loadendfirst" type="int" />
+			<preference id="dtmscheduler" name="extensions.dtm.serverlimit.connectionscheduler" type="string" />
+			<preference id="dtmexposeinua" name="extensions.dtm.exposeInUA" type="bool" />
+			<preference id="dtmsettime" name="extensions.dtm.settime" type="bool" />
+			<preference id="dtmrememberoneclick" name="extensions.dtm.rememberoneclick" type="bool" />
+			<preference id="dtmconfirmremove" name="extensions.dtm.confirmremove" type="bool" />
+			<preference id="dtmsparsefiles" name="extensions.dtm.sparsefiles" type="bool" />
+			<preference id="dtmautosegments" name="extensions.dtm.autosegments" type="bool" />
 		</preferences>
 
 		<tabbox>
@@ -54,11 +54,11 @@
 									<label id="maxchunkslabel" style="min-width: 6em;" />
 								</hbox>
 							</row>
-							<checkbox label="&advancedpane.autosegments.label;" preference="dtaautosegments" />
+							<checkbox label="&advancedpane.autosegments.label;" preference="dtmautosegments" />
 							<row align="center">
 								<label value="&advancedpane.timeout2.label;" />
 								<hbox align="center">
-									<menulist preference="dtatimeout">
+									<menulist preference="dtmtimeout">
 										<menupopup>
 											<menuitem id="t0" value="10" label="10 &advancedpane.seconds;" />
 											<menuitem id="t1" value="30" label="30 &advancedpane.seconds;" />
@@ -80,7 +80,7 @@
 									<label id="loadendfirstlabel" style="min-width: 6em;" />
 								</hbox>
 							</row>
-							<checkbox style="max-width: 44em;" label="&mainpane.settime.label;" preference="dtasettime" />
+							<checkbox style="max-width: 44em;" label="&mainpane.settime.label;" preference="dtmsettime" />
 						</rows>
 					</grid>
 				</tabpanel>
@@ -93,7 +93,7 @@
 						<rows>
 							<row align="baseline">
 								<label value="&advancedpane.scheduler.caption;" />
-								<menulist preference="dtascheduler" flex="1" crop="center">
+								<menulist preference="dtmscheduler" flex="1" crop="center">
 									<menupopup>
 										<menuitem label="&advancedpane.scheduler.fast;" value="fast" />
 										<menuitem label="&advancedpane.scheduler.fair;" value="fair" />
@@ -102,31 +102,31 @@
 								</menulist>
 							</row>
 							<separator class="thin" />
-							<checkbox label="&mainpane.confirmremove2.label;" preference="dtaconfirmremove" />
+							<checkbox label="&mainpane.confirmremove2.label;" preference="dtmconfirmremove" />
 							<separator class="thin" />
-							<checkbox label="&advancedpane.exposeinua.label;" preference="dtaexposeinua" />
-							<checkbox label="&mainpane.rememberoneclick.label;" preference="dtarememberoneclick" />
+							<checkbox label="&advancedpane.exposeinua.label;" preference="dtmexposeinua" />
+							<checkbox label="&mainpane.rememberoneclick.label;" preference="dtmrememberoneclick" />
 						</rows>
 					</grid>
 				</tabpanel>
 				<tabpanel orient="vertical">
 					<groupbox tooltiptext="&advancedpane.sparsefiles.tooltip;">
 						<caption label="&advancedpane.sparsefiles.caption;"/>
-						<checkbox label="&advancedpane.sparsefiles.label;" preference="dtasparsefiles"/>
+						<checkbox label="&advancedpane.sparsefiles.label;" preference="dtmsparsefiles"/>
 					</groupbox>
 					<vbox pack="start">
 						<groupbox id="advTempFiles">
 							<caption label="&advancedpane.tempfiles.caption;" />
-							<checkbox id="useTemp" label="&advancedpane.usetemp.label;" preference="dtatemporary" oncommand="Advanced.toggleTemp();" />
+							<checkbox id="useTemp" label="&advancedpane.usetemp.label;" preference="dtmtemporary" oncommand="Advanced.toggleTemp();" />
 							<hbox align="center">
 								<label value="&advancedpane.tempdir.label;" />
-								<textbox id="temp" preference="dtatemplocation" flex="1" />
+								<textbox id="temp" preference="dtmtemplocation" flex="1" />
 								<toolbarbutton id="browsedir" oncommand="Advanced.browse();" />
 							</hbox>
 						</groupbox>
 					</vbox>
 					<groupbox id="advPermissions">
-						<caption id="dtaperms" label="&advancedpane.permissions;" />
+						<caption id="dtmperms" label="&advancedpane.permissions;" />
 						<grid>
 							<columns>
 								<column flex="1" />
@@ -136,13 +136,13 @@
 								<row>
 									<vbox>
 										<label value="&advancedpane.permissions.groupmay;" />
-										<checkbox label="&advancedpane.permissions.read;" preference="dtapermissions" onsyncfrompreference="return Advanced.getPerm(0040);" onsynctopreference="return Advanced.setPerm(0040);" />
-										<checkbox label="&advancedpane.permissions.write;" preference="dtapermissions" onsyncfrompreference="return Advanced.getPerm(0020);" onsynctopreference="return Advanced.setPerm(0020);" />
+										<checkbox label="&advancedpane.permissions.read;" preference="dtmpermissions" onsyncfrompreference="return Advanced.getPerm(0040);" onsynctopreference="return Advanced.setPerm(0040);" />
+										<checkbox label="&advancedpane.permissions.write;" preference="dtmpermissions" onsyncfrompreference="return Advanced.getPerm(0020);" onsynctopreference="return Advanced.setPerm(0020);" />
 									</vbox>
 									<vbox>
 										<label value="&advancedpane.permissions.everybodymay;" />
-										<checkbox label="&advancedpane.permissions.read;" preference="dtapermissions" onsyncfrompreference="return Advanced.getPerm(0004);" onsynctopreference="return Advanced.setPerm(0004);" />
-										<checkbox label="&advancedpane.permissions.write;" preference="dtapermissions" onsyncfrompreference="return Advanced.getPerm(0002);" onsynctopreference="return Advanced.setPerm(0002);" />
+										<checkbox label="&advancedpane.permissions.read;" preference="dtmpermissions" onsyncfrompreference="return Advanced.getPerm(0004);" onsynctopreference="return Advanced.setPerm(0004);" />
+										<checkbox label="&advancedpane.permissions.write;" preference="dtmpermissions" onsyncfrompreference="return Advanced.getPerm(0002);" onsynctopreference="return Advanced.setPerm(0002);" />
 									</vbox>
 								</row>
 							</rows>

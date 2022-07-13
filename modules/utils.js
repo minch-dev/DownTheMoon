@@ -18,8 +18,8 @@ exports.NS_XUL = NS_XUL;
 /**
  * DownTheMoon! Properties namespace
  */
-const NS_DTA = 'http://www.downthemall.net/properties#';
-exports.NS_DTA = NS_DTA;
+const NS_DTM = 'http://www.downthemoon.nope/properties#';
+exports.NS_DTM = NS_DTM;
 
 /**
  * XHTML namespace
@@ -539,7 +539,7 @@ class StringBundles {
 		}
 		else {
 			this._strings = _loadBundles(Array.map(
-				documentOrStrings.getElementsByTagNameNS(NS_DTA, 'stringbundle'),
+				documentOrStrings.getElementsByTagNameNS(NS_DTM, 'stringbundle'),
 				e => e.getAttribute('src')
 			).concat(
 				Array.map(
@@ -652,7 +652,7 @@ exports.reveal = function reveal(file) {
 /**
  * Convert metalink priorities to start from 1 and give more weitage to ones with lower prioroty,
  * to dtm preferences
- * @param array of DTA.URL
+ * @param array of DTM.URL
  */
 exports.normalizeMetaPrefs = function(urls) {
 	if (!urls || !urls.length) {

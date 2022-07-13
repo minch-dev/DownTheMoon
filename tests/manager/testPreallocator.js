@@ -8,7 +8,7 @@ module("manager/preallocator.js");
 	function _do_test(title, impl, size, sparse) {
 		setTimeout(function() {
 			var allocStart = Date.now();
-			var file = FileUtils.getFile("TmpD", ["dta_prealloc_test" + title + ".tmp"]);
+			var file = FileUtils.getFile("TmpD", ["dtm_prealloc_test" + title + ".tmp"]);
 
 			var cb = function callback(result) {
 				var allocEnd = Date.now();

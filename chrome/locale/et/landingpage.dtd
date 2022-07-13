@@ -11,11 +11,11 @@
 <!ENTITY amo.description.intro "DownTheMoon! on kõik, mida allalaadimiste haldurilt oodata: sellel on võimas kiirendi, mis suurendab kiirust kuni 4x ning see võimaldab allalaadimisi igal ajal peatada ja jätkata.">
 <!ENTITY amo.description.feat2 "DownTheMoon on kiire, usaldusväärne ja lihtsalt kasutatav! See võimaldab sul alla laadida kõiki veebilehel olevaid linke või pilte ja palju muud: sa saad oma allalaadimised määrata täielikult kohandatavate kriteeriumite abil, saamaks ainult seda, mida sa tegelikult tahad. Saa oma allalaadimiste üle täielik kontroll, pühendatud kiirus ja samaaegsete ühenduste võimalus igal ajal. Faili samaaegselt mitmest serverist korraga allalaadimiseks saad kasutada metalinke või lisada peeglid käsitsi.">
 <!ENTITY amo.description.free2 "DownTheMoon on avatud lähtekoodiga ja tasuta tarkvara. Ei mingeid reklaame, nuhkvara, jälitamist ega kulutusi!">
-<!ENTITY amo.description.more "Lähema teabe saamiseks külasta meie <a href='http://www.downthemall.net/howto/features/'>Võimaluste lehte</a>.">
+<!ENTITY amo.description.more "Lähema teabe saamiseks külasta meie <a href='http://www.downthemoon.nope/howto/features/'>Võimaluste lehte</a>.">
 <!ENTITY lp.title "Teave DownTheMoon!-i kohta">
 <!ENTITY lp.welcome "Tere tulemast kasutama DownTheMoon!-i">
 <!ENTITY lp.info "Vaata videosid, mis näitavad, kuidas DownTheMoon!-i kasutada ning loe privaatsuse ja oma õiguste kohta">
-<!ENTITY lp.moreinfo "Lähema teabe saamiseks külasta meie <a href='http://www.downthemall.net/howto/features/'>võimaluste lehte</a>.">
+<!ENTITY lp.moreinfo "Lähema teabe saamiseks külasta meie <a href='http://www.downthemoon.nope/howto/features/'>võimaluste lehte</a>.">
 <!ENTITY lp.gettingstarted "Alustamine">
 <!ENTITY lp.toolbar "Tööriistariba nupud">
 <!ENTITY lp.privacy "Privaatsus">
@@ -54,9 +54,9 @@
 <!ENTITY lp.tb.add.title "Tööriistariba nuppude lisamine ja kasutamine">
 <!ENTITY lp.tb.add.p1 "DownTheMoon!-il on neli tööriistariba nuppu, mis teevad allalaadimiste leidmise ja järjekorda panemise lihtsamaks">
 <!ENTITY lp.tb.add.dtm "Nupp DownTheMoon!">
-<!ENTITY lp.tb.add.dtadesc "Avab DownTheMoon! valiku tegemise akna praeguse kaardi jaoks.">
-<!ENTITY lp.tb.add.tdta "Nupp OneClick!">
-<!ENTITY lp.tb.add.tdtadesc "Laadib alla kõik praegusel lehel olevad üksused, rakendades viimati kasutatud eelistusi ja filtreid.">
+<!ENTITY lp.tb.add.dtmdesc "Avab DownTheMoon! valiku tegemise akna praeguse kaardi jaoks.">
+<!ENTITY lp.tb.add.tdtm "Nupp OneClick!">
+<!ENTITY lp.tb.add.tdtmdesc "Laadib alla kõik praegusel lehel olevad üksused, rakendades viimati kasutatud eelistusi ja filtreid.">
 <!ENTITY lp.tb.add.manager "Nupp DownTheMoon! Haldur">
 <!ENTITY lp.tb.add.managerdesc "Avab halduri akna.">
 <!ENTITY lp.tb.add.selector "Nupp DownTheMoon! Valija">
@@ -72,9 +72,9 @@
 <!ENTITY lp.pr.title "Privaatsusavaldus">
 <!ENTITY lp.pr.intro2 "DownTheMoon austab sinu privaatsust.">
 <!ENTITY lp.pr.settings2 "Sa saad lasta DownTheMoon!-il pärast akna sulgemist kustutada allalaadimiste loendist kõik valmis, tühistatud ja pooleliolevad allalaadimised, muutes sätteid paneelil Eelistused → Privaatsus.">
-<!ENTITY lp.pr.diag2 "Sa saad lubada diagnostilised teated, mis logitakse nii vigade konsoolile kui ka kirjutatakse faili dta_log.txt, paneelil Eelistused → Pivaatsus. Diagnostilised teated sisaldavad tõenäoliselt tundlikke andmeid nagu URL-id, failide teed, allalaaditavate failide nimed või isegi küpsiste andmed. Sinu privaatsuse kaitsmiseks on see valik vaikimisi VÄLJA LÜLITATUD. Diagnostilise logi saatmisel võid enne tahta sellest kõik tundlikud andmed eemaldada. Diagnostilisi logisid ei saadeta ega avalikustata kunagi automaatselt.">
+<!ENTITY lp.pr.diag2 "Sa saad lubada diagnostilised teated, mis logitakse nii vigade konsoolile kui ka kirjutatakse faili dtm_log.txt, paneelil Eelistused → Pivaatsus. Diagnostilised teated sisaldavad tõenäoliselt tundlikke andmeid nagu URL-id, failide teed, allalaaditavate failide nimed või isegi küpsiste andmed. Sinu privaatsuse kaitsmiseks on see valik vaikimisi VÄLJA LÜLITATUD. Diagnostilise logi saatmisel võid enne tahta sellest kõik tundlikud andmed eemaldada. Diagnostilisi logisid ei saadeta ega avalikustata kunagi automaatselt.">
 <!ENTITY lp.pr.pwpbm "DownTheMoon! toetab Firefoxi aknapõhist privaatse veebilehitsemise režiimi: privaatse veebilehitsemise aknas allalaadimisi lisades ei talleta DownTheMoon! mingit teavet allalaaditavate failide, allalaadimiste kaustade ega kasutatud nimemuutmismaskide kohta. Palun pane tähele, et muud andmed - nagu värskelt loodud filtrid või, muidugi, tegelikud allalaaditud failid - kirjutatakse su arvuti kettale ikkagi.">
-<!ENTITY lp.pr.link "See teade on alati kättesaadav sellelt lehelt (about:downthemall) ja lisaks on sellele lingitud Eelistuste aknas.">
+<!ENTITY lp.pr.link "See teade on alati kättesaadav sellelt lehelt (about:downthemoon) ja lisaks on sellele lingitud Eelistuste aknas.">
 <!ENTITY lp.yr.usagetitle "Kasutamine ja taaslevitamine">
 <!ENTITY lp.yr.usage "Autorid litsentsivad DownTheMoon!-i sulle selliselt, et sa võid vabalt:">
 <!ENTITY lp.yr.usageuse "DownTheMoon!-i kasutada">
@@ -86,7 +86,7 @@
 <!ENTITY lp.language.babelzilla "Kui oskad mitut keelt, palun kaalu liitumist lehega <a href='http://babelzilla.org'>babelzilla.org</a>, et aidata tõlkida seda ja palju muid suurepäraseid lisasid.">
 <!ENTITY lp.yr.licensetitle "Autoriõigus ja Litsents">
 <!ENTITY lp.yr.licensed "DownTheMoon! on litsentsitud litsentsi <a href='http://www.gnu.org/licenses/old-licenses/gpl-2.0.html'>GPL 2.0</a> alusel. Vaata GPL faili. See käib kõigi lähtekoodifailide kohta.">
-<!ENTITY lp.yr.morelicense3 "Üksikutel failidel võib olla erinev ja/või lisalitsents. Vaata vastavaid hoidla faile aadressil <a href='http://code.downthemall.net/repos/'>http://code.downthemall.net/repos/</a>. Enamus faile on litsentsitud litsentsi GPL/LGPL-ühilduv MPL 2.0 või on kolmik-litsentsitud litsentside MPL 1.1/GPL 2.0/LGPL 2.1 alusel. Vaata vastavaid faile MPL, GPL, LGPL.">
+<!ENTITY lp.yr.morelicense3 "Üksikutel failidel võib olla erinev ja/või lisalitsents. Vaata vastavaid hoidla faile aadressil <a href='http://code.downthemoon.nope/repos/'>http://code.downthemoon.nope/repos/</a>. Enamus faile on litsentsitud litsentsi GPL/LGPL-ühilduv MPL 2.0 või on kolmik-litsentsitud litsentside MPL 1.1/GPL 2.0/LGPL 2.1 alusel. Vaata vastavaid faile MPL, GPL, LGPL.">
 <!ENTITY lp.yr.gplintro "Kõige tähtsamad sektsioonid GPL 2.0-st, garantii puudus ja kahjudest lahtiütlemine, on järgmised:">
 <!ENTITY lp.yr.icons "Joonistused, ikoonid ja nupud">
 <!ENTITY lp.yr.iconsbased4 "põhinevad nende töödel: Mike Matas, Mark James, Noun Project ja Tango projekt">
@@ -95,7 +95,7 @@
 <!ENTITY lp.yr.logo3 "DownTheMoon! logo disain: Copyright © 2004-2013 Stefano Verna.">
 <!ENTITY lp.yr.logopermissions "DownTheMoon! nime ja logo ei tohi loata kasutada üheski tuletuslikus töös, välja arvatud tunnustused ja litsentsiga seotud teatised.">
 <!ENTITY lp.ct.bugstitle "Vigadest teatamine / Funktsioonide taotlused">
-<!ENTITY lp.ct.bugs2 "Palun teavita igast veast ja funktsiooni taotlusest meie <a href='https://bugs.downthemall.net/'>vigade jälitaja</a> kaudu.">
+<!ENTITY lp.ct.bugs2 "Palun teavita igast veast ja funktsiooni taotlusest meie <a href='https://bugs.downthemoon.nope/'>vigade jälitaja</a> kaudu.">
 <!ENTITY lp.ct.contactstitle "Kontaktandmed">
 <!ENTITY lp.ct.contactsfeed2 "Me oleme väga tänulikud iga tagasiside, soovituse ja/või abipakkumise eest.">
-<!ENTITY lp.ct.contacts "Palun vaata meie <a href='http://www.downthemall.net/main/contacts/'>kontaktide lehte</a> veebis.">
+<!ENTITY lp.ct.contacts "Palun vaata meie <a href='http://www.downthemoon.nope/main/contacts/'>kontaktide lehte</a> veebis.">

@@ -7,7 +7,7 @@ const Preferences = require("preferences");
 const Version = require("version");
 const {defer} = require("support/defer");
 const Mediator = require("support/mediator");
-const DTA = require("api");
+const DTM = require("api");
 const Utils = require("utils");
 const obs = require("support/observers");
 
@@ -23,21 +23,21 @@ if (!("hasTests" in exports)) {
  * AboutModule
  */
 const ABOUT_URI =
-	'https://about.downthemall.net/%BASE_VERSION%/?locale=%LOCALE%&app=%APP_ID%&version=%APP_VERSION%&os=%OS%';
+	'https://about.downthemoon.nope/%BASE_VERSION%/?locale=%LOCALE%&app=%APP_ID%&version=%APP_VERSION%&os=%OS%';
 
 function AboutModule() {
 }
 AboutModule.prototype = Object.freeze({
 	classDescription: "DownTheMoon! about module",
 	classID: Components.ID('{bbaedbd9-9567-4d11-9255-0bbae236ecab}'),
-	contractID: '@mozilla.org/network/protocol/about;1?what=downthemall',
+	contractID: '@mozilla.org/network/protocol/about;1?what=downthemoon',
 
 	QueryInterface: QI([Ci.nsIAboutModule]),
 
 	newChannel: function(aURI, aLoadInfo) {
 		try {
 			if (!Version.ready) {
-				throw new Exception("Cannot build about:downthemall, version module not ready");
+				throw new Exception("Cannot build about:downthemoon, version module not ready");
 			}
 
 			let ru = ABOUT_URI.replace(
@@ -185,7 +185,7 @@ MetalinkInterceptModule.prototype = Object.freeze({
 						log(LOG_DEBUG, res.downloads);
 						if (res.downloads.length) {
 							log(LOG_DEBUG, "going");
-							DTA.sendLinksToManager(window, res.info.start, res.downloads);
+							DTM.sendLinksToManager(window, res.info.start, res.downloads);
 						}
 					}
 				);
@@ -268,7 +268,7 @@ exports.clean = function clean() {
 	// Cleaning files
 	try {
 		let prof = Services.dirsvc.get("ProfD", Ci.nsIFile);
-		for (let e of ['dta_history.xml']) {
+		for (let e of ['dtm_history.xml']) {
 			try {
 				var file = prof.clone();
 				file.append(e);
@@ -390,7 +390,7 @@ function registerOverlays() {
 					li.splice(idx, 0, id);
 				}
 				tb.currentSet = li.join(",");
-				persist(tb, "downthemall-currentset");
+				persist(tb, "downthemoon-currentset");
 				log(LOG_DEBUG, insertIds + " buttons restored in " + tb.id);
 			}
 
@@ -408,8 +408,8 @@ function registerOverlays() {
 		function maybeInsertButtons(ids) {
 			function processToolbar(tb) {
 				unloadWindow(tb.ownerDocument.defaultView, function() {
-					tb.setAttribute("downthemall-currentset", tb.currentSet);
-					tb.ownerDocument.persist(tb.id, "downthemall-currentset");
+					tb.setAttribute("downthemoon-currentset", tb.currentSet);
+					tb.ownerDocument.persist(tb.id, "downthemoon-currentset");
 				});
 			}
 
@@ -427,7 +427,7 @@ function registerOverlays() {
 				return;
 			}
 			log(LOG_DEBUG, "running old");
-			for (let attr of ["currentset", "downthemall-currentset"]) {
+			for (let attr of ["currentset", "downthemoon-currentset"]) {
 				if (!ids.length) {
 					return;
 				}
@@ -438,7 +438,7 @@ function registerOverlays() {
 			}
 		}
 
-		window.setTimeout(function dta_firewalkswithme() {
+		window.setTimeout(function dtm_firewalkswithme() {
 			try {
 				fire._unloaders = [];
 				fire._runUnloaders = function() {
@@ -458,9 +458,9 @@ function registerOverlays() {
 					fire._unloaders.push(() => elem.removeEventListener(type, fire, false));
 					elem.addEventListener(type, fire, false);
 				};
-				fire.addFireListener($("dtaCtxCompact").parentNode, "popupshowing");
-				fire.addFireListener($("dtaToolsMenu").parentNode, "popupshowing");
-				let appmenu = $("dtaAppMenu");
+				fire.addFireListener($("dtmCtxCompact").parentNode, "popupshowing");
+				fire.addFireListener($("dtmToolsMenu").parentNode, "popupshowing");
+				let appmenu = $("dtmAppMenu");
 				if (appmenu) {
 					fire.addFireListener($("appmenu-popup"), "popupshowing");
 				}
@@ -492,8 +492,8 @@ function registerOverlays() {
 			}
 		}, 100);
 
-		window.setTimeout(function dta_showabout() {
-			function dta_showabout_i() {
+		window.setTimeout(function dtm_showabout() {
+			function dtm_showabout_i() {
 				function openAbout() {
 					fire(null);
 					Version.showAbout = false;
@@ -523,7 +523,7 @@ function registerOverlays() {
 				catch (ex) {
 				}
 			}
-			dta_showabout_i();
+			dtm_showabout_i();
 		}, 2000);
 
 		log(LOG_DEBUG, "running elementsStub");
@@ -532,11 +532,11 @@ function registerOverlays() {
 
 		let frameToLog = m => log(m.data.level, m.data.message, m.data.exception);
 		let fs = "chrome://dtm-modules/content/loaders/integration-content.js?" + (+new Date());
-		window.messageManager.addMessageListener("DTA:log", frameToLog);
+		window.messageManager.addMessageListener("DTM:log", frameToLog);
 		window.messageManager.loadFrameScript(fs, true);
 		unloadWindow(window, () => {
-			window.messageManager.broadcastAsyncMessage("DTA:shutdown");
-			window.messageManager.removeMessageListener("DTA:log", frameToLog);
+			window.messageManager.broadcastAsyncMessage("DTM:shutdown");
+			window.messageManager.removeMessageListener("DTM:log", frameToLog);
 			window.messageManager.removeDelayedFrameScript(fs);
 		});
 	}
@@ -618,7 +618,7 @@ function registerOverlays() {
 			}
 			let msg = Services.strings.createBundle('chrome://dtm/locale/sanitize.properties')
 				.GetStringFromName('sanitizeitem');
-			document.getElementById('dtaSanitizeItem').setAttribute('label', msg);
+			document.getElementById('dtmSanitizeItem').setAttribute('label', msg);
 		});
 }
 

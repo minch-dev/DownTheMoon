@@ -27,14 +27,14 @@
 	<!ENTITY % defmirrorsDTD SYSTEM "chrome://dtm-locale/content/mirrors.dtd">
 	%defmirrorsDTD;
 ]>
-<dialog title="&title;" id="DownTheMoonMirrors" windowtype="DTA:mirrors" flex="1" persist="width height screenX screenY" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<dialog title="&title;" id="DownTheMoonMirrors" windowtype="DTM:mirrors" flex="1" persist="width height screenX screenY" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
 	<script type="application/x-javascript" src="chrome://global/content/globalOverlay.js" />
 	<script type="application/javascript" src="chrome://dtm/content/common/internalFunctions.js" />
 
 	<script type="text/javascript" src="mirrors.js" />
 
-	<stringbundleset id="bundles" xmlns="http://www.downthemall.net/properties#">
+	<stringbundleset id="bundles" xmlns="http://www.downthemoon.nope/properties#">
 		<stringbundle src="chrome://dtm/locale/mirrors.properties" />
 	</stringbundleset>
 

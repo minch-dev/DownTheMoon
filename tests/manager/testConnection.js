@@ -11,7 +11,7 @@ test("exports", function() {
 	var {Connection} = require("manager/connection");
 	const {VisitorManager} = require("manager/visitormanager");
 	const {UrlManager} = require("support/urlmanager");
-	const DTA = require("api");
+	const DTM = require("api");
 	const request = {
 		"User-Agent": "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:16.0) Gecko/16.0 Firefox/16.0",
 		"Referer": "http://example.com",
@@ -21,7 +21,7 @@ test("exports", function() {
 		"Accept-Encoding": "gzip, deflate",
 		"Accept": "text/html,application/xhtml+xml,application/xml,application/metalink," +
 			"application/metalink4+xml;q=0.9,*/*;q=0.8",
-		"Want-Digest": DTA.WANT_DIGEST_STRING
+		"Want-Digest": DTM.WANT_DIGEST_STRING
 	};
 	const range = function(num) {
 		var arr = new Array(num);
@@ -37,7 +37,7 @@ test("exports", function() {
 			download.fileName = visitor.fileName;
 			download.totalSize = visitor.contentLength > 0 ? visitor.contentLength : 0;
 			if (!download.hashCollection && visitor.hash) {
-				download.hashCollection = new DTA.HashCollection(visitor.hash);
+				download.hashCollection = new DTM.HashCollection(visitor.hash);
 			}
 		}
 		if (!download.urlManager) {
@@ -64,8 +64,8 @@ test("exports", function() {
 	test("metalink duplicates real world", function() {
 		var download = getTestDownload();
 		var uri = Services.io.newURI("http://example.com/file", null, null);
-		var hash = new DTA.Hash("2413fb3709b05939f04cf2e92f7d0897fc2596f9ad0b8a9ea855c7bfebaae892", "sha256");
-		download.hashCollection = new DTA.HashCollection(hash);
+		var hash = new DTM.Hash("2413fb3709b05939f04cf2e92f7d0897fc2596f9ad0b8a9ea855c7bfebaae892", "sha256");
+		download.hashCollection = new DTM.HashCollection(hash);
 
 		var chan = createTestHttpChannel({
 			uri: uri,
@@ -106,8 +106,8 @@ test("exports", function() {
 	test("metalink duplicates insecure hash", function() {
 		var download = getTestDownload();
 		var uri = Services.io.newURI("http://example.com/file", null, null);
-		var hash = new DTA.Hash("cccd7f891ff81b30b9152479d2efcda2", "md5");
-		download.hashCollection = new DTA.HashCollection(hash);
+		var hash = new DTM.Hash("cccd7f891ff81b30b9152479d2efcda2", "md5");
+		download.hashCollection = new DTM.HashCollection(hash);
 		download.hashCollection.parLength = 262144;
 		download.partials = range(8).map(() => hash);
 
@@ -133,7 +133,7 @@ test("exports", function() {
 		var download = getTestDownload();
 		var uri = Services.io.newURI(
 			"http://ftp.ad.kernel.org/pub/linux/kernel/v2.6/linux-2.6.16.19.tar.bz2", null, null);
-		var hash = new DTA.Hash("2413fb3709b05939f04cf2e92f7d0897fc2596f9ad0b8a9ea855c7bfebaae892", "sha256");
+		var hash = new DTM.Hash("2413fb3709b05939f04cf2e92f7d0897fc2596f9ad0b8a9ea855c7bfebaae892", "sha256");
 		download.urlManager = new UrlManager([uri]);
 
 		var chan = createTestHttpChannel({
@@ -180,11 +180,11 @@ test("exports", function() {
 	asyncTest("metalink describedby hash merging", function() {
 		var download = getTestDownload();
 		var uri = Services.io.newURI("http://example.com/sha512_hash", null, null);
-		var expHash = new DTA.Hash(
+		var expHash = new DTM.Hash(
 			"cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2" +
 			"b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
 			"sha512");
-		var hash = new DTA.Hash("2413fb3789b05939f04cf2e92f7d0897fc2596f9ad0b8a9ea855c7bfebaae892", "sha256");
+		var hash = new DTM.Hash("2413fb3789b05939f04cf2e92f7d0897fc2596f9ad0b8a9ea855c7bfebaae892", "sha256");
 		download.urlManager = new UrlManager([uri]);
 
 		var chan = createTestHttpChannel({
@@ -220,7 +220,7 @@ test("exports", function() {
 	asyncTest("metalink describedby unsafe protocol switching without a safe hash", function() {
 		var download = getTestDownload();
 		var uri = Services.io.newURI("https://example.com/file1", null, null);
-		var hash = new DTA.Hash("cccd7f891ff81b30b9152479d2efcda2", "md5");
+		var hash = new DTM.Hash("cccd7f891ff81b30b9152479d2efcda2", "md5");
 		download.urlManager = new UrlManager([uri]);
 
 		var chan = createTestHttpChannel({
@@ -245,7 +245,7 @@ test("exports", function() {
 	asyncTest("metalink describedby host switching without a safe hash", function() {
 		var download = getTestDownload();
 		var uri = Services.io.newURI("https://example.com/file1", null, null);
-		var hash = new DTA.Hash("cccd7f891ff81b30b9152479d2efcda2", "md5");
+		var hash = new DTM.Hash("cccd7f891ff81b30b9152479d2efcda2", "md5");
 		download.urlManager = new UrlManager([uri]);
 
 		var chan = createTestHttpChannel({
@@ -270,7 +270,7 @@ test("exports", function() {
 	asyncTest("ambiguous metalink describedby", function() {
 		var download = getTestDownload();
 		var uri = Services.io.newURI("http://example.com/file", null, null);
-		var hash = new DTA.Hash("2413fb3709b05939f04cf2e92f7d0897fc2596f9ad0b8a9ea855c7bfebaae892", "sha256");
+		var hash = new DTM.Hash("2413fb3709b05939f04cf2e92f7d0897fc2596f9ad0b8a9ea855c7bfebaae892", "sha256");
 		download.urlManager = new UrlManager([uri]);
 
 		var chan = createTestHttpChannel({
@@ -298,7 +298,7 @@ test("exports", function() {
 		var download = getTestDownload();
 		var uri = Services.io.newURI(
 			"http://ftp.ad.kernel.org/pub/linux/kernel/v2.6/linux-2.6.16.19.tar.bz2", null, null);
-		var hash = new DTA.Hash("2413fb3709b05939f04cf2e92f7d0897fc2596f9ad0b8a9ea855c7bfebaae892", "sha256");
+		var hash = new DTM.Hash("2413fb3709b05939f04cf2e92f7d0897fc2596f9ad0b8a9ea855c7bfebaae892", "sha256");
 		download.urlManager = new UrlManager([uri]);
 
 		var chan = createTestHttpChannel({
@@ -324,7 +324,7 @@ test("exports", function() {
 	asyncTest("metalink describedby with conflicting hash", function() {
 		var download = getTestDownload();
 		var uri = Services.io.newURI("http://example.com/sha256_hash", null, null);
-		var hash = new DTA.Hash("3413fb3709b05939f04cf2e92f7d0897fc2596f9ad0b8a9ea855c7bfebaae892", "sha256");
+		var hash = new DTM.Hash("3413fb3709b05939f04cf2e92f7d0897fc2596f9ad0b8a9ea855c7bfebaae892", "sha256");
 		download.urlManager = new UrlManager([uri]);
 
 		var chan = createTestHttpChannel({

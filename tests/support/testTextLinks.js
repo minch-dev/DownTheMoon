@@ -8,9 +8,9 @@ test("exports", function() {
 
 test("regular", function() {
 	var {getTextLinks} = require("support/textlinks");
-	deepEqual(getTextLinks("http://downthemall.net/"), ["http://downthemall.net/"]);
-	deepEqual(getTextLinks("https://downthemall.net/"), ["https://downthemall.net/"]);
-	deepEqual(getTextLinks("ftp://downthemall.net/"), ["ftp://downthemall.net/"]);
+	deepEqual(getTextLinks("http://downthemoon.nope/"), ["http://downthemoon.nope/"]);
+	deepEqual(getTextLinks("https://downthemoon.nope/"), ["https://downthemoon.nope/"]);
+	deepEqual(getTextLinks("ftp://downthemoon.nope/"), ["ftp://downthemoon.nope/"]);
 	deepEqual(getTextLinks("http://localhost/"), ["http://localhost/"]);
 	deepEqual(getTextLinks("ftp://localhost/"), ["ftp://localhost/"]);
 	deepEqual(getTextLinks("http://127.0.0.1/"), ["http://127.0.0.1/"]);
@@ -20,17 +20,17 @@ test("regular", function() {
 
 test("www", function() {
 	var {getTextLinks} = require("support/textlinks");
-	deepEqual(getTextLinks("www.downthemall.net"), ["http://www.downthemall.net/"]);
-	deepEqual(getTextLinks("downthemall.net/"), []);
+	deepEqual(getTextLinks("www.downthemoon.nope"), ["http://www.downthemoon.nope/"]);
+	deepEqual(getTextLinks("downthemoon.nope/"), []);
 });
 
 test("hxp", function() {
 	var {getTextLinks} = require("support/textlinks");
-	deepEqual(getTextLinks("hp://downthemall.net/"), ["http://downthemall.net/"]);
-	deepEqual(getTextLinks("hxp://downthemall.net/"), ["http://downthemall.net/"]);
-	deepEqual(getTextLinks("hxxp://downthemall.net/"), ["http://downthemall.net/"]);
-	deepEqual(getTextLinks("hxxxps://downthemall.net/"), ["https://downthemall.net/"]);
-	deepEqual(getTextLinks("fxp://downthemall.net/"), ["ftp://downthemall.net/"]);
+	deepEqual(getTextLinks("hp://downthemoon.nope/"), ["http://downthemoon.nope/"]);
+	deepEqual(getTextLinks("hxp://downthemoon.nope/"), ["http://downthemoon.nope/"]);
+	deepEqual(getTextLinks("hxxp://downthemoon.nope/"), ["http://downthemoon.nope/"]);
+	deepEqual(getTextLinks("hxxxps://downthemoon.nope/"), ["https://downthemoon.nope/"]);
+	deepEqual(getTextLinks("fxp://downthemoon.nope/"), ["ftp://downthemoon.nope/"]);
 });
 
 test("$", function() {
@@ -43,22 +43,22 @@ test("$", function() {
 
 test("3dots", function() {
 	var {getTextLinks} = require("support/textlinks");
-	deepEqual(getTextLinks("http://downthemall.net/crop...ped"), []);
-	deepEqual(getTextLinks("http://downthemall.net/crop.....ped"), []);
+	deepEqual(getTextLinks("http://downthemoon.nope/crop...ped"), []);
+	deepEqual(getTextLinks("http://downthemoon.nope/crop.....ped"), []);
 });
 
 test("sanitize", function() {
 	var {getTextLinks} = require("support/textlinks");
-	deepEqual(getTextLinks("<http://downthemall.net/>"), ["http://downthemall.net/"]);
-	deepEqual(getTextLinks("http://downthemall.net/#foo"), ["http://downthemall.net/"]);
-	deepEqual(getTextLinks("<http://downthemall.net/#foo>"), ["http://downthemall.net/"]);
+	deepEqual(getTextLinks("<http://downthemoon.nope/>"), ["http://downthemoon.nope/"]);
+	deepEqual(getTextLinks("http://downthemoon.nope/#foo"), ["http://downthemoon.nope/"]);
+	deepEqual(getTextLinks("<http://downthemoon.nope/#foo>"), ["http://downthemoon.nope/"]);
 });
 
 test("FakeLink", function() {
 	var {FakeLink} = require("support/textlinks");
-	var l = new FakeLink("http://downthemall.net/");
-	equal(l.href, "http://downthemall.net/", "href");
-	equal(l.toString(), "http://downthemall.net/", "toString");
+	var l = new FakeLink("http://downthemoon.nope/");
+	equal(l.href, "http://downthemoon.nope/", "href");
+	equal(l.toString(), "http://downthemoon.nope/", "toString");
 	strictEqual(l.title, undefined, "title1");
 	deepEqual(l.childNodes, [], "childNodes");
 	equal(typeof l.hasAttribute, "function", "hasAttribute");
@@ -69,7 +69,7 @@ test("FakeLink", function() {
 	equal(typeof l.getAttribute, "function", "hasAttribute");
 	equal(l.getAttribute("href"), l.href, "getAttribute href");
 
-	l = new FakeLink("http://downthemall.net/", "title");
+	l = new FakeLink("http://downthemoon.nope/", "title");
 	equal(l.hasAttribute("title"), true, "hasAttribute title2");
 	equal(l.getAttribute("title"), l.title, "getAttribute title");
 });

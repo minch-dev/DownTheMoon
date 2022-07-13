@@ -20,19 +20,19 @@
 	<prefpane id="panePrivacy" label="&privacypane.label;"
 		onpaneload="Privacy.load();" orient="vertical">
 		<preferences>
-			<preference id="dtarmcomp" name="extensions.dtm.removecompleted"
+			<preference id="dtmrmcomp" name="extensions.dtm.removecompleted"
 				type="bool" />
-			<preference id="dtarmcanc" name="extensions.dtm.removecanceled"
+			<preference id="dtmrmcanc" name="extensions.dtm.removecanceled"
 				type="bool" />
-			<preference id="dtarmabort" name="extensions.dtm.removeaborted"
+			<preference id="dtmrmabort" name="extensions.dtm.removeaborted"
 				type="bool" />
-			<preference id="dtadonation" name="extensions.dtm.infophrases"
+			<preference id="dtmdonation" name="extensions.dtm.infophrases"
 				type="bool" />
-			<preference id="dtastatistics" name="extensions.dtm.statistics"
+			<preference id="dtmstatistics" name="extensions.dtm.statistics"
 				type="bool" />
-			<preference id="dtadump" name="extensions.dtm.logging"
+			<preference id="dtmdump" name="extensions.dtm.logging"
 				type="bool" />
-			<preference id="dtahistory" name="extensions.dtm.history"
+			<preference id="dtmhistory" name="extensions.dtm.history"
 				type="int" />
 		</preferences>
 
@@ -46,15 +46,15 @@
 					<groupbox>
 						<caption id="closing" label="&privacypane.closing.caption;" />
 						<checkbox id="removecompleted" label="&privacypane.removecompleted2.label;"
-							preference="dtarmcomp" />
+							preference="dtmrmcomp" />
 						<checkbox id="removecanceled" label="&privacypane.removecanceled2.label;"
-							preference="dtarmcanc" />
+							preference="dtmrmcanc" />
 						<checkbox id="removeaborted" label="&privacypane.removeaborted2.label;"
-							preference="dtarmabort" />
+							preference="dtmrmabort" />
 					</groupbox>
 
 					<groupbox>
-						<caption id="dtaddown" label="&privacypane.dropdowns.caption;" />
+						<caption id="dtmddown" label="&privacypane.dropdowns.caption;" />
 						<vbox flex="1" align="center">
 							<label value="&privacypane.dropdownresults2.label;" flex="1"
 								control="history" />
@@ -76,7 +76,7 @@
 		</grid>
 		<groupbox orient="vertical">
 			<caption label="&privacypane.logs.caption;" />
-			<checkbox label="&privacypane.enablelogs.label;" preference="dtadump" />
+			<checkbox label="&privacypane.enablelogs.label;" preference="dtmdump" />
 			<spacer flex="1" />
 			<hbox class="clears">
 				<button id="butShowLog" label="&privacypane.showlog.label;"

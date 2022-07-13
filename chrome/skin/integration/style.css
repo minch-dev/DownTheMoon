@@ -1,16 +1,16 @@
 @import 'chrome://dtm/skin/toolbarbuttons/buttons.css';
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
-#notification-popup-box[anchorid="downthemall-notification-icon"] > #downthemall-notification-icon {
+#notification-popup-box[anchorid="downthemoon-notification-icon"] > #downthemoon-notification-icon {
 	display: -moz-box;
 }
-#downthemall-notification-icon {
+#downthemoon-notification-icon {
 	list-style-image: url(chrome://dtm/skin/toolbarbuttons/buttons16.png);
 	-moz-image-region: rect(0px,64px,16px,48px);
 }
 
-.popup-notification-icon[popupid="downthemall"] {
-	list-style-image: url(chrome://dtaicon/content/icon64.png);
+.popup-notification-icon[popupid="downthemoon"] {
+	list-style-image: url(chrome://dtmicon/content/icon64.png);
 }
 
 /* menus */

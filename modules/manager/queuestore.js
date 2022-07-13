@@ -3,7 +3,7 @@
  * You can obtain one at http://mozilla.org/MPL/2.0/ */
 "use strict";
 
-const DB_OLD_FILE = 'dta_queue.sqlite';
+const DB_OLD_FILE = 'dtm_queue.sqlite';
 const DB_FILE = "queue.sqlite";
 const DB_FILE_BROKEN = 'queue.broken';
 const DB_FILE_BAK = DB_FILE + ".bak";
@@ -100,7 +100,7 @@ const QueueStore = {
 		}
 
 		// give manager a chance to save running
-		obs.notifyLocal(null, 'DTA:shutdownQueueStore', null);
+		obs.notifyLocal(null, 'DTM:shutdownQueueStore', null);
 
 		this._initialized = false;
 		// finish any pending operations
@@ -129,7 +129,7 @@ const QueueStore = {
 			log(LOG_ERROR, "QueueStore: Cannot remove DB", ex);
 		}
 		this.init();
-		Services.storage.notifyObservers(null, 'DTA:clearedQueueStore', null);
+		Services.storage.notifyObservers(null, 'DTM:clearedQueueStore', null);
 	},
 	observe: function(s,topic,d) {
 		if (topic === "profile-change-teardown") {
@@ -350,7 +350,7 @@ function VacuumParticipant() {}
 VacuumParticipant.prototype = Object.freeze({
 	classDescription: "DownTheMoon! QueueStore Vacuum Participant",
 	classID: Components.ID("{c2f27651-9db2-438a-bcc7-f9e9bb2e3393}"),
-	contractID: "@downthemall.net/vacuum-participant;1",
+	contractID: "@downthemoon.nope/vacuum-participant;1",
 	xpcom_categories: ["vacuum-participant"],
 	QueryInterface: QI([Ci.mozIStorageVacuumParticipant]),
 

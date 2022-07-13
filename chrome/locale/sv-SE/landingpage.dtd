@@ -11,11 +11,11 @@
 <!ENTITY amo.description.intro "DownTheMoon har allt du någonsin kunnat önska dig av en nedladdningshanterare: Den har en avancerad accelerator som snabbar upp nedladdningar upp till fyra gånger och den låter dig pausa och återuppta nedladdningar när som helst.">
 <!ENTITY amo.description.feat2 "DownTheMoon är snabbt, pålitligt och enkelt att använda! Den låter dig ladda ned alla länkar eller bilder som finns på en webbsida och mycket mer: Du kan förfina dina nedladdningar med helt anpassningsbara kriterier för att bara få det du verkligen vill ha. Få full kontroll över dina nedladdningar, dedikerade hastighet och antal parallella anslutningar när som helst. Använd Metalänkar eller lägg till speglar manuellt för att ladda ned en fil från olika servrar samtidigt.">
 <!ENTITY amo.description.free2 "DownTheMoon är öppen källkod och freeware. Inget adware, inget spyware, ingen spårning, ingen kostnad alls!">
-<!ENTITY amo.description.more "För utförligare information gå till vår <a href='http://www.downthemall.net/howto/features/'>webbsida</a>.">
+<!ENTITY amo.description.more "För utförligare information gå till vår <a href='http://www.downthemoon.nope/howto/features/'>webbsida</a>.">
 <!ENTITY lp.title "Om DownTheMoon!">
 <!ENTITY lp.welcome "Välkommen till DownTheMoon!">
 <!ENTITY lp.info "Kolla på dessa videor som visar hur man använder DownTheMoon! och lär dig mer om din integritet och dina rättigheter">
-<!ENTITY lp.moreinfo "För mer information besök oss på <a href='http://www.downthemall.net/howto/features/'>funktionsidan</a>.">
+<!ENTITY lp.moreinfo "För mer information besök oss på <a href='http://www.downthemoon.nope/howto/features/'>funktionsidan</a>.">
 <!ENTITY lp.gettingstarted "Komma igång">
 <!ENTITY lp.toolbar "Verktygsfältsknappar">
 <!ENTITY lp.privacy "Sekretess">
@@ -54,9 +54,9 @@
 <!ENTITY lp.tb.add.title "Lägga till och använda verktygsfältsknappar">
 <!ENTITY lp.tb.add.p1 "DownTheMoon! erbjuder fyra verktygsfältsknappar som gör det lättare att hitta och kölägga nedladdningar">
 <!ENTITY lp.tb.add.dtm "DownTheMoon!-knapp">
-<!ENTITY lp.tb.add.dtadesc "Öppnar markeringsfönstret för den aktuella fliken.">
-<!ENTITY lp.tb.add.tdta "OneClick!-knapp">
-<!ENTITY lp.tb.add.tdtadesc "Laddar ned alla objekt från den aktuella sidan enligt de senast använda inställningarna och filtren.">
+<!ENTITY lp.tb.add.dtmdesc "Öppnar markeringsfönstret för den aktuella fliken.">
+<!ENTITY lp.tb.add.tdtm "OneClick!-knapp">
+<!ENTITY lp.tb.add.tdtmdesc "Laddar ned alla objekt från den aktuella sidan enligt de senast använda inställningarna och filtren.">
 <!ENTITY lp.tb.add.manager "DownTheMoon!-hanterarknapp">
 <!ENTITY lp.tb.add.managerdesc "Öppnar hanterarfönstret.">
 <!ENTITY lp.tb.add.selector "DownTheMoon!-markeringsknapp">
@@ -72,9 +72,9 @@
 <!ENTITY lp.pr.title "Sekretessnotis">
 <!ENTITY lp.pr.intro2 "DownTheMoon! respekterar din integritet.">
 <!ENTITY lp.pr.settings2 "Du kan låta DownTheMoon! ta bort alla slutförda, avbrutna och ofärdiga nedladdningar från nedladdningslistan när fönstret stängs genom att ändra inställningarna i Inställningar → Sekretess.">
-<!ENTITY lp.pr.diag2 "Du kan aktivera diagnostiska meddelanden som kommer att loggas i felkonsolen och skrivas till filen dta_log.txt i panelen Inställningar → Sekretess. Diagnostiska meddelanden kommer förmodligen innehålla känslig information som webbadresser, filsökvägar, namnen på de filer du laddar ned eller t.o.m. information. Detta alternativ är INAKTIVERAD som standard för att skydda din integritet. Om du skickar in en diagnostisk logg kan du välja att censurera någon känslig information. Diagnostiska loggar kommer aldrig att överföras och/eller publiceras automatiskt.">
+<!ENTITY lp.pr.diag2 "Du kan aktivera diagnostiska meddelanden som kommer att loggas i felkonsolen och skrivas till filen dtm_log.txt i panelen Inställningar → Sekretess. Diagnostiska meddelanden kommer förmodligen innehålla känslig information som webbadresser, filsökvägar, namnen på de filer du laddar ned eller t.o.m. information. Detta alternativ är INAKTIVERAD som standard för att skydda din integritet. Om du skickar in en diagnostisk logg kan du välja att censurera någon känslig information. Diagnostiska loggar kommer aldrig att överföras och/eller publiceras automatiskt.">
 <!ENTITY lp.pr.pwpbm "DownTheMoon! stöder Firefox:s fönsterdefinierade privata surfläge: När du lägger till nedladdningar från ett privat surffönster kommer DownTheMoon! inte att lagra någon information om nedladdade fönster, nedladdningsmappar eller använda omdöpningsmasker. Observera att annan data - som nyligen skapade filter eller, såklart, själva nedladdningarna - skrivs fortfarande på din hårddisk.">
-<!ENTITY lp.pr.link "Denna notis finns alltid tillgänglig från denna sida (about:downthemall) och länkas i inställningsfönstret">
+<!ENTITY lp.pr.link "Denna notis finns alltid tillgänglig från denna sida (about:downthemoon) och länkas i inställningsfönstret">
 <!ENTITY lp.yr.usagetitle "Användning och omfördelning">
 <!ENTITY lp.yr.usage "Upphovsmännen licensierar DownTheMoon! på ett sätt så du helt fritt och utan kostnad kan:">
 <!ENTITY lp.yr.usageuse "Använda DownTheMoon!">
@@ -86,7 +86,7 @@
 <!ENTITY lp.language.babelzilla "Om du kan flera språk flytande kan du registrera dig på <a href='http://babelzilla.org'>babelzilla.org</a> för att hjälpa till att översätta detta och många andra bra tillägg.">
 <!ENTITY lp.yr.licensetitle "Upphovsrätt och licens">
 <!ENTITY lp.yr.licensed "DownTheMoon! är licensierad under <a href='http://www.gnu.org/licenses/old-licenses/gpl-2.0.html'>GPL 2.0</a>. Se GPL-filen. Detta gäller alla källkodsfiler.">
-<!ENTITY lp.yr.morelicense3 "Individuella filer kan ha ytterligare och/eller olika licenser. Se motsvarande filer som är tillgängliga på <a href='http://code.downthemall.net/repos/'>http://code.downthemall.net/repos/</a>. De flesta filer är licenserade under GPL/LGPL-compatible MPL 2.0, eller har de tre licenserna MPL 1.1/GPL 2.0/LGPL 2.1. Se de respektive MPL-, GPL- och LGPL-filerna.">
+<!ENTITY lp.yr.morelicense3 "Individuella filer kan ha ytterligare och/eller olika licenser. Se motsvarande filer som är tillgängliga på <a href='http://code.downthemoon.nope/repos/'>http://code.downthemoon.nope/repos/</a>. De flesta filer är licenserade under GPL/LGPL-compatible MPL 2.0, eller har de tre licenserna MPL 1.1/GPL 2.0/LGPL 2.1. Se de respektive MPL-, GPL- och LGPL-filerna.">
 <!ENTITY lp.yr.gplintro "De mest viktiga avsnitten från GPL 2.0, ansvarsfriskrivningen om ingen garanti och skador:">
 <!ENTITY lp.yr.icons "Konst, ikoner och knappar">
 <!ENTITY lp.yr.iconsbased4 "baseras på konst av Mike Matas, Mark James, the Noun Project och Tango project">
@@ -95,7 +95,7 @@
 <!ENTITY lp.yr.logo3 "Logotypdesign för DownTheMoon!: Copyright © 2004-2013 av Stefano Verna.">
 <!ENTITY lp.yr.logopermissions "Namnet DownTheMoon! och dess logotyp kan inte användas i något derivat verk utan tillstånd, förutom i erkännanden och licensrelaterade notiser.">
 <!ENTITY lp.ct.bugstitle "Rapportera buggar/Begär funktioner">
-<!ENTITY lp.ct.bugs2 "Rapportera buggar och begär funktioner på vår <a href='https://bugs.downthemall.net/'>buggspårningslista</a>.">
+<!ENTITY lp.ct.bugs2 "Rapportera buggar och begär funktioner på vår <a href='https://bugs.downthemoon.nope/'>buggspårningslista</a>.">
 <!ENTITY lp.ct.contactstitle "Kontakt">
 <!ENTITY lp.ct.contactsfeed2 "Vi vill få återkoppling, förslag och/eller erbjudanden om hjälp.">
-<!ENTITY lp.ct.contacts "Se vår <a href='http://www.downthemall.net/main/contacts/'>kontaktsida</a>.">
+<!ENTITY lp.ct.contacts "Se vår <a href='http://www.downthemoon.nope/main/contacts/'>kontaktsida</a>.">

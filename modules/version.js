@@ -3,11 +3,11 @@
  * You can obtain one at http://mozilla.org/MPL/2.0/ */
 "use strict";
 
-const ID = 'dtm@downthemall.net';
+const ID = 'dtm@downthemoon.nope';
 let _callbacks = [];
 
 Object.defineProperties(exports, {
-	TOPIC_SHOWABOUT: {value: "DTA:showAbout", enumerable: true},
+	TOPIC_SHOWABOUT: {value: "DTM:showAbout", enumerable: true},
 	ID: {value: ID, enumerable: true},
 	LOCALE: {
 		value: Cc["@mozilla.org/chrome/chrome-registry;1"]

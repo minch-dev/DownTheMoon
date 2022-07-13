@@ -15,6 +15,6 @@ test("getAtom", function() {
 	strictEqual(f.getAtom("file.metalink", true).toString(), f.getAtom("file2.metalink", true).toString());
 	strictEqual(f.getAtom("file.meta4", true).toString(), f.getAtom("file2.meta4", true).toString());
 	strictEqual(f.getAtom("file.metalink", true).toString(), f.getAtom("file2.meta4", true).toString());
-	strictEqual(f.getAtom("file.downthemall is dope").toString(), "FileIconunknown");
-	strictEqual(f.getAtom("file.downthemall is dope").toString(), f.getAtom("file.downthemall is doper").toString());
+	strictEqual(f.getAtom("file.downthemoon is dope").toString(), "FileIconunknown");
+	strictEqual(f.getAtom("file.downthemoon is dope").toString(), f.getAtom("file.downthemoon is doper").toString());
 });

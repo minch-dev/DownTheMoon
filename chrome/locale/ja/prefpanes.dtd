@@ -8,9 +8,9 @@
 <!ENTITY filter.images.label "画像フィルター">
 <!ENTITY filter.links.label "リンクフィルター">
 <!ENTITY add.label "新しいフィルターを追加">
-<!ENTITY dtacontext2.label "設定">
+<!ENTITY dtmcontext2.label "設定">
 <!ENTITY buttonlabelextra2 "初期設定に戻す">
-<!ENTITY dtaPreferences.title "DownTheMoon! の設定">
+<!ENTITY dtmPreferences.title "DownTheMoon! の設定">
 <!ENTITY manager "dTm! マネージャー">
 <!ENTITY mainpane.label "一般">
 <!ENTITY mainpane.defaults.caption "デフォルト設定">
@@ -28,7 +28,7 @@
 <!ENTITY mainpane.alertnotifications2.label "デスクトップ通知を表示する">
 <!ENTITY mainpane.alertnone.label "知らせない">
 <!ENTITY mainpane.sounddone.label "すべてのダウンロードの完了を音で知らせる">
-<!ENTITY mainpane.closedta.label "すべてのダウンロードの完了時に DownTheMoon を閉じる">
+<!ENTITY mainpane.closedtm.label "すべてのダウンロードの完了時に DownTheMoon を閉じる">
 <!ENTITY mainpane.settime.label "ファイルのタイムスタンプをサーバーの変更日時かダウンロードリストへの登録日時に設定する">
 <!ENTITY mainpane.rememberoneclick.label "OneClick の設定をすべてのタブで使用するか現在のタブにだけ使用するか記憶する">
 <!ENTITY mainpane.confirmremove2.label "ダウンロードの削除時に確認する">

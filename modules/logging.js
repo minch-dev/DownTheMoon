@@ -61,7 +61,7 @@ function prepareStack(stack) {
 
 lazy(global, "file", function() {
 	let file = Services.dirsvc.get("ProfD", Ci.nsIFile);
-	file.append("downthemall.net");
+	file.append("downthemoon.nope");
 	file.append('log.txt');
 	if (file.exists() && file.fileSize > (256 * 1024)) {
 		try {

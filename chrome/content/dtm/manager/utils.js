@@ -52,7 +52,7 @@ try {
 
 		let _oc = Dialog.onclose;
 		Dialog.onclose = function(evt) {
-			if (self.prefs.getExt("downthemall", false) &&
+			if (self.prefs.getExt("downthemoon", false) &&
 				(self.prefs.getExt("minimizeon", 1) & (1<<1))) {
 				evt.preventDefault();
 				return false;
@@ -67,11 +67,11 @@ try {
 		removeEventListener("load", tray_init, false);
 
 		if (gMinTrayR.MinTrayR.length === 3) {
-			gMinTrayR = new gMinTrayR.MinTrayR($("traymenu"), "downthemall.watchmanager", init);
+			gMinTrayR = new gMinTrayR.MinTrayR($("traymenu"), "downthemoon.watchmanager", init);
 		}
 		else {
 			gMinTrayR = new (function() {
-				gMinTrayR.MinTrayR.call(this, $("traymenu"), "downthemall.watchmanager");
+				gMinTrayR.MinTrayR.call(this, $("traymenu"), "downthemoon.watchmanager");
 				init.call(this);
 			})();
 		}
@@ -88,7 +88,7 @@ var Prefs = {
 		['removeCompleted', true],
 		['removeAborted', false],
 		['removeCanceled', false],
-		['autoClose', 'closedta', false],
+		['autoClose', 'closedtm', false],
 		['timeout', 300],
 		['maxInProgress', 'ntask', 4],
 		['maxChunks', 4],
@@ -191,10 +191,10 @@ var Prefs = {
 		}
 
 		if (Preferences.getExt('exposeInUA', false)) {
-			RequestManipulation.registerHttp('dtaua', /./, RequestManipulation.amendUA);
+			RequestManipulation.registerHttp('dtmua', /./, RequestManipulation.amendUA);
 		}
 		else {
-			RequestManipulation.unregisterHttp('dtaua');
+			RequestManipulation.unregisterHttp('dtmua');
 		}
 		if (this.showActions) {
 			$("actionsbox").setAttribute("show", "true");
@@ -230,7 +230,7 @@ var Prefs = {
 				// hash the profD, as it would be otherwise a minor information leak
 				this.tempLocation = Services.dirsvc.get("TmpD", Ci.nsIFile);
 				let profD = hash(Services.dirsvc.get("ProfD", Ci.nsIFile).leafName);
-				this.tempLocation.append("dtatmp-" + profD);
+				this.tempLocation.append("dtmtmp-" + profD);
 			}
 			else {
 				this.tempLocation = new Instances.LocalFile(this.tempLocation);

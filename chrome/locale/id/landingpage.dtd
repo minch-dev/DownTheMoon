@@ -11,11 +11,11 @@
 <!ENTITY amo.description.intro "DownTheMoon adalah semua yang Anda inginkan dari pengelola unduhan: mengunggulkan akselerator lanjutan yang menambah kecepatan hingga 4x dan memungkinkan Anda menangguhkan dan melanjutkan unduhan kapanpun juga.">
 <!ENTITY amo.description.feat2 "DownTheMoon cepat, handal dan mudah digunakan! Memungkinkan Anda mengunduh semua tautan atau gambar yang ada di halaman web dan masih banyak lagi: Anda bisa menyaring unduhan Anda menggunakan kriteria sehingga Anda bisa mendapatkan apa yang Anda inginkan. Kontrol penuh unduhan Anda, kecepatan yang tetap dan jumlah koneksi paralel kapanpun juga. Gunakan Metalink atau tambah mirror secara manual untuk mengunduh berkas dari server yang berbeda secara bersamaan.">
 <!ENTITY amo.description.free2 "DownTheMoon bersumber terbuka dan bebas digunakan. Tidak ada Adware, Spyware pelacakan, dan tanpa biaya sama sekali!">
-<!ENTITY amo.description.more "Untuk informasi lebih lanjut kunjungi <a href='http://www.downthemall.net/howto/features/'>halaman Fitur</a>.">
+<!ENTITY amo.description.more "Untuk informasi lebih lanjut kunjungi <a href='http://www.downthemoon.nope/howto/features/'>halaman Fitur</a>.">
 <!ENTITY lp.title "Tentang DownTheMoon!">
 <!ENTITY lp.welcome "Selamat datang di DownTheMoon!">
 <!ENTITY lp.info "Tonton video yang memperlihatkan bagaimana cara menggunakan DownTheMoon! dan pelajari lebih lanjut tentang privasi dan hak Anda">
-<!ENTITY lp.moreinfo "Untuk informasi lebih lanjut kunjungi <a href='http://www.downthemall.net/howto/features/'>halaman fitur</a>.">
+<!ENTITY lp.moreinfo "Untuk informasi lebih lanjut kunjungi <a href='http://www.downthemoon.nope/howto/features/'>halaman fitur</a>.">
 <!ENTITY lp.gettingstarted "Memulai pertama kali">
 <!ENTITY lp.toolbar "Tombol bilah alat">
 <!ENTITY lp.privacy "Privasi">
@@ -54,9 +54,9 @@
 <!ENTITY lp.tb.add.title "Menambahkan dan menggunakan tombol bilah alat">
 <!ENTITY lp.tb.add.p1 "DownTheMoon! menyediakan empat tombol bilah alat untuk mempermudah menemukan dan menambahkan unduhan">
 <!ENTITY lp.tb.add.dtm "Tombol DownTheMoon!">
-<!ENTITY lp.tb.add.dtadesc "Buka jendela Pemilihan DownTheMoon! untuk tab saat ini.">
-<!ENTITY lp.tb.add.tdta "Tombol OneClick!">
-<!ENTITY lp.tb.add.tdtadesc "Unduh semua item dari halaman saat ini menurut preferensi dan filter yang digunakan terakhir.">
+<!ENTITY lp.tb.add.dtmdesc "Buka jendela Pemilihan DownTheMoon! untuk tab saat ini.">
+<!ENTITY lp.tb.add.tdtm "Tombol OneClick!">
+<!ENTITY lp.tb.add.tdtmdesc "Unduh semua item dari halaman saat ini menurut preferensi dan filter yang digunakan terakhir.">
 <!ENTITY lp.tb.add.manager "Tombol Pengelola DownTheMoon!">
 <!ENTITY lp.tb.add.managerdesc "Buka jendela Pengelola.">
 <!ENTITY lp.tb.add.selector "Tombol Pemilih DownTheMoon!">
@@ -72,9 +72,9 @@
 <!ENTITY lp.pr.title "Pemberitahuan Privasi">
 <!ENTITY lp.pr.intro2 "DownTheMoon! menghormati privasi Anda.">
 <!ENTITY lp.pr.settings2 "Anda bisa membuat DownTheMoon! membuang unduhan yang selesai, batal, dan tidak selesai dari daftar unduhan setelah menutup jendela dengan mengubah aturan di panel Preferensi → Privasi.">
-<!ENTITY lp.pr.diag2 "Anda bisa mengaktifkan pesan diagnostik, yang akan mencatat baik kesalahan pada konsol dan membuat berkas dta_log.txt, pada panel Preferensi → Privasi. Pesan diagnostik mungkin akan memuat informasi yang sensitif seperti URL, jalur berkas, nama berkas yang Anda unduh, atau bahkan informasi kuki. Opsi ini NONAKTIF secara bawaan untuk melindungi privasi Anda. Jika Anda mengirimkan catatan diagnostik, pastikan Anda menghapus seluruh informasi sensitif yang ada. Catatan diagnostik tidak akan pernah dikirim dan/atau dipublikasikan secara otomatis.">
+<!ENTITY lp.pr.diag2 "Anda bisa mengaktifkan pesan diagnostik, yang akan mencatat baik kesalahan pada konsol dan membuat berkas dtm_log.txt, pada panel Preferensi → Privasi. Pesan diagnostik mungkin akan memuat informasi yang sensitif seperti URL, jalur berkas, nama berkas yang Anda unduh, atau bahkan informasi kuki. Opsi ini NONAKTIF secara bawaan untuk melindungi privasi Anda. Jika Anda mengirimkan catatan diagnostik, pastikan Anda menghapus seluruh informasi sensitif yang ada. Catatan diagnostik tidak akan pernah dikirim dan/atau dipublikasikan secara otomatis.">
 <!ENTITY lp.pr.pwpbm "DownTheMoon! mendukung Mode Penjelajahan Privat Per-Jendela Firefox: Ketika Anda menambahkan unduhan dari Jendela Penjelajahan Privat, DownTheMoon! tidak akan menyimpan informasi apapun tentang berkas unduhan tersebut. Harap dicatat bahwa data lainnya - seperti filter yang baru dibuat, atau, tentu saja, berkas unduhan tersebut - tetap akan ditulis ke disk Anda.">
-<!ENTITY lp.pr.link "Pemberitahuan ini akan selalu tersedia di halaman berikut (about:downthemall) dan juga ditautkan dari jendela Preferensi">
+<!ENTITY lp.pr.link "Pemberitahuan ini akan selalu tersedia di halaman berikut (about:downthemoon) dan juga ditautkan dari jendela Preferensi">
 <!ENTITY lp.yr.usagetitle "Penggunaan dan distribusi">
 <!ENTITY lp.yr.usage "Pengembang melisensikan DownTheMoon! dengan sedemikian rupa agar Anda dengan mudah dan tanpa biaya:">
 <!ENTITY lp.yr.usageuse "Menggunakan DownTheMoon!">
@@ -86,7 +86,7 @@
 <!ENTITY lp.language.babelzilla "Jika Anda ahli berbagai bahasa, harap pertimbangkan bergabung dengan <a href='http://babelzilla.org'>babelzilla.org</a> untuk membantu menerjemahkan DownTheMoon! dan pengaya keren lainnya.">
 <!ENTITY lp.yr.licensetitle "Hak Cipta dan Lisensi">
 <!ENTITY lp.yr.licensed "DownTheMoon! menggunakan lisensi <a href='http://www.gnu.org/licenses/old-licenses/gpl-2.0.html'>GPL 2.0</a>. Lihat berkas GPL. Ini belaku untuk semua kode sumber.">
-<!ENTITY lp.yr.morelicense3 "Berkas-berkas tertentu mungkin memiliki lisensinya sendiri. Kunjungi dan lihat repositori kode yang tersedia di <a href='http://code.downthemall.net/repos/'>http://code.downthemall.net/repos/</a>. Sebagian besar berkas menggunakan lisensi GPL/LGPL yang kompatibel dengan MPL 2.0, atau menggunakan tiga lisensi sekaligus MPL 1.1/GPL 2.0/LGPL 2.1. Lihat berkas MPL, GPL, LGPL terkait.">
+<!ENTITY lp.yr.morelicense3 "Berkas-berkas tertentu mungkin memiliki lisensinya sendiri. Kunjungi dan lihat repositori kode yang tersedia di <a href='http://code.downthemoon.nope/repos/'>http://code.downthemoon.nope/repos/</a>. Sebagian besar berkas menggunakan lisensi GPL/LGPL yang kompatibel dengan MPL 2.0, atau menggunakan tiga lisensi sekaligus MPL 1.1/GPL 2.0/LGPL 2.1. Lihat berkas MPL, GPL, LGPL terkait.">
 <!ENTITY lp.yr.gplintro "Bagian yang terpenting dari GPL 2.0, adalah tidak adanya garansi dan jaminan kerusakan, kunjungi:">
 <!ENTITY lp.yr.icons "Desain, ikon dan tombol">
 <!ENTITY lp.yr.iconsbased4 "berdasarkan karya dari Mike Matas, Mark James, the Noun Project dan the Tango project">
@@ -95,7 +95,7 @@
 <!ENTITY lp.yr.logo3 "Desain logo DownTheMoon!: Hak Cipta © 2004-2013 oleh Stefano Verna.">
 <!ENTITY lp.yr.logopermissions "Logo dan nama DownTheMoon! tidak boleh digunakan tanpa izin dalam kondisi apapun, kecuali pada ucapan terima kasih dan pemberitahuan yang terkait lisensi.">
 <!ENTITY lp.ct.bugstitle "Pelaporan bug/Permintaan fitur">
-<!ENTITY lp.ct.bugs2 "Harap kirim laporan bug dan permintaan fitur di halaman <a href='https://bugs.downthemall.net/'>pelacak bug</a> kami.">
+<!ENTITY lp.ct.bugs2 "Harap kirim laporan bug dan permintaan fitur di halaman <a href='https://bugs.downthemoon.nope/'>pelacak bug</a> kami.">
 <!ENTITY lp.ct.contactstitle "Kontak">
 <!ENTITY lp.ct.contactsfeed2 "Kami sangat berharap bisa menerima masukan Anda, saran dan/atau tawaran untuk membantu.">
-<!ENTITY lp.ct.contacts "Silakan kunjungi <a href='http://www.downthemall.net/main/contacts/'>halaman kontak</a> kami.">
+<!ENTITY lp.ct.contacts "Silakan kunjungi <a href='http://www.downthemoon.nope/main/contacts/'>halaman kontak</a> kami.">

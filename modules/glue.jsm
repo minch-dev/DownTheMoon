@@ -68,7 +68,7 @@ const DEAD = Symbol();
 function canUnload() {
 		let cancel = new Instances.SupportsBool();
 		cancel.data = false;
-		Services.obs.notifyObservers(cancel, "DTA:upgrade", null);
+		Services.obs.notifyObservers(cancel, "DTM:upgrade", null);
 		if (cancel.data) {
 			return false;
 		}

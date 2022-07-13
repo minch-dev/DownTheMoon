@@ -74,7 +74,7 @@
 		</p>
 		<p>This is the "landing page" designed to give babelzilla.org localizers a way to translate things that are not directly part of dTm, or at least not directly accessible from the normal user interface.</p>
 		<h2>Usage</h2>
-		<p>This page will let you translate the various bits for addons.mozilla.org and the "landing page" which is displayed via about:downthemall to the user.</p>
+		<p>This page will let you translate the various bits for addons.mozilla.org and the "landing page" which is displayed via about:downthemoon to the user.</p>
 		<p>Texts will be taken from <code>landingpage.dtd</code>.</p>
 		<p>A translatable block looks like this:</p>
 		<p class="localizable">Translate me
@@ -119,7 +119,7 @@
 		</p>
 		<p>
 			The real page is always accessible at
-			<a href="http://about.downthemall.net/3.0/">http://about.downthemall.net/3.0/</a>, but will later be displayed via about:downthemall.
+			<a href="http://about.downthemoon.nope/3.0/">http://about.downthemoon.nope/3.0/</a>, but will later be displayed via about:downthemoon.
 			<br />
 			We will try to regenerate the page on the server once you mark your localization either "testing" or "released" in the pre-release (beta) phase.
 		</p>
@@ -224,8 +224,8 @@
 				<div class="player" href="toolbar-add">Video: Add toolbar items</div>
 				<p>&lp.tb.add.p1;</p>
 				<ul id="tbitems">
-					<li id="tbdta"><span>&lp.tb.add.dtm;</span><br/>&lp.tb.add.dtadesc;</li>
-					<li id="tbtdta"><span>&lp.tb.add.tdta;</span><br/>&lp.tb.add.tdtadesc;</li>
+					<li id="tbdtm"><span>&lp.tb.add.dtm;</span><br/>&lp.tb.add.dtmdesc;</li>
+					<li id="tbtdtm"><span>&lp.tb.add.tdtm;</span><br/>&lp.tb.add.tdtmdesc;</li>
 					<li id="tbselector"><span>&lp.tb.add.selector;</span><br/>&lp.tb.add.selectordesc;</li>
 					<li id="tbmanager"><span>&lp.tb.add.manager;</span><br/>&lp.tb.add.managerdesc;</li>
 				</ul>

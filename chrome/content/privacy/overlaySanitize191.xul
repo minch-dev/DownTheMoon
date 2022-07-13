@@ -5,13 +5,13 @@
 
 <!DOCTYPE overlay>
 
-<overlay id="dtaSanitize" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<overlay id="dtmSanitize" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 	<preferences id="sanitizePreferences">
 		<preference id="privacy.cpd.extensions-dtm" name="privacy.cpd.extensions-dtm" type="bool"/>
 	</preferences>
 	<listbox id="itemList">
 		<listitem
-			id="dtaSanitizeItem"
+			id="dtmSanitizeItem"
 			type="checkbox"
 			preference="privacy.cpd.extensions-dtm"
 			onsyncfrompreference="return gSanitizePromptDialog.onReadGeneric();"

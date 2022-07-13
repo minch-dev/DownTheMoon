@@ -14,7 +14,7 @@ for (var i = 0; i < require("support/moveFile").maxWorkers * 2; ++i) {
 		const {moveFile} = require("support/movefile");
 		var tmpDir = OS.Constants.Path.tmpDir;
 		var path = OS.Path.join(tmpDir, "dtm.tmp");
-		var path2 = OS.Path.join(tmpDir, "dta2.tmp");
+		var path2 = OS.Path.join(tmpDir, "dtm2.tmp");
 		await OS.File.writeAtomic(path, new Uint8Array(1));
 		try {
 			await moveFile(path, path2);

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 "use strict";
-/* global _, DTA, $, $$, Utils, Preferences, getDefaultDownloadsDirectory, unloadWindow */
+/* global _, DTM, $, $$, Utils, Preferences, getDefaultDownloadsDirectory, unloadWindow */
 /* global $e, mapInSitu, filterMapInSitu, filterInSitu, mapFilterInSitu, setTimeoutOnlyFun */
 /* global toURI, toURL, showPreferences, openUrl, getLargeIcon */
 /* global TreeManager, Prefs, ConflictManager */
@@ -126,7 +126,7 @@ function _moveFile(destination, self) {
 function dieEarly() {
 	window.removeEventListener("unload", dieEarly, false);
 	let evt = document.createEvent("Event");
-	evt.initEvent("DTA:diedEarly", true, false);
+	evt.initEvent("DTM:diedEarly", true, false);
 	window.dispatchEvent(evt);
 }
 window.addEventListener("unload", dieEarly, false);
@@ -178,10 +178,10 @@ var Dialog = {
 		'quit-application-requested',
 		'quit-application-granted',
 		'network:offline-status-changed',
-		'DTA:filterschanged',
-		'DTA:clearedQueueStore',
-		'DTA:shutdownQueueStore',
-		"DTA:upgrade",
+		'DTM:filterschanged',
+		'DTM:clearedQueueStore',
+		'DTM:shutdownQueueStore',
+		"DTM:upgrade",
 	],
 	_initialized: false,
 	_autoRetrying: [],
@@ -282,12 +282,12 @@ var Dialog = {
 						PrivateBrowsing.isWindowPrivate(event.dataTransfer.mozSourceNode.ownerDocument.defaultView);
 					url = Services.io.newURI(url, null, null);
 					let item = {
-						"url": new DTA.URL(DTA.getLinkPrintMetalink(url) || url),
+						"url": new DTM.URL(DTM.getLinkPrintMetalink(url) || url),
 						"referrer": null,
 						'description': "",
 						"isPrivate": isPrivate
 					};
-					DTA.saveSingleItem(window, false, item);
+					DTM.saveSingleItem(window, false, item);
 				}
 				catch (ex) {
 					log(LOG_ERROR, "failed to process ondrop", ex);
@@ -348,10 +348,10 @@ var Dialog = {
 			let de = document.documentElement;
 			Version.getInfo(function(version) {
 				let cv = version.VERSION + ".toolitems" + $('tools').childNodes.length;
-				let shouldAutofit = !de.hasAttribute('dtaAutofitted');
+				let shouldAutofit = !de.hasAttribute('dtmAutofitted');
 				if (!shouldAutofit) {
 					try {
-						let lv = de.getAttribute('dtaAutofitted');
+						let lv = de.getAttribute('dtmAutofitted');
 						shouldAutofit = !!version.compareVersion(cv, lv);
 					}
 					catch (ex) {
@@ -359,7 +359,7 @@ var Dialog = {
 					}
 				}
 				if (shouldAutofit) {
-					document.documentElement.setAttribute('dtaAutofitted', cv);
+					document.documentElement.setAttribute('dtmAutofitted', cv);
 					$('tools').setAttribute('mode', 'icons');
 					defer(
 						function() {
@@ -624,10 +624,10 @@ var Dialog = {
 			d.relaxSize = !!down.relaxSize;
 
 			if (down.hashCollection) {
-				d.hashCollection = DTA.HashCollection.load(down.hashCollection);
+				d.hashCollection = DTM.HashCollection.load(down.hashCollection);
 			}
 			else if (down.hash) {
-				d.hashCollection = new DTA.HashCollection(new DTA.Hash(down.hash, down.hashType));
+				d.hashCollection = new DTM.HashCollection(new DTM.Hash(down.hash, down.hashType));
 			}
 			if ('maxChunks' in down) {
 				d._maxChunks = down.maxChunks;
@@ -684,7 +684,7 @@ var Dialog = {
 
 	openDonate: function() {
 		try {
-			openUrl('http://www.downthemall.net/howto/donate/');
+			openUrl('http://www.downthemoon.nope/howto/donate/');
 		}
 		catch(ex) {
 			window.alert(ex);
@@ -716,7 +716,7 @@ var Dialog = {
 		$('loadingbox').parentNode.removeChild($('loadingbox'));
 		window.removeEventListener("unload", dieEarly, false);
 		let evt = document.createEvent("Event");
-		evt.initEvent("DTA:ready", true, false);
+		evt.initEvent("DTM:ready", true, false);
 		window.dispatchEvent(evt);
 	},
 
@@ -761,7 +761,7 @@ var Dialog = {
 				}
 			}
 		}
-		else if (topic === "DTA:upgrade") {
+		else if (topic === "DTM:upgrade") {
 			Preferences.setExt("rebootOnce", true);
 			if (!this._canClose()) {
 				delete this._forceClose;
@@ -788,13 +788,13 @@ var Dialog = {
 		else if (topic === 'network:offline-status-changed') {
 			this.offline = data === "offline";
 		}
-		else if (topic === 'DTA:filterschanged') {
+		else if (topic === 'DTM:filterschanged') {
 			Tree.assembleMenus();
 		}
-		else if (topic === 'DTA:clearedQueueStore') {
+		else if (topic === 'DTM:clearedQueueStore') {
 			this.reinit(true);
 		}
-		else if (topic === 'DTA:shutdownQueueStore') {
+		else if (topic === 'DTM:shutdownQueueStore') {
 			log(LOG_INFO, "saving running");
 			this.saveRunning();
 		}
@@ -1344,7 +1344,7 @@ var Dialog = {
 		let tmpEnum = Prefs.tempLocation.directoryEntries;
 		let unknown = [];
 		for (let f of new Utils.SimpleIterator(tmpEnum, Ci.nsIFile)) {
-			if (f.leafName.match(/\.dtapart$/) && !~known.indexOf(f.leafName)) {
+			if (f.leafName.match(/\.dtmpart$/) && !~known.indexOf(f.leafName)) {
 				unknown.push(f);
 			}
 		}
@@ -1707,7 +1707,7 @@ var QueueItem = class QueueItem {
 			if (fn.length > 60) {
 				fn = fn.substring(0, 60);
 			}
-			dest.append(fn + "-" + Utils.newUUIDString() + '.dtapart');
+			dest.append(fn + "-" + Utils.newUUIDString() + '.dtmpart');
 			this._tmpFile = dest;
 		}
 		return this._tmpFile;
@@ -1717,7 +1717,7 @@ var QueueItem = class QueueItem {
 		return this._hashCollection;
 	}
 	set hashCollection(nv) {
-		if (nv && !(nv instanceof DTA.HashCollection)) {
+		if (nv && !(nv instanceof DTM.HashCollection)) {
 			throw new Exception("Not a hash collection");
 		}
 		this._hashCollection = nv;
@@ -2865,8 +2865,8 @@ function CustomAction(download, command) {
 var startDownloads = (function() {
 	const series = {};
 	lazy(series, "num", function() {
-		let rv = DTA.currentSeries();
-		DTA.incrementSeries();
+		let rv = DTM.currentSeries();
+		DTM.incrementSeries();
 		return rv;
 	});
 	let busy = false;
@@ -2891,7 +2891,7 @@ var startDownloads = (function() {
 				let qi = new QueueItem(Dialog);
 				let lnk = e.url;
 				if (typeof lnk === 'string') {
-					qi.urlManager = new UrlManager([new DTA.URL(Services.io.newURI(lnk, null, null))]);
+					qi.urlManager = new UrlManager([new DTM.URL(Services.io.newURI(lnk, null, null))]);
 				}
 				else if (lnk instanceof UrlManager) {
 					qi.urlManager = lnk;
@@ -2950,10 +2950,10 @@ var startDownloads = (function() {
 					qi.hashCollection = e.url.hashCollection;
 				}
 				else if (e.hash) {
-					qi.hashCollection = new DTA.HashCollection(e.hash);
+					qi.hashCollection = new DTM.HashCollection(e.hash);
 				}
 				else if (e.url.hash) {
-					qi.hashCollection = new DTA.HashCollection(e.url.hash);
+					qi.hashCollection = new DTM.HashCollection(e.url.hash);
 				}
 				else {
 					qi.hashCollection = null; // to initialize prettyHash

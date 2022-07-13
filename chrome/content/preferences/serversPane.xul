@@ -12,10 +12,10 @@
 <overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 	<prefpane id="paneServers" label="&serverspane.label;" orient="vertical" onpaneload="Servers.init();" flex="1">
 		<preferences>
-			<preference id="dtamaxtasks" name="extensions.dtm.ntask" type="int" />
-			<preference id="dtamaxtasksperserver" name="extensions.dtm.serverlimit.perserver" type="int" />
-			<preference id="dtaarinterval" name="extensions.dtm.autoretryinterval" type="int" />
-			<preference id="dtaarmax" name="extensions.dtm.maxautoretries" type="int" />
+			<preference id="dtmmaxtasks" name="extensions.dtm.ntask" type="int" />
+			<preference id="dtmmaxtasksperserver" name="extensions.dtm.serverlimit.perserver" type="int" />
+			<preference id="dtmarinterval" name="extensions.dtm.autoretryinterval" type="int" />
+			<preference id="dtmarmax" name="extensions.dtm.maxautoretries" type="int" />
 		</preferences>
 
 		<groupbox>
@@ -50,7 +50,7 @@
 				<rows>
 					<row align="center">
 						<label value="&serverspane.autoretry.interval.label;" />
-						<menulist preference="dtaarinterval">
+						<menulist preference="dtmarinterval">
 							<menupopup>
 								<menuitem label="&advancedpane.chunksdisabled;" value="0" />
 								<menuitem label="1 &advancedpane.seconds;" value="1" />
@@ -69,7 +69,7 @@
 					</row>
 					<row align="center">
 						<label value="&serverspane.autoretry.max.label;" />
-						<menulist preference="dtaarmax">
+						<menulist preference="dtmarmax">
 							<menupopup>
 								<menuitem label="&serverspane.unlimited;" value="0" />
 								<menuitem label="1" value="1" />

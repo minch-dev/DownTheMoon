@@ -8,9 +8,9 @@
 <!ENTITY filter.images.label "Фильтр изображений">
 <!ENTITY filter.links.label "Фильтр ссылок">
 <!ENTITY add.label "Добавить новый фильтр">
-<!ENTITY dtacontext2.label "Настройки">
+<!ENTITY dtmcontext2.label "Настройки">
 <!ENTITY buttonlabelextra2 "Восстановить настройки по умолчанию">
-<!ENTITY dtaPreferences.title "Настройки DownTheMoon!">
+<!ENTITY dtmPreferences.title "Настройки DownTheMoon!">
 <!ENTITY manager "Менеджер dTm">
 <!ENTITY mainpane.label "Главные">
 <!ENTITY mainpane.defaults.caption "По умолчанию">
@@ -28,7 +28,7 @@
 <!ENTITY mainpane.alertnotifications2.label "Используя уведомления на десктопе">
 <!ENTITY mainpane.alertnone.label "не оповещать">
 <!ENTITY mainpane.sounddone.label "звук по завершении всех загрузок">
-<!ENTITY mainpane.closedta.label "Закрывать DownTheMoon по завершении загрузок">
+<!ENTITY mainpane.closedtm.label "Закрывать DownTheMoon по завершении загрузок">
 <!ENTITY mainpane.settime.label "Установить время файла по времени его изменения на сервере или времени добавления в очередь">
 <!ENTITY mainpane.rememberoneclick.label "dTm OneClick запомнит - он применен ко всем или к текущей вкладке">
 <!ENTITY mainpane.confirmremove2.label "Подтверждать удаление загрузок">

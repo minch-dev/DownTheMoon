@@ -8,9 +8,9 @@
 <!ENTITY filter.images.label "Filtro immagini">
 <!ENTITY filter.links.label "Filtro collegamenti">
 <!ENTITY add.label "Aggiungi nuovo filtro">
-<!ENTITY dtacontext2.label "Preferenze">
+<!ENTITY dtmcontext2.label "Preferenze">
 <!ENTITY buttonlabelextra2 "Ripristina impostazioni predefinite">
-<!ENTITY dtaPreferences.title "Preferenze DownTheMoon!">
+<!ENTITY dtmPreferences.title "Preferenze DownTheMoon!">
 <!ENTITY manager "dTm! Manager">
 <!ENTITY mainpane.label "Generali">
 <!ENTITY mainpane.defaults.caption "Predefinite">
@@ -28,7 +28,7 @@
 <!ENTITY mainpane.alertnotifications2.label "Utilizzando notifiche desktop">
 <!ENTITY mainpane.alertnone.label "Non avvisarmi">
 <!ENTITY mainpane.sounddone.label "Riproduci un suono quando tutti i download sono stati completati">
-<!ENTITY mainpane.closedta.label "Chiudi DownTheMoon! quando i download sono stati completati">
+<!ENTITY mainpane.closedtm.label "Chiudi DownTheMoon! quando i download sono stati completati">
 <!ENTITY mainpane.settime.label "Imposta l'ora del file all'ora dell'ultima modifica (server) o all'ora in cui sono stati messi in coda">
 <!ENTITY mainpane.rememberoneclick.label "Fai ricordare a dTm OneClick! se esso agisce su tutte le schede o solo su quella attuale">
 <!ENTITY mainpane.confirmremove2.label "Conferma la rimozione dei download">

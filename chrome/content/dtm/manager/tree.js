@@ -4,7 +4,7 @@
 "use strict";
 /* global $, $e, $$, _, Utils, FilterManager, getIcon, Preferences, OS */
 /* global mapInSitu, filterInSitu, mapFilterInSitu, filterMapInSitu */
-/* global DTA, Dialog,  QueueItem, Prefs, QueueStore, Prompts, ImportExport, Metalinker */
+/* global DTM, Dialog,  QueueItem, Prefs, QueueStore, Prompts, ImportExport, Metalinker */
 /* global asyncMoveFile, showPreferences, Tooltip, CoThreadListWalker */
 /* global COMPLETE, CANCELED, RUNNING, PAUSED, QUEUED, FINISHING */
 /* global TextCache_PAUSED */
@@ -1328,7 +1328,7 @@ class TreeManager {
 				}
 				let lnks = await ImportExport.parseTextFile(fp.file);
 				if (lnks.length) {
-					DTA.saveLinkArray(window, lnks, []);
+					DTM.saveLinkArray(window, lnks, []);
 				}
 			}
 			catch (ex) {

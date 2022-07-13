@@ -2,7 +2,7 @@
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 	<Description about="urn:mozilla:install-manifest">
 
-		<em:id>dtm@downthemall.net</em:id>
+		<em:id>dtm@downthemoon.nope</em:id>
 		<em:name>DownTheMoon! XUL edition</em:name>
 		<em:description>The mass downloader for Pale Moon.</em:description>
 		<em:version>3.14</em:version>
@@ -18,12 +18,12 @@
 		<em:developer>Minch Yoda</em:developer>
 
 		<em:aboutURL>chrome://dtm/content/about/about.xul</em:aboutURL>
-		<em:iconURL>chrome://dtaicon/content/icon.png</em:iconURL>
-		<em:icon64URL>chrome://dtaicon/content/icon64.png</em:icon64URL>
-		<em:homepageURL>https://github.com/minch-yoda/downthemall-archivist-xul</em:homepageURL>
-		<em:homepageURL>http://downthemall.net/</em:homepageURL>
+		<em:iconURL>chrome://dtmicon/content/icon.png</em:iconURL>
+		<em:icon64URL>chrome://dtmicon/content/icon64.png</em:icon64URL>
+		<em:homepageURL>https://github.com/minch-yoda/downthemoon-archivist-xul</em:homepageURL>
+		<em:homepageURL>http://downthemoon.nope/</em:homepageURL>
 		<em:optionsURL>chrome://dtm/content/preferences/prefs.xul</em:optionsURL>
-		<em:updateURL>https://github.com/minch-yoda/downthemall-archivist-xul/raw/master/update.rdf</em:updateURL>
+		<em:updateURL>https://github.com/minch-yoda/downthemoon-archivist-xul/raw/master/update.rdf</em:updateURL>
 
 
 		<!-- Firefox, Firefox ESR, Firefox DEV Edition, Basilisk, Waterfox Classic -->
@@ -66,7 +66,7 @@
 		<em:localized><Description><em:description>O transferidor em massa para o Pale Moon.</em:description><em:locale>pt-PT</em:locale><em:name>DownTheMoon!</em:name><em:translator>A Equipa dTm</em:translator></Description></em:localized>
 		<em:localized><Description><em:description>Менеджер загрузок для Pale Moon.</em:description><em:locale>ru</em:locale><em:name>DownTheMoon!</em:name><em:translator>Sergeys - Russian Mozilla Team</em:translator></Description></em:localized>
 		<em:localized><Description><em:description>Množični prenašalnik za Pale Moon.</em:description><em:locale>sl-SI</em:locale><em:name>DownTheMoon!</em:name><em:translator>Ekipa dTm</em:translator></Description></em:localized>
-		<em:localized><Description><em:description>Pale Moon için toplu indirme aracı.</em:description><em:locale>tr</em:locale><em:name>DownTheMoon!</em:name><em:translator>S.K.Yerli ve dTA takımı</em:translator></Description></em:localized>
+		<em:localized><Description><em:description>Pale Moon için toplu indirme aracı.</em:description><em:locale>tr</em:locale><em:name>DownTheMoon!</em:name><em:translator>S.K.Yerli ve dTm takımı</em:translator></Description></em:localized>
 		<em:localized><Description><em:description>Pale Moon 的批量下载工具。</em:description><em:locale>zh-CN</em:locale><em:name>DownTheMoon!</em:name><em:translator>Cye3s &amp; Blacko</em:translator></Description></em:localized>
 		<em:localized><Description><em:description>Pale Moon 的大量下載工具</em:description><em:locale>zh-TW</em:locale><em:name>DownTheMoon!</em:name><em:translator>rayx000, scsi, tiffblue, Sakura3814, Goldie Lin.</em:translator></Description></em:localized>
 

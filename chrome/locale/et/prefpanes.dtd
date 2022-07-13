@@ -8,9 +8,9 @@
 <!ENTITY filter.images.label "Piltide filter">
 <!ENTITY filter.links.label "Linkide filter">
 <!ENTITY add.label "Lisa uus filter">
-<!ENTITY dtacontext2.label "Eelistused">
+<!ENTITY dtmcontext2.label "Eelistused">
 <!ENTITY buttonlabelextra2 "Taasta vaikimisi sätted">
-<!ENTITY dtaPreferences.title "DownTheMoon! - Eelistused">
+<!ENTITY dtmPreferences.title "DownTheMoon! - Eelistused">
 <!ENTITY manager "dTm! Haldur">
 <!ENTITY mainpane.label "Üldised">
 <!ENTITY mainpane.defaults.caption "Vaikimisi sätted">
@@ -28,7 +28,7 @@
 <!ENTITY mainpane.alertnotifications2.label "Töölauateavitusi kasutades">
 <!ENTITY mainpane.alertnone.label "Ära teavita mind">
 <!ENTITY mainpane.sounddone.label "Esita heli, kui kõik allalaadimised valmis saavad">
-<!ENTITY mainpane.closedta.label "Sulge DownTheMoon, kui allalaadimised valmis saavad">
+<!ENTITY mainpane.closedtm.label "Sulge DownTheMoon, kui allalaadimised valmis saavad">
 <!ENTITY mainpane.settime.label "Määra faili ajaks viimatise muutmise aeg (server) või järjekorda panemise aeg">
 <!ENTITY mainpane.rememberoneclick.label "dTm OneClick jätab meelde, kas see käib kõikide kaartide või aktiivse kaardi kohta">
 <!ENTITY mainpane.confirmremove2.label "Küsi allalaadimiste eemaldamisel kinnitust">

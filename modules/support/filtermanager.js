@@ -7,7 +7,7 @@
 const PREF_FILTERS_BASE = 'extensions.dtm.filters.';
 const LINK_FILTER = (1<<0);
 const IMAGE_FILTER = (1<<1);
-const TOPIC_FILTERSCHANGED = 'DTA:filterschanged';
+const TOPIC_FILTERSCHANGED = 'DTM:filterschanged';
 
 const FILTERS_FILE = "filters.json";
 
@@ -86,7 +86,7 @@ function consolidateRegs(regs) {
 /**
  * FilterManager
  */
-// no not create DTA_Filter yourself, managed by FilterManager
+// no not create DTM_Filter yourself, managed by FilterManager
 class Filter {
 	constructor(name) {
 		this._id = name;

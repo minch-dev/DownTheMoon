@@ -3,7 +3,7 @@
  * You can obtain one at http://mozilla.org/MPL/2.0/ */
 "use strict";
 
-const DTA = require("api");
+const DTM = require("api");
 const {LOCALE} = require("version");
 const {getTimestamp, normalizeMetaPrefs} = require("utils");
 const {identity} = require("support/memoize");
@@ -133,14 +133,14 @@ class HttpVisitor extends Visitor {
 		try {
 			let digest = chan.getResponseHeader("digest").replace(/,/g, ";");
 			digest = ";" + digest;
-			for (let t in DTA.SUPPORTED_HASHES_ALIASES) {
+			for (let t in DTM.SUPPORTED_HASHES_ALIASES) {
 				try {
 					let v = Services.mimeheader.getParameter(digest, t, this._charset, true, {});
 					if (!v) {
 						continue;
 					}
 					v = atob(v);
-					v = new DTA.Hash(v, t);
+					v = new DTM.Hash(v, t);
 					if (!this.hash || this.hash.q < v.q) {
 						this.hash = v;
 					}
@@ -201,7 +201,7 @@ class HttpVisitor extends Visitor {
 						if (!this.mirrors) {
 							this.mirrors = [];
 						}
-						this.mirrors.push(new DTA.URL(linkURI, pri));
+						this.mirrors.push(new DTM.URL(linkURI, pri));
 					}
 				}
 				catch (ex) {

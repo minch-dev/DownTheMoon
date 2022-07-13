@@ -17,7 +17,7 @@ test("show", function() {
 asyncTest("XULAlertsService", function() {
 	try {
 		require("support/alertservice");
-		var svc = Cc["@downthemall.net/xul-alerts-service;1"].getService(Ci.nsIAlertsService);
+		var svc = Cc["@downthemoon.nope/xul-alerts-service;1"].getService(Ci.nsIAlertsService);
 		svc.showAlertNotification("chrome://branding/content/icon64.png", "hello", "world",
 															"true", null, null, "test", "en-US", "ltr", null);
 		svc.showAlertNotification(null, "hello", "world", "true", null, null, "test",

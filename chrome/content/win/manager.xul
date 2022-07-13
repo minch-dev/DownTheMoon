@@ -10,7 +10,7 @@
  * ***** END LICENSE BLOCK ***** -->
 <!DOCTYPE overlay>
 
-<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="dtamanagerplatformoverlay">
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="dtmmanagerplatformoverlay">
 	<keyset id="mainkeys">
 		<key id="kLaunch" keycode="VK_RETURN" command="cmdLaunch" />
 		<key id="kOpenFolder" modifiers="accel" keycode="VK_RETURN" command="cmdOpenFolder" />

@@ -1,7 +1,7 @@
 "use strict";
 /* jshint browser:true */
 /* globals module, test, asyncTest, checkExports, QUnit, equal, strictEqual, deepEqual, arrayEqual, ok, throws */
-/* globals getRelURI, start, DTA, FileUtils */
+/* globals getRelURI, start, DTM, FileUtils */
 var metalink_filterEqual = function(a, b, prop, message) {
 	message = message || "";
 	for (var i = 0; i < prop.length; i++) {
@@ -34,10 +34,10 @@ var metalink_checkDownload = function(downloads, d, message) {
 	], message);
 
 	if (d.numIstance) {
-		strictEqual(download.numIstance, d.numIstance, message + "DTA-num");
+		strictEqual(download.numIstance, d.numIstance, message + "DTM-num");
 	}
 	if (d.startDate) {
-		strictEqual(download.startDate.toString(), d.startDate.toString(), message + "DTA-startDate");
+		strictEqual(download.startDate.toString(), d.startDate.toString(), message + "DTM-startDate");
 	}
 
 	var urls = download.url.toArray().map(function(e) {
@@ -94,13 +94,13 @@ var metalink_downloadCollection = function(downloads) {
 	return downloads.map(function(d) {
 		var top_hash, hashCollection = null;
 		if (d.hash) {
-			top_hash = new DTA.Hash(d.hash.full, d.hash.type);
-			hashCollection = new DTA.HashCollection(top_hash);
+			top_hash = new DTM.Hash(d.hash.full, d.hash.type);
+			hashCollection = new DTM.HashCollection(top_hash);
 
 			if (d.hash.pieces) {
 				hashCollection.parLength = d.hash.pieceLength;
 				for (var i in Iterator(d.hash.pieces)) {
-					hashCollection.add(new DTA.Hash(i[1], d.hash.pieceType));
+					hashCollection.add(new DTM.Hash(i[1], d.hash.pieceType));
 				}
 			}
 		}

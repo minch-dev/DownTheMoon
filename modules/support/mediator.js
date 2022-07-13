@@ -163,16 +163,16 @@ function removeListener(listener) {
 }
 
 function showNotice(window) {
-	openUrl(window, 'about:downthemall#privacy');
+	openUrl(window, 'about:downthemoon#privacy');
 }
 function showAbout(window) {
-	openUrl(window, 'about:downthemall');
+	openUrl(window, 'about:downthemoon');
 }
 function showPreferences(window, pane, command) {
 	var instantApply = Prefs.get("browser.preferences.instantApply", false);
 	window.openDialog(
 		'chrome://dtm/content/preferences/prefs.xul',
-		'dtaPrefs',
+		'dtmPrefs',
 		'chrome,titlebar,toolbar,resizable,centerscreen'+ (instantApply ? ',dialog=no' : ''),
 		pane,
 		command

@@ -8,9 +8,9 @@
 <!ENTITY filter.images.label "Resim süzgeci">
 <!ENTITY filter.links.label "Bağlantı süzgeci">
 <!ENTITY add.label "Yeni Süzgeç Ekle">
-<!ENTITY dtacontext2.label "Tercihler">
+<!ENTITY dtmcontext2.label "Tercihler">
 <!ENTITY buttonlabelextra2 "Varsayılan Ayarları Geri Yükle">
-<!ENTITY dtaPreferences.title "DownTheMoon! Tercihleri">
+<!ENTITY dtmPreferences.title "DownTheMoon! Tercihleri">
 <!ENTITY manager "dTm! Yöneticisi">
 <!ENTITY mainpane.label "Genel">
 <!ENTITY mainpane.defaults.caption "Varsayılanlar">
@@ -28,7 +28,7 @@
 <!ENTITY mainpane.alertnotifications2.label "Masaüstü Bildirimlerinin Kullanımı">
 <!ENTITY mainpane.alertnone.label "Beni Uyarma">
 <!ENTITY mainpane.sounddone.label "Tüm indirmeler tamamlandığında ses çal">
-<!ENTITY mainpane.closedta.label "Tüm indirmeler tamamlandığında DownTheMoon'ı kapat">
+<!ENTITY mainpane.closedtm.label "Tüm indirmeler tamamlandığında DownTheMoon'ı kapat">
 <!ENTITY mainpane.settime.label "Dosyanın zaman bilgisini, son güncelleme zamanı (sunucudaki) ya da sıraya ekleme zamanı olarak ayarla">
 <!ENTITY mainpane.rememberoneclick.label "dTm OneClick'in, Tüm Sekmelere mi yoksa Güncel Sekmeye mi uygulandığını hatırla">
 <!ENTITY mainpane.confirmremove2.label "İndirmelerin kaldırılmasını onayla">

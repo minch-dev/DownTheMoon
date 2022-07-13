@@ -40,7 +40,7 @@
 	<script type="text/javascript" src="chrome://dtm/content/common/internalFunctions.js" />
 	<script type="text/javascript" src="chrome://dtm/content/dtm/select.js" />
 
-	<stringbundleset xmlns="http://www.downthemall.net/properties#">
+	<stringbundleset xmlns="http://www.downthemoon.nope/properties#">
 		<stringbundle src="chrome://dtm/locale/common.properties"/>
 		<stringbundle src="chrome://dtm/locale/select.properties"/>
 		<stringbundle src="chrome://global/locale/dialog.properties"/>

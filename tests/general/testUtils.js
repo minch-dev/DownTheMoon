@@ -6,7 +6,7 @@ test("exports", function() {
 	"use strict";
 	checkExports("utils", [
 		"MimeQuality",
-		"NS_DTA",
+		"NS_DTM",
 		"NS_HTML",
 		"NS_XUL",
 		"Properties",

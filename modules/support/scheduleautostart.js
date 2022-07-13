@@ -23,8 +23,8 @@ Date.__defineGetter__("today", function() {
 	return rv;
 });
 
-/* global DTA */
-lazy(this, "DTA", () => require("api"));
+/* global DTM */
+lazy(this, "DTM", () => require("api"));
 /* global QueueStore */
 lazy(this, "QueueStore", () => require("manager/queuestore"));
 
@@ -52,7 +52,7 @@ const Observer = {
 			setTimeout(() => this.openManager(), 1000);
 			return;
 		}
-		DTA.openManager(wnd);
+		DTM.openManager(wnd);
 	},
 	openIfQueued: function() {
 		QueueStore.loadItems(function(items) {

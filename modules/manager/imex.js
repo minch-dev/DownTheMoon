@@ -3,10 +3,10 @@
  * You can obtain one at http://mozilla.org/MPL/2.0/ */
 "use strict";
 
-const DTA = require("api");
+const DTM = require("api");
 const {getTextLinks} = require("support/textlinks");
 const Version = require("version");
-const {NS_DTA, NS_METALINKER3, NS_METALINK_RFC5854} = require("support/metalinker");
+const {NS_DTM, NS_METALINKER3, NS_METALINK_RFC5854} = require("support/metalinker");
 const {filterInSitu} = require("utils");
 
 exports.parseTextFile = async function parseTextFile(aFile) {
@@ -20,7 +20,7 @@ exports.parseTextFile = async function parseTextFile(aFile) {
 	for (let l of getTextLinks(req, false)) {
 		l = Services.io.newURI(l, null, null);
 		links.push({
-			url: new DTA.URL(l),
+			url: new DTM.URL(l),
 			referrer: null,
 			description: 'imported from ' + aFile.leafName,
 			isPrivate: false
@@ -129,7 +129,7 @@ exports.exportToHtmlFile = function exportToHtmlFile(aDownloads, aDocument, aFil
 		let foot = document.createElement('p');
 		foot.appendChild(document.createTextNode('Exported by '));
 		n = document.createElement('a');
-		n.setAttribute('href', 'http://www.downthemall.net/');
+		n.setAttribute('href', 'http://www.downthemoon.nope/');
 		n.textContent = 'DownTheMoon! ' + Version.VERSION;
 		foot.appendChild(n);
 		body.appendChild(foot);
@@ -149,24 +149,24 @@ exports.exportToMetalinkFile = function exportToMetalinkFile(aDownloads, aDocume
 	root.setAttribute('type', 'static');
 	root.setAttribute('version', '3.0');
 	root.setAttribute('generator', 'DownTheMoon!/' + Version.BASE_VERSION);
-	root.setAttributeNS(NS_DTA, 'version', Version.VERSION);
+	root.setAttributeNS(NS_DTM, 'version', Version.VERSION);
 	root.setAttribute('pubdate', new Date().toUTCString());
 
 	root.appendChild(document.createComment(
 			"metalink as exported by DownTheMoon! on " +
 			Version.APP_NAME + "/" + Version.APP_VERSION +
 			"\r\nMay contain DownTheMoon! specific information in the DownTheMoon! namespace: " +
-			NS_DTA
+			NS_DTM
 			));
 
 	let files = document.createElementNS(NS_METALINKER3, 'files');
 	for (let d of aDownloads) {
 		let f = document.createElementNS(NS_METALINKER3, 'file');
 		f.setAttribute('name', d.fileName);
-		f.setAttributeNS(NS_DTA, 'num', d.bNum);
-		f.setAttributeNS(NS_DTA, 'startDate', d.startDate.getTime());
+		f.setAttributeNS(NS_DTM, 'num', d.bNum);
+		f.setAttributeNS(NS_DTM, 'startDate', d.startDate.getTime());
 		if (d.referrer) {
-			f.setAttributeNS(NS_DTA, 'referrer', d.referrer.spec);
+			f.setAttributeNS(NS_DTM, 'referrer', d.referrer.spec);
 		}
 
 		if (d.description) {
@@ -180,7 +180,7 @@ exports.exportToMetalinkFile = function exportToMetalinkFile(aDownloads, aDocume
 			let t = u.spec.match(/^(\w+):/);
 			n.setAttribute('type', t[1]);
 			n.setAttribute('preference', u.preference);
-			n.setAttributeNS(NS_DTA, 'usable', u.usable);
+			n.setAttributeNS(NS_DTM, 'usable', u.usable);
 			n.textContent = u.spec;
 			r.appendChild(n);
 		}
@@ -217,13 +217,13 @@ exports.exportToMetalink4File = function exportToMetalink4File(aDownloads, aDocu
 	let document = aDocument.implementation.createDocument(NS_METALINK_RFC5854, 'metalink', null);
 	let root = document.documentElement;
 	root.setAttribute('version', '4.0');
-	root.setAttributeNS(NS_DTA, 'version', Version.VERSION);
+	root.setAttributeNS(NS_DTM, 'version', Version.VERSION);
 
 	root.appendChild(document.createComment(
 			"metalink as exported by DownTheMoon! on " +
 			Version.APP_NAME + "/" + Version.APP_VERSION +
 			"\r\nMay contain DownTheMoon! specific information in the DownTheMoon! namespace: " +
-			NS_DTA
+			NS_DTM
 			));
 
 	let generator = document.createElementNS(NS_METALINK_RFC5854, 'generator');
@@ -237,29 +237,29 @@ exports.exportToMetalink4File = function exportToMetalink4File(aDownloads, aDocu
 	for (let d of aDownloads) {
 		let f = document.createElementNS(NS_METALINK_RFC5854, 'file');
 		f.setAttribute('name', d.fileName);
-		f.setAttributeNS(NS_DTA, 'num', d.bNum);
+		f.setAttributeNS(NS_DTM, 'num', d.bNum);
 		
 		/* additions to include referrer and all file related params */
 		/* _fileNameAndExtension;_destinationName;_destinationPath;_destinationNameFull;_destinationFile;_destinationLocalFile; */
-		//f.setAttributeNS(NS_DTA, 'destinationLocalFile', d._destinationLocalFile);
-		//f.setAttributeNS(NS_DTA, 'fileNameAndExtension', d._fileNameAndExtension);
-		f.setAttributeNS(NS_DTA, 'destinationNameFull', d._destinationNameFull);
-		f.setAttributeNS(NS_DTA, 'destinationFile', d._destinationFile);
+		//f.setAttributeNS(NS_DTM, 'destinationLocalFile', d._destinationLocalFile);
+		//f.setAttributeNS(NS_DTM, 'fileNameAndExtension', d._fileNameAndExtension);
+		f.setAttributeNS(NS_DTM, 'destinationNameFull', d._destinationNameFull);
+		f.setAttributeNS(NS_DTM, 'destinationFile', d._destinationFile);
 
 		
-		f.setAttributeNS(NS_DTA, 'destinationName', d._destinationName);
-		f.setAttributeNS(NS_DTA, 'destinationPath', d._destinationPath);
-		f.setAttributeNS(NS_DTA, 'pathName', d._pathName);
-		f.setAttributeNS(NS_DTA, 'title', d._title);
+		f.setAttributeNS(NS_DTM, 'destinationName', d._destinationName);
+		f.setAttributeNS(NS_DTM, 'destinationPath', d._destinationPath);
+		f.setAttributeNS(NS_DTM, 'pathName', d._pathName);
+		f.setAttributeNS(NS_DTM, 'title', d._title);
 		if (d.referrer) {
-			f.setAttributeNS(NS_DTA, 'referrer', d.referrer.spec);
+			f.setAttributeNS(NS_DTM, 'referrer', d.referrer.spec);
 		}
 		/* end additions */
 		if(d.fileNameFromUser){
-			f.setAttributeNS(NS_DTA, 'fileNameFromUser', d.fileNameFromUser);
+			f.setAttributeNS(NS_DTM, 'fileNameFromUser', d.fileNameFromUser);
 		}
 		
-		f.setAttributeNS(NS_DTA, 'startDate', d.startDate.getTime());
+		f.setAttributeNS(NS_DTM, 'startDate', d.startDate.getTime());
 		
 		if (d.description) {
 			let n = document.createElementNS(NS_METALINK_RFC5854, 'description');
@@ -281,7 +281,7 @@ exports.exportToMetalink4File = function exportToMetalink4File(aDownloads, aDocu
 			n.textContent = u.spec;
 
 			/* extention to include usabality of the url */
-			n.setAttributeNS(NS_DTA, 'usable', u.usable);
+			n.setAttributeNS(NS_DTM, 'usable', u.usable);
 			f.appendChild(n);
 		}
 		if (d.hashCollection) {

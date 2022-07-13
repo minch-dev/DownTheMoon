@@ -26,8 +26,8 @@
 <prefwindow
 	id="DownTheMoon"
 	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-	windowtype="DTA:Preferences"
-	title="&dtaPreferences.title;"
+	windowtype="DTM:Preferences"
+	title="&dtmPreferences.title;"
 	buttons="accept,cancel,extra2,help"
 	buttonlabelextra2="&buttonlabelextra2;"
 	ondialogextra2="Prefs.restoreAll();"
@@ -35,7 +35,7 @@
 	onload="Prefs.load();"
 	style="&windowstyle.3;"
 	>
-	<stringbundleset id="bundlesPrefs" xmlns="http://www.downthemall.net/properties#">
+	<stringbundleset id="bundlesPrefs" xmlns="http://www.downthemoon.nope/properties#">
 		<stringbundle src="chrome://dtm/locale/common.properties" />
 		<stringbundle src="chrome://dtm/locale/prefpanes.properties" />
 	</stringbundleset>

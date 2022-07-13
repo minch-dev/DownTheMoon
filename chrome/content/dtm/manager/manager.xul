@@ -26,8 +26,8 @@
 	%defmanagerDTD;
 ]>
 
-<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="dtamanagermainoverlay">
-<window windowtype="DTA:Manager" title="DownTheMoon!" id="DownTheMoon" class="downlinks" flex="1" persist="width height screenX screenY sizemode dtaAutofitted">
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="dtmmanagermainoverlay">
+<window windowtype="DTM:Manager" title="DownTheMoon!" id="DownTheMoon" class="downlinks" flex="1" persist="width height screenX screenY sizemode dtmAutofitted">
 
 	<audio xmlns="http://www.w3.org/1999/xhtml" src="chrome://dtm/skin/sounds/done.ogg" id="sound_done"></audio>
 	<audio xmlns="http://www.w3.org/1999/xhtml" src="chrome://dtm/skin/sounds/error.ogg" id="sound_error"></audio>
@@ -41,7 +41,7 @@
 	<script type="application/javascript" src="chrome://dtm/content/dtm/manager/utils.js" />
 	<script type="application/javascript" src="chrome://dtm/content/dtm/manager/tree.js" />
 
-	<stringbundleset xmlns="http://www.downthemall.net/properties#">
+	<stringbundleset xmlns="http://www.downthemoon.nope/properties#">
 		<stringbundle src="chrome://dtm/locale/common.properties" />
 		<stringbundle src="chrome://dtm/locale/manager.properties" />
 		<stringbundle src="chrome://dtm/locale/prefpanes.properties" />

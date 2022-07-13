@@ -10,7 +10,7 @@ This is a continuation of the original XUL-based DownTheMoon! extension. It's an
 - allows to ignore the 'proxy' part and "www." part of the url while replicating
 - differentiates between files without extension `\example` and folder indexes `\example\`, providing the correct `index.htm` name and local path.
 - replaces illegal symbols with their full-width counterparts: 	：＊？＂＜＞｜
-- all of the above works in DTA OneClick mode via the most recent filter used (as expected)
+- all of the above works in DTM OneClick mode via the most recent filter used (as expected)
 
 You can run this extension in Pale Moon, Waterfox *Classic*, Basilisk, Firefox ESR 52.x & Firefox Developer Edition 56.x. _Live_ version of Waterfox kinda supports XUL, but not  XPCOM, so of no use for us. SeaMonkey needs some fixes, so maybe [later].
 (Note that WebArchive's search results pages might not work in those Firefox versions though, that's a reoccuring issue with some of the webarchive's libraries, sometimes one of the components breaks the show for the older browsers)

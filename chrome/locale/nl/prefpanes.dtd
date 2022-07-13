@@ -8,9 +8,9 @@
 <!ENTITY filter.images.label "Afbeeldingenfilter">
 <!ENTITY filter.links.label "Koppelingenfilter">
 <!ENTITY add.label "Nieuw filter toevoegen">
-<!ENTITY dtacontext2.label "Voorkeuren">
+<!ENTITY dtmcontext2.label "Voorkeuren">
 <!ENTITY buttonlabelextra2 "Standaardinstellingen terugzetten">
-<!ENTITY dtaPreferences.title "DownTheMoon!-voorkeuren">
+<!ENTITY dtmPreferences.title "DownTheMoon!-voorkeuren">
 <!ENTITY manager "dTm!-beheerder">
 <!ENTITY mainpane.label "Algemeen">
 <!ENTITY mainpane.defaults.caption "Standaardwaarden">
@@ -28,7 +28,7 @@
 <!ENTITY mainpane.alertnotifications2.label "Via desktopnotificaties">
 <!ENTITY mainpane.alertnone.label "Niet waarschuwen">
 <!ENTITY mainpane.sounddone.label "Een geluid afspelen als alle downloads zijn voltooid">
-<!ENTITY mainpane.closedta.label "DownTheMoon! sluiten als downloads zijn voltooid">
+<!ENTITY mainpane.closedtm.label "DownTheMoon! sluiten als downloads zijn voltooid">
 <!ENTITY mainpane.settime.label "Bestandstijd instellen op tijd van laatste wijziging (server) of op tijd van in wachtrij plaatsen">
 <!ENTITY mainpane.rememberoneclick.label "dTm OneClick laten onthouden of het op alle tabbladen of het huidige tabblad van toepassing is">
 <!ENTITY mainpane.confirmremove2.label "Verwijdering van downloads bevestigen">

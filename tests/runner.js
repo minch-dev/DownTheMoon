@@ -33,7 +33,7 @@ var Exception = Components.Exception;
 Cu.import("resource://gre/modules/FileUtils.jsm");
 Cu.import("chrome://dtm-modules/content/glue.jsm");
 
-var DTA = require("api");
+var DTM = require("api");
 
 function checkExports(m, exports) {
 	arrayEqual(
@@ -101,7 +101,7 @@ function _createTestHttpChannelInternal() {
 		QueryInterface: XPCOMUtils.generateQI([Ci.nsIHttpChannel]),
 		classDescription: "test nsIHttpChannel",
 		classID: Components.ID("{4b048560-c789-11e1-9b21-0800200c9a65}"),
-		contractID: "@downthemall.net/testHttpChannel;1",
+		contractID: "@downthemoon.nope/testHttpChannel;1",
 
 		isPending: function() {
 			return !this.done;

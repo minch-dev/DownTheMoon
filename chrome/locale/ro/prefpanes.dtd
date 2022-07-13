@@ -8,9 +8,9 @@
 <!ENTITY filter.images.label "Filtru de imagini">
 <!ENTITY filter.links.label "Filtru de adrese">
 <!ENTITY add.label "Adaugă filtru nou">
-<!ENTITY dtacontext2.label "Preferințe">
+<!ENTITY dtmcontext2.label "Preferințe">
 <!ENTITY buttonlabelextra2 "Restaurează setările prestabilite">
-<!ENTITY dtaPreferences.title "Preferințe DownTheMoon!">
+<!ENTITY dtmPreferences.title "Preferințe DownTheMoon!">
 <!ENTITY manager "Gestionar dTm!">
 <!ENTITY mainpane.label "General">
 <!ENTITY mainpane.defaults.caption "Setări prestabilite">
@@ -28,7 +28,7 @@
 <!ENTITY mainpane.alertnotifications2.label "notificări de Desktop">
 <!ENTITY mainpane.alertnone.label "nimic">
 <!ENTITY mainpane.sounddone.label "Emite un sunet după terminarea tuturor descărcărilor">
-<!ENTITY mainpane.closedta.label "Închide DownTheMoon! după terminarea tuturor descărcărilor">
+<!ENTITY mainpane.closedtm.label "Închide DownTheMoon! după terminarea tuturor descărcărilor">
 <!ENTITY mainpane.settime.label "Stabilește data fișierului ca fiind data ultimei modificări (pe server) sau data puneri în lista de descărcări">
 <!ENTITY mainpane.rememberoneclick.label "Stabilește ca dTm OneClick să rețină dacă se aplică la toate filele sau doar la fila curentă">
 <!ENTITY mainpane.confirmremove2.label "Confirmă eliminarea descărcărilor">

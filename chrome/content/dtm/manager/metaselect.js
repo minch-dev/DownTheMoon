@@ -45,7 +45,7 @@ var MetaSelect = {
 			ignoreWWW.disabled=true;
 		}
 		
-		let filter = DTA.formatFilter({
+		let filter = DTM.formatFilter({
 			filter: this.ddRenaming.value,
 			copyDirTree: copyDirTree.checked && !copyDirTree.disabled,
 			ignoreProxyPath: ignoreProxyPath.checked,
@@ -183,7 +183,7 @@ var MetaSelect = {
 		Array.forEach(
 			document.getElementsByTagName('richlistitem'),
 			function(n) {
-				n.download.dirSave = DTA.getDirSavePath({
+				n.download.dirSave = DTM.getDirSavePath({
 					dirSaveDefault: directory.value,
 					dirSaveMeta: n.download.destinationPath,
 					ignoreDirSaveMeta: ignoreDirSaveMeta

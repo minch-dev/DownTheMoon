@@ -8,9 +8,9 @@
 <!ENTITY filter.images.label "Filtro de imagens">
 <!ENTITY filter.links.label "Filtro de ligações">
 <!ENTITY add.label "Adicionar novo filtro">
-<!ENTITY dtacontext2.label "Definições">
+<!ENTITY dtmcontext2.label "Definições">
 <!ENTITY buttonlabelextra2 "Restaurar pré-definições">
-<!ENTITY dtaPreferences.title "Definições do DownTheMoon!...">
+<!ENTITY dtmPreferences.title "Definições do DownTheMoon!...">
 <!ENTITY manager "Gestor dTm">
 <!ENTITY mainpane.label "Principal">
 <!ENTITY mainpane.defaults.caption "Padrões">
@@ -28,7 +28,7 @@
 <!ENTITY mainpane.alertnotifications2.label "Usar Notificações do Ambiente de Trabalho">
 <!ENTITY mainpane.alertnone.label "Não me avisar">
 <!ENTITY mainpane.sounddone.label "Tocar um som quando todas as transferências forem finalizadas">
-<!ENTITY mainpane.closedta.label "Fechar o DownTheMoon quando as transferências forem finalizadas">
+<!ENTITY mainpane.closedtm.label "Fechar o DownTheMoon quando as transferências forem finalizadas">
 <!ENTITY mainpane.settime.label "Definir hora do ficheiro para última vez modificado (servidor) ou hora da fila">
 <!ENTITY mainpane.rememberoneclick.label "Ter o dTm Um Clique a lembrar se se aplica a todos os separadores ou ao separador actual">
 <!ENTITY mainpane.confirmremove2.label "Confirmar remoção de transferências">

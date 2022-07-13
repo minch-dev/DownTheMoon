@@ -61,7 +61,7 @@ class MemoryReporter {
 		// KIND_OTHER to stay forwards-compatible.
 		callback.callback(
 			this.process,
-			"downthemall-downloads-memory-pending",
+			"downthemoon-downloads-memory-pending",
 			Ci.nsIMemoryReporter.KIND_OTHER,
 			Ci.nsIMemoryReporter.UNITS_BYTES,
 			this._pendingBytes,
@@ -70,7 +70,7 @@ class MemoryReporter {
 			);
 		callback.callback(
 			this.process,
-			"downthemall-connections-active",
+			"downthemoon-connections-active",
 			Ci.nsIMemoryReporter.KIND_OTHER,
 			Ci.nsIMemoryReporter.UNITS_COUNT,
 			this._chunksActive,
@@ -79,7 +79,7 @@ class MemoryReporter {
 			);
 		callback.callback(
 			this.process,
-			"downthemall-connections-suspended",
+			"downthemoon-connections-suspended",
 			Ci.nsIMemoryReporter.KIND_OTHER,
 			Ci.nsIMemoryReporter.UNITS_COUNT,
 			this._chunksScheduled,
@@ -88,7 +88,7 @@ class MemoryReporter {
 			);
 		callback.callback(
 			this.process,
-			"downthemall-connections-total",
+			"downthemoon-connections-total",
 			Ci.nsIMemoryReporter.KIND_OTHER,
 			Ci.nsIMemoryReporter.UNITS_COUNT,
 			this.chunks.length,
@@ -97,7 +97,7 @@ class MemoryReporter {
 			);
 		callback.callback(
 			this.process,
-			"downthemall-session-connections",
+			"downthemoon-session-connections",
 			Ci.nsIMemoryReporter.KIND_OTHER,
 			Ci.nsIMemoryReporter.UNITS_COUNT_CUMULATIVE,
 			this.session.chunks,
@@ -106,7 +106,7 @@ class MemoryReporter {
 			);
 		callback.callback(
 			this.process,
-			"downthemall-session-bytes",
+			"downthemoon-session-bytes",
 			Ci.nsIMemoryReporter.KIND_OTHER,
 			Ci.nsIMemoryReporter.UNITS_BYTES,
 			this.session.written,

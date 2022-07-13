@@ -12,10 +12,10 @@ const NS_METALINKER3 = 'http://www.metalinker.org/';
  */
 const NS_METALINK_RFC5854 = 'urn:ietf:params:xml:ns:metalink';
 
-const DTA = require("api");
+const DTM = require("api");
 const {LOCALE} = require("version");
 const {UrlManager} = require("./urlmanager");
-const {NS_DTA, NS_HTML, normalizeMetaPrefs} = require("utils");
+const {NS_DTM, NS_HTML, normalizeMetaPrefs} = require("utils");
 
 const XPathResult = Ci.nsIDOMXPathResult;
 
@@ -41,7 +41,7 @@ class Base {
 		case 'html':
 			return NS_HTML;
 		case 'dtm':
-			return NS_DTA;
+			return NS_DTM;
 		}
 		return this._NS;
 	}
@@ -143,28 +143,28 @@ class Metalinker3 extends Base {
 				throw new Exception("LocalFile name not provided!");
 			}
 			let referrer = null;
-			if (file.hasAttributeNS(NS_DTA, 'referrer')) {
-				referrer = file.getAttributeNS(NS_DTA, 'referrer');
+			if (file.hasAttributeNS(NS_DTM, 'referrer')) {
+				referrer = file.getAttributeNS(NS_DTM, 'referrer');
 			}
 			else {
 				referrer = aReferrer;
 			}
 			let num = null;
-			if (file.hasAttributeNS(NS_DTA, 'num')) {
+			if (file.hasAttributeNS(NS_DTM, 'num')) {
 				try {
-					num = parseInt(file.getAttributeNS(NS_DTA, 'num'), 10);
+					num = parseInt(file.getAttributeNS(NS_DTM, 'num'), 10);
 				}
 				catch (ex) {
 					/* no-op */
 				}
 			}
 			if (!num) {
-				num = DTA.currentSeries();
+				num = DTM.currentSeries();
 			}
 			let startDate = new Date();
-			if (file.hasAttributeNS(NS_DTA, 'startDate')) {
+			if (file.hasAttributeNS(NS_DTM, 'startDate')) {
 				try {
-					startDate = new Date(parseInt(file.getAttributeNS(NS_DTA, 'startDate'), 10));
+					startDate = new Date(parseInt(file.getAttributeNS(NS_DTM, 'startDate'), 10));
 				}
 				catch (ex) {
 					/* no-op */
@@ -176,8 +176,8 @@ class Metalinker3 extends Base {
 			for (var url of urlNodes) {
 				let preference = 1;
 				let charset = doc.characterSet;
-				if (url.hasAttributeNS(NS_DTA, 'charset')) {
-					charset = url.getAttributeNS(NS_DTA, 'charset');
+				if (url.hasAttributeNS(NS_DTM, 'charset')) {
+					charset = url.getAttributeNS(NS_DTM, 'charset');
 				}
 
 				let uri = null;
@@ -211,7 +211,7 @@ class Metalinker3 extends Base {
 						preference = 100 + preference;
 					}
 				}
-				urls.push(new DTA.URL(uri, preference));
+				urls.push(new DTM.URL(uri, preference));
 			}
 			if (!urls.length) {
 				continue;
@@ -225,7 +225,7 @@ class Metalinker3 extends Base {
 			let hash = null;
 			for (let h of this.getNodes(file, 'ml:verification/ml:hash')) {
 				try {
-					h = new DTA.Hash(h.textContent.trim(), h.getAttribute('type'));
+					h = new DTM.Hash(h.textContent.trim(), h.getAttribute('type'));
 					if (!hash || hash.q < h.q) {
 						hash = h;
 					}
@@ -235,7 +235,7 @@ class Metalinker3 extends Base {
 				}
 			}
 			if (hash) {
-				hash = new DTA.HashCollection(hash);
+				hash = new DTM.HashCollection(hash);
 				let pieces = this.getNodes(file, 'ml:verification/ml:pieces');
 				if (pieces.length) {
 					pieces = pieces[0];
@@ -251,7 +251,7 @@ class Metalinker3 extends Base {
 							try {
 								let num = parseInt(piece.getAttribute('piece'), 10);
 								if (!maxPiece || (num >= 0 && num <= maxPiece)) {
-									collection[num] =  new DTA.Hash(piece.textContent.trim(), type);
+									collection[num] =  new DTM.Hash(piece.textContent.trim(), type);
 								}
 								else {
 									throw new Exception("out of bound piece");
@@ -275,7 +275,7 @@ class Metalinker3 extends Base {
 					}
 					catch (ex) {
 						log(LOG_ERROR, "Failed to parse pieces", ex);
-						hash = new DTA.HashCollection(hash.full);
+						hash = new DTM.HashCollection(hash.full);
 					}
 				}
 			}
@@ -358,40 +358,40 @@ class MetalinkerRFC5854 extends Base {
 				throw new Exception("LocalFile name not provided!");
 			}
 			let referrer = null;
-			if (file.hasAttributeNS(NS_DTA, 'referrer')) {
-				referrer = file.getAttributeNS(NS_DTA, 'referrer');
+			if (file.hasAttributeNS(NS_DTM, 'referrer')) {
+				referrer = file.getAttributeNS(NS_DTM, 'referrer');
 			}
 			else {
 				referrer = aReferrer;
 			}
 			/* additions to support local save path/filename */
 			let destinationNameFull = null;
-			if (file.hasAttributeNS(NS_DTA, 'destinationNameFull')) {
-				destinationNameFull = file.getAttributeNS(NS_DTA, 'destinationNameFull') || null;
+			if (file.hasAttributeNS(NS_DTM, 'destinationNameFull')) {
+				destinationNameFull = file.getAttributeNS(NS_DTM, 'destinationNameFull') || null;
 			}
 			let destinationFile = null;
-			if (file.hasAttributeNS(NS_DTA, 'destinationFile')) {
-				destinationFile = file.getAttributeNS(NS_DTA, 'destinationFile') || null;
+			if (file.hasAttributeNS(NS_DTM, 'destinationFile')) {
+				destinationFile = file.getAttributeNS(NS_DTM, 'destinationFile') || null;
 			}
 			let destinationPath = null;
-			if (file.hasAttributeNS(NS_DTA, 'destinationPath')) {
-				destinationPath = file.getAttributeNS(NS_DTA, 'destinationPath') || null;
+			if (file.hasAttributeNS(NS_DTM, 'destinationPath')) {
+				destinationPath = file.getAttributeNS(NS_DTM, 'destinationPath') || null;
 			}
 			let destinationName = null;
-			if (file.hasAttributeNS(NS_DTA, 'destinationName')) {
-				destinationName = file.getAttributeNS(NS_DTA, 'destinationName') || null;
+			if (file.hasAttributeNS(NS_DTM, 'destinationName')) {
+				destinationName = file.getAttributeNS(NS_DTM, 'destinationName') || null;
 			}
 			let pathName = null;
-			if (file.hasAttributeNS(NS_DTA, 'pathName')) {
-				pathName = file.getAttributeNS(NS_DTA, 'pathName') || null;
+			if (file.hasAttributeNS(NS_DTM, 'pathName')) {
+				pathName = file.getAttributeNS(NS_DTM, 'pathName') || null;
 			}
 			let fileNameFromUser = null;
-			if (file.hasAttributeNS(NS_DTA, 'fileNameFromUser')) {
-				fileNameFromUser = file.getAttributeNS(NS_DTA, 'fileNameFromUser') || null;
+			if (file.hasAttributeNS(NS_DTM, 'fileNameFromUser')) {
+				fileNameFromUser = file.getAttributeNS(NS_DTM, 'fileNameFromUser') || null;
 			}
 			let title = null;
-			if (file.hasAttributeNS(NS_DTA, 'title')) {
-				title = file.getAttributeNS(NS_DTA, 'title') || '';
+			if (file.hasAttributeNS(NS_DTM, 'title')) {
+				title = file.getAttributeNS(NS_DTM, 'title') || '';
 			}
 			
 			/* end additions */
@@ -400,21 +400,21 @@ class MetalinkerRFC5854 extends Base {
 			
 			
 			let num = null;
-			if (file.hasAttributeNS(NS_DTA, 'num')) {
+			if (file.hasAttributeNS(NS_DTM, 'num')) {
 				try {
-					num = parseInt(file.getAttributeNS(NS_DTA, 'num'), 10);
+					num = parseInt(file.getAttributeNS(NS_DTM, 'num'), 10);
 				}
 				catch (ex) {
 					/* no-op */
 				}
 			}
 			if (!num) {
-				num = DTA.currentSeries();
+				num = DTM.currentSeries();
 			}
 			let startDate = new Date();
-			if (file.hasAttributeNS(NS_DTA, 'startDate')) {
+			if (file.hasAttributeNS(NS_DTM, 'startDate')) {
 				try {
-					startDate = new Date(parseInt(file.getAttributeNS(NS_DTA, 'startDate'), 10));
+					startDate = new Date(parseInt(file.getAttributeNS(NS_DTM, 'startDate'), 10));
 				}
 				catch (ex) {
 					/* no-op */
@@ -426,8 +426,8 @@ class MetalinkerRFC5854 extends Base {
 			for (var url of urlNodes) {
 				let preference = 1;
 				let charset = doc.characterSet;
-				if (url.hasAttributeNS(NS_DTA, 'charset')) {
-					charset = url.getAttributeNS(NS_DTA, 'charset');
+				if (url.hasAttributeNS(NS_DTM, 'charset')) {
+					charset = url.getAttributeNS(NS_DTM, 'charset');
 				}
 
 				let uri = null;
@@ -455,7 +455,7 @@ class MetalinkerRFC5854 extends Base {
 						preference = Math.max(preference / 4, 1);
 					}
 				}
-				urls.push(new DTA.URL(uri, preference));
+				urls.push(new DTM.URL(uri, preference));
 			}
 			if (!urls.length) {
 				continue;
@@ -471,7 +471,7 @@ class MetalinkerRFC5854 extends Base {
 			let hash = null;
 			for (let h of this.getNodes(file, 'ml:hash')) {
 				try {
-					h = new DTA.Hash(h.textContent.trim(), h.getAttribute('type'));
+					h = new DTM.Hash(h.textContent.trim(), h.getAttribute('type'));
 					if (!hash || hash.q < h.q) {
 						hash = h;
 					}
@@ -482,7 +482,7 @@ class MetalinkerRFC5854 extends Base {
 			}
 			if (hash) {
 				Cu.reportError(hash);
-				hash = new DTA.HashCollection(hash);
+				hash = new DTM.HashCollection(hash);
 				let pieces = this.getNodes(file, 'ml:pieces');
 				if (pieces.length) {
 					pieces = pieces[0];
@@ -494,7 +494,7 @@ class MetalinkerRFC5854 extends Base {
 						}
 						for (let piece of this.getNodes(pieces, 'ml:hash')) {
 							try {
-								hash.add(new DTA.Hash(piece.textContent.trim(), type));
+								hash.add(new DTM.Hash(piece.textContent.trim(), type));
 							}
 							catch (ex) {
 								log(LOG_ERROR, "Failed to parse piece", ex);
@@ -511,7 +511,7 @@ class MetalinkerRFC5854 extends Base {
 					}
 					catch (ex) {
 						log(LOG_ERROR, "Failed to parse pieces", ex);
-						hash = new DTA.HashCollection(hash.full);
+						hash = new DTM.HashCollection(hash.full);
 					}
 				}
 			}
@@ -617,7 +617,7 @@ function parse(aURI, aReferrer, aCallback) {
 Object.defineProperties(exports, {
 	"parse": {value: parse, enumerable: true},
 	"Metalink": {value: Metalink, enumerable: true},
-	"NS_DTA": {value: NS_DTA, enumerable: true},
+	"NS_DTM": {value: NS_DTM, enumerable: true},
 	"NS_HTML": {value: NS_HTML, enumerable: true},
 	"NS_METALINKER3": {value: NS_METALINKER3, enumerable: true},
 	"NS_METALINK_RFC5854": {value: NS_METALINK_RFC5854, enumerable: true}

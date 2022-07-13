@@ -6,10 +6,10 @@
 /* **
  * Lazy getters
  */
-/* global DTA, Mediator, Version, Preferences, recognizeTextLinks, TextLinks */
+/* global DTM, Mediator, Version, Preferences, recognizeTextLinks, TextLinks */
 /* global ContentHandling, CoThreads, getIcon, bundle, isWindowPrivate, identity */
 /*jshint strict:true, globalstrict:true, -W083, -W003*/
-lazy(this, 'DTA', () => require("api"));
+lazy(this, 'DTM', () => require("api"));
 lazy(this, "Mediator", () => require("support/mediator"));
 lazy(this, 'Version', () => require("version"));
 lazy(this, 'Preferences', () => require("preferences"));
@@ -30,8 +30,8 @@ const strfn = require("support/stringfuncs");
 var findLinksJob = 0;
 
 const MENU_ITEMS = [
-	'SepBack', 'Pref', 'SepPref', 'TDTA', 'DTA', 'TDTASel',
-	'DTASel', 'SaveLinkT', 'SaveLink', 'SaveImgT', 'SaveImg',
+	'SepBack', 'Pref', 'SepPref', 'TDTM', 'DTM', 'TDTMSel',
+	'DTMSel', 'SaveLinkT', 'SaveLink', 'SaveImgT', 'SaveImg',
 	'SaveVideoT', 'SaveVideo', 'SaveAudioT', 'SaveAudio',
 	'SaveFormT', 'SaveForm', 'SepFront'
 	];
@@ -43,9 +43,9 @@ function makeURI(u, ml) {
 	try {
 		let url = Services.io.newURI(u.spec || u, u.originCharset, null);
 		if (ml) {
-			url = DTA.getLinkPrintMetalink(url) || url;
+			url = DTM.getLinkPrintMetalink(url) || url;
 		}
-		return new DTA.URL(url);
+		return new DTM.URL(url);
 	}
 	catch (ex) {
 		log(LOG_ERROR, "failed to reconstruct: " + JSON.stringify(u), ex);
@@ -166,9 +166,9 @@ exports.load = function load(window, outerEvent) {
 					timeout = timeout || 2500;
 					let notification = window.PopupNotifications.show(
 							gBrowser.selectedBrowser,
-							'downthemall',
+							'downthemoon',
 							message,
-							'downthemall-notification-icon',
+							'downthemoon-notification-icon',
 							null,
 							null,
 							{timeout: timeout}
@@ -187,7 +187,7 @@ exports.load = function load(window, outerEvent) {
 		case 2:
 		/* jshint strict:true, globalstrict:true, +W086 */
 			require("support/alertservice")
-				.show("DownTheMoon!", message, null, "chrome://dtaicon/content/icon64.png");
+				.show("DownTheMoon!", message, null, "chrome://dtmicon/content/icon64.png");
 			return;
 		default:
 			// no notification
@@ -212,7 +212,7 @@ exports.load = function load(window, outerEvent) {
 		return new Promise((resolve, reject) => {
 			let job = ++findLinksJob;
 			let result = m => {
-				b.messageManager.removeMessageListener(`DTA:${method}:${job}`, result);
+				b.messageManager.removeMessageListener(`DTM:${method}:${job}`, result);
 				if (m.data.exception) {
 					reject(m.data.exception);
 				}
@@ -220,12 +220,12 @@ exports.load = function load(window, outerEvent) {
 					resolve(m.data);
 				}
 			};
-			b.messageManager.addMessageListener(`DTA:${method}:${job}`, result);
+			b.messageManager.addMessageListener(`DTM:${method}:${job}`, result);
 			if (!target) {
-				b.messageManager.sendAsyncMessage(`DTA:${method}`, {job:job, args: data});
+				b.messageManager.sendAsyncMessage(`DTM:${method}`, {job:job, args: data});
 			}
 			else {
-				b.messageManager.sendAsyncMessage(`DTA:${method}`, {job:job, args: data}, {target:target});
+				b.messageManager.sendAsyncMessage(`DTM:${method}`, {job:job, args: data}, {target:target});
 			}
 		});
 	}
@@ -260,10 +260,10 @@ exports.load = function load(window, outerEvent) {
 			}
 
 			if (turbo) {
-				log(LOG_INFO, "findLinks(): DtaOneClick request from the user");
+				log(LOG_INFO, "findLinks(): DtmOneClick request from the user");
 			}
 			else {
-				log(LOG_INFO, "findLinks(): DtaStandard request from the user");
+				log(LOG_INFO, "findLinks(): DtmStandard request from the user");
 			}
 
 			let collectedUrls = [];
@@ -298,13 +298,13 @@ exports.load = function load(window, outerEvent) {
 							imagesLength += m.data.images;
 						};
 						let result = m => {
-							browser.messageManager.removeMessageListener("DTA:findLinks:progress:" + job, progress);
-							browser.messageManager.removeMessageListener("DTA:findLinks:" + job, result);
+							browser.messageManager.removeMessageListener("DTM:findLinks:progress:" + job, progress);
+							browser.messageManager.removeMessageListener("DTM:findLinks:" + job, result);
 							resolve(m.data);
 						};
-						browser.messageManager.addMessageListener("DTA:findLinks:progress:" + job, progress);
-						browser.messageManager.addMessageListener("DTA:findLinks:" + job, result);
-						browser.messageManager.sendAsyncMessage("DTA:findLinks", {
+						browser.messageManager.addMessageListener("DTM:findLinks:progress:" + job, progress);
+						browser.messageManager.addMessageListener("DTM:findLinks:" + job, result);
+						browser.messageManager.sendAsyncMessage("DTM:findLinks", {
 							job: job,
 							honorSelection: !all,
 							recognizeTextLinks: recognizeTextLinks
@@ -339,7 +339,7 @@ exports.load = function load(window, outerEvent) {
 						let sniffed = getSniffedInfoFromLocation(l);
 						for (let s of sniffed) {
 							let o = {
-								"url": new DTA.URL(s.url),
+								"url": new DTM.URL(s.url),
 								"fileName": s.name,
 								"referrer": s.ref,
 								"description": bundle.getString('sniffedvideo')
@@ -377,13 +377,13 @@ exports.load = function load(window, outerEvent) {
 					return;
 				}
 
-				DTA.setPrivateMode(window, collectedUrls);
-				DTA.setPrivateMode(window, collectedImages);
+				DTM.setPrivateMode(window, collectedUrls);
+				DTM.setPrivateMode(window, collectedImages);
 
 				if (turbo) {
-					DTA.turboSaveLinkArray(window, collectedUrls, collectedImages, function(queued) {
+					DTM.turboSaveLinkArray(window, collectedUrls, collectedImages, function(queued) {
 						if (!queued) {
-							DTA.saveLinkArray(
+							DTM.saveLinkArray(
 								window,
 								collectedUrls,
 								collectedImages,
@@ -399,7 +399,7 @@ exports.load = function load(window, outerEvent) {
 					});
 					return;
 				}
-				DTA.saveLinkArray(window, collectedUrls, collectedImages);
+				DTM.saveLinkArray(window, collectedUrls, collectedImages);
 			}
 			catch (ex) {
 				log(LOG_ERROR, "findLinksTask", ex);
@@ -434,7 +434,7 @@ exports.load = function load(window, outerEvent) {
 	function findSniff(event, turbo) {
 		const target = event.explicitOriginalTarget;
 		if (target.classList.contains("dtm-sniff-element") && target.info) {
-			DTA.saveSingleItem(window, turbo, target.info);
+			DTM.saveSingleItem(window, turbo, target.info);
 		}
 	}
 
@@ -461,7 +461,7 @@ exports.load = function load(window, outerEvent) {
 			}
 			if (turbo) {
 				try {
-					DTA.saveSingleItem(window, true, item);
+					DTM.saveSingleItem(window, true, item);
 					notifyInfo(bundle.getFormattedString('queued', [url]));
 					return;
 				}
@@ -470,7 +470,7 @@ exports.load = function load(window, outerEvent) {
 					notifyError(bundle.getString('error'), bundle.getString('error.information'));
 				}
 			}
-			DTA.saveSingleItem(window, false, item);
+			DTM.saveSingleItem(window, false, item);
 		}
 		catch (ex) {
 			log(LOG_ERROR, "Failed to process single link", ex);
@@ -524,7 +524,7 @@ exports.load = function load(window, outerEvent) {
 
 			if (turbo) {
 				try {
-					DTA.saveSingleItem(window, true, item);
+					DTM.saveSingleItem(window, true, item);
 					return;
 				}
 				catch (ex) {
@@ -532,7 +532,7 @@ exports.load = function load(window, outerEvent) {
 					notifyError(bundle.getString('error'), bundle.getString('error.information'));
 				}
 			}
-			DTA.saveSingleItem(window, false, item);
+			DTM.saveSingleItem(window, false, item);
 		}
 		catch (ex) {
 			log(LOG_ERROR, 'findForm', ex);
@@ -557,9 +557,9 @@ exports.load = function load(window, outerEvent) {
 					}
 					_n = window.PopupNotifications.show(
 						gBrowser.selectedBrowser,
-						'downthemall',
+						'downthemoon',
 						message,
-						'downthemall-notification-icon'
+						'downthemoon-notification-icon'
 						);
 				};
 				return notifyProgress(message);
@@ -595,7 +595,7 @@ exports.load = function load(window, outerEvent) {
 				}
 			}
 			try {
-				DTA.saveSingleItem(window, true, item);
+				DTM.saveSingleItem(window, true, item);
 				notifyInfo(bundle.getFormattedString('queued', [url]));
 				return;
 			}
@@ -603,7 +603,7 @@ exports.load = function load(window, outerEvent) {
 				log(LOG_ERROR, 'saveSingleLink', ex);
 				notifyError(bundle.getString('error'), bundle.getString('error.information'));
 			}
-			DTA.saveSingleItem(window, false, item);
+			DTM.saveSingleItem(window, false, item);
 		}
 		catch (ex) {
 			log(LOG_ERROR, "Failed to process single link", ex);
@@ -617,11 +617,11 @@ exports.load = function load(window, outerEvent) {
 		}
 	}
 
-	window.messageManager.addMessageListener("DTA:selected", saveSelected);
-	window.messageManager.addMessageListener("DTA:new", newFrameScript);
+	window.messageManager.addMessageListener("DTM:selected", saveSelected);
+	window.messageManager.addMessageListener("DTM:new", newFrameScript);
 	unloadWindow(window, () => {
-		window.messageManager.removeMessageListener("DTA:selected", saveSelected);
-		window.messageManager.removeMessageListener("DTA:new", newFrameScript);
+		window.messageManager.removeMessageListener("DTM:selected", saveSelected);
+		window.messageManager.removeMessageListener("DTM:new", newFrameScript);
 	});
 
 	// these are only valid after the load event.
@@ -629,10 +629,10 @@ exports.load = function load(window, outerEvent) {
 	let compact = {};
 	let tools = {};
 
-	let ctxBase = $('dtaCtxCompact');
-	let toolsBase = $('dtaToolsMenu');
-	let toolsMenu = $('dtaToolsPopup');
-	let toolsSep = $('dtaToolsSep');
+	let ctxBase = $('dtmCtxCompact');
+	let toolsBase = $('dtmToolsMenu');
+	let toolsMenu = $('dtmToolsPopup');
+	let toolsSep = $('dtmToolsSep');
 
 	let ctx = ctxBase.parentNode;
 	let menu = toolsBase.parentNode;
@@ -673,10 +673,10 @@ exports.load = function load(window, outerEvent) {
 			let sel = ctx && ctx.isContentSelected;
 			if (sel) {
 				if (items[0]) {
-					show.push(menu.DTASel);
+					show.push(menu.DTMSel);
 				}
 				if (items[1]) {
-					show.push(menu.TDTASel);
+					show.push(menu.TDTMSel);
 				}
 			}
 
@@ -711,7 +711,7 @@ exports.load = function load(window, outerEvent) {
 					}
 				}
 			}
-			else if (ctxdata && ctxdata.addonInfo && ctxdata.addonInfo["DTA:onform"]) {
+			else if (ctxdata && ctxdata.addonInfo && ctxdata.addonInfo["DTM:onform"]) {
 				if (items[0]) {
 					show.push(menu.SaveForm);
 				}
@@ -722,10 +722,10 @@ exports.load = function load(window, outerEvent) {
 			// regular
 			else if (!sel) {
 				if (items[0]) {
-					show.push(menu.DTA);
+					show.push(menu.DTM);
 				}
 				if (items[1]) {
-					show.push(menu.TDTA);
+					show.push(menu.TDTM);
 				}
 			}
 
@@ -763,7 +763,7 @@ exports.load = function load(window, outerEvent) {
 			}
 		}
 		catch(ex) {
-			log(LOG_ERROR, "DTAContext(): ", ex);
+			log(LOG_ERROR, "DTMContext(): ", ex);
 		}
 	}
 
@@ -790,10 +790,10 @@ exports.load = function load(window, outerEvent) {
 			let show = [];
 
 			if (menu[0]) {
-				show.push('DTA');
+				show.push('DTM');
 			}
 			if (menu[1]) {
-				show.push('TDTA');
+				show.push('TDTM');
 			}
 			// prefs
 			if (menu[2]) {
@@ -801,7 +801,7 @@ exports.load = function load(window, outerEvent) {
 			}
 			toolsSep.hidden = menu.indexOf(0) === -1;
 			toolsBase.setAttribute('label',
-				bundle.getString(menu.indexOf(1) !== -1 ? 'moredtatools' : 'simpledtatools'));
+				bundle.getString(menu.indexOf(1) !== -1 ? 'moredtmtools' : 'simpledtmtools'));
 
 			// show the items.
 			for (let i in tools) {
@@ -815,11 +815,11 @@ exports.load = function load(window, outerEvent) {
 			}
 		}
 		catch(ex) {
-			log(LOG_ERROR, "DTATools(): ", ex);
+			log(LOG_ERROR, "DTMTools(): ", ex);
 		}
 	}
 
-	async function onDTAShowing(evt) {
+	async function onDTMShowing(evt) {
 		let menu = evt.target;
 		for (let n of menu.querySelectorAll(".dtm-sniff-element")) {
 			n.parentNode.removeChild(n);
@@ -843,7 +843,7 @@ exports.load = function load(window, outerEvent) {
 		let cmd = menu.parentNode.getAttribute("buttoncommand") + "-sniff";
 		for (let s of sniffed) {
 			let o = {
-				"url": new DTA.URL(s.url),
+				"url": new DTM.URL(s.url),
 				"referrer": s.ref,
 				"fileName": s.name,
 				"description": bundle.getString("sniffedvideo"),
@@ -860,7 +860,7 @@ exports.load = function load(window, outerEvent) {
 		}
 	}
 
-	async function onDTAViewShowing(button, view) {
+	async function onDTMViewShowing(button, view) {
 		for (let n of view.querySelectorAll(".dtm-sniff-element")) {
 			n.parentNode.removeChild(n);
 		}
@@ -885,7 +885,7 @@ exports.load = function load(window, outerEvent) {
 		let cmd = button.getAttribute("buttoncommand") + "-sniff";
 		for (let s of sniffed) {
 			let o = {
-				"url": new DTA.URL(s.url),
+				"url": new DTM.URL(s.url),
 				"referrer": s.ref,
 				"fileName": s.name,
 				"description": bundle.getString("sniffedvideo"),
@@ -903,14 +903,14 @@ exports.load = function load(window, outerEvent) {
 	}
 
 	function attachOneClick() {
-		window.messageManager.broadcastAsyncMessage("DTA:selector", {
+		window.messageManager.broadcastAsyncMessage("DTM:selector", {
 			enable: true,
 			bgimgs: Preferences.getExt('selectbgimages', false)
 		});
 	}
 
 	function detachOneClick() {
-		window.messageManager.broadcastAsyncMessage("DTA:selector", {enable: false});
+		window.messageManager.broadcastAsyncMessage("DTM:selector", {enable: false});
 	}
 
 	let _keyActive =  false;
@@ -941,8 +941,8 @@ exports.load = function load(window, outerEvent) {
 		// note that this is only performed to keep the number of event listeners down
 		// The remote site does not get special privileges!
 		try {
-			if (!/^about:downthemall/.test(event.target.location) &&
-				event.target.location.host !== "about.downthemall.net") {
+			if (!/^about:downthemoon/.test(event.target.location) &&
+				event.target.location.host !== "about.downthemoon.nope") {
 				return;
 			}
 		}
@@ -951,13 +951,13 @@ exports.load = function load(window, outerEvent) {
 			return;
 		}
 		let tbinstall, tbunload, win = event.target;
-		win.addEventListener("DTA:toolbarinstall", tbinstall = (function() {
-			win.removeEventListener("DTA:toolbarinstall", tbinstall, true);
+		win.addEventListener("DTM:toolbarinstall", tbinstall = (function() {
+			win.removeEventListener("DTM:toolbarinstall", tbinstall, true);
 			win.removeEventListener("unload", tbunload, true);
 			Mediator.showToolbarInstall(window);
 		}), true);
 		win.addEventListener("unload", tbunload = (function() {
-			win.removeEventListener("DTA:toolbarinstall", tbinstall, true);
+			win.removeEventListener("DTM:toolbarinstall", tbinstall, true);
 			win.removeEventListener("unload", tbunload, true);
 		}), true);
 	}
@@ -1004,7 +1004,7 @@ exports.load = function load(window, outerEvent) {
 					return;
 				}
 				url = Services.io.newURI(url, null, null);
-				url = new DTA.URL(DTA.getLinkPrintMetalink(url) || url);
+				url = new DTM.URL(DTM.getLinkPrintMetalink(url) || url);
 				let {ref, title} = await getFocusedDetails();
 				ref = makeURI(ref);
 				func(url, ref);
@@ -1047,11 +1047,11 @@ exports.load = function load(window, outerEvent) {
 		}
 
 		try {
-			let cont = $('dtaCtxSubmenu');
+			let cont = $('dtmCtxSubmenu');
 
 			for (let id of MENU_ITEMS) {
-				compact[id] = $('dtaCtx' + id);
-				let node = $('dtaCtx' + id).cloneNode(true);
+				compact[id] = $('dtmCtx' + id);
+				let node = $('dtmCtx' + id).cloneNode(true);
 				node.setAttribute('id', node.id + "-direct");
 				ctx.insertBefore(node, ctxBase.nextSibling);
 				direct[id] = node;
@@ -1059,8 +1059,8 @@ exports.load = function load(window, outerEvent) {
 			}
 
 			// prepare tools
-			for (let e of ['DTA', 'TDTA', 'Manager']) {
-				tools[e] = $('dtaTools' + e);
+			for (let e of ['DTM', 'TDTM', 'Manager']) {
+				tools[e] = $('dtmTools' + e);
 			}
 
 			let f = bindEvt("command", () => findLinks(false));
@@ -1086,7 +1086,7 @@ exports.load = function load(window, outerEvent) {
 			bindEvt("command", e => findSniff(e, true))($("dtm:turbo-sniff"));
 
 			bindEvt("command", () => toggleOneClick())($("dtm:turboselect"));
-			bindEvt("command", () => DTA.openManager(window))($("dtm:manager"));
+			bindEvt("command", () => DTM.openManager(window))($("dtm:manager"));
 			bindEvt("command", () => Mediator.showPreferences(window))($("dtm:prefs"));
 			bindEvt("command", () => Mediator.showToolbarInstall(window))($("dtm:tbinstall"));
 			bindEvt("command", () => Mediator.showAbout(window))($("dtm:about"));
@@ -1140,7 +1140,7 @@ exports.load = function load(window, outerEvent) {
 						let ownerWindow = el.ownerDocument.defaultView;
 						let {area} = ownerWindow.CustomizableUI.getPlacementOfWidget(el.id);
 						let view = el.getAttribute("panelview");
-						onDTAViewShowing(el, $(view));
+						onDTMViewShowing(el, $(view));
 						ownerWindow.PanelUI.showSubView(view, el, area);
 						e.preventDefault();
 						return false;
@@ -1151,14 +1151,14 @@ exports.load = function load(window, outerEvent) {
 				}
 				$(el.getAttribute("buttoncommand")).doCommand();
 			}
-			let dta_button = $t('dtm-button');
-			dta_button.addEventListener('popupshowing', onDTAShowing, true);
-			unloadWindow(window, () => dta_button.removeEventListener('popupshowing', onDTAShowing, true));
-			dta_button.addEventListener('command', onCommand, true);
-			unloadWindow(window, () => dta_button.removeEventListener('command', onCommand, true));
+			let dtm_button = $t('dtm-button');
+			dtm_button.addEventListener('popupshowing', onDTMShowing, true);
+			unloadWindow(window, () => dtm_button.removeEventListener('popupshowing', onDTMShowing, true));
+			dtm_button.addEventListener('command', onCommand, true);
+			unloadWindow(window, () => dtm_button.removeEventListener('command', onCommand, true));
 
-			setupDrop(dta_button, function(url, ref) {
-				DTA.saveSingleItem(window, false, {
+			setupDrop(dtm_button, function(url, ref) {
+				DTM.saveSingleItem(window, false, {
 					"url": url,
 					"referrer": ref,
 					"description": "",
@@ -1166,13 +1166,13 @@ exports.load = function load(window, outerEvent) {
 				});
 			});
 
-			let dta_turbo_button = $t('dtm-turbo-button');
-			dta_turbo_button.addEventListener('popupshowing', onDTAShowing, true);
-			unloadWindow(window, () => dta_turbo_button.removeEventListener('popupshowing', onDTAShowing, true));
-			dta_turbo_button.addEventListener('command', onCommand, true);
-			unloadWindow(window, () => dta_turbo_button.removeEventListener('command', onCommand, true));
+			let dtm_turbo_button = $t('dtm-turbo-button');
+			dtm_turbo_button.addEventListener('popupshowing', onDTMShowing, true);
+			unloadWindow(window, () => dtm_turbo_button.removeEventListener('popupshowing', onDTMShowing, true));
+			dtm_turbo_button.addEventListener('command', onCommand, true);
+			unloadWindow(window, () => dtm_turbo_button.removeEventListener('command', onCommand, true));
 
-			setupDrop(dta_turbo_button, function(url, ref) {
+			setupDrop(dtm_turbo_button, function(url, ref) {
 				let item = {
 					"url": url,
 					"referrer": ref,
@@ -1180,11 +1180,11 @@ exports.load = function load(window, outerEvent) {
 					"isPrivate": isWindowPrivate(window)
 				};
 				try {
-					DTA.saveSingleItem(window, true, item);
+					DTM.saveSingleItem(window, true, item);
 				}
 				catch (ex) {
 					log(LOG_ERROR, "failed to turbo drop, retrying normal", ex);
-					DTA.saveSingleItem(window, false, item);
+					DTM.saveSingleItem(window, false, item);
 				}
 			});
 

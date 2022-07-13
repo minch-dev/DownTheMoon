@@ -11,11 +11,11 @@
 <!ENTITY amo.description.intro "DownTheMoon é tudo o que pode desejar de um gestor de transferências: tem um acelerador avançado que aumenta até 4x mais a velocidade e permite que pause e resuma transferências em qualquer altura.">
 <!ENTITY amo.description.feat2 "DownTheMoon é rápido, confiável e fácil de usar! Deixa-o transferir todas as ligações ou imagens contidas numa página web e muito mais: pode refinar as suas transferências através de critérios totalmente personalizáveis para obter apenas aquilo que realmente quer. Tenha controlo total sobre as suas transferências, velocidade dedicada e número de ligações paralelas em qualquer altura. Use Metaligações ou adicione manualmente servidores-espelho para transferir um ficheiro a partir de diferentes servidores ao mesmo tempo.">
 <!ENTITY amo.description.free2 "DownTheMoon é código-livre e gratuito, Sem Adware, sem Spyware, sem rastreamento, sem quaisquer custos!">
-<!ENTITY amo.description.more "Para mais informações veja a nossa página <a href='http://www.downthemall.net/howto/features/'>de funcionalidades</a>.">
+<!ENTITY amo.description.more "Para mais informações veja a nossa página <a href='http://www.downthemoon.nope/howto/features/'>de funcionalidades</a>.">
 <!ENTITY lp.title "Sobre o DownTheMoon!">
 <!ENTITY lp.welcome "Bem vindo ao DownTheMoon!">
 <!ENTITY lp.info "Veja os vídeos  que mostram como usar o DownTheMoon! e saiba mais sobre privacidade e os seus direitos">
-<!ENTITY lp.moreinfo "Para mais informação visite a nossa <a href='http://www.downthemall.net/howto/features/'>página de funcionalidades</a>.">
+<!ENTITY lp.moreinfo "Para mais informação visite a nossa <a href='http://www.downthemoon.nope/howto/features/'>página de funcionalidades</a>.">
 <!ENTITY lp.gettingstarted "Como começar">
 <!ENTITY lp.toolbar "Botões da Barra de Ferramentas">
 <!ENTITY lp.privacy "Privacidade">
@@ -54,9 +54,9 @@
 <!ENTITY lp.tb.add.title "Adicionando e usando botões da barra de ferramentas">
 <!ENTITY lp.tb.add.p1 "O DownTheMoon! tem quatro botões de barra de ferramentas para tornar mais fácil encontrar e ordenar as transferências">
 <!ENTITY lp.tb.add.dtm "Botão DownTheMoon!">
-<!ENTITY lp.tb.add.dtadesc "Abre a janela de Selecção DownTheMoon! para o separador actual.">
-<!ENTITY lp.tb.add.tdta "Botão UmClique!">
-<!ENTITY lp.tb.add.tdtadesc "Transfere todos os itens da página actual de acordo com as últimas preferências e filtros usados.">
+<!ENTITY lp.tb.add.dtmdesc "Abre a janela de Selecção DownTheMoon! para o separador actual.">
+<!ENTITY lp.tb.add.tdtm "Botão UmClique!">
+<!ENTITY lp.tb.add.tdtmdesc "Transfere todos os itens da página actual de acordo com as últimas preferências e filtros usados.">
 <!ENTITY lp.tb.add.manager "Botão Gestor DownTheMoon!">
 <!ENTITY lp.tb.add.managerdesc "Abre a janela do Gestor">
 <!ENTITY lp.tb.add.selector "Botão de Selecção DownTheMoon!">
@@ -72,9 +72,9 @@
 <!ENTITY lp.pr.title "Nota de Privacidade">
 <!ENTITY lp.pr.intro2 "DownTheMoon respeita a sua privacidade.">
 <!ENTITY lp.pr.settings2 "Pode fazer com que o DownTheMoon! remova todas as transferências completas, canceladas, e inacabadas da lista de transferências depois de fechar a janela ao alterar as definições nas Preferências → Painel de privacidade.">
-<!ENTITY lp.pr.diag2 "Pode ativar mensagens de diagnóstico, que serão registadas duplamente na consola de erros e escritas no ficheiro dta_log.txt, através de Preferências → Painel de privacidade. As mensagens de diagnóstico irão provavelmente conter informação sensível como URLs, caminhos de ficheiro, nomes de ficheiros que está a transferir, ou até mesmo informação de cookies. Esta opção está DESATIVADA por defeito para proteger a sua privacidade. Se submeter um histórico de diagnóstico, pode querer censurar alguma informação sensível. Os históricos de diagnóstico nunca serão transmitidos e/ou publicados de uma forma automática.">
+<!ENTITY lp.pr.diag2 "Pode ativar mensagens de diagnóstico, que serão registadas duplamente na consola de erros e escritas no ficheiro dtm_log.txt, através de Preferências → Painel de privacidade. As mensagens de diagnóstico irão provavelmente conter informação sensível como URLs, caminhos de ficheiro, nomes de ficheiros que está a transferir, ou até mesmo informação de cookies. Esta opção está DESATIVADA por defeito para proteger a sua privacidade. Se submeter um histórico de diagnóstico, pode querer censurar alguma informação sensível. Os históricos de diagnóstico nunca serão transmitidos e/ou publicados de uma forma automática.">
 <!ENTITY lp.pr.pwpbm "DownTheMoon! suporta o Modo de Navegação Privada por-janela do Firefox: Quando adicionar transferências a partir de uma Janela de Navegação Privada, o DownTheMoon! não guardará qualquer informação sobre ficheiros transferidos, pastas transferidas ou máscaras de renomeação usadas. Por favor note que outros dados - como novos filtros criados, ou, claro, as transferências atuais - serão na mesma escritas para o seu disco.">
-<!ENTITY lp.pr.link "Esta advertência está sempre disponível a partir desta página (about:downthemall) e está adicionalmente ligada na janela das Preferências">
+<!ENTITY lp.pr.link "Esta advertência está sempre disponível a partir desta página (about:downthemoon) e está adicionalmente ligada na janela das Preferências">
 <!ENTITY lp.yr.usagetitle "Uso e redistribuição">
 <!ENTITY lp.yr.usage "Os autores licenciam o DownTheMoon! de modo a que possa livremente:">
 <!ENTITY lp.yr.usageuse "Use o DownTheMoon!">
@@ -86,7 +86,7 @@
 <!ENTITY lp.language.babelzilla "Se é fluente em vários idiomas, por favor considere fazer parte da <a href='http://babelzilla.org'>babelzilla.org</a> para ajudar a traduzir este e muitos outros grandiosos extras.">
 <!ENTITY lp.yr.licensetitle "Direitos de Cópia e Licença">
 <!ENTITY lp.yr.licensed "DownTheMoon! está licenciado sob <a href='http://www.gnu.org/licenses/old-licenses/gpl-2.0.html'>GPL 2.0</a>. Veja o ficheiro GPL. Isto aplica-se a todo os ficheiros de código-fonte.">
-<!ENTITY lp.yr.morelicense3 "Ficheiros individuais podem conter licenças adicionais e/ou diferentes. Veja o repositório de ficheiros correspondes disponível em <a href='http://code.downthemall.net/repos/'>http://code.downthemall.net/repos/</a>. A maioria dos ficheiros são licenciados sob GPL/LGPL-compatível MPL 2.0, ou são tri-licenciados sob licenças MPL 1.1/GPL 2.0/LGPL 2.1. Veja os ficheiros MPL, GPL, LGPL respetivos.">
+<!ENTITY lp.yr.morelicense3 "Ficheiros individuais podem conter licenças adicionais e/ou diferentes. Veja o repositório de ficheiros correspondes disponível em <a href='http://code.downthemoon.nope/repos/'>http://code.downthemoon.nope/repos/</a>. A maioria dos ficheiros são licenciados sob GPL/LGPL-compatível MPL 2.0, ou são tri-licenciados sob licenças MPL 1.1/GPL 2.0/LGPL 2.1. Veja os ficheiros MPL, GPL, LGPL respetivos.">
 <!ENTITY lp.yr.gplintro "Secções mais importantes do GPL 2.0, a não-garantia e danos, seguem:">
 <!ENTITY lp.yr.icons "Arte, ícones e botões">
 <!ENTITY lp.yr.iconsbased4 "são baseados no trabalho de Mike Matas, Mark James, o Noun Project e o Tango project">
@@ -95,7 +95,7 @@
 <!ENTITY lp.yr.logo3 "Design do logo DownTheMoon!: Direitos de cópia © 2004-2013 por Stefano Verna.">
 <!ENTITY lp.yr.logopermissions "O nome DownTheMoon! e logo não podem ser usados sem permissão em nenhum trabalho derivativo, com excepção de notícias relativas aos créditos e licenças.">
 <!ENTITY lp.ct.bugstitle "Relatório de bugs/pedidos de funcionalidades">
-<!ENTITY lp.ct.bugs2 "Por favor reporte quaisquer bugs ou pedido de funcionalidade no nosso <a href='https://bugs.downthemall.net/'>bug tracker</a>.">
+<!ENTITY lp.ct.bugs2 "Por favor reporte quaisquer bugs ou pedido de funcionalidade no nosso <a href='https://bugs.downthemoon.nope/'>bug tracker</a>.">
 <!ENTITY lp.ct.contactstitle "Contactos">
 <!ENTITY lp.ct.contactsfeed2 "Gostamos de receber os seus comentários, sugestões e/ou ofertas de ajuda.">
-<!ENTITY lp.ct.contacts "Por favor veja a nossa <a href='http://www.downthemall.net/main/contacts/'>página de contactos</a> online.">
+<!ENTITY lp.ct.contacts "Por favor veja a nossa <a href='http://www.downthemoon.nope/main/contacts/'>página de contactos</a> online.">

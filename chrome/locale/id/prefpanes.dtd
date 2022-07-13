@@ -8,9 +8,9 @@
 <!ENTITY filter.images.label "Filter gambar">
 <!ENTITY filter.links.label "Filter tautan">
 <!ENTITY add.label "Tambah Filter Baru">
-<!ENTITY dtacontext2.label "Preferensi">
+<!ENTITY dtmcontext2.label "Preferensi">
 <!ENTITY buttonlabelextra2 "Kembalikan Pengaturan Bawaan">
-<!ENTITY dtaPreferences.title "Preferensi DownTheMoon!">
+<!ENTITY dtmPreferences.title "Preferensi DownTheMoon!">
 <!ENTITY manager "Pengelola dTm!">
 <!ENTITY mainpane.label "Umum">
 <!ENTITY mainpane.defaults.caption "Bawaan">
@@ -28,7 +28,7 @@
 <!ENTITY mainpane.alertnotifications2.label "Menggunakan Notifikasi Desktop">
 <!ENTITY mainpane.alertnone.label "Jangan Ingatkan Saya">
 <!ENTITY mainpane.sounddone.label "Putar suara saat semua unduhan selesai">
-<!ENTITY mainpane.closedta.label "Tutup DownTheMoon saat unduhan selesai">
+<!ENTITY mainpane.closedtm.label "Tutup DownTheMoon saat unduhan selesai">
 <!ENTITY mainpane.settime.label "Tetapkan waktu berkas ke saat diubah (server) atau waktu saat ditambahkan">
 <!ENTITY mainpane.rememberoneclick.label "Pastikan dTm OneClick mengingat apakah diterapkan pada Semua Tab atau Tab Saat Ini">
 <!ENTITY mainpane.confirmremove2.label "Konfirmasi penghapusan unduhan">

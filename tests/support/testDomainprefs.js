@@ -16,7 +16,7 @@ test("exports", function() {
 
 test("basic", function() {
 	let dp = require("support/domainprefs");
-	let uri = Services.io.newURI("https://code.downthemall.net/test.jpg", null, null);
+	let uri = Services.io.newURI("https://code.downthemoon.nope/test.jpg", null, null);
 
 	ok(!dp.get(uri, "test"));
 	strictEqual(dp.get(uri, "test", "val"), "val");
@@ -28,31 +28,31 @@ test("basic", function() {
 	strictEqual(dp.get(uri, "test", 1), "a");
 	strictEqual(dp.get(uri, "test"), "a");
 	strictEqual(dp.get(uri, Symbol.for("test")), "a");
-	strictEqual(dp.getHost("code.downthemall.net", "test"), "a");
-	strictEqual(dp.getHost("code.downthemall.net", Symbol.for("test")), "a");
+	strictEqual(dp.getHost("code.downthemoon.nope", "test"), "a");
+	strictEqual(dp.getHost("code.downthemoon.nope", Symbol.for("test")), "a");
 
 	dp.delete(uri, "test");
 	ok(!dp.get(uri, "test"));
 	strictEqual(dp.get(uri, "test", "val"), "val");
-	strictEqual(dp.getHost("code.downthemall.net", "test", "val"), "val");
+	strictEqual(dp.getHost("code.downthemoon.nope", "test", "val"), "val");
 	strictEqual(dp.get(uri, "test", 1), 1);
 	strictEqual(dp.get(uri, "test"), undefined);
-	strictEqual(dp.getHost("code.downthemall.net", "test"), undefined);
+	strictEqual(dp.getHost("code.downthemoon.nope", "test"), undefined);
 });
 
 test("tld", function() {
 	let dp = require("support/domainprefs");
-	let uri = Services.io.newURI("https://code.downthemall.net/test.jpg", null, null);
-	let uri2 = Services.io.newURI("https://downthemall.net/test.jpg", null, null);
+	let uri = Services.io.newURI("https://code.downthemoon.nope/test.jpg", null, null);
+	let uri2 = Services.io.newURI("https://downthemoon.nope/test.jpg", null, null);
 	let tld = { tld: true };
 
 	dp.set(uri, "test", "a", tld);
 	strictEqual(dp.get(uri, "test", "val", tld), "a");
-	strictEqual(dp.getHost("downthemall.net", "test", "val"), "a");
+	strictEqual(dp.getHost("downthemoon.nope", "test", "val"), "a");
 	strictEqual(dp.get(uri, "test", 1, tld), "a");
 	strictEqual(dp.get(uri, "test", undefined, tld), "a");
 	strictEqual(dp.get(uri, Symbol.for("test"), undefined, tld), "a");
-	strictEqual(dp.getHost("downthemall.net", Symbol.for("test"), "val"), "a");
+	strictEqual(dp.getHost("downthemoon.nope", Symbol.for("test"), "val"), "a");
 
 	strictEqual(dp.get(uri2, "test", "val", tld), "a");
 	strictEqual(dp.get(uri2, "test", 1, tld), "a");
@@ -65,13 +65,13 @@ test("tld", function() {
 	strictEqual(dp.get(uri, "test", "val", tld), "val");
 	strictEqual(dp.get(uri2, "test", 1, tld), 1);
 	strictEqual(dp.get(uri, "test", undefined, tld), undefined);
-	strictEqual(dp.getHost("downthemall.net", Symbol.for("test")), undefined);
+	strictEqual(dp.getHost("downthemoon.nope", Symbol.for("test")), undefined);
 });
 
 test("TLD", function() {
 	let dp = require("support/domainprefs");
-	let uri = Services.io.newURI("https://code.downthemall.net/test.jpg", null, null);
-	let uri2 = Services.io.newURI("https://downthemall.net/test.jpg", null, null);
+	let uri = Services.io.newURI("https://code.downthemoon.nope/test.jpg", null, null);
+	let uri2 = Services.io.newURI("https://downthemoon.nope/test.jpg", null, null);
 
 	dp.setTLD(uri, "test", "a");
 	strictEqual(dp.getTLD(uri, "test", "val"), "a");
@@ -94,8 +94,8 @@ test("TLD", function() {
 
 test("priv", function() {
 	let dp = require("support/domainprefs");
-	let uri = Services.io.newURI("https://code.downthemall.net/test.jpg", null, null);
-	let uri2 = Services.io.newURI("https://downthemall.net/test.jpg", null, null);
+	let uri = Services.io.newURI("https://code.downthemoon.nope/test.jpg", null, null);
+	let uri2 = Services.io.newURI("https://downthemoon.nope/test.jpg", null, null);
 	let tld = { tld: true };
 	let priv = { isPrivate: true, tld: true };
 

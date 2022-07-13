@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 "use strict";
-/* global _, DTA, $, $$, Utils, Preferences, log, unloadWindow */
+/* global _, DTM, $, $$, Utils, Preferences, log, unloadWindow */
 /* global Mediator, FilterManager, openUrl, alert */
 /* jshint globalstrict:true, strict:true, browser:true */
 
@@ -27,20 +27,20 @@ var Main = {
 var Privacy = {
 	load: function() {
 		try {
-			var logExists = DTA.getProfileFile("log.txt").exists();
+			var logExists = DTM.getProfileFile("log.txt").exists();
 			$("butShowLog", 'butDelLog', 'butRevealLog')
 				.forEach(function(e) { e.disabled = !logExists; });
 
-			$("butFiltDel").disabled = !DTA.getDropDownValue("filter");
-			$("butFoldDel").disabled = !DTA.getDropDownValue("directory");
+			$("butFiltDel").disabled = !DTM.getDropDownValue("filter");
+			$("butFoldDel").disabled = !DTM.getDropDownValue("directory");
 		}
 		catch (ex) {
 			log(LOG_ERROR, "privacyLoad(): ", ex);
 		}
 
 		// delay this assignment, or else we get messed up by the slider c'tor
-		$('history').setAttribute('preference', 'dtahistory');
-		$('dtahistory').updateElements();
+		$('history').setAttribute('preference', 'dtmhistory');
+		$('dtmhistory').updateElements();
 	},
 	changedHistory: function() {
 		$('historylabel').value = $('history').value;
@@ -79,11 +79,11 @@ var Privacy = {
 var Advanced = {
 	load: function() {
 		// delay these assignments, or else we get messed up by the slider c'tor
-		$('maxchunks').setAttribute('preference', 'dtamaxchunks');
-		$('dtamaxchunks').updateElements();
+		$('maxchunks').setAttribute('preference', 'dtmmaxchunks');
+		$('dtmmaxchunks').updateElements();
 		this.changedMaxChunks();
-		$('loadendfirst').setAttribute('preference', 'dtaloadendfirst');
-		$('dtaloadendfirst').updateElements();
+		$('loadendfirst').setAttribute('preference', 'dtmloadendfirst');
+		$('dtmloadendfirst').updateElements();
 		this.changedLoadEndFirst();
 		this.toggleTemp();
 	},
@@ -106,10 +106,10 @@ var Advanced = {
 		$("temp").disabled = $("browsedir").disabled = !$("useTemp").checked;
 	},
 	getPerm: function(perm) {
-		return $('dtapermissions').value & perm;
+		return $('dtmpermissions').value & perm;
 	},
 	setPerm: function(perm) {
-		return 384 | ($('dtapermissions').value ^ perm);
+		return 384 | ($('dtmpermissions').value ^ perm);
 	},
 	changedMaxChunks: function() {
 		let v = $('maxchunks').value;
@@ -161,7 +161,7 @@ var Filters = {
 		registerObserver: function() {
 			try {
 				Preferences.makeObserver(this);
-				Services.obs.addObserver(this, 'DTA:filterschanged', true);
+				Services.obs.addObserver(this, 'DTM:filterschanged', true);
 			}
 			catch (ex) {
 				log(LOG_ERROR, "cannot install filterManager observer!", ex);
@@ -172,7 +172,7 @@ var Filters = {
 		// nsIObserver::observe
 		observe : function(subject, topic, prefName) {
 			// filterManager will throw this topic at us.
-			if (topic === 'DTA:filterschanged') {
+			if (topic === 'DTM:filterschanged') {
 				// the heavy work will be performed by changeTab..
 				// it will create the filter boxen for us, and furthermore do another selection
 				Filters.reloadFilters();
@@ -409,10 +409,10 @@ var Servers = {
 		}
 
 		// delay these assignments, or else we get messed up by the slider c'tor
-		$('maxtasks').setAttribute('preference', 'dtamaxtasks');
-		$('dtamaxtasks').updateElements();
-		$('maxtasksperserver').setAttribute('preference', 'dtamaxtasksperserver');
-		$('dtamaxtasksperserver').updateElements();
+		$('maxtasks').setAttribute('preference', 'dtmmaxtasks');
+		$('dtmmaxtasks').updateElements();
+		$('maxtasksperserver').setAttribute('preference', 'dtmmaxtasksperserver');
+		$('dtmmaxtasksperserver').updateElements();
 
 		this._list.addEventListener('LimitsEdit', evt => this.editLimit(evt), true);
 		this._list.addEventListener('LimitsEditCancel', evt => this.cancelEditLimit(evt.originalTarget), true);

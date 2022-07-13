@@ -12,13 +12,13 @@
 <overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 	<prefpane id="paneSchedule" label="&schedpane.label;" orient="vertical" onpaneload="Schedule.init();" flex="1">
 		<preferences>
-			<preference id="dtaschedenabled" name="extensions.dtm.schedule.enabled" type="bool" />
-			<preference id="dtaschedstart" name="extensions.dtm.schedule.start" type="int" />
-			<preference id="dtaschedend" name="extensions.dtm.schedule.end" type="int" />
-			<preference id="dtaschedopen" name="extensions.dtm.schedule.open" type="bool" />
+			<preference id="dtmschedenabled" name="extensions.dtm.schedule.enabled" type="bool" />
+			<preference id="dtmschedstart" name="extensions.dtm.schedule.start" type="int" />
+			<preference id="dtmschedend" name="extensions.dtm.schedule.end" type="int" />
+			<preference id="dtmschedopen" name="extensions.dtm.schedule.open" type="bool" />
 		</preferences>
 
-		<checkbox id="schedenable" label="&schedpane.enable.label;" preference="dtaschedenabled"/>
+		<checkbox id="schedenable" label="&schedpane.enable.label;" preference="dtmschedenabled"/>
 		<deck id="scheddeck">
 			<hbox/>
 			<groupbox>
@@ -31,15 +31,15 @@
 					<rows>
 						<row align="center">
 							<label value="&schedpane.start.label;" control="schedstart"/>
-							<timepicker id="schedstart" hideseconds="true" preference="dtaschedstart" preference-editable="true" onsyncfrompreference="return Schedule.syncFromPref(this)" onsynctopreference="return Schedule.syncToPref(this)"/>
+							<timepicker id="schedstart" hideseconds="true" preference="dtmschedstart" preference-editable="true" onsyncfrompreference="return Schedule.syncFromPref(this)" onsynctopreference="return Schedule.syncToPref(this)"/>
 						</row>
 						<row align="center">
 							<label value="&schedpane.end.label;" control="schedend"/>
-							<timepicker id="schedend" hideseconds="true" preference="dtaschedend" preference-editable="true" onsyncfrompreference="return Schedule.syncFromPref(this)" onsynctopreference="return Schedule.syncToPref(this)"/>
+							<timepicker id="schedend" hideseconds="true" preference="dtmschedend" preference-editable="true" onsyncfrompreference="return Schedule.syncFromPref(this)" onsynctopreference="return Schedule.syncToPref(this)"/>
 						</row>
 					</rows>
 				</grid>
-				<checkbox label="&schedpane.open.label;" preference="dtaschedopen"/>
+				<checkbox label="&schedpane.open.label;" preference="dtmschedopen"/>
 			</groupbox>
 		</deck>
 	</prefpane>

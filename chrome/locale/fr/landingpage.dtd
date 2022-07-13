@@ -11,11 +11,11 @@
 <!ENTITY amo.description.intro "DownTheMoon! est tout ce que vous pouvez désirer d'un gestionnaire de téléchargement : il dispose d'un accélérateur avancé qui multiplie la vitesse par 4 et il vous permet d'interrompre et de reprendre les téléchargements à tout moment.">
 <!ENTITY amo.description.feat2 "DownTheMoon est rapide, fiable et simple à utiliser ! Elle vous permet de télécharger tous les liens ou images contenus dans une page Web et bien plus : vous pouvez filtrer vos téléchargements par des critères complètement personnalisables pour obtenir uniquement ce que vous souhaitez. Soyez totalement maître de vos téléchargements, dédiez vitesse et nombre de connections simultanées à n'importe quel moment. Utilisez des metaliens ou ajoutés des sites miroirs manuellement pour télécharger un fichier à partir de différents serveurs en même temps.">
 <!ENTITY amo.description.free2 "DownTheMoon est un produit open-source et gratuit. Pas de publicité, pas d'espionnage, pas de traçage, pas de coût !">
-<!ENTITY amo.description.more "Pour en savoir plus visitez la <a href='http://www.downthemall.net/howto/features/'>page des fonctionnalités</a>.">
+<!ENTITY amo.description.more "Pour en savoir plus visitez la <a href='http://www.downthemoon.nope/howto/features/'>page des fonctionnalités</a>.">
 <!ENTITY lp.title "À propos de l'extension DownTheMoon!">
 <!ENTITY lp.welcome "Bienvenue dans DownTheMoon!">
 <!ENTITY lp.info "Jetez un œil sur les vidéos montrant comment utiliser DownTheMoon! et apprenez-en davantage sur la vie privée et vos droits">
-<!ENTITY lp.moreinfo "Pour en savoir plus visitez la <a href='http://www.downthemall.net/howto/features/'>page des fonctionnalités</a>.">
+<!ENTITY lp.moreinfo "Pour en savoir plus visitez la <a href='http://www.downthemoon.nope/howto/features/'>page des fonctionnalités</a>.">
 <!ENTITY lp.gettingstarted "Comment commencer">
 <!ENTITY lp.toolbar "Boutons de la barre d'outils">
 <!ENTITY lp.privacy "Vie privée">
@@ -54,9 +54,9 @@
 <!ENTITY lp.tb.add.title "Ajout et utilisation des boutons de barre d'outils">
 <!ENTITY lp.tb.add.p1 "DownTheMoon! propose quatre boutons de barre d'outils pour faciliter la recherche et le démarrage de téléchargements">
 <!ENTITY lp.tb.add.dtm "Bouton DownTheMoon!">
-<!ENTITY lp.tb.add.dtadesc "Ouvre la fenêtre de sélection DownTheMoon! pour l'onglet courant.">
-<!ENTITY lp.tb.add.tdta "Bouton OneClick!">
-<!ENTITY lp.tb.add.tdtadesc "Télécharge tous les éléments de la page courante en prenant en compte les dernières préférences et filtres utilisés.">
+<!ENTITY lp.tb.add.dtmdesc "Ouvre la fenêtre de sélection DownTheMoon! pour l'onglet courant.">
+<!ENTITY lp.tb.add.tdtm "Bouton OneClick!">
+<!ENTITY lp.tb.add.tdtmdesc "Télécharge tous les éléments de la page courante en prenant en compte les dernières préférences et filtres utilisés.">
 <!ENTITY lp.tb.add.manager "Bouton Gestionnaire DownTheMoon!">
 <!ENTITY lp.tb.add.managerdesc "Ouvre la fenêtre du gestionnaire.">
 <!ENTITY lp.tb.add.selector "Bouton de sélection DownTheMoon!">
@@ -72,9 +72,9 @@
 <!ENTITY lp.pr.title "Note concernant la vie privée">
 <!ENTITY lp.pr.intro2 "DownTheMoon! respecte votre vie privée.">
 <!ENTITY lp.pr.settings2 "Vous pouvez demander à DownTheMoon de supprimer tous les téléchargements achevés, annulés et incomplets à partir de la liste de téléchargement après avoir fermé la fenêtre en modifiant les paramètres dans le panneau de vie privée des préférences.">
-<!ENTITY lp.pr.diag2 "Vous pouvez activer des messages diagnostics qui seront enregistrés dans la console d'erreur et dans le fichier dta_log.txt, dans Préférences » Panneau vie privée. Les messages de diagnostic vont contenir des informations sensibles comme les URLs, le chemin de fichiers, le nom des fichiers téléchargés ou même des informations sur les cookies. Cette option est DÉSACTIVÉE par défaut pour protéger votre vie privée. Si vous soumettez un un journal diagnostic, vous devrez censurer toute information sensible. Les journaux diagnostics ne seront jamais transmis ou publiés de manière automatisée.">
+<!ENTITY lp.pr.diag2 "Vous pouvez activer des messages diagnostics qui seront enregistrés dans la console d'erreur et dans le fichier dtm_log.txt, dans Préférences » Panneau vie privée. Les messages de diagnostic vont contenir des informations sensibles comme les URLs, le chemin de fichiers, le nom des fichiers téléchargés ou même des informations sur les cookies. Cette option est DÉSACTIVÉE par défaut pour protéger votre vie privée. Si vous soumettez un un journal diagnostic, vous devrez censurer toute information sensible. Les journaux diagnostics ne seront jamais transmis ou publiés de manière automatisée.">
 <!ENTITY lp.pr.pwpbm "DownTheMoon! prend en charge le mode de navigation privée de Firefox : lorsque vous ajoutez des téléchargement à partir d'une session de navigation privée, DownTheMoon ne stockera aucune information à propos des fichiers téléchargés, des dossiers de téléchargement et des masques de renommage. Veuillez prendre note que d'autres données - comme des filtres créés ou, bien-sûr, les téléchargements - sont encore écrites sur votre disque.">
-<!ENTITY lp.pr.link "Cette note est toujours disponible à partir de la page (about:downthemall) et est également consultable à partir de la fenêtre des préférences">
+<!ENTITY lp.pr.link "Cette note est toujours disponible à partir de la page (about:downthemoon) et est également consultable à partir de la fenêtre des préférences">
 <!ENTITY lp.yr.usagetitle "Utilisation et redistribution">
 <!ENTITY lp.yr.usage "Les auteurs de DownTheMoon! ont opté pour une licence qui vous permet librement :">
 <!ENTITY lp.yr.usageuse "D'utiliser DownTheMoon!">
@@ -86,7 +86,7 @@
 <!ENTITY lp.language.babelzilla "Si vous êtes à l'aise dans l'utilisation de plusieurs langues, veuillez vous rendre à <a href='http://babelzilla.org'>babelzilla.org</a> pour aider à la traduction de cette extension et beaucoup d'autres.">
 <!ENTITY lp.yr.licensetitle "Copyright et licence">
 <!ENTITY lp.yr.licensed "Licence d'utilisation de DownTheMoon! : <a href='http://www.gnu.org/licenses/old-licenses/gpl-2.0.html'>GPL 2.0</a>. Voyez le fichier GPL. Ceci s'applique à tous les fichiers contenant du code source.">
-<!ENTITY lp.yr.morelicense3 "Des fichiers individuels peuvent avoir des licences supplémentaires et/ou différentes. Voyez les fichiers du dépôt correspondant disponibles sur <a href='http://code.downthemall.net/repos/'>http://code.downthemall.net/repos/</a>. La plupart des fichiers sont sous licence GPL/LGPL-compatible MPL 2.0 ou sous tri-licence MPL 1.1/GPL 2.0/LGPL 2.1. Voyez respectivement les fichiers MPL, GPL, LGPL.">
+<!ENTITY lp.yr.morelicense3 "Des fichiers individuels peuvent avoir des licences supplémentaires et/ou différentes. Voyez les fichiers du dépôt correspondant disponibles sur <a href='http://code.downthemoon.nope/repos/'>http://code.downthemoon.nope/repos/</a>. La plupart des fichiers sont sous licence GPL/LGPL-compatible MPL 2.0 ou sous tri-licence MPL 1.1/GPL 2.0/LGPL 2.1. Voyez respectivement les fichiers MPL, GPL, LGPL.">
 <!ENTITY lp.yr.gplintro "Les parties les plus importantes de GPL 2.0, la décharge de responsabilité concernant la garantie et les dommages éventuels, suivent :">
 <!ENTITY lp.yr.icons "Graphisme, icônes et boutons">
 <!ENTITY lp.yr.iconsbased4 "sont basés sur le travail de Mike Matas, Mark James, du projet Noun et du projet Tango">
@@ -95,7 +95,7 @@
 <!ENTITY lp.yr.logo3 "Le design du logo DownTheMoon! : Copyright © 2004-2016 par Stefano Verna.">
 <!ENTITY lp.yr.logopermissions "Le nom et le logo DownTheMoon! ne peuvent être utilisés sans permission dans tout travail connexe, à l'exception des notices de crédits et de licences.">
 <!ENTITY lp.ct.bugstitle "Signalement de bogues / Demande de fonctionnalités">
-<!ENTITY lp.ct.bugs2 "Veuillez signaler tout bug et demande de fonctionnalité sur notre <a href='https://bugs.downthemall.net/'>bug tracker</a>.">
+<!ENTITY lp.ct.bugs2 "Veuillez signaler tout bug et demande de fonctionnalité sur notre <a href='https://bugs.downthemoon.nope/'>bug tracker</a>.">
 <!ENTITY lp.ct.contactstitle "Contacts">
 <!ENTITY lp.ct.contactsfeed2 "Nous aimons recevoir vos retours, suggestions et/ou offres pour aide.">
-<!ENTITY lp.ct.contacts "Veuillez aller à <a href='http://www.downthemall.net/main/contacts/'>la page de contact</a> en ligne.">
+<!ENTITY lp.ct.contacts "Veuillez aller à <a href='http://www.downthemoon.nope/main/contacts/'>la page de contact</a> en ligne.">

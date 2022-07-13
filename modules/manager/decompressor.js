@@ -6,7 +6,7 @@
 const BUFFER_SIZE = 5 * 1024 * 1024;
 const FREQ = 250;
 
-const DTA = require("api");
+const DTM = require("api");
 const {setInterval, clearInterval} = require("support/defer");
 const Prefs = require("preferences");
 

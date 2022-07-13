@@ -59,7 +59,7 @@ exports.ContentHandling = new class {
 	constructor() {
 		this.classDescription = "DownTheMoon! ContentHandling";
 		this.classID = Components.ID("366982b8-9db9-4383-aae7-dbc2f40ba6f6");
-		this.contractID = "@downthemall.net/content/redirects;1";
+		this.contractID = "@downthemoon.nope/content/redirects;1";
 		this.xpcom_categories = ["net-channel-event-sinks"];
 		this.QueryInterface = QI([
 			Ci.nsIObserver,
@@ -88,7 +88,7 @@ exports.ContentHandling = new class {
 		let fs = "chrome://dtm-modules/content/support/contenthandling-content.js?" + (+new Date());
 		this.globalMM.loadFrameScript(fs, true);
 		unload(() => {
-			this.globalMM.broadcastAsyncMessage("DTA:ch:shutdown");
+			this.globalMM.broadcastAsyncMessage("DTM:ch:shutdown");
 			this.globalMM.removeDelayedFrameScript(fs);
 		});
 		unload(this._uninit.bind(this));
@@ -244,12 +244,12 @@ exports.ContentHandling = new class {
 						let tfe = lc.topFrameElement;
 						let mm = tfe.messageManager;
 						let wnd = await new Promise((resolve, reject) => {
-							let topic = `DTA::getURI:${this.getUriJob++}`;
+							let topic = `DTM::getURI:${this.getUriJob++}`;
 							mm.addMessageListener(topic, function load(m) {
 								mm.removeMessageListener(topic, load);
 								resolve(m.data);
 							});
-							mm.sendAsyncMessage("DTA:ch:getURI", {
+							mm.sendAsyncMessage("DTM:ch:getURI", {
 								topic: topic
 							});
 						});

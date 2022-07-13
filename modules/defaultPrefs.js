@@ -5,7 +5,7 @@ pref("extensions.dtm.ctxmenu", "1,1,0");
 pref("extensions.dtm.ctxcompact", false);
 pref("extensions.dtm.toolsmenu", "0,0,0");
 pref("extensions.dtm.toolshidden", false);
-pref("extensions.dtm.closedta", false);
+pref("extensions.dtm.closedtm", false);
 pref("extensions.dtm.saveTemp", false);
 pref("extensions.dtm.downloadWin", true);
 pref("extensions.dtm.conflictresolution", 3);
@@ -86,4 +86,4 @@ pref("extensions.dtm.schedule.open", true);
 pref("privacy.cpd.extensions-dtm", false);
 pref("privacy.clearOnShutdown.extensions-dtm", false);
 
-pref("extensions.mintrayr.downthemall.watchmanager", false);
+pref("extensions.mintrayr.downthemoon.watchmanager", false);

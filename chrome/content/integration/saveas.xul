@@ -6,17 +6,17 @@
 <?xml-stylesheet type="text/css" href="chrome://dtm/content/common/bindings.css"?>
 <?xml-stylesheet type="text/css" href="chrome://dtm/skin/integration/saveas.css"?>
 
-<overlay id="downthemallDownloadSaveAs" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<overlay id="downthemoonDownloadSaveAs" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 	<radiogroup id="mode">
-		<vbox insertbefore="save" id="downthemallcontainer" collapsed="true" flex="1">
+		<vbox insertbefore="save" id="downthemooncontainer" collapsed="true" flex="1">
 			<hbox flex="1">
-				<radio id="downthemall" label="DownTheMoon!" disabled="true" />
+				<radio id="downthemoon" label="DownTheMoon!" disabled="true" />
 			</hbox>
-			<hbox id="tdta" flex="1">
-				<radio id="turbodta" disabled="true" label="dTm OneClick!" />
-				<toolbarbutton id="turbodtaexec" disabled="true" />
+			<hbox id="tdtm" flex="1">
+				<radio id="turbodtm" disabled="true" label="dTm OneClick!" />
+				<toolbarbutton id="turbodtmexec" disabled="true" />
 				<spacer flex="1" />
-				<saveddropdown id="tdtalist" preference="directory" readonly="true" crop="center" flex="1" />
+				<saveddropdown id="tdtmlist" preference="directory" readonly="true" crop="center" flex="1" />
 			</hbox>
 		</vbox>
 	</radiogroup>

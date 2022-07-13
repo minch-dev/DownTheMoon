@@ -13,10 +13,10 @@
 	%defmenuDTD;
 ]>
 
-<overlay id="DTAUIElements" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<overlay id="DTMUIElements" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 	<!-- Firefox/Seamonkey -->
 	<popup id="contentAreaContextMenu">
-		<menu id="dtaCtxCompact" insertafter="context-sep-selectall" />
+		<menu id="dtmCtxCompact" insertafter="context-sep-selectall" />
 	</popup>
 
 	<toolbarpalette id="BrowserToolbarPalette">
@@ -27,10 +27,10 @@
 	</toolbarpalette>
 
 	<menupopup id="menu_ToolsPopup">
-		<menu id="dtaToolsMenu" />
+		<menu id="dtmToolsMenu" />
 	</menupopup>
 	<menupopup id="taskPopup">
-		<menu id="dtaToolsMenu" class="menu-iconic dtm" insertafter="downloadmgr,navBeginGlobalItems" />
+		<menu id="dtmToolsMenu" class="menu-iconic dtm" insertafter="downloadmgr,navBeginGlobalItems" />
 	</menupopup>
 
 	<!-- Integration -->
@@ -64,37 +64,37 @@
 	</commandset>
 
 
-	<menu id="dtaCtxCompact" label="DownTheMoon!" class="menu-iconic dtm-menuitem dtm-normal">
-		<menupopup id="dtaCtxSubmenu">
-			<menuseparator class="thin" id="dtaCtxSepFront" />
-			<menuitem class="menuitem-iconic dtm-menuitem dtm-normal" id="dtaCtxDTA" accesskey="n" label="&dtm-regular2.label;" command="dtm:regular" />
-			<menuitem class="menuitem-iconic dtm-menuitem dtm-turbo" id="dtaCtxTDTA" accesskey="o" label="&dtm-regular-turbo2.label;" command="dtm:turbo" />
+	<menu id="dtmCtxCompact" label="DownTheMoon!" class="menu-iconic dtm-menuitem dtm-normal">
+		<menupopup id="dtmCtxSubmenu">
+			<menuseparator class="thin" id="dtmCtxSepFront" />
+			<menuitem class="menuitem-iconic dtm-menuitem dtm-normal" id="dtmCtxDTM" accesskey="n" label="&dtm-regular2.label;" command="dtm:regular" />
+			<menuitem class="menuitem-iconic dtm-menuitem dtm-turbo" id="dtmCtxTDTM" accesskey="o" label="&dtm-regular-turbo2.label;" command="dtm:turbo" />
 
-			<menuitem class="menuitem-iconic dtm-menuitem dtm-normal" id="dtaCtxDTASel" accesskey="n" label="&dtm-selection2.label;" command="dtm:regular-sel"/>
-			<menuitem class="menuitem-iconic dtm-menuitem dtm-turbo" id="dtaCtxTDTASel" accesskey="o" label="&dtm-selection-turbo2.label;" command="dtm:turbo-sel"/>
+			<menuitem class="menuitem-iconic dtm-menuitem dtm-normal" id="dtmCtxDTMSel" accesskey="n" label="&dtm-selection2.label;" command="dtm:regular-sel"/>
+			<menuitem class="menuitem-iconic dtm-menuitem dtm-turbo" id="dtmCtxTDTMSel" accesskey="o" label="&dtm-selection-turbo2.label;" command="dtm:turbo-sel"/>
 
-			<menuitem class="menuitem-iconic dtm-menuitem dtm-normal" id="dtaCtxSaveLink" accesskey="n" label="&dtm-link-save2.label;" command="dtm:regular-link"/>
-			<menuitem class="menuitem-iconic dtm-menuitem dtm-turbo" id="dtaCtxSaveLinkT" accesskey="o" label="&dtm-link-save-turbo2.label;" command="dtm:turbo-link"/>
+			<menuitem class="menuitem-iconic dtm-menuitem dtm-normal" id="dtmCtxSaveLink" accesskey="n" label="&dtm-link-save2.label;" command="dtm:regular-link"/>
+			<menuitem class="menuitem-iconic dtm-menuitem dtm-turbo" id="dtmCtxSaveLinkT" accesskey="o" label="&dtm-link-save-turbo2.label;" command="dtm:turbo-link"/>
 
-			<menuitem class="menuitem-iconic dtm-menuitem dtm-normal" id="dtaCtxSaveImg" label="&dtm-img-save2.label;" command="dtm:regular-img"/>
-			<menuitem class="menuitem-iconic dtm-menuitem dtm-turbo" id="dtaCtxSaveImgT" label="&dtm-img-save-turbo2.label;" command="dtm:turbo-img"/>
+			<menuitem class="menuitem-iconic dtm-menuitem dtm-normal" id="dtmCtxSaveImg" label="&dtm-img-save2.label;" command="dtm:regular-img"/>
+			<menuitem class="menuitem-iconic dtm-menuitem dtm-turbo" id="dtmCtxSaveImgT" label="&dtm-img-save-turbo2.label;" command="dtm:turbo-img"/>
 
-			<menuitem class="menuitem-iconic dtm-menuitem dtm-normal" id="dtaCtxSaveVideo" label="&dtm-video-save2.label;" command="dtm:regular-video"/>
-			<menuitem class="menuitem-iconic dtm-menuitem dtm-turbo" id="dtaCtxSaveVideoT" label="&dtm-video-save-turbo2.label;" command="dtm:turbo-video"/>
+			<menuitem class="menuitem-iconic dtm-menuitem dtm-normal" id="dtmCtxSaveVideo" label="&dtm-video-save2.label;" command="dtm:regular-video"/>
+			<menuitem class="menuitem-iconic dtm-menuitem dtm-turbo" id="dtmCtxSaveVideoT" label="&dtm-video-save-turbo2.label;" command="dtm:turbo-video"/>
 
-			<menuitem class="menuitem-iconic dtm-menuitem dtm-normal" id="dtaCtxSaveAudio" label="&dtm-audio-save2.label;" command="dtm:regular-audio"/>
-			<menuitem class="menuitem-iconic dtm-menuitem dtm-turbo" id="dtaCtxSaveAudioT" label="&dtm-audio-save-turbo2.label;" command="dtm:turbo-audio"/>
+			<menuitem class="menuitem-iconic dtm-menuitem dtm-normal" id="dtmCtxSaveAudio" label="&dtm-audio-save2.label;" command="dtm:regular-audio"/>
+			<menuitem class="menuitem-iconic dtm-menuitem dtm-turbo" id="dtmCtxSaveAudioT" label="&dtm-audio-save-turbo2.label;" command="dtm:turbo-audio"/>
 
-			<menuitem class="menuitem-iconic dtm-menuitem dtm-normal" id="dtaCtxSaveForm" label="&dtm-form-save2.label;" command="dtm:regular-form"/>
-			<menuitem class="menuitem-iconic dtm-menuitem dtm-turbo" id="dtaCtxSaveFormT" label="&dtm-form-save-turbo2.label;" command="dtm:turbo-form"/>
+			<menuitem class="menuitem-iconic dtm-menuitem dtm-normal" id="dtmCtxSaveForm" label="&dtm-form-save2.label;" command="dtm:regular-form"/>
+			<menuitem class="menuitem-iconic dtm-menuitem dtm-turbo" id="dtmCtxSaveFormT" label="&dtm-form-save-turbo2.label;" command="dtm:turbo-form"/>
 
-			<menuseparator class="thin" id="dtaCtxSepPref" />
-			<menuitem class="menuitem-iconic dtm-menuitem dtm-prefs" id="dtaCtxPref" label="&dtm-pref.label;" command="dtm:prefs"/>
-			<menuseparator class="thin" id="dtaCtxSepBack" />
+			<menuseparator class="thin" id="dtmCtxSepPref" />
+			<menuitem class="menuitem-iconic dtm-menuitem dtm-prefs" id="dtmCtxPref" label="&dtm-pref.label;" command="dtm:prefs"/>
+			<menuseparator class="thin" id="dtmCtxSepBack" />
 		</menupopup>
 	</menu>
 
-	<toolbarbutton id="dtm-button" class="chromeclass-toolbar-additional toolbarbutton-1 dtm-toolbarbutton" label="&dtm-regular2.label;" tooltiptext="&dtm-regular.desc;" type="menu-button" buttoncommand="dtm:regular" widget-type="view" panelview="PanelUI-downthemall">
+	<toolbarbutton id="dtm-button" class="chromeclass-toolbar-additional toolbarbutton-1 dtm-toolbarbutton" label="&dtm-regular2.label;" tooltiptext="&dtm-regular.desc;" type="menu-button" buttoncommand="dtm:regular" widget-type="view" panelview="PanelUI-downthemoon">
 		<menupopup  id="dtm-button-popup">
 			<menuitem id="dtm-tb-dtm" label="DownTheMoon! (&dtm-tb-single.label;)" class="menuitem-iconic dtm-menuitem dtm-normal" tooltiptext="&dtm-regular2.label;" command="dtm:regular"/>
 			<menuitem id="dtm-tb-all" label="DownTheMoon! (&dtm-tb-all.label;)" class="menuitem-iconic dtm-menuitem dtm-normal" tooltiptext="&dtm-regular2.label;" command="dtm:regular-all"/>
@@ -104,10 +104,10 @@
 	</toolbarbutton>
 
 	<box id="notification-popup-box">
-		<image id="downthemall-notification-icon" class="notification-anchor-icon" role="button" />
+		<image id="downthemoon-notification-icon" class="notification-anchor-icon" role="button" />
 	</box>
 
-	<toolbarbutton id="dtm-turbo-button" class="chromeclass-toolbar-additional toolbarbutton-1 dtm-toolbarbutton" label="&dtm-regular-turbo2.label;" tooltiptext="&dtm-regular-turbo.desc;" type="menu-button" widget-type="view" buttoncommand="dtm:turbo" panelview="PanelUI-downthemall-turbo">
+	<toolbarbutton id="dtm-turbo-button" class="chromeclass-toolbar-additional toolbarbutton-1 dtm-toolbarbutton" label="&dtm-regular-turbo2.label;" tooltiptext="&dtm-regular-turbo.desc;" type="menu-button" widget-type="view" buttoncommand="dtm:turbo" panelview="PanelUI-downthemoon-turbo">
 		<menupopup id="dtm-turbo-button-popup">
 			<menuitem id="dtm-tb-turbo" label="dTm OneClick! (&dtm-tb-single.label;)" tooltiptext="&dtm-regular-turbo2.label;" class="menuitem-iconic dtm-menuitem dtm-turbo" command="dtm:turbo"/>
 			<menuitem id="dtm-tb-allturbo" label="dTm OneClick! (&dtm-tb-all.label;)" tooltiptext="&dtm-regular-turbo2.label;" class="menuitem-iconic dtm-menuitem dtm-turbo" command="dtm:turbo-all"/>
@@ -119,34 +119,34 @@
 	<toolbarbutton id="dtm-turboselect-button" class="chromeclass-toolbar-additional toolbarbutton-1 dtm-toolbarbutton" label="&dtm-selector-button2.label;" tooltiptext="&dtm-selector-button.desc;" type="checkbox" command="dtm:turboselect" />
 	<toolbarbutton id="dtm-manager-button" class="chromeclass-toolbar-additional toolbarbutton-1 dtm-toolbarbutton" label="&dtm-manager-button;" tooltiptext="&dtm-manager-button;" command="dtm:manager"/>
 
-	<menu id="dtaToolsMenu" label="DownTheMoon!" class="menu-iconic dtm-menuitem dtm-normal">
-		<menupopup id="dtaToolsPopup">
-			<menuitem id="dtaToolsDTA" label="&dtm-regular2.label;" class="menuitem-iconic dtm-menuitem dtm-normal" command="dtm:regular"/>
-			<menuitem id="dtaToolsTDTA" label="&dtm-regular-turbo2.label;" class="menuitem-iconic dtm-menuitem dtm-turbo" command="dtm:turbo"/>
-			<menuitem id="dtaToolsManager" label="&dtm-manager-button;" class="menuitem-iconic dtm-menuitem dtm-manager" command="dtm:manager"/>
-			<menuseparator id="dtaToolsSep" />
-			<menuitem id="dtaToolsTBInstall" label="&dtm-tbinstall;" class="" command="dtm:tbinstall"/>
-			<menuitem id="dtaToolsPrefs" label="&dtm-pref.label;" class="menuitem-iconic dtm-menuitem dtm-prefs" command="dtm:prefs"/>
-			<menuitem id="dtaToolsAbout" label="&dtm-about2.label;" class="menuitem-iconic dtm-menuitem dtm-about" command="dtm:about"/>
+	<menu id="dtmToolsMenu" label="DownTheMoon!" class="menu-iconic dtm-menuitem dtm-normal">
+		<menupopup id="dtmToolsPopup">
+			<menuitem id="dtmToolsDTM" label="&dtm-regular2.label;" class="menuitem-iconic dtm-menuitem dtm-normal" command="dtm:regular"/>
+			<menuitem id="dtmToolsTDTM" label="&dtm-regular-turbo2.label;" class="menuitem-iconic dtm-menuitem dtm-turbo" command="dtm:turbo"/>
+			<menuitem id="dtmToolsManager" label="&dtm-manager-button;" class="menuitem-iconic dtm-menuitem dtm-manager" command="dtm:manager"/>
+			<menuseparator id="dtmToolsSep" />
+			<menuitem id="dtmToolsTBInstall" label="&dtm-tbinstall;" class="" command="dtm:tbinstall"/>
+			<menuitem id="dtmToolsPrefs" label="&dtm-pref.label;" class="menuitem-iconic dtm-menuitem dtm-prefs" command="dtm:prefs"/>
+			<menuitem id="dtmToolsAbout" label="&dtm-about2.label;" class="menuitem-iconic dtm-menuitem dtm-about" command="dtm:about"/>
 		</menupopup>
 	</menu>
 
 	<vbox id="appmenuSecondaryPane">
-		<menu id="dtaAppMenu" label="DownTheMoon!" class="menu-iconic dtm-menuitem dtm-normal" insertafter="appmenu_downloads">
-			<menupopup id="dtaAppMenuPopup">
-				<menuitem id="dtaAppMenuDTA" label="&dtm-regular2.label;" class="menuitem-iconic dtm-menuitem dtm-normal" command="dtm:regular"/>
-				<menuitem id="dtaAppMenuTDTA" label="&dtm-regular-turbo2.label;" class="menuitem-iconic dtm-menuitem dtm-turbo" command="dtm:turbo"/>
-				<menuitem id="dtaAppMenuManager" label="&dtm-manager-button;" class="menuitem-iconic dtm-menuitem dtm-manager" command="dtm:manager"/>
-				<menuseparator id="dtaAppMenuSep" />
-				<menuitem id="dtaAppMenuTBInstall" label="&dtm-tbinstall;" class="" command="dtm:tbinstall"/>
-				<menuitem id="dtaAppMenuPrefs" label="&dtm-pref.label;" class="menuitem-iconic dtm-menuitem dtm-prefs" command="dtm:prefs"/>
-				<menuitem id="dtaAppMenuAbout" label="&dtm-about2.label;" class="menuitem-iconic dtm-menuitem dtm-about" command="dtm:about"/>
+		<menu id="dtmAppMenu" label="DownTheMoon!" class="menu-iconic dtm-menuitem dtm-normal" insertafter="appmenu_downloads">
+			<menupopup id="dtmAppMenuPopup">
+				<menuitem id="dtmAppMenuDTM" label="&dtm-regular2.label;" class="menuitem-iconic dtm-menuitem dtm-normal" command="dtm:regular"/>
+				<menuitem id="dtmAppMenuTDTM" label="&dtm-regular-turbo2.label;" class="menuitem-iconic dtm-menuitem dtm-turbo" command="dtm:turbo"/>
+				<menuitem id="dtmAppMenuManager" label="&dtm-manager-button;" class="menuitem-iconic dtm-menuitem dtm-manager" command="dtm:manager"/>
+				<menuseparator id="dtmAppMenuSep" />
+				<menuitem id="dtmAppMenuTBInstall" label="&dtm-tbinstall;" class="" command="dtm:tbinstall"/>
+				<menuitem id="dtmAppMenuPrefs" label="&dtm-pref.label;" class="menuitem-iconic dtm-menuitem dtm-prefs" command="dtm:prefs"/>
+				<menuitem id="dtmAppMenuAbout" label="&dtm-about2.label;" class="menuitem-iconic dtm-menuitem dtm-about" command="dtm:about"/>
 			</menupopup>
 		</menu>
 	</vbox>
 
 	<panelmultiview id="PanelUI-multiView">
-		<panelview id="PanelUI-downthemall" flex="1" class="PanelUI-subView">
+		<panelview id="PanelUI-downthemoon" flex="1" class="PanelUI-subView">
 			<label value="&dtm-regular2.label;" class="panel-subview-header"/>
 			<vbox class="panel-subview-body">
 				<toolbarbutton id="dtm-panel-dtm" label="&dtm-tb-single.label;" class="subviewbutton cui-withicon dtm-menuitem dtm-normal" tooltiptext="&dtm-regular2.label;" command="dtm:regular"/>
@@ -155,7 +155,7 @@
 				<toolbarbutton id="dtm-panel-manager" label="&dtm-manager-button;" class="subviewbutton cui-withicon dtm-menuitem dtm-manager" tooltiptext="&dtm-manager-button;" command="dtm:manager" />
 			</vbox>
 		</panelview>
-		<panelview id="PanelUI-downthemall-turbo" flex="1"  class="PanelUI-subView">
+		<panelview id="PanelUI-downthemoon-turbo" flex="1"  class="PanelUI-subView">
 			<label value="&dtm-regular-turbo2.label;" class="panel-subview-header"/>
 			<vbox class="panel-subview-body">
 				<toolbarbutton id="dtm-panel-turbo" label="&dtm-tb-single.label;" tooltiptext="&dtm-regular-turbo2.label;" class="subviewbutton cui-withicon dtm-menuitem dtm-turbo" command="dtm:turbo"/>

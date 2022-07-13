@@ -1,6 +1,6 @@
 ## actual content packages ##
 content	dtm	chrome/content/
-content	dtaicon	./
+content	dtmicon	./
 skin	dtm	classic/1.0 chrome/skin/
 content	dtm-locale chrome/locale/en-US/
 locale	dtm	en-US	chrome/locale/en-US/

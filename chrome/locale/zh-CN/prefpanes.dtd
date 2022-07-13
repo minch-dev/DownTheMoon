@@ -8,9 +8,9 @@
 <!ENTITY filter.images.label "图片过滤器">
 <!ENTITY filter.links.label "链接过滤器">
 <!ENTITY add.label "新建过滤器">
-<!ENTITY dtacontext2.label "选项">
+<!ENTITY dtmcontext2.label "选项">
 <!ENTITY buttonlabelextra2 "恢复默认设置">
-<!ENTITY dtaPreferences.title "DownTheMoon! 选项">
+<!ENTITY dtmPreferences.title "DownTheMoon! 选项">
 <!ENTITY manager "dTm 管理器">
 <!ENTITY mainpane.label "常规">
 <!ENTITY mainpane.defaults.caption "默认">
@@ -28,7 +28,7 @@
 <!ENTITY mainpane.alertnotifications2.label "使用桌面通知">
 <!ENTITY mainpane.alertnone.label "不提示">
 <!ENTITY mainpane.sounddone.label "全部下载完成时播放声音">
-<!ENTITY mainpane.closedta.label "下载结束时关闭 DownTheMoon">
+<!ENTITY mainpane.closedtm.label "下载结束时关闭 DownTheMoon">
 <!ENTITY mainpane.settime.label "设置文件时间为上次修改时间(服务器)或队列时间">
 <!ENTITY mainpane.rememberoneclick.label "如果应用到所有标签页或当前标签页,让 dTm OneClick 记住设置">
 <!ENTITY mainpane.confirmremove2.label "移除下载需要确认">

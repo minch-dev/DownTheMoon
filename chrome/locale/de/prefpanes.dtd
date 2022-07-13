@@ -8,9 +8,9 @@
 <!ENTITY filter.images.label "Bild-Filter">
 <!ENTITY filter.links.label "Links-Filter">
 <!ENTITY add.label "Neue Filteregel erstellen">
-<!ENTITY dtacontext2.label "Einstellungen">
+<!ENTITY dtmcontext2.label "Einstellungen">
 <!ENTITY buttonlabelextra2 "Auf Standardwerte zurücksetzen">
-<!ENTITY dtaPreferences.title "DownTheMoon! Einstellungen">
+<!ENTITY dtmPreferences.title "DownTheMoon! Einstellungen">
 <!ENTITY manager "dTm! Manager">
 <!ENTITY mainpane.label "Allgemein">
 <!ENTITY mainpane.defaults.caption "Standardeinstellungen">
@@ -28,7 +28,7 @@
 <!ENTITY mainpane.alertnotifications2.label "Desktop-Benachrichtungen benutzen">
 <!ENTITY mainpane.alertnone.label "Keine Benachrichtigung anzeigen">
 <!ENTITY mainpane.sounddone.label "Nach Abschluss aller Downloads einen Hinweiston abspielen">
-<!ENTITY mainpane.closedta.label "DownTheMoon! schließen, wenn alle Downloads abgeschlossen sind">
+<!ENTITY mainpane.closedtm.label "DownTheMoon! schließen, wenn alle Downloads abgeschlossen sind">
 <!ENTITY mainpane.settime.label "Zeit der Datei auf Änderungszeit (des Servers) oder Startzeit setzen">
 <!ENTITY mainpane.rememberoneclick.label "dTm-OneClick soll sich merken, ob es für alle oder nur für den aktuellen Tab gilt">
 <!ENTITY mainpane.confirmremove2.label "Entfernen von Downloads bestätigen">
