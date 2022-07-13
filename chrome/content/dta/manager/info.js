@@ -94,7 +94,7 @@ var Dialog = {
 				}
 			}
 			if (this.isFullyDisabled) {
-				$('dTaDownloadInfo').buttons = 'accept';
+				$('dTaDownloadInfo').buttons = 'accept'; //!ATTENTION! what's this? this id is mentioned nowhere
 			}
 		}
 		catch(ex) {
