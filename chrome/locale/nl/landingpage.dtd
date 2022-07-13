@@ -3,8 +3,8 @@
 <!ENTITY lp.localedir "ltr">
 <!-- LOCALIZATION NOTE (language): Your language in your language -->
 <!ENTITY language "Nederlands">
-<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTa Team if you don't want credit -->
-<!ENTITY transAuthor "Het dTa-team">
+<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTm Team if you don't want credit -->
+<!ENTITY transAuthor "Het dTm-team">
 <!-- LOCALIZATION NOTE (fulltranslation): Your credit and language combined -->
 <!ENTITY fulltranslation "Nederlandse vertaling door: Alf (BabelZilla), Tonnes">
 <!ENTITY amo.summary2 "De eerste en enige downloadbeheerder/-versneller binnen uw browser!">

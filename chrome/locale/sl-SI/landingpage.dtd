@@ -3,10 +3,10 @@
 <!ENTITY lp.localedir "ltr">
 <!-- LOCALIZATION NOTE (language): Your language in your language -->
 <!ENTITY language "Slovenščina">
-<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTa Team if you don't want credit -->
-<!ENTITY transAuthor "Ekipa dTa">
+<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTm Team if you don't want credit -->
+<!ENTITY transAuthor "Ekipa dTm">
 <!-- LOCALIZATION NOTE (fulltranslation): Your credit and language combined -->
-<!ENTITY fulltranslation "Angleški prevod: ekipa dTa">
+<!ENTITY fulltranslation "Angleški prevod: ekipa dTm">
 <!ENTITY amo.summary2 "Prvi in edini upravitelj/pospeševalnik prenosov v brskalniku!">
 <!ENTITY amo.description.intro "DownTheMoon je vse, kar si želite od upravitelja prenosov: vsebuje napredni pospeševalnik, ki poveča hitrost do 4x in kadarkoli omogoča premore in obnovitve prenosov.">
 <!ENTITY amo.description.feat2 "DownTheMoon je hiter, zanesljiv in enostaven za uporabo! Omogoča prenos vseh povezav ali slik na strani in veliko več: svoje prenose lahko popolnoma prilagodite z merili, da dobite samo tisto, kar želite. Kadarkoli prevzemite popoln nadzor nad prenosi, dodeljeno hitrostjo in številom vzporednih povezav. Uporabite metapovezave ali ročno dodajte zrcalne strežnike za sočasni prenos datoteke z različnih strežnikov.">
@@ -24,7 +24,7 @@
 <!ENTITY lp.pleasenote "Upoštevajte:">
 <!ENTITY lp.donate2 "Prosimo razmislite o darovanju">
 <!ENTITY lp.tut.firsttitle "Vaš prvi prenos">
-<!ENTITY lp.tut.fd2 "Prenos datoteke v dTa-ju je precej enostaven in hkrati zelo učinkovit. Če ste pozvani za odpiranje ali shranjevanje datoteke, lahko uporabite predmet DownTheMoon!. Po izbiri mesta za shranjevanje lahko takoj začnete s prenosom ali datoteko daste v čakalno vrsto za kasnejši prenos.">
+<!ENTITY lp.tut.fd2 "Prenos datoteke v dTm-ju je precej enostaven in hkrati zelo učinkovit. Če ste pozvani za odpiranje ali shranjevanje datoteke, lahko uporabite predmet DownTheMoon!. Po izbiri mesta za shranjevanje lahko takoj začnete s prenosom ali datoteko daste v čakalno vrsto za kasnejši prenos.">
 <!ENTITY lp.tut.selecttitle "Uporaba izbirnega okna">
 <!ENTITY lp.tut.selintro "Vsebinski meni spletne strani omogoči nov predmet DownTheMoon! Uuporaba tega predmeta bo prikazala izbirno okno DownTheMoon!, katerega lahko uporabite za enostavno izbiro ene ali več povezav iz strani.">
 <!ENTITY lp.tut.seloptions "V izbirnem oknu imate več načinov izbire datotek za prenos:">

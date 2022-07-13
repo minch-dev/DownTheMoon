@@ -3,7 +3,7 @@
 <!ENTITY lp.localedir "ltr">
 <!-- LOCALIZATION NOTE (language): Your language in your language -->
 <!ENTITY language "Eesti keel">
-<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTa Team if you don't want credit -->
+<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTm Team if you don't want credit -->
 <!ENTITY transAuthor "Maidur">
 <!-- LOCALIZATION NOTE (fulltranslation): Your credit and language combined -->
 <!ENTITY fulltranslation "Tõlge eesti keelde: Maidur">
@@ -24,7 +24,7 @@
 <!ENTITY lp.pleasenote "Palun võta teadmiseks:">
 <!ENTITY lp.donate2 "Palun kaalu annetuse tegemist">
 <!ENTITY lp.tut.firsttitle "Sinu esimene allalaadimine">
-<!ENTITY lp.tut.fd2 "Faili dTa'ga allalaadimine on suhteliselt lihtne, kuid samas väga võimas. Kui küsitakse faili avamist või salvestamist, võid kasutada DownTheMoon!-i. Pärast allalaadimise salvestuskoha valimist võid allalaadimise käivitada kohe või faili hilisemaks allalaadimiseks järjekorda panna.">
+<!ENTITY lp.tut.fd2 "Faili dTm'ga allalaadimine on suhteliselt lihtne, kuid samas väga võimas. Kui küsitakse faili avamist või salvestamist, võid kasutada DownTheMoon!-i. Pärast allalaadimise salvestuskoha valimist võid allalaadimise käivitada kohe või faili hilisemaks allalaadimiseks järjekorda panna.">
 <!ENTITY lp.tut.selecttitle "Valiku tegemise akna kasutamine">
 <!ENTITY lp.tut.selintro "Veebilehe kontekstimenüüs on uus DownTheMoon! kirje. Selle kasutamine avab DownTheMoon! valiku tegemise akna, milles saad valida vähemalt ühe lingi, mis alla laadida.">
 <!ENTITY lp.tut.seloptions "Valiku tegemise aknas on allalaaditavate failide valimiseks minu võimalust:">

@@ -1,9 +1,9 @@
 <!-- LOCALIZATION NOTE (fulltranslation): Your credit and language combined -->
 <!-- LOCALIZATION NOTE (lp.tb.install): Text for the toolbar install button -->
 <!ENTITY lp.localedir "ltr">
-<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTa Team if you don't want credit -->
+<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTm Team if you don't want credit -->
 <!ENTITY language "Deutsch">
-<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTa Team if you don't want credit -->
+<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTm Team if you don't want credit -->
 <!ENTITY transAuthor "Nils Maier">
 <!-- LOCALIZATION NOTE (fulltranslation): Your credit and language combined -->
 <!ENTITY fulltranslation "Deutsche Übersetzung von: Nils Maier + weiteren Helfern">

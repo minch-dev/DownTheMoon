@@ -30,7 +30,7 @@
 <!ENTITY mainpane.sounddone.label "Een geluid afspelen als alle downloads zijn voltooid">
 <!ENTITY mainpane.closedta.label "DownTheMoon! sluiten als downloads zijn voltooid">
 <!ENTITY mainpane.settime.label "Bestandstijd instellen op tijd van laatste wijziging (server) of op tijd van in wachtrij plaatsen">
-<!ENTITY mainpane.rememberoneclick.label "dTa OneClick laten onthouden of het op alle tabbladen of het huidige tabblad van toepassing is">
+<!ENTITY mainpane.rememberoneclick.label "dTm OneClick laten onthouden of het op alle tabbladen of het huidige tabblad van toepassing is">
 <!ENTITY mainpane.confirmremove2.label "Verwijdering van downloads bevestigen">
 <!ENTITY mainpane.textlinks.label "Tekstkoppelingen herkennen">
 <!ENTITY mainpane.listsniffedvideos.label "(Flash-)video’s opnemen en in lijst vermelden">

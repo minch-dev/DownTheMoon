@@ -3,7 +3,7 @@
 <!ENTITY lp.localedir "ltr">
 <!-- LOCALIZATION NOTE (language): Your language in your language -->
 <!ENTITY language "Русский">
-<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTa Team if you don't want credit -->
+<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTm Team if you don't want credit -->
 <!ENTITY transAuthor "Sergeys, insolor, Anton Pinsky">
 <!-- LOCALIZATION NOTE (fulltranslation): Your credit and language combined -->
 <!ENTITY fulltranslation "Русский перевод: Sergeys, insolor, Anton Pinsky">
@@ -24,7 +24,7 @@
 <!ENTITY lp.pleasenote "Пожалуйста, обратите внимание:">
 <!ENTITY lp.donate2 "Возможно вы хотите поддержать разработку">
 <!ENTITY lp.tut.firsttitle "Ваша первая загрузка">
-<!ENTITY lp.tut.fd2 "dTa - простой, но мощный загрузчик. В запросе на открытие или сохранение файла Вы можете выбрать для этого DownTheMoon! Укажите куда сохранить загрузку, и Вы можете начать загружать немедленно или поставить загрузку в очередь чтобы скачать позже.">
+<!ENTITY lp.tut.fd2 "dTm - простой, но мощный загрузчик. В запросе на открытие или сохранение файла Вы можете выбрать для этого DownTheMoon! Укажите куда сохранить загрузку, и Вы можете начать загружать немедленно или поставить загрузку в очередь чтобы скачать позже.">
 <!ENTITY lp.tut.selecttitle "Использовать окно выбора">
 <!ENTITY lp.tut.selintro "В контекстное меню сайтов добавлен новый пункт DownTheMoon! Выбрав этот пункт DownTheMoon! покажет окно выбора, в котором вы можете выбрать для загрузки одну или несколько ссылок этой страницы">
 <!ENTITY lp.tut.seloptions "В окне выбора у вас есть несколько способов выбора файлов для загрузки:">

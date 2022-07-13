@@ -30,7 +30,7 @@
 <!ENTITY mainpane.sounddone.label "Odtwarzaj dźwięk po zakończeniu pobierania">
 <!ENTITY mainpane.closedta.label "Zamykaj DownTheMoon! po zakończeniu pobierania">
 <!ENTITY mainpane.settime.label "Ustaw ostatnio zmodyfikowany czas pliku na czas serwera lub czas kolejki">
-<!ENTITY mainpane.rememberoneclick.label "dTa OneClick! ma zapamiętać czy ma to zastosowanie do wszystkich kart, czy do aktywnej karty">
+<!ENTITY mainpane.rememberoneclick.label "dTm OneClick! ma zapamiętać czy ma to zastosowanie do wszystkich kart, czy do aktywnej karty">
 <!ENTITY mainpane.confirmremove2.label "Użytkownik musi potwierdzać usunięcie pobrań">
 <!ENTITY mainpane.textlinks.label "Rozpoznaj odnośniki tekstowe">
 <!ENTITY mainpane.listsniffedvideos.label "Zapisz i wyświetl listę wideo (Flash)">

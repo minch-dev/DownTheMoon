@@ -3,8 +3,8 @@
 <!ENTITY lp.localedir "ltr">
 <!-- LOCALIZATION NOTE (language): Your language in your language -->
 <!ENTITY language "Français">
-<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTa Team if you don't want credit -->
-<!ENTITY transAuthor "L'équipe dTa">
+<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTm Team if you don't want credit -->
+<!ENTITY transAuthor "L'équipe dTm">
 <!-- LOCALIZATION NOTE (fulltranslation): Your credit and language combined -->
 <!ENTITY fulltranslation "Traduction française par Jojaba">
 <!ENTITY amo.summary2 "Le premier et dernier gestionnaire/accélérateur de téléchargement dans votre navigateur !">
@@ -24,7 +24,7 @@
 <!ENTITY lp.pleasenote "Veuillez noter :">
 <!ENTITY lp.donate2 "Merci de prendre en considération le fait de faire un don">
 <!ENTITY lp.tut.firsttitle "Votre premier téléchargement">
-<!ENTITY lp.tut.fd2 "Télécharger un fichier dans dTa est vraiment facile mais très puissant également. Dans la boîte de téléchargement vous pouvez utiliser l'élément DownTheMoon!. Après avoir choisi l'emplacement de téléchargement, vous pouvez le lancer immédiatement ou mettre le fichier en file d'attente pour le télécharger ultérieurement.">
+<!ENTITY lp.tut.fd2 "Télécharger un fichier dans dTm est vraiment facile mais très puissant également. Dans la boîte de téléchargement vous pouvez utiliser l'élément DownTheMoon!. Après avoir choisi l'emplacement de téléchargement, vous pouvez le lancer immédiatement ou mettre le fichier en file d'attente pour le télécharger ultérieurement.">
 <!ENTITY lp.tut.selecttitle "Utilisation de la fenêtre de sélection">
 <!ENTITY lp.tut.selintro "Le menu contextuel d'un site vous propose un nouvel élément « DownTheMoon!». En utilisant cet élément, vous ouvrirez la fenêtre de sélection de DownTheMoon!, que vous pourrez utiliser pour choisir facilement un ou plusieurs lien de la page.">
 <!ENTITY lp.tut.seloptions "Dans la fenêtre de sélection vous avez plusieurs façons de sélectionner les fichiers à télécharger :">

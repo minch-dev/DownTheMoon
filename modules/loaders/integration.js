@@ -1219,5 +1219,5 @@ exports.load = function load(window, outerEvent) {
 			target.doCommand();
 		}
 	}
-	log(LOG_DEBUG, "dTa integration done");
+	log(LOG_DEBUG, "dTm integration done");
 };

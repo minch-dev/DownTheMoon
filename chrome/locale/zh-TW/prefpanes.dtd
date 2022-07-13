@@ -14,7 +14,7 @@
 <!ENTITY manager "dTm! 管理員">
 <!ENTITY mainpane.label "主要">
 <!ENTITY mainpane.defaults.caption "預設">
-<!ENTITY mainpane.defaults.desc "dTa 單鍵式所用的下載目錄、重新命名規則以及過濾器，可在 DownTheMoon! 選擇性下載視窗中設定。">
+<!ENTITY mainpane.defaults.desc "dTm 單鍵式所用的下載目錄、重新命名規則以及過濾器，可在 DownTheMoon! 選擇性下載視窗中設定。">
 <!ENTITY mainpane.nameclash.caption "當已存在一個相同名稱的檔案時:">
 <!ENTITY mainpane.rename.label "重新命名">
 <!ENTITY mainpane.overwrite.label "覆寫">
@@ -30,7 +30,7 @@
 <!ENTITY mainpane.sounddone.label "所有下載都完成時播放音效">
 <!ENTITY mainpane.closedta.label "下載完成後關閉 DownTheMoon!">
 <!ENTITY mainpane.settime.label "設定檔案時間為伺服器上的檔案修改時間或是佇列時間">
-<!ENTITY mainpane.rememberoneclick.label "讓 dTa 單鍵式記住要套用至所有分頁或是目前分頁">
+<!ENTITY mainpane.rememberoneclick.label "讓 dTm 單鍵式記住要套用至所有分頁或是目前分頁">
 <!ENTITY mainpane.confirmremove2.label "確認刪除下載">
 <!ENTITY mainpane.textlinks.label "辨識純文字鏈結">
 <!ENTITY mainpane.listsniffedvideos.label "辨識並列出 Flash 影片">

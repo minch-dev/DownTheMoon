@@ -3,7 +3,7 @@
 <!ENTITY lp.localedir "ltr">
 <!-- LOCALIZATION NOTE (language): Your language in your language -->
 <!ENTITY language "Română">
-<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTa Team if you don't want credit -->
+<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTm Team if you don't want credit -->
 <!ENTITY transAuthor "Cătălin Zamfirescu">
 <!-- LOCALIZATION NOTE (fulltranslation): Your credit and language combined -->
 <!ENTITY fulltranslation "Traducere în română: Cătălin Zamfirescu">
@@ -24,7 +24,7 @@
 <!ENTITY lp.pleasenote "Notă:">
 <!ENTITY lp.donate2 "Please consider making a contribution">
 <!ENTITY lp.tut.firsttitle "<font face="Helvetica">Prima descărcare&quot;&gt;">
-<!ENTITY lp.tut.fd2 "Downloading a file in dTa is fairly easy but also very powerful. If prompted to open or save a file you may use the DownTheMoon! item. After choosing where to save the download, you may start to download immediately or queue the file to be downloaded later.">
+<!ENTITY lp.tut.fd2 "Downloading a file in dTm is fairly easy but also very powerful. If prompted to open or save a file you may use the DownTheMoon! item. After choosing where to save the download, you may start to download immediately or queue the file to be downloaded later.">
 <!ENTITY lp.tut.selecttitle "<font face="Helvetica">Caseta de selectare surse&quot;&gt;">
 <!ENTITY lp.tut.selintro "Meniul contextual al unei pagini web oferă o nouă opțiune — DownTheMoon!. Folosind această opțiune se va deschide caseta de selectare surse DownTheMoon!, de unde puteți selecta cu ușurință una sau mai multe adrese de descărcare din pagina respectivă.">
 <!ENTITY lp.tut.seloptions "În caseta de selectare aveți mai multe moduri de a selecta fișierele pe care doriți să le descărcați:">

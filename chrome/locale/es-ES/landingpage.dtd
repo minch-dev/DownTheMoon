@@ -3,7 +3,7 @@
 <!ENTITY lp.localedir "ltr">
 <!-- LOCALIZATION NOTE (language): Your language in your language -->
 <!ENTITY language "Español">
-<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTa Team if you don't want credit -->
+<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTm Team if you don't want credit -->
 <!ENTITY transAuthor "urko (babelzilla)">
 <!-- LOCALIZATION NOTE (fulltranslation): Your credit and language combined -->
 <!ENTITY fulltranslation "Traducción al español: urko (babelzilla)">
@@ -24,7 +24,7 @@
 <!ENTITY lp.pleasenote "Por favor, tenga en cuenta:">
 <!ENTITY lp.donate2 "Por favor piense en la posibilidad de hacer una donación">
 <!ENTITY lp.tut.firsttitle "Su primera descarga">
-<!ENTITY lp.tut.fd2 "Descargar un archivo con dTa es muy fácil a la vez que potente. Si se le pide abrir o guardar un archivo puede usar la opción DownTheMoon!. Tras elegir dónde guardar la descarga puede empezarla de inmediata o poner en cola el archivo para su descarga posterior.">
+<!ENTITY lp.tut.fd2 "Descargar un archivo con dTm es muy fácil a la vez que potente. Si se le pide abrir o guardar un archivo puede usar la opción DownTheMoon!. Tras elegir dónde guardar la descarga puede empezarla de inmediata o poner en cola el archivo para su descarga posterior.">
 <!ENTITY lp.tut.selecttitle "Usar la ventana de selección">
 <!ENTITY lp.tut.selintro "El menú contextual en las páginas web ofrece un nuevo elemento de menú de DownTheMoon! Si la escoge se le mostrará la ventana de selección de DownTheMoon!, en la que podrá elegir fácilmente uno o varios enlaces de la página.">
 <!ENTITY lp.tut.seloptions "En la ventana de selección tiene varias formas de seleccionar los archivos a descargar:">

@@ -11,7 +11,7 @@
 <!ENTITY dtacontext2.label "Настройки">
 <!ENTITY buttonlabelextra2 "Восстановить настройки по умолчанию">
 <!ENTITY dtaPreferences.title "Настройки DownTheMoon!">
-<!ENTITY manager "Менеджер dTa">
+<!ENTITY manager "Менеджер dTm">
 <!ENTITY mainpane.label "Главные">
 <!ENTITY mainpane.defaults.caption "По умолчанию">
 <!ENTITY mainpane.defaults.desc "Папку загрузки, маску и фильтр переименования, используемые для OneClick!, можно настроить в главном окне DownTheMoon!">
@@ -30,7 +30,7 @@
 <!ENTITY mainpane.sounddone.label "звук по завершении всех загрузок">
 <!ENTITY mainpane.closedta.label "Закрывать DownTheMoon по завершении загрузок">
 <!ENTITY mainpane.settime.label "Установить время файла по времени его изменения на сервере или времени добавления в очередь">
-<!ENTITY mainpane.rememberoneclick.label "dTa OneClick запомнит - он применен ко всем или к текущей вкладке">
+<!ENTITY mainpane.rememberoneclick.label "dTm OneClick запомнит - он применен ко всем или к текущей вкладке">
 <!ENTITY mainpane.confirmremove2.label "Подтверждать удаление загрузок">
 <!ENTITY mainpane.textlinks.label "Распознавать текстовые ссылки">
 <!ENTITY mainpane.listsniffedvideos.label "Записывать и показывать в списке (Flash) видео">

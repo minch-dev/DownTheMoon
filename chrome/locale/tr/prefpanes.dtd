@@ -30,7 +30,7 @@
 <!ENTITY mainpane.sounddone.label "Tüm indirmeler tamamlandığında ses çal">
 <!ENTITY mainpane.closedta.label "Tüm indirmeler tamamlandığında DownTheMoon'ı kapat">
 <!ENTITY mainpane.settime.label "Dosyanın zaman bilgisini, son güncelleme zamanı (sunucudaki) ya da sıraya ekleme zamanı olarak ayarla">
-<!ENTITY mainpane.rememberoneclick.label "dTa OneClick'in, Tüm Sekmelere mi yoksa Güncel Sekmeye mi uygulandığını hatırla">
+<!ENTITY mainpane.rememberoneclick.label "dTm OneClick'in, Tüm Sekmelere mi yoksa Güncel Sekmeye mi uygulandığını hatırla">
 <!ENTITY mainpane.confirmremove2.label "İndirmelerin kaldırılmasını onayla">
 <!ENTITY mainpane.textlinks.label "Metinsel bağlantıları algıla">
 <!ENTITY mainpane.listsniffedvideos.label "(Flash) videoları kaydet ve listele">

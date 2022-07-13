@@ -11,7 +11,7 @@
 <!ENTITY dtacontext2.label "选项">
 <!ENTITY buttonlabelextra2 "恢复默认设置">
 <!ENTITY dtaPreferences.title "DownTheMoon! 选项">
-<!ENTITY manager "dTa 管理器">
+<!ENTITY manager "dTm 管理器">
 <!ENTITY mainpane.label "常规">
 <!ENTITY mainpane.defaults.caption "默认">
 <!ENTITY mainpane.defaults.desc "OneClick! 所使用的下载文件夹，重命名掩码和过滤器可以在普通 DownTheMoon! 选择窗口中配置。">
@@ -30,7 +30,7 @@
 <!ENTITY mainpane.sounddone.label "全部下载完成时播放声音">
 <!ENTITY mainpane.closedta.label "下载结束时关闭 DownTheMoon">
 <!ENTITY mainpane.settime.label "设置文件时间为上次修改时间(服务器)或队列时间">
-<!ENTITY mainpane.rememberoneclick.label "如果应用到所有标签页或当前标签页,让 dTa OneClick 记住设置">
+<!ENTITY mainpane.rememberoneclick.label "如果应用到所有标签页或当前标签页,让 dTm OneClick 记住设置">
 <!ENTITY mainpane.confirmremove2.label "移除下载需要确认">
 <!ENTITY mainpane.textlinks.label "识别文本链接">
 <!ENTITY mainpane.listsniffedvideos.label "识别并列出(Flash)视频">

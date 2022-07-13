@@ -3,10 +3,10 @@
 <!ENTITY lp.localedir "ltr">
 <!-- LOCALIZATION NOTE (language): Your language in your language -->
 <!ENTITY language "Inggris">
-<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTa Team if you don't want credit -->
-<!ENTITY transAuthor "Tim dTa">
+<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTm Team if you don't want credit -->
+<!ENTITY transAuthor "Tim dTm">
 <!-- LOCALIZATION NOTE (fulltranslation): Your credit and language combined -->
-<!ENTITY fulltranslation "Terjemahan inggris oleh: Tim dTa">
+<!ENTITY fulltranslation "Terjemahan inggris oleh: Tim dTm">
 <!ENTITY amo.summary2 "Pertama dan satu-satunya pengelola/akselerator unduhan di dalam peramban Anda!">
 <!ENTITY amo.description.intro "DownTheMoon adalah semua yang Anda inginkan dari pengelola unduhan: mengunggulkan akselerator lanjutan yang menambah kecepatan hingga 4x dan memungkinkan Anda menangguhkan dan melanjutkan unduhan kapanpun juga.">
 <!ENTITY amo.description.feat2 "DownTheMoon cepat, handal dan mudah digunakan! Memungkinkan Anda mengunduh semua tautan atau gambar yang ada di halaman web dan masih banyak lagi: Anda bisa menyaring unduhan Anda menggunakan kriteria sehingga Anda bisa mendapatkan apa yang Anda inginkan. Kontrol penuh unduhan Anda, kecepatan yang tetap dan jumlah koneksi paralel kapanpun juga. Gunakan Metalink atau tambah mirror secara manual untuk mengunduh berkas dari server yang berbeda secara bersamaan.">
@@ -24,7 +24,7 @@
 <!ENTITY lp.pleasenote "Catatan:">
 <!ENTITY lp.donate2 "Harap pertimbangkan untuk berkontribusi">
 <!ENTITY lp.tut.firsttitle "Unduhan pertama Anda">
-<!ENTITY lp.tut.fd2 "Mengunduh berkas menggunakan dTa sangat mudah dilakukan. Jika diminta untuk membuka atau menyimpan berkas Anda bisa menggunakan item DownTheMoon!. Setelah memilih dimana Anda menyimpan unduhan Anda, Anda bisa memulai unduhan sesegara mungkin atau mengantrekannya untuk diunduh nanti.">
+<!ENTITY lp.tut.fd2 "Mengunduh berkas menggunakan dTm sangat mudah dilakukan. Jika diminta untuk membuka atau menyimpan berkas Anda bisa menggunakan item DownTheMoon!. Setelah memilih dimana Anda menyimpan unduhan Anda, Anda bisa memulai unduhan sesegara mungkin atau mengantrekannya untuk diunduh nanti.">
 <!ENTITY lp.tut.selecttitle "Menggunakan jendela pemilihan">
 <!ENTITY lp.tut.selintro "Menu konteks dari situs web memunculkan item DownTheMoon! baru. Menggunakan opsi ini akan menampilkan jendela pemilihan DownTheMoon!, yang bisa Anda gunakan dengan mudah untuk memilih satu atau lebih tautan dari halaman tersebut.">
 <!ENTITY lp.tut.seloptions "Di dalam jendela pemilihan Anda memiliki banyak cara untuk memilih berkas mana yang akan diunduh:">

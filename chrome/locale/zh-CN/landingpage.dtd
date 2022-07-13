@@ -3,7 +3,7 @@
 <!ENTITY lp.localedir "ltr">
 <!-- LOCALIZATION NOTE (language): Your language in your language -->
 <!ENTITY language "简体中文">
-<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTa Team if you don't want credit -->
+<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTm Team if you don't want credit -->
 <!ENTITY transAuthor "Blacko,Cye3s">
 <!-- LOCALIZATION NOTE (fulltranslation): Your credit and language combined -->
 <!ENTITY fulltranslation "简体中文翻译：Blacko,Cye3s">
@@ -24,7 +24,7 @@
 <!ENTITY lp.pleasenote "请注意：">
 <!ENTITY lp.donate2 "请考虑提供捐助">
 <!ENTITY lp.tut.firsttitle "您的第一次下载">
-<!ENTITY lp.tut.fd2 "用 dTa 下载文件十分简单但同时功能也十分强大。如果提示打开或保存文件，你可以使用 DownTheMoon!。之后将显示一个对话框供您选择文件保存的位置，您就可以马上开始下载或加入队列稍后下载。">
+<!ENTITY lp.tut.fd2 "用 dTm 下载文件十分简单但同时功能也十分强大。如果提示打开或保存文件，你可以使用 DownTheMoon!。之后将显示一个对话框供您选择文件保存的位置，您就可以马上开始下载或加入队列稍后下载。">
 <!ENTITY lp.tut.selecttitle "使用选择窗口">
 <!ENTITY lp.tut.selintro "网页右键菜单提供一个新 DownTheMoon! 功能。点击它可以显示 DownTheMoon! 选择窗口，您可以用它很方便地选择页面上的一个或多个链接。">
 <!ENTITY lp.tut.seloptions "在选择窗口中你有多种方式来选择下载哪些文件：">

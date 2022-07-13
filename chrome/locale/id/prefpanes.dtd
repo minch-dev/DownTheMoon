@@ -30,7 +30,7 @@
 <!ENTITY mainpane.sounddone.label "Putar suara saat semua unduhan selesai">
 <!ENTITY mainpane.closedta.label "Tutup DownTheMoon saat unduhan selesai">
 <!ENTITY mainpane.settime.label "Tetapkan waktu berkas ke saat diubah (server) atau waktu saat ditambahkan">
-<!ENTITY mainpane.rememberoneclick.label "Pastikan dTa OneClick mengingat apakah diterapkan pada Semua Tab atau Tab Saat Ini">
+<!ENTITY mainpane.rememberoneclick.label "Pastikan dTm OneClick mengingat apakah diterapkan pada Semua Tab atau Tab Saat Ini">
 <!ENTITY mainpane.confirmremove2.label "Konfirmasi penghapusan unduhan">
 <!ENTITY mainpane.textlinks.label "Kenali tautan teks">
 <!ENTITY mainpane.listsniffedvideos.label "Rekam dan ungkap video (Flash)">

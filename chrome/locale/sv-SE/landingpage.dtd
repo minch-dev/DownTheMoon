@@ -3,7 +3,7 @@
 <!ENTITY lp.localedir "ltr">
 <!-- LOCALIZATION NOTE (language): Your language in your language -->
 <!ENTITY language "Svenska">
-<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTa Team if you don't want credit -->
+<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTm Team if you don't want credit -->
 <!ENTITY transAuthor "Thunderpig, xXxXx och Phoenix">
 <!-- LOCALIZATION NOTE (fulltranslation): Your credit and language combined -->
 <!ENTITY fulltranslation "Svensk översättning av: Thunderpig, xXxXx och Phoenix">
@@ -24,7 +24,7 @@
 <!ENTITY lp.pleasenote "Var god observera:">
 <!ENTITY lp.donate2 "Överväga att bidra">
 <!ENTITY lp.tut.firsttitle "Din första nedladdning">
-<!ENTITY lp.tut.fd2 "Att ladda ned en fil i dTa är riktigt enkelt men även riktigt kraftfullt. Om du får välja att öppna eller spara en fil kan du använda alternativet DownTheMoon!. När du har valt var du vill spara nedladdningen startar nedladdningen omedelbart eller köläggs för att laddas ned senare.">
+<!ENTITY lp.tut.fd2 "Att ladda ned en fil i dTm är riktigt enkelt men även riktigt kraftfullt. Om du får välja att öppna eller spara en fil kan du använda alternativet DownTheMoon!. När du har valt var du vill spara nedladdningen startar nedladdningen omedelbart eller köläggs för att laddas ned senare.">
 <!ENTITY lp.tut.selecttitle "Hur man använder markeringsfönstret">
 <!ENTITY lp.tut.selintro "I högerklicksmenyn på en webbsida visas ett nytt DownTheMoon!-alternativ. När du klickar på detta alternativ kommer ett markeringsfönster visas, som du enkelt kan använda för att välja en eller flera länkar från en sida.">
 <!ENTITY lp.tut.seloptions "I markeringsfönstret har du många sätt att välja vilka filer du vill ladda ned:">

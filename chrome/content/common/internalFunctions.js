@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-/* dTa-only code! - DO NOT include in overlays or such! */
+/* dTm-only code! - DO NOT include in overlays or such! */
 "use strict";
 /* jshint browser:true */
 /* global _, Cc:true, Ci:true, Cu:true, Cr:true, ctor:true, Exception:true */

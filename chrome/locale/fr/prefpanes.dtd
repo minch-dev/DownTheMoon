@@ -30,7 +30,7 @@
 <!ENTITY mainpane.sounddone.label "Jouer un son pour annoncer la fin de tous les téléchargements">
 <!ENTITY mainpane.closedta.label "Fermer DownTheMoon! lorsque les téléchargements sont terminés">
 <!ENTITY mainpane.settime.label "Définir la date de création du fichier à la date de dernière modification (serveur) ou à la date de mise en attente de téléchargement">
-<!ENTITY mainpane.rememberoneclick.label "Faire en sorte que dTa OneClick! mémorise s'il s'applique à tous les onglets ou à l'onglet courant">
+<!ENTITY mainpane.rememberoneclick.label "Faire en sorte que dTm OneClick! mémorise s'il s'applique à tous les onglets ou à l'onglet courant">
 <!ENTITY mainpane.confirmremove2.label "Confirmer la suppression des téléchargements">
 <!ENTITY mainpane.textlinks.label "Reconnaître les liens au format texte">
 <!ENTITY mainpane.listsniffedvideos.label "Enregistrer et lister les vidéos (Flash)">

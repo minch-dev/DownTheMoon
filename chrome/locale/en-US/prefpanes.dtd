@@ -31,7 +31,7 @@
 <!ENTITY mainpane.sounddone.label "Play a sound when all downloads are complete">
 <!ENTITY mainpane.closedta.label "Close DownTheMoon when downloads are complete">
 <!ENTITY mainpane.settime.label "Set file time to last modified time (server) or time of queuing">
-<!ENTITY mainpane.rememberoneclick.label "Have dTa OneClick remember if it applies to All Tabs or Current Tab">
+<!ENTITY mainpane.rememberoneclick.label "Have dTm OneClick remember if it applies to All Tabs or Current Tab">
 <!ENTITY mainpane.confirmremove2.label "Confirm removal of downloads">
 <!ENTITY mainpane.textlinks.label "Recognize text links">
 <!ENTITY mainpane.listsniffedvideos.label "Record and list (Flash) videos">

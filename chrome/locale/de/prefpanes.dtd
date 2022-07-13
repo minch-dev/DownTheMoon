@@ -30,7 +30,7 @@
 <!ENTITY mainpane.sounddone.label "Nach Abschluss aller Downloads einen Hinweiston abspielen">
 <!ENTITY mainpane.closedta.label "DownTheMoon! schließen, wenn alle Downloads abgeschlossen sind">
 <!ENTITY mainpane.settime.label "Zeit der Datei auf Änderungszeit (des Servers) oder Startzeit setzen">
-<!ENTITY mainpane.rememberoneclick.label "dTa-OneClick soll sich merken, ob es für alle oder nur für den aktuellen Tab gilt">
+<!ENTITY mainpane.rememberoneclick.label "dTm-OneClick soll sich merken, ob es für alle oder nur für den aktuellen Tab gilt">
 <!ENTITY mainpane.confirmremove2.label "Entfernen von Downloads bestätigen">
 <!ENTITY mainpane.textlinks.label "Text-Links erkennen">
 <!ENTITY mainpane.listsniffedvideos.label "(Flash) Videos erkennen und auflisten">

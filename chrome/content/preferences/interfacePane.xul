@@ -64,7 +64,7 @@
 					<groupbox>
 						<caption label="&uipane.context.caption;" />
 						<checkbox id="dtaContext0" preference="dtaContext" label="DownTheMoon!" class="moreLeft" onsyncfrompreference="return Interface.getMenu('dtaContext', 0);" onsynctopreference="return Interface.setMenu('dtaContext', 0);" />
-						<checkbox id="dtaContext1" preference="dtaContext" label="dTa OneClick!" onsyncfrompreference="return Interface.getMenu('dtaContext', 1);" onsynctopreference="return Interface.setMenu('dtaContext', 1);" class="moreLeft" />
+						<checkbox id="dtaContext1" preference="dtaContext" label="dTm OneClick!" onsyncfrompreference="return Interface.getMenu('dtaContext', 1);" onsynctopreference="return Interface.setMenu('dtaContext', 1);" class="moreLeft" />
 						<checkbox id="dtaContext2" preference="dtaContext" label="&dtacontext2.label;" onsyncfrompreference="return Interface.getMenu('dtaContext', 2);" onsynctopreference="return Interface.setMenu('dtaContext', 2);" class="moreLeft" />
 						<separator class="thin" />
 						<checkbox label="&uipane.compact.label;" preference="dtaContextSub" />
@@ -72,7 +72,7 @@
 					<groupbox>
 						<caption label="&uipane.tools.caption;" />
 						<checkbox id="dtaTool0" preference="dtaTool" label="DownTheMoon!" onsyncfrompreference="return Interface.getMenu('dtaTool', 0);" onsynctopreference="return Interface.setMenu('dtaTool', 0);" class="moreLeft" />
-						<checkbox id="dtaTool1" preference="dtaTool" label="dTa OneClick!" onsyncfrompreference="return Interface.getMenu('dtaTool', 1);" onsynctopreference="return Interface.setMenu('dtaTool', 1);" class="moreLeft" />
+						<checkbox id="dtaTool1" preference="dtaTool" label="dTm OneClick!" onsyncfrompreference="return Interface.getMenu('dtaTool', 1);" onsynctopreference="return Interface.setMenu('dtaTool', 1);" class="moreLeft" />
 						<checkbox id="dtaTool2" preference="dtaTool" label="&manager;" onsyncfrompreference="return Interface.getMenu('dtaTool', 2);" onsynctopreference="return Interface.setMenu('dtaTool', 2);" class="moreLeft" />
 						<separator class="thin" />
 						<checkbox label="&uipane.hide.label;" preference="dtaToolHide" />

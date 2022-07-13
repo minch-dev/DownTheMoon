@@ -3,8 +3,8 @@
 <!ENTITY lp.localedir "esq. á dereit.">
 <!-- LOCALIZATION NOTE (language): Your language in your language -->
 <!ENTITY language "Galego">
-<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTa Team if you don't want credit -->
-<!ENTITY transAuthor "O equipo dTa">
+<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTm Team if you don't want credit -->
+<!ENTITY transAuthor "O equipo dTm">
 <!-- LOCALIZATION NOTE (fulltranslation): Your credit and language combined -->
 <!ENTITY fulltranslation "Tradución ao galego: lois, marisma">
 <!ENTITY amo.summary2 "O primeiro e único xestor/acelerador de descargas dentro do seu navegador!">
@@ -24,7 +24,7 @@
 <!ENTITY lp.pleasenote "Aviso:">
 <!ENTITY lp.donate2 "Por favor, considere facer unha contribución">
 <!ENTITY lp.tut.firsttitle "A primeira descarga">
-<!ENTITY lp.tut.fd2 "Descargar un ficheiro con dTa é moi doado pero tamén moi potente. Se se lle pregunta se abrir ou gardar un ficheiro pode usar o elemento DownTheMoon! Despois de seleccionar onde gardar a descarga, pode iniciar esta inmediatamente ou poñela na cola para facelo máis tarde.">
+<!ENTITY lp.tut.fd2 "Descargar un ficheiro con dTm é moi doado pero tamén moi potente. Se se lle pregunta se abrir ou gardar un ficheiro pode usar o elemento DownTheMoon! Despois de seleccionar onde gardar a descarga, pode iniciar esta inmediatamente ou poñela na cola para facelo máis tarde.">
 <!ENTITY lp.tut.selecttitle "Usando a xanela de selección">
 <!ENTITY lp.tut.selintro "O menú contextual dos sitios web ofrece un novo elemento DownTheMoon!. Usando este elemento mostrarase unha xanela de selección de DownTheMoon! na cal poderá seleccionar facilmente unha ou máis ligazóns da páxina.">
 <!ENTITY lp.tut.seloptions "Na xanela de selección hai varias formas de seleccionar os ficheiros para descargar:">

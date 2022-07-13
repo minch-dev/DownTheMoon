@@ -3,7 +3,7 @@
 <!ENTITY lp.localedir "ltr">
 <!-- LOCALIZATION NOTE (language): Your language in your language -->
 <!ENTITY language "正體中文">
-<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTa Team if you don't want credit -->
+<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTm Team if you don't want credit -->
 <!ENTITY transAuthor "rayx000, scsi, tiffblue, Sakura3814, Goldie Lin.">
 <!-- LOCALIZATION NOTE (fulltranslation): Your credit and language combined -->
 <!ENTITY fulltranslation "正體中文翻譯：rayx000, scsi, tiffblue, Sakura3814, Goldie Lin.">
@@ -24,7 +24,7 @@
 <!ENTITY lp.pleasenote "請記得：">
 <!ENTITY lp.donate2 "請考慮貢獻一下">
 <!ENTITY lp.tut.firsttitle "您的第一次下載">
-<!ENTITY lp.tut.fd2 "在 dTa 裡下載一個檔案不僅相當容易而且非常強大。若跳出提示要開啟或儲存一個檔案，您可以使用 DownTheMoon! 項目。在選完儲存下載的目錄後，您可以開始立即下載或佇列檔案以晚點下載。">
+<!ENTITY lp.tut.fd2 "在 dTm 裡下載一個檔案不僅相當容易而且非常強大。若跳出提示要開啟或儲存一個檔案，您可以使用 DownTheMoon! 項目。在選完儲存下載的目錄後，您可以開始立即下載或佇列檔案以晚點下載。">
 <!ENTITY lp.tut.selecttitle "「選擇性下載」視窗">
 <!ENTITY lp.tut.selintro "在右鍵選單中多了一個「DownTheMoon!」的選項，點下去將會開始 DownTheMoon! 的選擇性下載視窗，有了它就可以輕鬆地下載網頁中的各個鏈結。">
 <!ENTITY lp.tut.seloptions "在這裡，您可以用很多方法選擇要下載的檔案：">

@@ -5,10 +5,10 @@
 
 <!-- LOCALIZATION NOTE (language): Your language in your language -->
 <!ENTITY language "English">
-<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTa Team if you don't want credit -->
-<!ENTITY transAuthor "The dTa Team">
+<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTm Team if you don't want credit -->
+<!ENTITY transAuthor "The dTm Team">
 <!-- LOCALIZATION NOTE (fulltranslation): Your credit and language combined -->
-<!ENTITY fulltranslation "English translation by: The dTa Team">
+<!ENTITY fulltranslation "English translation by: The dTm Team">
 
 
 <!ENTITY amo.summary2 "The first and only download manager/accelerator inside your browser!">
@@ -31,7 +31,7 @@
 <!ENTITY lp.donate2 "Please consider making a contribution">
 
 <!ENTITY lp.tut.firsttitle "Your first download">
-<!ENTITY lp.tut.fd2 "Downloading a file in dTa is fairly easy but also very powerful. If prompted to open or save a file you may use the DownTheMoon! item. After choosing where to save the download, you may start to download immediately or queue the file to be downloaded later.">
+<!ENTITY lp.tut.fd2 "Downloading a file in dTm is fairly easy but also very powerful. If prompted to open or save a file you may use the DownTheMoon! item. After choosing where to save the download, you may start to download immediately or queue the file to be downloaded later.">
 <!ENTITY lp.tut.selecttitle "Using the selection window">
 <!ENTITY lp.tut.selintro "The context menu of a website offers a new DownTheMoon! item. Using this item will show the DownTheMoon! selection window, which you can use to easily select one or more links from a page.">
 <!ENTITY lp.tut.seloptions "In the selection window you have multiple ways to select which files to download:">

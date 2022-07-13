@@ -109,8 +109,8 @@
 
 	<toolbarbutton id="dta-turbo-button" class="chromeclass-toolbar-additional toolbarbutton-1 dta-toolbarbutton" label="&dta-regular-turbo2.label;" tooltiptext="&dta-regular-turbo.desc;" type="menu-button" widget-type="view" buttoncommand="dta:turbo" panelview="PanelUI-downthemall-turbo">
 		<menupopup id="dta-turbo-button-popup">
-			<menuitem id="dta-tb-turbo" label="dTa OneClick! (&dta-tb-single.label;)" tooltiptext="&dta-regular-turbo2.label;" class="menuitem-iconic dta-menuitem dta-turbo" command="dta:turbo"/>
-			<menuitem id="dta-tb-allturbo" label="dTa OneClick! (&dta-tb-all.label;)" tooltiptext="&dta-regular-turbo2.label;" class="menuitem-iconic dta-menuitem dta-turbo" command="dta:turbo-all"/>
+			<menuitem id="dta-tb-turbo" label="dTm OneClick! (&dta-tb-single.label;)" tooltiptext="&dta-regular-turbo2.label;" class="menuitem-iconic dta-menuitem dta-turbo" command="dta:turbo"/>
+			<menuitem id="dta-tb-allturbo" label="dTm OneClick! (&dta-tb-all.label;)" tooltiptext="&dta-regular-turbo2.label;" class="menuitem-iconic dta-menuitem dta-turbo" command="dta:turbo-all"/>
 			<menuseparator />
 			<menuitem id="dta-tb-manager2" label="&dta-manager-button;" class="menuitem-iconic dta-menuitem dta-manager" tooltiptext="&dta-manager-button;" command="dta:manager" />
 		</menupopup>

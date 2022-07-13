@@ -30,7 +30,7 @@
 <!ENTITY mainpane.sounddone.label "Riproduci un suono quando tutti i download sono stati completati">
 <!ENTITY mainpane.closedta.label "Chiudi DownTheMoon! quando i download sono stati completati">
 <!ENTITY mainpane.settime.label "Imposta l'ora del file all'ora dell'ultima modifica (server) o all'ora in cui sono stati messi in coda">
-<!ENTITY mainpane.rememberoneclick.label "Fai ricordare a dTa OneClick! se esso agisce su tutte le schede o solo su quella attuale">
+<!ENTITY mainpane.rememberoneclick.label "Fai ricordare a dTm OneClick! se esso agisce su tutte le schede o solo su quella attuale">
 <!ENTITY mainpane.confirmremove2.label "Conferma la rimozione dei download">
 <!ENTITY mainpane.textlinks.label "Riconosci i collegamenti testuali">
 <!ENTITY mainpane.listsniffedvideos.label "Registra ed elenca i video (Flash)">

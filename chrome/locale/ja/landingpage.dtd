@@ -24,7 +24,7 @@
 <!ENTITY lp.pleasenote "お読みください:">
 <!ENTITY lp.donate2 "開発への協力と貢献をご検討ください">
 <!ENTITY lp.tut.firsttitle "はじめてのダウンロード">
-<!ENTITY lp.tut.fd2 "dTa でファイルをダウンロードするのは簡単なだけでなくパワフルです。ファイルを保存する際に表示されるダイアログに DownTheMoon! でダウンロードする項目が表示されます。この項目を選択してダウンロードの保存先を指定すれば、すぐにダウンロードを開始できますし、後でダウンロードすることもできます。">
+<!ENTITY lp.tut.fd2 "dTm でファイルをダウンロードするのは簡単なだけでなくパワフルです。ファイルを保存する際に表示されるダイアログに DownTheMoon! でダウンロードする項目が表示されます。この項目を選択してダウンロードの保存先を指定すれば、すぐにダウンロードを開始できますし、後でダウンロードすることもできます。">
 <!ENTITY lp.tut.selecttitle "選択ウィンドウを使う">
 <!ENTITY lp.tut.selintro "ウェブページ上で右クリックし、コンテキストメニューに表示される [DownTheMoon!] を選択すると、DownTheMoon! の選択ウィンドウが表示され、ダウンロードしたいリンクを選択するだけでダウンロードが開始されます。">
 <!ENTITY lp.tut.seloptions "選択ウィンドウには、ダウンロードするファイルを選択する様々な方法が用意されています:">
@@ -49,7 +49,7 @@
 <!ENTITY lp.tut.alltabs "ツールバーボタンのドロップダウンメニューから、すべてのタブのアイテムを一度にダウンロード待ちのリストに追加できます。">
 <!ENTITY lp.tut.tabrestore "完全に復元されたタブからのリンクのみが利用可能になります。">
 <!ENTITY lp.tb.intro "DownTheMoon! は、DownTheMoon! の機能にアクセスできる便利なツールバーボタンを提供しています。">
-<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTa Team if you don't want credit -->
+<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTm Team if you don't want credit -->
 <!ENTITY lp.tb.install "ツールバーボタンを追加">
 <!ENTITY lp.tb.add.title "ツールバーにボタンを追加して使用する方法">
 <!ENTITY lp.tb.add.p1 "DownTheMoon! にはダウンロードをより簡単にするために、ツールバー用のボタンが4つ用意されています">

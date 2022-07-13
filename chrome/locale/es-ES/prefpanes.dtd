@@ -30,7 +30,7 @@
 <!ENTITY mainpane.sounddone.label "Emitir un sonido tras completar todas las descargas">
 <!ENTITY mainpane.closedta.label "Cerrar DownTheMoon tras completar todas las descargas">
 <!ENTITY mainpane.settime.label "Poner como fecha/hora del archivo la de la última modificación (servidor) o la de puesta en cola">
-<!ENTITY mainpane.rememberoneclick.label "Hacer que dTa OneClick recuerde si aplica a todas las pestañas o a la actual">
+<!ENTITY mainpane.rememberoneclick.label "Hacer que dTm OneClick recuerde si aplica a todas las pestañas o a la actual">
 <!ENTITY mainpane.confirmremove2.label "Confirmar eliminación de descargas">
 <!ENTITY mainpane.textlinks.label "Reconocer enlaces de texto">
 <!ENTITY mainpane.listsniffedvideos.label "Registrar y listar vídeos (Flash)">

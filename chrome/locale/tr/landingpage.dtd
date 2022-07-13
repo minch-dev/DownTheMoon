@@ -3,10 +3,10 @@
 <!ENTITY lp.localedir "ltr">
 <!-- LOCALIZATION NOTE (language): Your language in your language -->
 <!ENTITY language "Türkçe">
-<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTa Team if you don't want credit -->
-<!ENTITY transAuthor "Sinan Kaan Yerli ve dTa Ekibi">
+<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTm Team if you don't want credit -->
+<!ENTITY transAuthor "Sinan Kaan Yerli ve dTm Ekibi">
 <!-- LOCALIZATION NOTE (fulltranslation): Your credit and language combined -->
-<!ENTITY fulltranslation "İngilizce çeviri: Sinan Kaan Yerli ve dTa Ekibi">
+<!ENTITY fulltranslation "İngilizce çeviri: Sinan Kaan Yerli ve dTm Ekibi">
 <!ENTITY amo.summary2 "Ağ gezginindeki ilk ve tek indirme yöneticisi/hızlandırıcısı!">
 <!ENTITY amo.description.intro "DownTheMoon'da bir indirme yöneticisinden beklediğiniz her şey var: indirmeyi 4 kata kadar hızlandıran ve indirmelerinizi istedğiniz zaman duraklatıp yeniden sürdürebileceğiniz gibi gelişmiş özellikler içerir.">
 <!ENTITY amo.description.feat2 "DownTheMoon hızlı, güvenilir ve kolay kullanılan bir eklentidir! Eklenti, bir web sayfasındaki tüm bağlantıları ve görüntüleri indirmeyi sağladığı gibi daha bir çok şeyi de yapabilr: tümüyle özelleştirebileceğiniz kriterler getirip yalnızca istediğinizi indirebilecek biçimde indirmelerinize ince ayar yapabilir, indirmelerinizin tüm denetimini ele geçirebilr, hız ve paralel bağlantı sayılarını ayarlayabilir, Meta-bağlantıları kullanarak ya da elle yansılar ekleyerek bir dosyayı farklı sunuculardan aynı anda indirebilirsiniz.">
@@ -24,7 +24,7 @@
 <!ENTITY lp.pleasenote "Önemli not:">
 <!ENTITY lp.donate2 "Lütfen desteklemeyi unutmayın">
 <!ENTITY lp.tut.firsttitle "İlk indirmeniz">
-<!ENTITY lp.tut.fd2 "dTa'yal dosya indirmek oldukça kolay ama çok da güçlü. Bir dosyayı açma ya da kaydetme sorulduğunda DownTheMoon! öğesini de kullanabilirsiniz. Nereye kaydedeceğinizi seçtikten sonra anında indirmeye başlayabilir ya da sonra indirmek için sıraya alabilirsiniz.">
+<!ENTITY lp.tut.fd2 "dTm'yal dosya indirmek oldukça kolay ama çok da güçlü. Bir dosyayı açma ya da kaydetme sorulduğunda DownTheMoon! öğesini de kullanabilirsiniz. Nereye kaydedeceğinizi seçtikten sonra anında indirmeye başlayabilir ya da sonra indirmek için sıraya alabilirsiniz.">
 <!ENTITY lp.tut.selecttitle "Seçim ekranı kullanımı">
 <!ENTITY lp.tut.selintro "Web sitesinin içerik menüsünde yeni DownTheMoon! öğesi sunulmakta. Bu öğeyi kullanarak DownTemAll! seçim penceresini ulaşabilirsiniz. Burada sayfadaki bağlantılardan bir ya da daha fazlasını seçebileceksiniz.">
 <!ENTITY lp.tut.seloptions "Seçim ekranında dosyaları seçmek için birçok yolunuz var:">

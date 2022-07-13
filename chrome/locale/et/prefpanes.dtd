@@ -30,7 +30,7 @@
 <!ENTITY mainpane.sounddone.label "Esita heli, kui kõik allalaadimised valmis saavad">
 <!ENTITY mainpane.closedta.label "Sulge DownTheMoon, kui allalaadimised valmis saavad">
 <!ENTITY mainpane.settime.label "Määra faili ajaks viimatise muutmise aeg (server) või järjekorda panemise aeg">
-<!ENTITY mainpane.rememberoneclick.label "dTa OneClick jätab meelde, kas see käib kõikide kaartide või aktiivse kaardi kohta">
+<!ENTITY mainpane.rememberoneclick.label "dTm OneClick jätab meelde, kas see käib kõikide kaartide või aktiivse kaardi kohta">
 <!ENTITY mainpane.confirmremove2.label "Küsi allalaadimiste eemaldamisel kinnitust">
 <!ENTITY mainpane.textlinks.label "Tuvasta tekstilinke">
 <!ENTITY mainpane.listsniffedvideos.label "Salvesta ja kanna loendisse (Flash) videod">

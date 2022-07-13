@@ -3,7 +3,7 @@
 <!ENTITY lp.localedir "ltr">
 <!-- LOCALIZATION NOTE (language): Your language in your language -->
 <!ENTITY language "Português (Brasil)">
-<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTa Team if you don't want credit -->
+<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTm Team if you don't want credit -->
 <!ENTITY transAuthor "Rafael Sposito">
 <!-- LOCALIZATION NOTE (fulltranslation): Your credit and language combined -->
 <!ENTITY fulltranslation "Tradução ao Português (Brasil) por: Rafael Sposito">
@@ -24,7 +24,7 @@
 <!ENTITY lp.pleasenote "Tome conhecimento:">
 <!ENTITY lp.donate2 "Por favor, considere fazer uma doação">
 <!ENTITY lp.tut.firsttitle "Seu primeiro download">
-<!ENTITY lp.tut.fd2 "Baixar um arquivo com o dTa é bem fácil mas também muito poderoso. Quando for baixar um arquivo, entre as opções Abrir ou Salvar, você poderá optar pelo DownTheMoon!. Depois de selecionar onde salvar o download, você pode iniciá-lo imediatamente ou colocá-lo numa fila para baixar depois.">
+<!ENTITY lp.tut.fd2 "Baixar um arquivo com o dTm é bem fácil mas também muito poderoso. Quando for baixar um arquivo, entre as opções Abrir ou Salvar, você poderá optar pelo DownTheMoon!. Depois de selecionar onde salvar o download, você pode iniciá-lo imediatamente ou colocá-lo numa fila para baixar depois.">
 <!ENTITY lp.tut.selecttitle "Usando a janela de seleção">
 <!ENTITY lp.tut.selintro "O menu de contexto numa página da web dispõe de uma nova opção DownTheMoon! Ela levará à janela de seleção do DownTheMoon!, que você usar para facilmente selecionar um ou mais links numa página.">
 <!ENTITY lp.tut.seloptions "Na janela de seleção existem várias formas de selecionar os arquivos para baixar:">

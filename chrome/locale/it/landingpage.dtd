@@ -3,10 +3,10 @@
 <!ENTITY lp.localedir "ltr">
 <!-- LOCALIZATION NOTE (language): Your language in your language -->
 <!ENTITY language "Italiano">
-<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTa Team if you don't want credit -->
-<!ENTITY transAuthor "Il team dTa, Alessandro Menti">
+<!-- LOCALIZATION NOTE (transAuthor): Your credit; or leave as dTm Team if you don't want credit -->
+<!ENTITY transAuthor "Il team dTm, Alessandro Menti">
 <!-- LOCALIZATION NOTE (fulltranslation): Your credit and language combined -->
-<!ENTITY fulltranslation "Traduzione italiana del team dTa e di Alessandro Menti">
+<!ENTITY fulltranslation "Traduzione italiana del team dTm e di Alessandro Menti">
 <!ENTITY amo.summary2 "Il primo e unico gestore di download/acceleratore nel tuo browser!">
 <!ENTITY amo.description.intro "DownTheMoon! è tutto ciò che puoi desiderare da un gestore di download: offre un avanzato acceleratore che rende i tuoi download fino a quattro volte più veloci e ti permette di interrompere e riprendere i download quando vuoi.">
 <!ENTITY amo.description.feat2 "DownTheMoon è veloce, affidabile e facile da usare! Ti consente di scaricare tutti i collegamenti o le immagini contenuti in una pagina Web e molto altro: puoi raffinare i tuoi download utilizzando criteri completamente personalizzabili per scaricare solo ciò che veramente vuoi. Esercita il controllo totale sui tuoi download, sulla velocità dedicata e sul numero di connessioni parallele in qualunque momento. Utilizza metalink o aggiungi mirror manualmente per scaricare un file da server differenti contemporaneamente.">
@@ -24,7 +24,7 @@
 <!ENTITY lp.pleasenote "Nota bene:">
 <!ENTITY lp.donate2 "Valuta l'opportunità di fare una donazione">
 <!ENTITY lp.tut.firsttitle "Il tuo primo download">
-<!ENTITY lp.tut.fd2 "Scaricare un file in dTa è abbastanza facile ma anche molto potente. Se ti viene chiesto di aprire o salvare un file puoi selezionare la voce DownTheMoon!. Dopo aver scelto dove salvare il download puoi iniziare subito il download o mettere in coda il file per scaricarlo in seguito.">
+<!ENTITY lp.tut.fd2 "Scaricare un file in dTm è abbastanza facile ma anche molto potente. Se ti viene chiesto di aprire o salvare un file puoi selezionare la voce DownTheMoon!. Dopo aver scelto dove salvare il download puoi iniziare subito il download o mettere in coda il file per scaricarlo in seguito.">
 <!ENTITY lp.tut.selecttitle "Usare la finestra di selezione">
 <!ENTITY lp.tut.selintro "Il menù di scelta rapida delle pagine Web ha una nuova voce DownTheMoon!. Usando tale voce comparirà la finestra di selezione di DownTheMoon! che puoi usare per selezionare facilmente uno o più collegamenti da una pagina.">
 <!ENTITY lp.tut.seloptions "Nella finestra di selezione hai diversi modi per scegliere quali file scaricare:">

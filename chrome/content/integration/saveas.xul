@@ -13,7 +13,7 @@
 				<radio id="downthemall" label="DownTheMoon!" disabled="true" />
 			</hbox>
 			<hbox id="tdta" flex="1">
-				<radio id="turbodta" disabled="true" label="dTa OneClick!" />
+				<radio id="turbodta" disabled="true" label="dTm OneClick!" />
 				<toolbarbutton id="turbodtaexec" disabled="true" />
 				<spacer flex="1" />
 				<saveddropdown id="tdtalist" preference="directory" readonly="true" crop="center" flex="1" />

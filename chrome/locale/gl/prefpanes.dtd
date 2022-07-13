@@ -11,7 +11,7 @@
 <!ENTITY dtacontext2.label "Preferencias">
 <!ENTITY buttonlabelextra2 "Restaurar a configuración predeterminada">
 <!ENTITY dtaPreferences.title "Preferencias do DownTheMoon!">
-<!ENTITY manager "Xestor de dTa">
+<!ENTITY manager "Xestor de dTm">
 <!ENTITY mainpane.label "Xeral">
 <!ENTITY mainpane.defaults.caption "Predefinicións">
 <!ENTITY mainpane.defaults.desc "O cartafol de descarga, máscara de renomeado e filtros que usa OneClick pódense configurar no diálogo de selección de DownTheMoon!.">
@@ -30,7 +30,7 @@
 <!ENTITY mainpane.sounddone.label "Avisar cun son ao rematar todas as descargas">
 <!ENTITY mainpane.closedta.label "Pechar DownTheMoon ao rematar as descargas">
 <!ENTITY mainpane.settime.label "Establecer como data/hora do ficheiro a última modificación (servidor) ou a da incorporación á cola">
-<!ENTITY mainpane.rememberoneclick.label "Ten que indiarlle a dTa OneClick se aplicalo a todas as lapelas ou só á actual">
+<!ENTITY mainpane.rememberoneclick.label "Ten que indiarlle a dTm OneClick se aplicalo a todas as lapelas ou só á actual">
 <!ENTITY mainpane.confirmremove2.label "Confirmar a eliminación das descargas">
 <!ENTITY mainpane.textlinks.label "Recoñecer as ligazóns de texto">
 <!ENTITY mainpane.listsniffedvideos.label "Gravar e listar vídeos (Flash)">
