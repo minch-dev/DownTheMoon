@@ -35,7 +35,7 @@
 	onload="Prefs.load();"
 	style="&windowstyle.3;"
 	>
-	<stringbundleset id="bundlesPrefs" xmlns="http://www.downthemoon.nope/properties#">
+	<stringbundleset id="bundlesPrefs" xmlns="http://www.downthemall.net/properties#">
 		<stringbundle src="chrome://dtm/locale/common.properties" />
 		<stringbundle src="chrome://dtm/locale/prefpanes.properties" />
 	</stringbundleset>

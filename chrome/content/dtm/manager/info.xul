@@ -32,7 +32,7 @@
 	<script type="application/javascript" src="chrome://dtm/content/dtm/manager/info.js" />
 	<script type="application/javascript" src="chrome://dtm/content/dtm/manager/utils.js" />
 
-	<stringbundleset xmlns="http://www.downthemoon.nope/properties#">
+	<stringbundleset xmlns="http://www.downthemall.net/properties#">
 		<stringbundle src="chrome://dtm/locale/common.properties" />
 	</stringbundleset>
 

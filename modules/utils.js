@@ -18,7 +18,7 @@ exports.NS_XUL = NS_XUL;
 /**
  * DownTheMoon! Properties namespace
  */
-const NS_DTM = 'http://www.downthemoon.nope/properties#';
+const NS_DTM = 'http://www.downthemall.net/properties#';
 exports.NS_DTM = NS_DTM;
 
 /**

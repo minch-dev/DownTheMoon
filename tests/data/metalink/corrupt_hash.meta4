@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metalink xmlns="urn:ietf:params:xml:ns:metalink" xmlns:a0="http://www.downthemoon.nope/properties#">
+<metalink xmlns="urn:ietf:params:xml:ns:metalink" xmlns:a0="http://www.downthemall.net/properties#">
 <file name="corrupt_hash">
 	<size>2014232</size>
 	<hash>cccd7f891ff81b30b9152479d2efcda2aabccee</hash>

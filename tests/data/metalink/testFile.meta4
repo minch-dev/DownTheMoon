@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metalink xmlns="urn:ietf:params:xml:ns:metalink" xmlns:a0="http://www.downthemoon.nope/properties#">
+<metalink xmlns="urn:ietf:params:xml:ns:metalink" xmlns:a0="http://www.downthemall.net/properties#">
 	<publisher>
 	  <name>test_publisher</name>
 	  <url>http://example.com/test_publisher</url>

@@ -34,7 +34,7 @@
 
 	<script type="text/javascript" src="mirrors.js" />
 
-	<stringbundleset id="bundles" xmlns="http://www.downthemoon.nope/properties#">
+	<stringbundleset id="bundles" xmlns="http://www.downthemall.net/properties#">
 		<stringbundle src="chrome://dtm/locale/mirrors.properties" />
 	</stringbundleset>
 

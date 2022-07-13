@@ -41,7 +41,7 @@
 	<script type="application/javascript" src="chrome://dtm/content/dtm/manager/utils.js" />
 	<script type="application/javascript" src="chrome://dtm/content/dtm/manager/tree.js" />
 
-	<stringbundleset xmlns="http://www.downthemoon.nope/properties#">
+	<stringbundleset xmlns="http://www.downthemall.net/properties#">
 		<stringbundle src="chrome://dtm/locale/common.properties" />
 		<stringbundle src="chrome://dtm/locale/manager.properties" />
 		<stringbundle src="chrome://dtm/locale/prefpanes.properties" />
