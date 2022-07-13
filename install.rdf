@@ -3,7 +3,7 @@
 	<Description about="urn:mozilla:install-manifest">
 
 		<em:id>dta@downthemall.net</em:id>
-		<em:name>DownThemAll!</em:name>
+		<em:name>DownThemAll! XUL edition</em:name>
 		<em:description>The mass downloader for Pale Moon.</em:description>
 		<em:version>3.14</em:version>
 		<em:bootstrap>true</em:bootstrap>
