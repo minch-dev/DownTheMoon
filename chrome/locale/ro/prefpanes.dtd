@@ -11,7 +11,7 @@
 <!ENTITY dtacontext2.label "Preferințe">
 <!ENTITY buttonlabelextra2 "Restaurează setările prestabilite">
 <!ENTITY dtaPreferences.title "Preferințe DownTheMoon!">
-<!ENTITY manager "Gestionar dTa!">
+<!ENTITY manager "Gestionar dTm!">
 <!ENTITY mainpane.label "General">
 <!ENTITY mainpane.defaults.caption "Setări prestabilite">
 <!ENTITY mainpane.defaults.desc "Dosarul de descărcare, șablonul de redenumire și filtrele utilizate de OneClick! pot fi configurate în mod normal în caseta de selecție DownTheMoon!.">

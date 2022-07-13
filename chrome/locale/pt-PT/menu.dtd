@@ -12,15 +12,15 @@
 <!ENTITY dta-selection-turbo2.label "Seleção UmClique">
 <!ENTITY dta-regular2.label "DownTheMoon!">
 <!ENTITY dta-regular.desc "Abre a Janela de Seleção DownTheMoon! para o separador atual.">
-<!ENTITY dta-regular-turbo2.label "dTa! UmCLique">
+<!ENTITY dta-regular-turbo2.label "dTm! UmCLique">
 <!ENTITY dta-regular-turbo.desc "Transfere todos os itens da página atual de acordo com as últimas preferências e filtros usados.">
 <!ENTITY dta-img-save2.label "Guardar Imagem com o DownTheMoon!">
-<!ENTITY dta-img-save-turbo2.label "Guardar Imagem com o dTa! UmClique">
+<!ENTITY dta-img-save-turbo2.label "Guardar Imagem com o dTm! UmClique">
 <!ENTITY dta-video-save2.label "Guardar vídeo com o DownTheMoon!">
-<!ENTITY dta-video-save-turbo2.label "Guardar Vídeo com o dTa! UmClique">
+<!ENTITY dta-video-save-turbo2.label "Guardar Vídeo com o dTm! UmClique">
 <!ENTITY dta-audio-save2.label "Guardar Áudio com o DownTheMoon!">
-<!ENTITY dta-audio-save-turbo2.label "Guardar Áudio com o dTa! UmClique">
+<!ENTITY dta-audio-save-turbo2.label "Guardar Áudio com o dTm! UmClique">
 <!ENTITY dta-link-save2.label "Guardar Ligação com o DownTheMoon!">
-<!ENTITY dta-link-save-turbo2.label "Guardar Ligação com o dTa! UmClique">
+<!ENTITY dta-link-save-turbo2.label "Guardar Ligação com o dTm! UmClique">
 <!ENTITY dta-form-save2.label "Guardar Formulário Alvo com o DownTheMoon!">
-<!ENTITY dta-form-save-turbo2.label "Guardar Formulário Alvo com o dTa! UmClique">
+<!ENTITY dta-form-save-turbo2.label "Guardar Formulário Alvo com o dTm! UmClique">

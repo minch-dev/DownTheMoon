@@ -11,7 +11,7 @@
 <!ENTITY dtacontext2.label "Eelistused">
 <!ENTITY buttonlabelextra2 "Taasta vaikimisi sätted">
 <!ENTITY dtaPreferences.title "DownTheMoon! - Eelistused">
-<!ENTITY manager "dTa! Haldur">
+<!ENTITY manager "dTm! Haldur">
 <!ENTITY mainpane.label "Üldised">
 <!ENTITY mainpane.defaults.caption "Vaikimisi sätted">
 <!ENTITY mainpane.defaults.desc "Allalaadimiste kausta, nimemuutmismaski ja OneClick!-i kasutatavaid filtreid saab muuta tavalises DownTheMoon!-i dialoogiaknas.">

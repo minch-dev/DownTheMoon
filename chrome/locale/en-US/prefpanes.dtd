@@ -11,7 +11,7 @@
 <!ENTITY dtacontext2.label "Preferences">
 <!ENTITY buttonlabelextra2 "Restore Default Settings">
 <!ENTITY dtaPreferences.title "DownTheMoon! Preferences">
-<!ENTITY manager "dTa! Manager">
+<!ENTITY manager "dTm! Manager">
 
 <!ENTITY mainpane.label "General">
 <!ENTITY mainpane.defaults.caption "Defaults">

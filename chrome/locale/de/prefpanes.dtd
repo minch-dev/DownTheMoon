@@ -11,7 +11,7 @@
 <!ENTITY dtacontext2.label "Einstellungen">
 <!ENTITY buttonlabelextra2 "Auf Standardwerte zurücksetzen">
 <!ENTITY dtaPreferences.title "DownTheMoon! Einstellungen">
-<!ENTITY manager "dTa! Manager">
+<!ENTITY manager "dTm! Manager">
 <!ENTITY mainpane.label "Allgemein">
 <!ENTITY mainpane.defaults.caption "Standardeinstellungen">
 <!ENTITY mainpane.defaults.desc "Das Downloadverzeichnis, die Umbenennungs-Tags und Filter, die von OneClick! benutzt werden können mit dem regulären DownTheMoon! Auswahldialog konfiguriert werden.">

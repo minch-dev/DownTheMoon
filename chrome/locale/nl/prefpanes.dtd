@@ -11,7 +11,7 @@
 <!ENTITY dtacontext2.label "Voorkeuren">
 <!ENTITY buttonlabelextra2 "Standaardinstellingen terugzetten">
 <!ENTITY dtaPreferences.title "DownTheMoon!-voorkeuren">
-<!ENTITY manager "dTa!-beheerder">
+<!ENTITY manager "dTm!-beheerder">
 <!ENTITY mainpane.label "Algemeen">
 <!ENTITY mainpane.defaults.caption "Standaardwaarden">
 <!ENTITY mainpane.defaults.desc "De downloadmap, het hernoemmasker en filters zoals gebruikt door OneClick! kunnen in het algemene DownTheMoon!-selectievenster worden geconfigureerd.">

@@ -13,15 +13,15 @@
 <!ENTITY dta-selection-turbo2.label "OneClick Selection">
 <!ENTITY dta-regular2.label "DownTheMoon!">
 <!ENTITY dta-regular.desc "Opens the DownTheMoon! Selection window for the current tab.">
-<!ENTITY dta-regular-turbo2.label "dTa! OneClick">
+<!ENTITY dta-regular-turbo2.label "dTm! OneClick">
 <!ENTITY dta-regular-turbo.desc "Downloads all items from the current page according to the last used preferences and filters.">
 <!ENTITY dta-img-save2.label "Save Image with DownTheMoon!">
-<!ENTITY dta-img-save-turbo2.label "Save Image with dTa! OneClick">
+<!ENTITY dta-img-save-turbo2.label "Save Image with dTm! OneClick">
 <!ENTITY dta-video-save2.label "Save Video with DownTheMoon!">
-<!ENTITY dta-video-save-turbo2.label "Save Video with dTa! OneClick">
+<!ENTITY dta-video-save-turbo2.label "Save Video with dTm! OneClick">
 <!ENTITY dta-audio-save2.label "Save Audio with DownTheMoon!">
-<!ENTITY dta-audio-save-turbo2.label "Save Audio with dTa! OneClick">
+<!ENTITY dta-audio-save-turbo2.label "Save Audio with dTm! OneClick">
 <!ENTITY dta-link-save2.label "Save Link with DownTheMoon!">
-<!ENTITY dta-link-save-turbo2.label "Save Link with dTa! OneClick">
+<!ENTITY dta-link-save-turbo2.label "Save Link with dTm! OneClick">
 <!ENTITY dta-form-save2.label "Save Form Target with DownTheMoon!">
-<!ENTITY dta-form-save-turbo2.label "Save Form Target with dTa! OneClick">
+<!ENTITY dta-form-save-turbo2.label "Save Form Target with dTm! OneClick">

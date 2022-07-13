@@ -11,7 +11,7 @@
 <!ENTITY dtacontext2.label "Préférences">
 <!ENTITY buttonlabelextra2 "Rétablir les paramètres par défaut">
 <!ENTITY dtaPreferences.title "Préférences de DownTheMoon!…">
-<!ENTITY manager "Gestionnaire de dTa!">
+<!ENTITY manager "Gestionnaire de dTm!">
 <!ENTITY mainpane.label "Principales">
 <!ENTITY mainpane.defaults.caption "Par défaut">
 <!ENTITY mainpane.defaults.desc "Le répertoire de téléchargement, masque de renommage et filtres utilisés par OneClick! peuvent être configurés dans la boîte de dialogue habituelle de DownTheMoon!.">

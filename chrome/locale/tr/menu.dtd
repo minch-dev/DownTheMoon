@@ -12,15 +12,15 @@
 <!ENTITY dta-selection-turbo2.label "OneClick Seçimi">
 <!ENTITY dta-regular2.label "DownTheMoon!">
 <!ENTITY dta-regular.desc "Geçerli sekmede DownTheMoon! Seçim penceresini açar.">
-<!ENTITY dta-regular-turbo2.label "dTa! OneClick">
+<!ENTITY dta-regular-turbo2.label "dTm! OneClick">
 <!ENTITY dta-regular-turbo.desc "Son kullanılan tercih ve süzgeçlere göre geçerli sayfadan tüm öğreleri indirir.">
 <!ENTITY dta-img-save2.label "DownTheMoon! ile Görüntü Kaydet">
-<!ENTITY dta-img-save-turbo2.label "dTa! OneClick ile Görüntü Kaydet">
+<!ENTITY dta-img-save-turbo2.label "dTm! OneClick ile Görüntü Kaydet">
 <!ENTITY dta-video-save2.label "DownTheMoon! ile Video Kaydet">
-<!ENTITY dta-video-save-turbo2.label "dTa! OneClik ile Video Kaydet">
+<!ENTITY dta-video-save-turbo2.label "dTm! OneClik ile Video Kaydet">
 <!ENTITY dta-audio-save2.label "DownTheMoon! ile Ses Kaydet">
-<!ENTITY dta-audio-save-turbo2.label "dTa! OneClick ile Ses Kaydet">
+<!ENTITY dta-audio-save-turbo2.label "dTm! OneClick ile Ses Kaydet">
 <!ENTITY dta-link-save2.label "DownTheMoon! ile Bağlantı Kaydet">
-<!ENTITY dta-link-save-turbo2.label "dTa! OneClick ile Bağlantı Kaydet">
+<!ENTITY dta-link-save-turbo2.label "dTm! OneClick ile Bağlantı Kaydet">
 <!ENTITY dta-form-save2.label "DownTheMoon! ile Hedef Formunu Kaydet">
-<!ENTITY dta-form-save-turbo2.label "dTa! OneClick ile Hedef Formunu Kaydet">
+<!ENTITY dta-form-save-turbo2.label "dTm! OneClick ile Hedef Formunu Kaydet">

@@ -2,7 +2,7 @@
 <!ENTITY dta-tbinstall "Adaugă butoane">
 <!ENTITY dta-pref.label "Preferințe">
 <!ENTITY dta-about2.label "Despre DownTheMoon!">
-<!ENTITY dta-manager-button "Gestionar dTa!">
+<!ENTITY dta-manager-button "Gestionar dTm!">
 <!ENTITY dta-manager-button.desc "Deschide gestionarul">
 <!ENTITY dta-selector-button2.label "Selector OneClick!">
 <!ENTITY dta-selector-button.desc "Adaugă elemente prin clic-stânga pe ele">
@@ -12,15 +12,15 @@
 <!ENTITY dta-selection-turbo2.label "Selectare OneClick!">
 <!ENTITY dta-regular2.label "DownTheMoon!">
 <!ENTITY dta-regular.desc "Deschide fereastra DownTheMoon! din fila curentă">
-<!ENTITY dta-regular-turbo2.label "dTa! OneClick">
+<!ENTITY dta-regular-turbo2.label "dTm! OneClick">
 <!ENTITY dta-regular-turbo.desc "Descarcă toate elementele din pagina curentă conform cu preferințele curente și ultimele filtre folosite">
 <!ENTITY dta-img-save2.label "Salvează imaginea cu DownTheMoon!">
-<!ENTITY dta-img-save-turbo2.label "Salvează imaginea cu dTa! OneClick">
+<!ENTITY dta-img-save-turbo2.label "Salvează imaginea cu dTm! OneClick">
 <!ENTITY dta-video-save2.label "Salvează clipul video cu DownTheMoon!">
-<!ENTITY dta-video-save-turbo2.label "Salvează clipul video cu dTa! OneClick">
+<!ENTITY dta-video-save-turbo2.label "Salvează clipul video cu dTm! OneClick">
 <!ENTITY dta-audio-save2.label "Salvează piesa audio cu DownTheMoon!">
-<!ENTITY dta-audio-save-turbo2.label "Salvează piesa audio cu dTa! OneClick">
+<!ENTITY dta-audio-save-turbo2.label "Salvează piesa audio cu dTm! OneClick">
 <!ENTITY dta-link-save2.label "Salvează documentul cu DownTheMoon!">
-<!ENTITY dta-link-save-turbo2.label "Salvează documentul cu dTa! OneClick">
+<!ENTITY dta-link-save-turbo2.label "Salvează documentul cu dTm! OneClick">
 <!ENTITY dta-form-save2.label "Salvează formularul cu DownTheMoon!">
-<!ENTITY dta-form-save-turbo2.label "Salvează documentul cu dTa! OneClick">
+<!ENTITY dta-form-save-turbo2.label "Salvează documentul cu dTm! OneClick">

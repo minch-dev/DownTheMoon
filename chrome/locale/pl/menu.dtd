@@ -15,12 +15,12 @@
 <!ENTITY dta-regular-turbo2.label "DownTheMoon! OneClick…">
 <!ENTITY dta-regular-turbo.desc "Pobiera wszystkie elementy z aktywnej strony, stosując ostatnio używane ustawienia i filtry.">
 <!ENTITY dta-img-save2.label "Zapisz obrazki za pomocą DownTheMoon!">
-<!ENTITY dta-img-save-turbo2.label "Zapisz obrazki za pomocą dTa! OneClick!">
+<!ENTITY dta-img-save-turbo2.label "Zapisz obrazki za pomocą dTm! OneClick!">
 <!ENTITY dta-video-save2.label "Zapisz wideo za pomocą DownTheMoon!">
-<!ENTITY dta-video-save-turbo2.label "Zapisz wideo za pomocą dTa! OneClick!">
+<!ENTITY dta-video-save-turbo2.label "Zapisz wideo za pomocą dTm! OneClick!">
 <!ENTITY dta-audio-save2.label "Zapisz audio za pomocą DownTheMoon!">
-<!ENTITY dta-audio-save-turbo2.label "Zapisz audio za pomocą dTa! OneClick!">
+<!ENTITY dta-audio-save-turbo2.label "Zapisz audio za pomocą dTm! OneClick!">
 <!ENTITY dta-link-save2.label "Zapisz odnośnik za pomocą DownTheMoon!">
-<!ENTITY dta-link-save-turbo2.label "Zapisz odnośnik za pomocą dTa! OneClick!">
+<!ENTITY dta-link-save-turbo2.label "Zapisz odnośnik za pomocą dTm! OneClick!">
 <!ENTITY dta-form-save2.label "Zapisz formularz za pomocą DownTheMoon!">
-<!ENTITY dta-form-save-turbo2.label "Zapisz formularz za pomocą dTa! OneClick!">
+<!ENTITY dta-form-save-turbo2.label "Zapisz formularz za pomocą dTm! OneClick!">

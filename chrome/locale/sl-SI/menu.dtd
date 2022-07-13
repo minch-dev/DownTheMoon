@@ -12,15 +12,15 @@
 <!ENTITY dta-selection-turbo2.label "Izbira OneClick">
 <!ENTITY dta-regular2.label "DownTheMoon!">
 <!ENTITY dta-regular.desc "Odpre DownTheMoon! Okno izbire za trenutni zavihek.">
-<!ENTITY dta-regular-turbo2.label "dTa! OneClick">
+<!ENTITY dta-regular-turbo2.label "dTm! OneClick">
 <!ENTITY dta-regular-turbo.desc "Prenese vse predmete s trenutne strani glede na nazadnje uporabljene nastavitve in filtre.">
 <!ENTITY dta-img-save2.label "Shrani sliko z raz. DownTheMoon!">
-<!ENTITY dta-img-save-turbo2.label "Shrani sliko z dTa! OneClickom">
+<!ENTITY dta-img-save-turbo2.label "Shrani sliko z dTm! OneClickom">
 <!ENTITY dta-video-save2.label "Shrani videoposnetek z raz. DownTheMoon!">
-<!ENTITY dta-video-save-turbo2.label "Shrani videoposnetek z dTa! OneClickom">
+<!ENTITY dta-video-save-turbo2.label "Shrani videoposnetek z dTm! OneClickom">
 <!ENTITY dta-audio-save2.label "Shrani zvok z raz. DownTheMoon!">
 <!ENTITY dta-audio-save-turbo2.label "Shrani zvok z Ta! OneClickom">
 <!ENTITY dta-link-save2.label "Shrani povezave z raz. DownTheMoon!">
-<!ENTITY dta-link-save-turbo2.label "Shrani povezave z dTa! OneClickom">
+<!ENTITY dta-link-save-turbo2.label "Shrani povezave z dTm! OneClickom">
 <!ENTITY dta-form-save2.label "Shrani cilj obrazca z raz. DownTheMoon!">
-<!ENTITY dta-form-save-turbo2.label "Shrani cilj obrazca z dTa! OneClickom">
+<!ENTITY dta-form-save-turbo2.label "Shrani cilj obrazca z dTm! OneClickom">

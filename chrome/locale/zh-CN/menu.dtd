@@ -12,15 +12,15 @@
 <!ENTITY dta-selection-turbo2.label "OneClick 选择">
 <!ENTITY dta-regular2.label "DownTheMoon!">
 <!ENTITY dta-regular.desc "为当前标签页打开 DownTheMoon! 选择窗口。">
-<!ENTITY dta-regular-turbo2.label "dTa! OneClick">
+<!ENTITY dta-regular-turbo2.label "dTm! OneClick">
 <!ENTITY dta-regular-turbo.desc "使用上次的选项和过滤器下载当前页面所有项目。">
 <!ENTITY dta-img-save2.label "用 DownTheMoon! 保存图像">
-<!ENTITY dta-img-save-turbo2.label "用 dTa! OneClick 保存图像">
+<!ENTITY dta-img-save-turbo2.label "用 dTm! OneClick 保存图像">
 <!ENTITY dta-video-save2.label "用 DownTheMoon! 保存视频">
-<!ENTITY dta-video-save-turbo2.label "用 dTa! OneClick 保存视频">
+<!ENTITY dta-video-save-turbo2.label "用 dTm! OneClick 保存视频">
 <!ENTITY dta-audio-save2.label "用 DownTheMoon! 保存音频">
-<!ENTITY dta-audio-save-turbo2.label "用 dTa! OneClick 保存音频">
+<!ENTITY dta-audio-save-turbo2.label "用 dTm! OneClick 保存音频">
 <!ENTITY dta-link-save2.label "用 DownTheMoon! 保存链接">
-<!ENTITY dta-link-save-turbo2.label "用 dTa! OneClick 保存链接">
+<!ENTITY dta-link-save-turbo2.label "用 dTm! OneClick 保存链接">
 <!ENTITY dta-form-save2.label "用 DownTheMoon! 保存表单目标">
-<!ENTITY dta-form-save-turbo2.label "用 dTa! OneClick 保存表单目标">
+<!ENTITY dta-form-save-turbo2.label "用 dTm! OneClick 保存表单目标">

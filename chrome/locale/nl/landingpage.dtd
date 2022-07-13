@@ -1,4 +1,4 @@
-<!-- To test this out, open chrome://dta/content/about/index.xml in your browser with dTa! installed -->
+<!-- To test this out, open chrome://dta/content/about/index.xml in your browser with dTm! installed -->
 <!-- LOCALIZATION NOTE (lp.localedir): UI text direction, either ltr (left-to-right) or rtl (right-to-left); other values not possible -->
 <!ENTITY lp.localedir "ltr">
 <!-- LOCALIZATION NOTE (language): Your language in your language -->
@@ -24,7 +24,7 @@
 <!ENTITY lp.pleasenote "Let op:">
 <!ENTITY lp.donate2 "Overweeg een bijdrage te doen">
 <!ENTITY lp.tut.firsttitle "De eerste download">
-<!ENTITY lp.tut.fd2 "Een bestand downloaden in dTa! is betrekkelijk eenvoudig, maar ook erg krachtig. Als wordt gevraagd een bestand te openen of op te slaan, kunt u het item DownTheMoon! gebruiken. Na te hebben gekozen waar het bestand wordt opgeslagen, kunt u meteen beginnen met downloaden of het bestand in een wachtrij zetten, zodat het later kan worden gedownload.">
+<!ENTITY lp.tut.fd2 "Een bestand downloaden in dTm! is betrekkelijk eenvoudig, maar ook erg krachtig. Als wordt gevraagd een bestand te openen of op te slaan, kunt u het item DownTheMoon! gebruiken. Na te hebben gekozen waar het bestand wordt opgeslagen, kunt u meteen beginnen met downloaden of het bestand in een wachtrij zetten, zodat het later kan worden gedownload.">
 <!ENTITY lp.tut.selecttitle "Het selectievenster gebruiken">
 <!ENTITY lp.tut.selintro "Het contextmenu van een website biedt een nieuw DownTheMoon!-item. Door dit item te gebruiken, wordt het selectievenster van DownTheMoon! getoond, dat u kunt gebruiken om eenvoudig een of meer koppelingen van een pagina te selecteren.">
 <!ENTITY lp.tut.seloptions "In het selectievenster hebt u meerdere manieren om te selecteren welke bestanden worden gedownload:">

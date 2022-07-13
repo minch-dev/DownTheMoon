@@ -94,7 +94,7 @@
 			</ul></li>
 			<li>DownTheMoon! Manager will by default now use the "Icons" mode in the toolbar. Please make sure to check the texts as well, by right-clicking the toolbar and selecting text and icons.</li>
 			<li>Please adjust the preference window width (and maybe height). See <code>prefpanes.dtd:winstyle</code>. There is currently no way to autofit-resize the window automatically, so please choose decent values to avoid cutting-off parts of the window contents.</li>
-			<li>An often missed feature is Metalink support. Please make sure to test that dialog and your translations as well. E.g. downloading LibreOffice with dTa! should display the metalink dialog.</li>
+			<li>An often missed feature is Metalink support. Please make sure to test that dialog and your translations as well. E.g. downloading LibreOffice with dTm! should display the metalink dialog.</li>
 		</ul>
 
 		<h1>addons.mozilla.org localizations</h1>

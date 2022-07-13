@@ -11,7 +11,7 @@
 <!ENTITY dtacontext2.label "設定">
 <!ENTITY buttonlabelextra2 "初期設定に戻す">
 <!ENTITY dtaPreferences.title "DownTheMoon! の設定">
-<!ENTITY manager "dTa! マネージャー">
+<!ENTITY manager "dTm! マネージャー">
 <!ENTITY mainpane.label "一般">
 <!ENTITY mainpane.defaults.caption "デフォルト設定">
 <!ENTITY mainpane.defaults.desc "OneClick! は前回使用したダウンロード設定を使用します。保存先やフィルター等を設定する場合は通常の DownTheMoon! 選択ダイアログを使用します。">

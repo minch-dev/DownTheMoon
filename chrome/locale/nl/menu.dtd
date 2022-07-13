@@ -12,15 +12,15 @@
 <!ENTITY dta-selection-turbo2.label "OneClick-selectie">
 <!ENTITY dta-regular2.label "DownTheMoon!">
 <!ENTITY dta-regular.desc "Opent het DownTheMoon!-selectievenster voor het huidige tabblad.">
-<!ENTITY dta-regular-turbo2.label "dTa! OneClick">
+<!ENTITY dta-regular-turbo2.label "dTm! OneClick">
 <!ENTITY dta-regular-turbo.desc "Downloadt alle items van de huidige pagina volgens de laatst gebruikte voorkeuren en filters.">
 <!ENTITY dta-img-save2.label "Afbeelding opslaan met DownTheMoon!">
-<!ENTITY dta-img-save-turbo2.label "Afbeelding opslaan met dTa! OneClick">
+<!ENTITY dta-img-save-turbo2.label "Afbeelding opslaan met dTm! OneClick">
 <!ENTITY dta-video-save2.label "Video opslaan met DownTheMoon!">
-<!ENTITY dta-video-save-turbo2.label "Video opslaan met dTa! OneClick">
+<!ENTITY dta-video-save-turbo2.label "Video opslaan met dTm! OneClick">
 <!ENTITY dta-audio-save2.label "Audio opslaan met DownTheMoon!">
-<!ENTITY dta-audio-save-turbo2.label "Audio opslaan met dTa! OneClick">
+<!ENTITY dta-audio-save-turbo2.label "Audio opslaan met dTm! OneClick">
 <!ENTITY dta-link-save2.label "Koppeling opslaan met DownTheMoon!">
-<!ENTITY dta-link-save-turbo2.label "Koppeling opslaan met dTa! OneClick">
+<!ENTITY dta-link-save-turbo2.label "Koppeling opslaan met dTm! OneClick">
 <!ENTITY dta-form-save2.label "Formulierdoel opslaan met DownTheMoon!">
-<!ENTITY dta-form-save-turbo2.label "Formulierdoel opslaan met dTa! OneClick">
+<!ENTITY dta-form-save-turbo2.label "Formulierdoel opslaan met dTm! OneClick">

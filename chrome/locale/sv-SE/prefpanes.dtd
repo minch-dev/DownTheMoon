@@ -30,7 +30,7 @@
 <!ENTITY mainpane.sounddone.label "Spela upp ett ljud när samtliga filhämtningar är slutförda">
 <!ENTITY mainpane.closedta.label "Stäng DownTheMoon! när alla nedladdningar är slutförda">
 <!ENTITY mainpane.settime.label "Ange filens tid till senast ändrad (server) eller tid vid köläggning">
-<!ENTITY mainpane.rememberoneclick.label "Låt dTa! OneClick komma ihåg om det gäller alla flikar eller aktuell flik">
+<!ENTITY mainpane.rememberoneclick.label "Låt dTm! OneClick komma ihåg om det gäller alla flikar eller aktuell flik">
 <!ENTITY mainpane.confirmremove2.label "Bekräfta borttagning av nedladdningar">
 <!ENTITY mainpane.textlinks.label "Känn igen textlänkar">
 <!ENTITY mainpane.listsniffedvideos.label "Spela in och lista (Flash)videor">

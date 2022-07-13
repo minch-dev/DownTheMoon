@@ -11,7 +11,7 @@
 <!ENTITY dtacontext2.label "偏好設定">
 <!ENTITY buttonlabelextra2 "還原預設值">
 <!ENTITY dtaPreferences.title "DownTheMoon! 偏好設定…">
-<!ENTITY manager "dTa! 管理員">
+<!ENTITY manager "dTm! 管理員">
 <!ENTITY mainpane.label "主要">
 <!ENTITY mainpane.defaults.caption "預設">
 <!ENTITY mainpane.defaults.desc "dTa 單鍵式所用的下載目錄、重新命名規則以及過濾器，可在 DownTheMoon! 選擇性下載視窗中設定。">

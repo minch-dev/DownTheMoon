@@ -11,7 +11,7 @@
 <!ENTITY dtacontext2.label "Nastavitve">
 <!ENTITY buttonlabelextra2 "Obnovi privzete nastavitve">
 <!ENTITY dtaPreferences.title "Nastavitve za DownTheMoon! ...">
-<!ENTITY manager "Upravitelj dTa!">
+<!ENTITY manager "Upravitelj dTm!">
 <!ENTITY mainpane.label "Splošno">
 <!ENTITY mainpane.defaults.caption "Privzeto">
 <!ENTITY mainpane.defaults.desc "Mapo za prenos, masko za preimenovanje in filtre, ki jih uporablja OneClick!, lahko nastavite v običajnem pogovornem oknu za izbiro DownTheMoon!">

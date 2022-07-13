@@ -11,7 +11,7 @@
 <!ENTITY dtacontext2.label "Opções">
 <!ENTITY buttonlabelextra2 "Restaurar configurações originais">
 <!ENTITY dtaPreferences.title "Opções do DownTheMoon!">
-<!ENTITY manager "Gerenciador dTa!">
+<!ENTITY manager "Gerenciador dTm!">
 <!ENTITY mainpane.label "Principal">
 <!ENTITY mainpane.defaults.caption "Configurações Padrões">
 <!ENTITY mainpane.defaults.desc "O diretório de destino, as máscaras de renomeação e os filtros a serem usados pelo OneClick! podem ser configurados na janela de seleção do DownTheMoon!.">

@@ -11,7 +11,7 @@
 <!ENTITY dtacontext2.label "Tercihler">
 <!ENTITY buttonlabelextra2 "Varsayılan Ayarları Geri Yükle">
 <!ENTITY dtaPreferences.title "DownTheMoon! Tercihleri">
-<!ENTITY manager "dTa! Yöneticisi">
+<!ENTITY manager "dTm! Yöneticisi">
 <!ENTITY mainpane.label "Genel">
 <!ENTITY mainpane.defaults.caption "Varsayılanlar">
 <!ENTITY mainpane.defaults.desc "İndirme dizini, yeniden adlandırma maskesi ve OneClick!'te kullanılan süzgeçler DownTheMoon! seçim penceresinde düzenlenebilir.">

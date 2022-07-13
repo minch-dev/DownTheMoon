@@ -12,15 +12,15 @@
 <!ENTITY dta-selection-turbo2.label "Selección de OneClick">
 <!ENTITY dta-regular2.label "DownTheMoon!">
 <!ENTITY dta-regular.desc "Abre a xanela de selección de DownTheMoon! para a lapela actual.">
-<!ENTITY dta-regular-turbo2.label "dTa! OneClick">
+<!ENTITY dta-regular-turbo2.label "dTm! OneClick">
 <!ENTITY dta-regular-turbo.desc "Descarga todos os elementos da páxina actual segundo as últimas preferencias e filtros usados.">
 <!ENTITY dta-img-save2.label "Gardar imaxe con DownTheMoon!">
-<!ENTITY dta-img-save-turbo2.label "Gardar imaxe con dTa! OneClick">
+<!ENTITY dta-img-save-turbo2.label "Gardar imaxe con dTm! OneClick">
 <!ENTITY dta-video-save2.label "Gardar vídeo con DownTheMoon!">
-<!ENTITY dta-video-save-turbo2.label "Gardar vídeo con dTa! OneClick">
+<!ENTITY dta-video-save-turbo2.label "Gardar vídeo con dTm! OneClick">
 <!ENTITY dta-audio-save2.label "Gardar son con DownTheMoon!">
-<!ENTITY dta-audio-save-turbo2.label "Gardar son con dTa! OneClick">
+<!ENTITY dta-audio-save-turbo2.label "Gardar son con dTm! OneClick">
 <!ENTITY dta-link-save2.label "Gardar ligazón con DownTheMoon!">
-<!ENTITY dta-link-save-turbo2.label "Gardar ligazón con dTa! OneClick">
+<!ENTITY dta-link-save-turbo2.label "Gardar ligazón con dTm! OneClick">
 <!ENTITY dta-form-save2.label "Gardar formulario de destino con DownTheMoon!">
-<!ENTITY dta-form-save-turbo2.label "Gardar formulario de destino con dTa!OneClick">
+<!ENTITY dta-form-save-turbo2.label "Gardar formulario de destino con dTm!OneClick">

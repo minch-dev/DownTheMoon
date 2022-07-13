@@ -11,7 +11,7 @@
 <!ENTITY dtacontext2.label "Preferencias">
 <!ENTITY buttonlabelextra2 "Restablecer predisposiciones predeterminadas">
 <!ENTITY dtaPreferences.title "Preferencias de DownTheMoon!...">
-<!ENTITY manager "Administrador de dTa!">
+<!ENTITY manager "Administrador de dTm!">
 <!ENTITY mainpane.label "Principal">
 <!ENTITY mainpane.defaults.caption "Predeterminados">
 <!ENTITY mainpane.defaults.desc "El directorio de descargas, la máscara de renombrado y los filtros utilizados por OneClick! puede configurarse en la ventana de selección de DownTheMoon!">

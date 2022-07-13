@@ -11,7 +11,7 @@
 <!ENTITY dtacontext2.label "Preferensi">
 <!ENTITY buttonlabelextra2 "Kembalikan Pengaturan Bawaan">
 <!ENTITY dtaPreferences.title "Preferensi DownTheMoon!">
-<!ENTITY manager "Pengelola dTa!">
+<!ENTITY manager "Pengelola dTm!">
 <!ENTITY mainpane.label "Umum">
 <!ENTITY mainpane.defaults.caption "Bawaan">
 <!ENTITY mainpane.defaults.desc "Direktori unduhan, pola ubah nama dan filter yang digunakan oleh OneClick! bisa diatur di jendela pilihan DownTheMoon! yang ada">

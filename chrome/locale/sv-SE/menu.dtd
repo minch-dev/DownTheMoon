@@ -12,15 +12,15 @@
 <!ENTITY dta-selection-turbo2.label "OneClick!-markering">
 <!ENTITY dta-regular2.label "DownTheMoon!">
 <!ENTITY dta-regular.desc "Öppnar DownTheMoon!-markeringsfönster för aktuell flik.">
-<!ENTITY dta-regular-turbo2.label "dTa! OneClick">
+<!ENTITY dta-regular-turbo2.label "dTm! OneClick">
 <!ENTITY dta-regular-turbo.desc "Laddar ned alla objekt från aktuell sida enligt de senast använda inställningarna och filtren.">
 <!ENTITY dta-img-save2.label "Spara bild med DownTheMoon!">
-<!ENTITY dta-img-save-turbo2.label "Spara bild med dTa! OneClick">
+<!ENTITY dta-img-save-turbo2.label "Spara bild med dTm! OneClick">
 <!ENTITY dta-video-save2.label "Spara video med DownTheMoon!">
-<!ENTITY dta-video-save-turbo2.label "Spara video med dTa! OneClick">
+<!ENTITY dta-video-save-turbo2.label "Spara video med dTm! OneClick">
 <!ENTITY dta-audio-save2.label "Spara ljud med DownTheMoon!">
-<!ENTITY dta-audio-save-turbo2.label "Spara ljud med dTa! OneClick">
+<!ENTITY dta-audio-save-turbo2.label "Spara ljud med dTm! OneClick">
 <!ENTITY dta-link-save2.label "Spara länk med DownTheMoon!">
-<!ENTITY dta-link-save-turbo2.label "Spara länk med dTa! OneClick">
+<!ENTITY dta-link-save-turbo2.label "Spara länk med dTm! OneClick">
 <!ENTITY dta-form-save2.label "Spara formulärmål med DownTheMoon!">
-<!ENTITY dta-form-save-turbo2.label "Spara formulärmål med dTa! OneClick">
+<!ENTITY dta-form-save-turbo2.label "Spara formulärmål med dTm! OneClick">
