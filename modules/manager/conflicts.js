@@ -193,7 +193,7 @@ module.exports = class Manager {
 				newDest: cropCenter(newDest.leafName, 45)
 			};
 			this._window.openDialog(
-				"chrome://dta/content/dta/manager/conflicts.xul",
+				"chrome://dtm/content/dtm/manager/conflicts.xul",
 				"_blank",
 				"chrome,centerscreen,resizable=no,dialog,close=no,dependent",
 				options, dialog

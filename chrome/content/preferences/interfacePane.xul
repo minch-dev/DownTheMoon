@@ -9,26 +9,26 @@
  *
  * ***** END LICENSE BLOCK ***** -->
 <!DOCTYPE window [
-	<!ENTITY % prefsDTD SYSTEM "chrome://dta/locale/prefpanes.dtd">
+	<!ENTITY % prefsDTD SYSTEM "chrome://dtm/locale/prefpanes.dtd">
 	%prefsDTD;
-	<!ENTITY % defprefsDTD SYSTEM "chrome://dta-locale/content/prefpanes.dtd">
+	<!ENTITY % defprefsDTD SYSTEM "chrome://dtm-locale/content/prefpanes.dtd">
 	%defprefsDTD;
 ]>
 <overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
 	<prefpane id="paneInterface" label="&uipane.label;" onpaneload="Interface.init();">
 		<preferences id="prefsInterface">
-			<preference id="dtaShowInDown" name="extensions.dta.downloadWin" type="bool" />
-			<preference id="dtaHideUrl" name="extensions.dta.showonlyfilenames" type="bool" />
-			<preference id="dtaContextSub" name="extensions.dta.ctxcompact" type="bool" />
-			<preference id="dtaToolHide" name="extensions.dta.toolshidden" type="bool" />
-			<preference id="dtaContext" name="extensions.dta.ctxmenu" type="string" />
-			<preference id="dtaTool" name="extensions.dta.toolsmenu" type="string" />
-			<preference id="dtaShowTooltip" name="extensions.dta.showtooltip" type="bool" />
-			<preference id="dtaStartMinimized" name="extensions.dta.startminimized" type="bool" />
+			<preference id="dtaShowInDown" name="extensions.dtm.downloadWin" type="bool" />
+			<preference id="dtaHideUrl" name="extensions.dtm.showonlyfilenames" type="bool" />
+			<preference id="dtaContextSub" name="extensions.dtm.ctxcompact" type="bool" />
+			<preference id="dtaToolHide" name="extensions.dtm.toolshidden" type="bool" />
+			<preference id="dtaContext" name="extensions.dtm.ctxmenu" type="string" />
+			<preference id="dtaTool" name="extensions.dtm.toolsmenu" type="string" />
+			<preference id="dtaShowTooltip" name="extensions.dtm.showtooltip" type="bool" />
+			<preference id="dtaStartMinimized" name="extensions.dtm.startminimized" type="bool" />
 			<preference id="dtaMinimizeToTray" name="extensions.mintrayr.downthemall.watchmanager" type="bool" />
-			<preference id="dtaNotification" name="extensions.dta.notification2" type="int" />
-			<preference id="dtaShowActions" name="extensions.dta.showactions" type="bool" />
+			<preference id="dtaNotification" name="extensions.dtm.notification2" type="int" />
+			<preference id="dtaShowActions" name="extensions.dtm.showactions" type="bool" />
 		</preferences>
 
 		<groupbox>

@@ -3,7 +3,7 @@
 module("glue.jsm");
 
 test("Service contents", function() {
-	var {Services: S1} = requireJSM("chrome://dta-modules/content/glue.jsm");
+	var {Services: S1} = requireJSM("chrome://dtm-modules/content/glue.jsm");
 	var {Services: S2} = requireJSM("resource://gre/modules/Services.jsm");
 
 	var k2 = Object.keys(S2);
@@ -75,7 +75,7 @@ test("Instances contents", function() {
 		"transferable",
 		"uniconverter",
 	];
-	var {Instances: I} = requireJSM("chrome://dta-modules/content/glue.jsm");
+	var {Instances: I} = requireJSM("chrome://dtm-modules/content/glue.jsm");
 	arrayEqual(Object.keys(I), expected, "Glue Instances are complete");
 });
 
@@ -84,7 +84,7 @@ test("weak", function() {
 	var o = {
 		test: function() { ref++; }
 	};
-	var {weak} = requireJSM("chrome://dta-modules/content/glue.jsm");
+	var {weak} = requireJSM("chrome://dtm-modules/content/glue.jsm");
 	var w = weak(o);
 	equal(o, w.get());
 	o.test();
@@ -100,7 +100,7 @@ test("weak", function() {
 });
 
 test("lazy", function() {
-	var {lazyProto} = requireJSM("chrome://dta-modules/content/glue.jsm");
+	var {lazyProto} = requireJSM("chrome://dtm-modules/content/glue.jsm");
 	var o = {};
 	var io = {1:1};
 	var i = 0;
@@ -126,7 +126,7 @@ test("lazy", function() {
 });
 
 test("lazyProto", function() {
-	var {lazyProto} = requireJSM("chrome://dta-modules/content/glue.jsm");
+	var {lazyProto} = requireJSM("chrome://dtm-modules/content/glue.jsm");
 	var O = function() {};
 	O.prototype = {};
 	var io = {1:1};
@@ -161,7 +161,7 @@ test("lazyProto", function() {
 });
 
 test("lazyProto frozen proto", function() {
-	var {lazyProto} = requireJSM("chrome://dta-modules/content/glue.jsm");
+	var {lazyProto} = requireJSM("chrome://dtm-modules/content/glue.jsm");
 	var O = function() {};
 	O.prototype = {};
 	var io = {1:1};
@@ -197,7 +197,7 @@ test("lazyProto frozen proto", function() {
 });
 
 test("lazyProto very frozen", function() {
-	var {lazyProto} = requireJSM("chrome://dta-modules/content/glue.jsm");
+	var {lazyProto} = requireJSM("chrome://dtm-modules/content/glue.jsm");
 	var O = function() {};
 	O.prototype = {};
 	var io = {1:1};
@@ -216,7 +216,7 @@ test("lazyProto very frozen", function() {
 });
 
 test("require recursive", function() {
-	var {require} = requireJSM("chrome://dta-modules/content/glue.jsm");
+	var {require} = requireJSM("chrome://dtm-modules/content/glue.jsm");
 
 	var rec = require("testsupport/require/recursive");
 	strictEqual(rec.a, 1);
@@ -226,7 +226,7 @@ test("require recursive", function() {
 });
 
 test("require cyclic", function() {
-	var {require} = requireJSM("chrome://dta-modules/content/glue.jsm");
+	var {require} = requireJSM("chrome://dtm-modules/content/glue.jsm");
 
 	var a = require('testsupport/require/cyclicA');
 	var b = require('testsupport/require/cyclicB');
@@ -238,7 +238,7 @@ test("require cyclic", function() {
 });
 
 test("LRUMap", function() {
-	var {LRUMap} = requireJSM("chrome://dta-modules/content/glue.jsm");
+	var {LRUMap} = requireJSM("chrome://dtm-modules/content/glue.jsm");
 	let map = new LRUMap(2);
 	strictEqual(map.limit, 2, "correct limit");
 	strictEqual(map.capacity, map.limit, "correct capacity");

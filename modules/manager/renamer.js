@@ -14,7 +14,7 @@ const {
 
 var seriesDigits;
 
-Prefs.addObserver("extensions.dta.seriesdigits", ({
+Prefs.addObserver("extensions.dtm.seriesdigits", ({
 	observe: function() {
 		seriesDigits = Prefs.getExt("seriesdigits", 3);
 		return this;

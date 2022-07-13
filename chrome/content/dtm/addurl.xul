@@ -12,19 +12,19 @@
  *
  * ***** END LICENSE BLOCK ***** -->
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
-<?xml-stylesheet href="chrome://dta/skin/common/style.css" type="text/css" ?>
-<?xml-stylesheet href="chrome://dta/skin/add/style.css" type="text/css" ?>
+<?xml-stylesheet href="chrome://dtm/skin/common/style.css" type="text/css" ?>
+<?xml-stylesheet href="chrome://dtm/skin/add/style.css" type="text/css" ?>
 
 <!DOCTYPE dialog [
 	<!ENTITY % globalDTD SYSTEM "chrome://global/locale/">
 	%globalDTD;
-	<!ENTITY % commonDTD SYSTEM "chrome://dta/locale/">
+	<!ENTITY % commonDTD SYSTEM "chrome://dtm/locale/">
 	%commonDTD;
-	<!ENTITY % defcommonDTD SYSTEM "chrome://dta-locale/content/dta.dtd">
+	<!ENTITY % defcommonDTD SYSTEM "chrome://dtm-locale/content/dtm.dtd">
 	%defcommonDTD;
-	<!ENTITY % addUrlDTD SYSTEM "chrome://dta/locale/addurl.dtd">
+	<!ENTITY % addUrlDTD SYSTEM "chrome://dtm/locale/addurl.dtd">
 	%addUrlDTD;
-	<!ENTITY % defaddUrlDTD SYSTEM "chrome://dta-locale/content/addurl.dtd">
+	<!ENTITY % defaddUrlDTD SYSTEM "chrome://dtm-locale/content/addurl.dtd">
 	%defaddUrlDTD;
 ]>
 
@@ -44,12 +44,12 @@
 	buttonaccesskeyextra1="&queue.key;"
 	>
 
-	<script type="application/javascript" src="chrome://dta/content/common/internalFunctions.js"/>
-	<script type="application/javascript" src="chrome://dta/content/dta/addurl.js"/>
+	<script type="application/javascript" src="chrome://dtm/content/common/internalFunctions.js"/>
+	<script type="application/javascript" src="chrome://dtm/content/dtm/addurl.js"/>
 
 	<stringbundleset xmlns="http://www.downthemall.net/properties#">
-		<stringbundle src="chrome://dta/locale/addurl.properties"/>
-		<stringbundle src="chrome://dta/locale/common.properties"/>
+		<stringbundle src="chrome://dtm/locale/addurl.properties"/>
+		<stringbundle src="chrome://dtm/locale/common.properties"/>
 	</stringbundleset>
 
 	<keyset>

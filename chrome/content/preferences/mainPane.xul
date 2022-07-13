@@ -9,22 +9,22 @@
  *
  * ***** END LICENSE BLOCK ***** -->
 <!DOCTYPE window [
-	<!ENTITY % prefsDTD SYSTEM "chrome://dta/locale/prefpanes.dtd">
+	<!ENTITY % prefsDTD SYSTEM "chrome://dtm/locale/prefpanes.dtd">
 	%prefsDTD;
-	<!ENTITY % defprefsDTD SYSTEM "chrome://dta-locale/content/prefpanes.dtd">
+	<!ENTITY % defprefsDTD SYSTEM "chrome://dtm-locale/content/prefpanes.dtd">
 	%defprefsDTD;
 ]>
 <overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 	<prefpane id="paneMain" label="&mainpane.label;" onpaneload="Main.load();">
 
 		<preferences>
-			<preference id="dtaexisting" name="extensions.dta.conflictresolution" type="int" />
-			<preference id="dtaalert" name="extensions.dta.alertbox" type="int" />
-			<preference id="dtadone" name="extensions.dta.sounds.done" type="bool" />
-			<preference id="dtaerror" name="extensions.dta.sounds.error" type="bool" />
-			<preference id="dtaautoclose" name="extensions.dta.closedta" type="bool" />
-			<preference id="dtatextlinks" name="extensions.dta.textlinks" type="bool" />
-			<preference id="dtalistsniffedvideos" name="extensions.dta.listsniffedvideos" type="bool" />
+			<preference id="dtaexisting" name="extensions.dtm.conflictresolution" type="int" />
+			<preference id="dtaalert" name="extensions.dtm.alertbox" type="int" />
+			<preference id="dtadone" name="extensions.dtm.sounds.done" type="bool" />
+			<preference id="dtaerror" name="extensions.dtm.sounds.error" type="bool" />
+			<preference id="dtaautoclose" name="extensions.dtm.closedta" type="bool" />
+			<preference id="dtatextlinks" name="extensions.dtm.textlinks" type="bool" />
+			<preference id="dtalistsniffedvideos" name="extensions.dtm.listsniffedvideos" type="bool" />
 		</preferences>
 
 		<groupbox id="defaultsdesc">

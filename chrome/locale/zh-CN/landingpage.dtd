@@ -1,4 +1,4 @@
-<!-- To test this out, open chrome://dta/content/about/index.xml in your browser with dTm! installed -->
+<!-- To test this out, open chrome://dtm/content/about/index.xml in your browser with dTm! installed -->
 <!-- LOCALIZATION NOTE (lp.localedir): UI text direction, either ltr (left-to-right) or rtl (right-to-left); other values not possible -->
 <!ENTITY lp.localedir "ltr">
 <!-- LOCALIZATION NOTE (language): Your language in your language -->
@@ -53,7 +53,7 @@
 <!ENTITY lp.tb.install "添加工具栏按钮">
 <!ENTITY lp.tb.add.title "增加并使用工具栏按钮">
 <!ENTITY lp.tb.add.p1 "DownTheMoon! 提供四个工具栏按钮用于方便地查找并增加下载队列">
-<!ENTITY lp.tb.add.dta "DownTheMoon! 按钮">
+<!ENTITY lp.tb.add.dtm "DownTheMoon! 按钮">
 <!ENTITY lp.tb.add.dtadesc "为当前标签页打开 DownTheMoon! 选择窗口。">
 <!ENTITY lp.tb.add.tdta "OneClick! 按钮">
 <!ENTITY lp.tb.add.tdtadesc "使用上次的选项和过滤器下载当前页面上的所有项目。">

@@ -8,43 +8,43 @@
  * See LICENSE and GPL for details.
  *
  * ***** END LICENSE BLOCK ***** -->
-<?xml-stylesheet href="chrome://dta/skin/manager/style.css" type="text/css" ?>
-<?xml-stylesheet href="chrome://dta-platform/skin/manager.css" type="text/css" ?>
-<?xul-overlay href="chrome://dta/content/dta/manager/tooltip.xul"?>
-<?xul-overlay href="chrome://dta-platform/content/manager.xul"?>
+<?xml-stylesheet href="chrome://dtm/skin/manager/style.css" type="text/css" ?>
+<?xml-stylesheet href="chrome://dtm-platform/skin/manager.css" type="text/css" ?>
+<?xul-overlay href="chrome://dtm/content/dtm/manager/tooltip.xul"?>
+<?xul-overlay href="chrome://dtm-platform/content/manager.xul"?>
 
 <!DOCTYPE overlay [
 	<!ENTITY % globalDTD SYSTEM "chrome://global/locale/">
 	%globalDTD;
-	<!ENTITY % commonDTD SYSTEM "chrome://dta/locale/">
+	<!ENTITY % commonDTD SYSTEM "chrome://dtm/locale/">
 	%commonDTD;
-	<!ENTITY % defcommonDTD SYSTEM "chrome://dta-locale/content/dta.dtd">
+	<!ENTITY % defcommonDTD SYSTEM "chrome://dtm-locale/content/dtm.dtd">
 	%defcommonDTD;
-	<!ENTITY % managerDTD SYSTEM "chrome://dta/locale/manager.dtd">
+	<!ENTITY % managerDTD SYSTEM "chrome://dtm/locale/manager.dtd">
 	%managerDTD;
-	<!ENTITY % defmanagerDTD SYSTEM "chrome://dta-locale/content/manager.dtd">
+	<!ENTITY % defmanagerDTD SYSTEM "chrome://dtm-locale/content/manager.dtd">
 	%defmanagerDTD;
 ]>
 
 <overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="dtamanagermainoverlay">
 <window windowtype="DTA:Manager" title="DownTheMoon!" id="DownTheMoon" class="downlinks" flex="1" persist="width height screenX screenY sizemode dtaAutofitted">
 
-	<audio xmlns="http://www.w3.org/1999/xhtml" src="chrome://dta/skin/sounds/done.ogg" id="sound_done"></audio>
-	<audio xmlns="http://www.w3.org/1999/xhtml" src="chrome://dta/skin/sounds/error.ogg" id="sound_error"></audio>
+	<audio xmlns="http://www.w3.org/1999/xhtml" src="chrome://dtm/skin/sounds/done.ogg" id="sound_done"></audio>
+	<audio xmlns="http://www.w3.org/1999/xhtml" src="chrome://dtm/skin/sounds/error.ogg" id="sound_error"></audio>
 
 	<script type="application/x-javascript" src="chrome://global/content/globalOverlay.js" />
 	<script type="application/x-javascript" src="chrome://browser/content/utilityOverlay.js" />
 
-	<script type="application/javascript" src="chrome://dta/content/common/internalFunctions.js" />
+	<script type="application/javascript" src="chrome://dtm/content/common/internalFunctions.js" />
 
-	<script type="application/javascript" src="chrome://dta/content/dta/manager/manager.js" />
-	<script type="application/javascript" src="chrome://dta/content/dta/manager/utils.js" />
-	<script type="application/javascript" src="chrome://dta/content/dta/manager/tree.js" />
+	<script type="application/javascript" src="chrome://dtm/content/dtm/manager/manager.js" />
+	<script type="application/javascript" src="chrome://dtm/content/dtm/manager/utils.js" />
+	<script type="application/javascript" src="chrome://dtm/content/dtm/manager/tree.js" />
 
 	<stringbundleset xmlns="http://www.downthemall.net/properties#">
-		<stringbundle src="chrome://dta/locale/common.properties" />
-		<stringbundle src="chrome://dta/locale/manager.properties" />
-		<stringbundle src="chrome://dta/locale/prefpanes.properties" />
+		<stringbundle src="chrome://dtm/locale/common.properties" />
+		<stringbundle src="chrome://dtm/locale/manager.properties" />
+		<stringbundle src="chrome://dtm/locale/prefpanes.properties" />
 	</stringbundleset>
 
 	<commandset id="maincommands">

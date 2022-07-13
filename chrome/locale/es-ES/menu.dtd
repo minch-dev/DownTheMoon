@@ -1,26 +1,26 @@
 <!-- LOCALIZATION NOTE : FILE Please do NOT translate DownTheMoon! and OneClick -->
-<!ENTITY dta-tbinstall "Añadir iconos">
-<!ENTITY dta-pref.label "Preferencias...">
-<!ENTITY dta-about2.label "Acerca de DownTheMoon!">
-<!ENTITY dta-manager-button "Administrador de dTm!">
-<!ENTITY dta-manager-button.desc "Abre ventana de Gestor.">
-<!ENTITY dta-selector-button2.label "Selector de OneClick">
-<!ENTITY dta-selector-button.desc "Añade elementos al hacer click izquierdo en ellos.">
-<!ENTITY dta-tb-all.label "Todas las pestañas">
-<!ENTITY dta-tb-single.label "Pestaña actual">
-<!ENTITY dta-selection2.label "Selección de DownTheMoon!">
-<!ENTITY dta-selection-turbo2.label "Selección de OneClick">
-<!ENTITY dta-regular2.label "DownTheMoon!">
-<!ENTITY dta-regular.desc "Abre la ventana de Selección de DownTheMoon! para la pestaña actual.">
-<!ENTITY dta-regular-turbo2.label "dTm! OneClick">
-<!ENTITY dta-regular-turbo.desc "Descarga todos los elementos de la página actual según las últimas preferencias y filtros usados.">
-<!ENTITY dta-img-save2.label "Guardar imagen con DownTheMoon!">
-<!ENTITY dta-img-save-turbo2.label "Guardar imagen con dTm! OneClick">
-<!ENTITY dta-video-save2.label "Guardar vídeo con DownTheMoon!">
-<!ENTITY dta-video-save-turbo2.label "Guardar vídeo con dTm! OneClick">
-<!ENTITY dta-audio-save2.label "Guardar audio con DownTheMoon!">
-<!ENTITY dta-audio-save-turbo2.label "Guardar audio con dTm! OneClick">
-<!ENTITY dta-link-save2.label "Guardar enlace con DownTheMoon!">
-<!ENTITY dta-link-save-turbo2.label "Guardar enlace con dTm! OneClick">
-<!ENTITY dta-form-save2.label "Guardar objeto de formulario con DownTheMoon!">
-<!ENTITY dta-form-save-turbo2.label "Guardar objeto de formulario con dTm! OneClick">
+<!ENTITY dtm-tbinstall "Añadir iconos">
+<!ENTITY dtm-pref.label "Preferencias...">
+<!ENTITY dtm-about2.label "Acerca de DownTheMoon!">
+<!ENTITY dtm-manager-button "Administrador de dTm!">
+<!ENTITY dtm-manager-button.desc "Abre ventana de Gestor.">
+<!ENTITY dtm-selector-button2.label "Selector de OneClick">
+<!ENTITY dtm-selector-button.desc "Añade elementos al hacer click izquierdo en ellos.">
+<!ENTITY dtm-tb-all.label "Todas las pestañas">
+<!ENTITY dtm-tb-single.label "Pestaña actual">
+<!ENTITY dtm-selection2.label "Selección de DownTheMoon!">
+<!ENTITY dtm-selection-turbo2.label "Selección de OneClick">
+<!ENTITY dtm-regular2.label "DownTheMoon!">
+<!ENTITY dtm-regular.desc "Abre la ventana de Selección de DownTheMoon! para la pestaña actual.">
+<!ENTITY dtm-regular-turbo2.label "dTm! OneClick">
+<!ENTITY dtm-regular-turbo.desc "Descarga todos los elementos de la página actual según las últimas preferencias y filtros usados.">
+<!ENTITY dtm-img-save2.label "Guardar imagen con DownTheMoon!">
+<!ENTITY dtm-img-save-turbo2.label "Guardar imagen con dTm! OneClick">
+<!ENTITY dtm-video-save2.label "Guardar vídeo con DownTheMoon!">
+<!ENTITY dtm-video-save-turbo2.label "Guardar vídeo con dTm! OneClick">
+<!ENTITY dtm-audio-save2.label "Guardar audio con DownTheMoon!">
+<!ENTITY dtm-audio-save-turbo2.label "Guardar audio con dTm! OneClick">
+<!ENTITY dtm-link-save2.label "Guardar enlace con DownTheMoon!">
+<!ENTITY dtm-link-save-turbo2.label "Guardar enlace con dTm! OneClick">
+<!ENTITY dtm-form-save2.label "Guardar objeto de formulario con DownTheMoon!">
+<!ENTITY dtm-form-save-turbo2.label "Guardar objeto de formulario con dTm! OneClick">

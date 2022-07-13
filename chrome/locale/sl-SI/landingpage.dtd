@@ -1,4 +1,4 @@
-<!-- To test this out, open chrome://dta/content/about/index.xml in your browser with dTm! installed -->
+<!-- To test this out, open chrome://dtm/content/about/index.xml in your browser with dTm! installed -->
 <!-- LOCALIZATION NOTE (lp.localedir): UI text direction, either ltr (left-to-right) or rtl (right-to-left); other values not possible -->
 <!ENTITY lp.localedir "ltr">
 <!-- LOCALIZATION NOTE (language): Your language in your language -->
@@ -53,7 +53,7 @@
 <!ENTITY lp.tb.install "Dodaj gumbe orodne vrstice">
 <!ENTITY lp.tb.add.title "Dodajanje in uporaba gumbov za orodno vrstico">
 <!ENTITY lp.tb.add.p1 "DownTheMoon! omogoča štiri gumbe za orodno vrstico, s katerimi lahko enostavno najdete in dodate prenose v čakalno vrsto">
-<!ENTITY lp.tb.add.dta "Gumb DownTheMoon!">
+<!ENTITY lp.tb.add.dtm "Gumb DownTheMoon!">
 <!ENTITY lp.tb.add.dtadesc "Odpre izbirno okno DownTheMoon! za trenutni zavihek.">
 <!ENTITY lp.tb.add.tdta "Gumb OneClick!">
 <!ENTITY lp.tb.add.tdtadesc "Prenese vse predmete iz trenutne strani glede na nazadnje uporabljene nastavitve in filtre.">

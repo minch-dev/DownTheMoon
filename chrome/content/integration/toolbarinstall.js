@@ -4,7 +4,7 @@
 "use strict";
 /* jshint browser:true */
 
-var all = ['dta-button', 'dta-turbo-button', 'dta-turboselect-button', 'dta-manager-button'];
+var all = ['dtm-button', 'dtm-turbo-button', 'dtm-turboselect-button', 'dtm-manager-button'];
 
 function $(id) {
 	return document.getElementById(id);

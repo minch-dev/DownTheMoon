@@ -14,7 +14,7 @@ const obs = require("support/observers");
 const {registerOverlay, watchWindows, unloadWindow} = require("support/overlays");
 
 // Tests will only be available in dev mode. See make.py
-exports.hasTests = "dta-tests";
+exports.hasTests = "dtm-tests";
 if (!("hasTests" in exports)) {
 	exports.hasTests = false;
 }
@@ -73,34 +73,34 @@ AboutModule.prototype = Object.freeze({
 	}
 });
 
-function AboutTestsModule() { // dta-tests
-} // dta-tests
-AboutTestsModule.prototype = Object.freeze({ // dta-tests
-	classDescription: "DownTheMoon! Tests about module", // dta-tests
-	classID: Components.ID('{6b5f6ca0-6a19-11e4-9803-0800200c9a66}'), // dta-tests
-	contractID: '@mozilla.org/network/protocol/about;1?what=dta-tests', // dta-tests
+function AboutTestsModule() { // dtm-tests
+} // dtm-tests
+AboutTestsModule.prototype = Object.freeze({ // dtm-tests
+	classDescription: "DownTheMoon! Tests about module", // dtm-tests
+	classID: Components.ID('{6b5f6ca0-6a19-11e4-9803-0800200c9a66}'), // dtm-tests
+	contractID: '@mozilla.org/network/protocol/about;1?what=dtm-tests', // dtm-tests
 
-	QueryInterface: QI([Ci.nsIAboutModule]), // dta-tests
+	QueryInterface: QI([Ci.nsIAboutModule]), // dtm-tests
 
-	newChannel: function(aURI, aLoadInfo) { // dta-tests
-		try { // dta-tests
-			log(LOG_ERROR, "aURI " + aURI.spec); // dta-tests
-			return Services.oldio.newChannelFromURI(  // dta-tests
-				Services.io.newURI("chrome://dta-tests/content/dta-tests.xul", null, null),  // dta-tests
-				aLoadInfo); // dta-tests
-		} // dta-tests
-		catch (ex) { // dta-tests
-			log(LOG_ERROR, "failed to create about channel", ex); // dta-tests
-			throw ex; // dta-tests
-		} // dta-tests
-	}, // dta-tests
-	getURIFlags: function(aURI) { // dta-tests
-		return Ci.nsIAboutModule.ALLOW_SCRIPT; // dta-tests
-	}, // dta-tests
-	getIndexedDBOriginPostfix: function(uri) { // dta-tests
-		return null; // dta-tests
-	} // dta-tests
-}); // dta-tests
+	newChannel: function(aURI, aLoadInfo) { // dtm-tests
+		try { // dtm-tests
+			log(LOG_ERROR, "aURI " + aURI.spec); // dtm-tests
+			return Services.oldio.newChannelFromURI(  // dtm-tests
+				Services.io.newURI("chrome://dtm-tests/content/dtm-tests.xul", null, null),  // dtm-tests
+				aLoadInfo); // dtm-tests
+		} // dtm-tests
+		catch (ex) { // dtm-tests
+			log(LOG_ERROR, "failed to create about channel", ex); // dtm-tests
+			throw ex; // dtm-tests
+		} // dtm-tests
+	}, // dtm-tests
+	getURIFlags: function(aURI) { // dtm-tests
+		return Ci.nsIAboutModule.ALLOW_SCRIPT; // dtm-tests
+	}, // dtm-tests
+	getIndexedDBOriginPostfix: function(uri) { // dtm-tests
+		return null; // dtm-tests
+	} // dtm-tests
+}); // dtm-tests
 
 function MetalinkInterceptModule() {}
 MetalinkInterceptModule.prototype = Object.freeze({
@@ -175,7 +175,7 @@ MetalinkInterceptModule.prototype = Object.freeze({
 				}
 				let window = Mediator.getMostRecent();
 				window.openDialog(
-					"chrome://dta/content/dta/manager/metaselect.xul",
+					"chrome://dtm/content/dtm/manager/metaselect.xul",
 					"_blank",
 					"chrome,centerscreen,resizable,dialog=yes",
 					res.downloads,
@@ -304,7 +304,7 @@ exports.clean = function clean() {
 function unloadObserver() {
 	let branch = Preferences.getBranch('privacy.');
 	// has user pref'ed to sanitize on shutdown?
-	if (branch.getBoolPref('sanitize.sanitizeOnShutdown') && branch.getBoolPref('clearOnShutdown.extensions-dta')) {
+	if (branch.getBoolPref('sanitize.sanitizeOnShutdown') && branch.getBoolPref('clearOnShutdown.extensions-dtm')) {
 		exports.clean();
 	}
 }
@@ -472,16 +472,16 @@ function registerOverlays() {
 				if (panelbutton) {
 					fire.addFireListener(panelbutton, "command");
 				}
-				fire.addFireListener($("dta:regular"), "command");
-				fire.addFireListener($("dta-button"), "command");
-				fire.addFireListener($("dta-button"), "popupshowing");
-				fire.addFireListener($("dta-button"), "dragover");
-				fire.addFireListener($("dta:turbo"), "command");
-				fire.addFireListener($("dta-turbo-button"), "command");
-				fire.addFireListener($("dta-turbo-button"), "popupshowing");
-				fire.addFireListener($("dta-turbo-button"), "dragover");
-				fire.addFireListener($("dta:turboselect"), "command");
-				fire.addFireListener($("dta:manager"), "command");
+				fire.addFireListener($("dtm:regular"), "command");
+				fire.addFireListener($("dtm-button"), "command");
+				fire.addFireListener($("dtm-button"), "popupshowing");
+				fire.addFireListener($("dtm-button"), "dragover");
+				fire.addFireListener($("dtm:turbo"), "command");
+				fire.addFireListener($("dtm-turbo-button"), "command");
+				fire.addFireListener($("dtm-turbo-button"), "popupshowing");
+				fire.addFireListener($("dtm-turbo-button"), "dragover");
+				fire.addFireListener($("dtm:turboselect"), "command");
+				fire.addFireListener($("dtm:manager"), "command");
 				fire.addFireListener($("cmd_CustomizeToolbars"), "command");
 				unloadWindow(window, function() {
 					fire._runUnloaders();
@@ -528,10 +528,10 @@ function registerOverlays() {
 
 		log(LOG_DEBUG, "running elementsStub");
 
-		maybeInsertButtons(["dta-button", "dta-turbo-button", "dta-turboselect-button", "dta-manager-button"]);
+		maybeInsertButtons(["dtm-button", "dtm-turbo-button", "dtm-turboselect-button", "dtm-manager-button"]);
 
 		let frameToLog = m => log(m.data.level, m.data.message, m.data.exception);
-		let fs = "chrome://dta-modules/content/loaders/integration-content.js?" + (+new Date());
+		let fs = "chrome://dtm-modules/content/loaders/integration-content.js?" + (+new Date());
 		window.messageManager.addMessageListener("DTA:log", frameToLog);
 		window.messageManager.loadFrameScript(fs, true);
 		unloadWindow(window, () => {
@@ -542,32 +542,32 @@ function registerOverlays() {
 	}
 
 	registerOverlay(
-		"chrome://dta/content/integration/elements.xul",
+		"chrome://dtm/content/integration/elements.xul",
 		"chrome://browser/content/browser.xul",
 		elementsStub
 		);
 	registerOverlay(
-		"chrome://dta/content/integration/elements.xul",
+		"chrome://dtm/content/integration/elements.xul",
 		"chrome://navigator/content/navigator.xul",
 		elementsStub
 		);
 	watchWindows("chrome://global/content/customizeToolbar.xul", function(window, document) {
 		let ss = document.createProcessingInstruction(
 			"xml-stylesheet",
-			'href="chrome://dta/skin/integration/style.css" type="text/css"'
+			'href="chrome://dtm/skin/integration/style.css" type="text/css"'
 			);
 		document.insertBefore(ss, document.documentElement);
 		unloadWindow(window, () => ss.parentNode.removeChild(ss));
 	});
 
 	registerOverlay(
-		"chrome://dta/content/integration/saveas.xul",
+		"chrome://dtm/content/integration/saveas.xul",
 		"chrome://mozapps/content/downloads/unknownContentType.xul",
 		function(window, document) {
 			require("loaders/saveas").load(window, document);
 		});
 	watchWindows("chrome://browser/content/preferences/sanitize.xul", function(window, document) {
-		const PREF = 'privacy.clearOnShutdown.extensions-dta';
+		const PREF = 'privacy.clearOnShutdown.extensions-dtm';
 		try {
 			let prefs = document.getElementsByTagName('preferences')[0];
 			let pref = document.createElement('preference');
@@ -579,7 +579,7 @@ function registerOverlays() {
 			let rows = document.getElementsByTagName('rows');
 			rows = rows[rows.length - 1];
 
-			let msg = Services.strings.createBundle('chrome://dta/locale/sanitize.properties')
+			let msg = Services.strings.createBundle('chrome://dtm/locale/sanitize.properties')
 				.GetStringFromName('sanitizeitem');
 
 			let check = document.createElement('checkbox');
@@ -597,11 +597,11 @@ function registerOverlays() {
 		}
 	});
 	registerOverlay(
-		"chrome://dta/content/privacy/overlaySanitize191.xul",
+		"chrome://dtm/content/privacy/overlaySanitize191.xul",
 		"chrome://browser/content/sanitize.xul",
 		function(window, document) {
 			if ('Sanitizer' in window) {
-				window.Sanitizer.prototype.items['extensions-dta'] = {
+				window.Sanitizer.prototype.items['extensions-dtm'] = {
 					clear: function() {
 						try	{
 							exports.clean();
@@ -616,7 +616,7 @@ function registerOverlays() {
 					}
 				};
 			}
-			let msg = Services.strings.createBundle('chrome://dta/locale/sanitize.properties')
+			let msg = Services.strings.createBundle('chrome://dtm/locale/sanitize.properties')
 				.GetStringFromName('sanitizeitem');
 			document.getElementById('dtaSanitizeItem').setAttribute('label', msg);
 		});
@@ -627,9 +627,9 @@ exports.main = function main() {
 
 	const {registerComponents} = require("components");
 	const components = [AboutModule, MetalinkInterceptModule];
-	if (exports.hasTests) {  // dta-tests
-		components.push(AboutTestsModule); // dta-tests
-	} // dta-tests
+	if (exports.hasTests) {  // dtm-tests
+		components.push(AboutTestsModule); // dtm-tests
+	} // dtm-tests
 	registerComponents(components);
 
 	migrate();

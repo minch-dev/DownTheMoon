@@ -676,7 +676,7 @@ var Dialog = {
 	},
 	openAdd: function() {
 		window.openDialog(
-			'chrome://dta/content/dta/addurl.xul',
+			'chrome://dtm/content/dtm/addurl.xul',
 			'_blank',
 			Version.OS === 'darwin' ? 'chrome,modal,dependent=yes' : 'chrome,centerscreen,dialog=no,dependent=yes'
 		);
@@ -692,7 +692,7 @@ var Dialog = {
 	},
 	openInfo: function(downloads) {
 		let w = window.openDialog(
-			"chrome://dta/content/dta/manager/info.xul","_blank",
+			"chrome://dtm/content/dtm/manager/info.xul","_blank",
 			"chrome, centerscreen, dialog=no",
 			downloads,
 			this
@@ -1382,7 +1382,7 @@ var Dialog = {
 		if (this._mustReload) {
 			unload("shutdown");
 			try {
-				Cu.import("chrome://dta-modules/content/glue.jsm", {});
+				Cu.import("chrome://dtm-modules/content/glue.jsm", {});
 			}
 			catch (ex) {
 				// may fail, if the add-on was disabled in between
@@ -1441,7 +1441,7 @@ var Metalinker = {
 					e.isPrivate = aIsPrivate;
 				}
 				window.openDialog(
-					'chrome://dta/content/dta/manager/metaselect.xul',
+					'chrome://dtm/content/dtm/manager/metaselect.xul',
 					'_blank',
 					'chrome,centerscreen,resizable,dialog=yes,modal',
 					res.downloads,

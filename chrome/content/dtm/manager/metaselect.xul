@@ -4,29 +4,29 @@
 	- file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
-<?xml-stylesheet href="chrome://dta/skin/manager/metalinker.css" type="text/css" ?>
+<?xml-stylesheet href="chrome://dtm/skin/manager/metalinker.css" type="text/css" ?>
 
 <!DOCTYPE window [
-	<!ENTITY % commonDTD SYSTEM "chrome://dta/locale/">
+	<!ENTITY % commonDTD SYSTEM "chrome://dtm/locale/">
 	%commonDTD;
-	<!ENTITY % defcommonDTD SYSTEM "chrome://dta-locale/content/dta.dtd">
+	<!ENTITY % defcommonDTD SYSTEM "chrome://dtm-locale/content/dtm.dtd">
 	%defcommonDTD;
-	<!ENTITY % metalinkerDTD SYSTEM "chrome://dta/locale/metalinker.dtd">
+	<!ENTITY % metalinkerDTD SYSTEM "chrome://dtm/locale/metalinker.dtd">
 	%metalinkerDTD;
-	<!ENTITY % defmetalinkerDTD SYSTEM "chrome://dta-locale/content/metalinker.dtd">
+	<!ENTITY % defmetalinkerDTD SYSTEM "chrome://dtm-locale/content/metalinker.dtd">
 	%defmetalinkerDTD;
-	<!ENTITY % selectDTD SYSTEM "chrome://dta/locale/select.dtd">
+	<!ENTITY % selectDTD SYSTEM "chrome://dtm/locale/select.dtd">
 	%selectDTD;
-	<!ENTITY % defselectDTD SYSTEM "chrome://dta-locale/content/select.dtd">
+	<!ENTITY % defselectDTD SYSTEM "chrome://dtm-locale/content/select.dtd">
 	%defselectDTD;
-	<!ENTITY % managerDTD SYSTEM "chrome://dta/locale/manager.dtd">
+	<!ENTITY % managerDTD SYSTEM "chrome://dtm/locale/manager.dtd">
 	%managerDTD;
-	<!ENTITY % defmanagerDTD SYSTEM "chrome://dta-locale/content/manager.dtd">
+	<!ENTITY % defmanagerDTD SYSTEM "chrome://dtm-locale/content/manager.dtd">
 	%defmanagerDTD;
 ]>
 
 <window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" xmlns:html="http://www.w3.org/1999/xhtml" id="metaselect" persist="width height">
-	<script type="application/javascript" src="chrome://dta/content/common/internalFunctions.js" />
+	<script type="application/javascript" src="chrome://dtm/content/common/internalFunctions.js" />
 	<script type="application/x-javascript" src="metaselect.js" />
 
 	<keyset>
@@ -35,10 +35,10 @@
 
 
 	<stringbundleset>
-		<stringbundle src="chrome://dta/locale/common.properties" />
-		<stringbundle src="chrome://dta/locale/metalinker.properties" />
-		<stringbundle src="chrome://dta/locale/manager.properties" />
-		<stringbundle src="chrome://dta/locale/prefpanes.properties" />
+		<stringbundle src="chrome://dtm/locale/common.properties" />
+		<stringbundle src="chrome://dtm/locale/metalinker.properties" />
+		<stringbundle src="chrome://dtm/locale/manager.properties" />
+		<stringbundle src="chrome://dtm/locale/prefpanes.properties" />
 		<stringbundle src="chrome://global/locale/dialog.properties" />
 	</stringbundleset>
 

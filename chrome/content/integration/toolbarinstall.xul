@@ -3,48 +3,48 @@
 	- License, v. 2.0. If a copy of the MPL was not distributed with this
 	- file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<?xml-stylesheet href="chrome://dta/skin/integration/toolbarinstall.css" type="text/css" ?>
+<?xml-stylesheet href="chrome://dtm/skin/integration/toolbarinstall.css" type="text/css" ?>
 
 <!DOCTYPE overlay [
-	<!ENTITY % menuDTD SYSTEM "chrome://dta/locale/menu.dtd">
+	<!ENTITY % menuDTD SYSTEM "chrome://dtm/locale/menu.dtd">
 	%menuDTD;
-	<!ENTITY % defmenuDTD SYSTEM "chrome://dta-locale/content/menu.dtd">
+	<!ENTITY % defmenuDTD SYSTEM "chrome://dtm-locale/content/menu.dtd">
 	%defmenuDTD;
 ]>
-<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" title="&dta-tbinstall;" id="DownTheMoon" windowtype="DTA:TBInstall">
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" title="&dtm-tbinstall;" id="DownTheMoon" windowtype="DTA:TBInstall">
 		<script type="text/javascript" src="toolbarinstall.js"/>
 		<grid>
 			<columns><column/><column flex="1"/></columns>
 			<rows>
 				<row align="center" pack="center">
-					<image id="dta-icon" class="icon" />
+					<image id="dtm-icon" class="icon" />
 					<vbox flex="1">
-						<checkbox id="dta-button" label="&dta-regular2.label;" />
-						<description>&dta-regular.desc;</description>
+						<checkbox id="dtm-button" label="&dtm-regular2.label;" />
+						<description>&dtm-regular.desc;</description>
 					</vbox>
 				</row>
 				<separator class="groove" />
 				<row align="center" pack="center">
-					<image id="dta-turbo-icon" class="icon" />
+					<image id="dtm-turbo-icon" class="icon" />
 					<vbox flex="1">
-						<checkbox id="dta-turbo-button" label="&dta-regular-turbo2.label;" />
-						<description>&dta-regular-turbo.desc;</description>
+						<checkbox id="dtm-turbo-button" label="&dtm-regular-turbo2.label;" />
+						<description>&dtm-regular-turbo.desc;</description>
 					</vbox>
 				</row>
 				<separator class="groove" />
 				<row align="center" pack="center">
-					<image id="dta-turboselect-icon" class="icon" />
+					<image id="dtm-turboselect-icon" class="icon" />
 					<vbox>
-						<checkbox id="dta-turboselect-button" label="&dta-selector-button2.label;" />
-						<description>&dta-selector-button.desc;</description>
+						<checkbox id="dtm-turboselect-button" label="&dtm-selector-button2.label;" />
+						<description>&dtm-selector-button.desc;</description>
 					</vbox>
 				</row>
 				<separator class="groove" />
 				<row align="center" pack="center">
-					<image id="dta-manager-icon" class="icon" />
+					<image id="dtm-manager-icon" class="icon" />
 					<vbox flex="1">
-						<checkbox id="dta-manager-button" label="&dta-manager-button;" />
-						<description>&dta-manager-button.desc;</description>
+						<checkbox id="dtm-manager-button" label="&dtm-manager-button;" />
+						<description>&dtm-manager-button.desc;</description>
 					</vbox>
 				</row>
 			</rows>

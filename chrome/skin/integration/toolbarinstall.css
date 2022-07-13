@@ -1,6 +1,6 @@
 @import 'chrome://global/skin/';
-@import 'chrome://dta/skin/common/style.css';
-@import 'chrome://dta-platform/skin/common.css';
+@import 'chrome://dtm/skin/common/style.css';
+@import 'chrome://dtm-platform/skin/common.css';
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 grid {
@@ -23,15 +23,15 @@ description {
 	margin: 1em;
 }
 
-#dta-icon {
+#dtm-icon {
 	-moz-image-region: rect(0px,48px,24px,24px);
 }
-#dta-turbo-icon {
+#dtm-turbo-icon {
 	-moz-image-region: rect(0px,96px,24px,72px);
 }
-#dta-turboselect-icon {
+#dtm-turboselect-icon {
 	-moz-image-region: rect(0px,144px,24px,120px);
 }
-#dta-manager-icon {
+#dtm-manager-icon {
 	-moz-image-region: rect(0px,168px,24px,144px);
 }

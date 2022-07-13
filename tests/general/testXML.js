@@ -7,17 +7,17 @@ asyncTest("verify that UI XML actually loads", function() {
 	var files = [
 								"about/about.xul",
 								"common/bindings.xml",
-								"dta/addurl.xul",
-								"dta/manager-aero.xul",
-								"dta/manager.xul",
-								"dta/maskbutton.xml",
-								"dta/mirrors.xul",
-								"dta/select.xul",
-								"dta/manager/conflicts.xul",
-								"dta/manager/info.xul",
-								"dta/manager/manager.xul",
-								"dta/manager/metaselect.xul",
-								"dta/manager/tooltip.xul",
+								"dtm/addurl.xul",
+								"dtm/manager-aero.xul",
+								"dtm/manager.xul",
+								"dtm/maskbutton.xml",
+								"dtm/mirrors.xul",
+								"dtm/select.xul",
+								"dtm/manager/conflicts.xul",
+								"dtm/manager/info.xul",
+								"dtm/manager/manager.xul",
+								"dtm/manager/metaselect.xul",
+								"dtm/manager/tooltip.xul",
 								"integration/elements.xul",
 								"integration/saveas.xul",
 								"integration/toolbarinstall.xul",
@@ -40,7 +40,7 @@ asyncTest("verify that UI XML actually loads", function() {
 		}
 		var req = new XMLHttpRequest();
 		req.overrideMimeType("text/xml");
-		req.open("GET", "chrome://dta/content/" + file);
+		req.open("GET", "chrome://dtm/content/" + file);
 		req.onloadend = function() {
 				runNext();
 				ok(req.responseXML && req.responseXML.documentElement.localName !== "parsererror", file);

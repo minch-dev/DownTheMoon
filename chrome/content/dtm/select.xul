@@ -11,19 +11,19 @@
 
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 <?xml-stylesheet href="chrome://global/skin/toolbar.css" type="text/css"?>
-<?xml-stylesheet href="chrome://dta/skin/select/style.css" type="text/css"?>
-<?xml-stylesheet href="chrome://dta-platform/skin/select.css" type="text/css"?>
+<?xml-stylesheet href="chrome://dtm/skin/select/style.css" type="text/css"?>
+<?xml-stylesheet href="chrome://dtm-platform/skin/select.css" type="text/css"?>
 
 <!DOCTYPE dialog [
 	<!ENTITY % globalDTD SYSTEM "chrome://global/locale/">
 	%globalDTD;
-	<!ENTITY % commonDTD SYSTEM "chrome://dta/locale/">
+	<!ENTITY % commonDTD SYSTEM "chrome://dtm/locale/">
 	%commonDTD;
-	<!ENTITY % defcommonDTD SYSTEM "chrome://dta-locale/content/dta.dtd">
+	<!ENTITY % defcommonDTD SYSTEM "chrome://dtm-locale/content/dtm.dtd">
 	%defcommonDTD;
-	<!ENTITY % selectDTD SYSTEM "chrome://dta/locale/select.dtd">
+	<!ENTITY % selectDTD SYSTEM "chrome://dtm/locale/select.dtd">
 	%selectDTD;
-	<!ENTITY % defselectDTD SYSTEM "chrome://dta-locale/content/select.dtd">
+	<!ENTITY % defselectDTD SYSTEM "chrome://dtm-locale/content/select.dtd">
 	%defselectDTD;
 ]>
 
@@ -37,12 +37,12 @@
 >
 	<script type="application/x-javascript" src="chrome://global/content/globalOverlay.js"/>
 
-	<script type="text/javascript" src="chrome://dta/content/common/internalFunctions.js" />
-	<script type="text/javascript" src="chrome://dta/content/dta/select.js" />
+	<script type="text/javascript" src="chrome://dtm/content/common/internalFunctions.js" />
+	<script type="text/javascript" src="chrome://dtm/content/dtm/select.js" />
 
 	<stringbundleset xmlns="http://www.downthemall.net/properties#">
-		<stringbundle src="chrome://dta/locale/common.properties"/>
-		<stringbundle src="chrome://dta/locale/select.properties"/>
+		<stringbundle src="chrome://dtm/locale/common.properties"/>
+		<stringbundle src="chrome://dtm/locale/select.properties"/>
 		<stringbundle src="chrome://global/locale/dialog.properties"/>
 	</stringbundleset>
 
@@ -126,7 +126,7 @@
 			<toolbarbutton class="toolbarbuttonDown" id="viewpics" label="&tab.media.label;" command="cmdChangeToImages" />
 		</toolbar>
 	</toolbox>
-	<vbox id="dta-select" flex="1">
+	<vbox id="dtm-select" flex="1">
 		<notificationbox id="notifications" flex="1">
 			<tree
 				id="urlList"

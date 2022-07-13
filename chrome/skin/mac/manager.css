@@ -78,7 +78,7 @@
 }
 
 statusbarpanel#netstatus {
-	list-style-image: url(chrome://dta/skin/manager/netstatus.png);
+	list-style-image: url(chrome://dtm/skin/manager/netstatus.png);
 	-moz-image-region: rect(16px, 16px, 32px, 0px);
 }
 statusbarpanel#netstatus[offline] {

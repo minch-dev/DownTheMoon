@@ -16,7 +16,7 @@ var UNKNOWN_STACK = {
 	columnNumber: 0
 };
 Object.freeze(UNKNOWN_STACK);
-const GLUE = "chrome://dta-modules/content/glue.jsm -> ";
+const GLUE = "chrome://dtm-modules/content/glue.jsm -> ";
 
 function prepareStack(stack) {
 	let message;

@@ -31,7 +31,7 @@ FILES = (
     "chrome.manifest",
     "chrome/content/about/about.xul",
     "chrome/content/common/",
-    "chrome/content/dta/",
+    "chrome/content/dtm/",
     "chrome/content/integration/",
     "chrome/content/preferences/",
     "chrome/content/privacy/",
@@ -261,7 +261,7 @@ def droptests(fp, **kw):
     io = BytesIO()
     with Reset(io):
         for l in fp:
-            if b"dta-tests" in l:
+            if b"dtm-tests" in l:
                 continue
             io.write(l)
         io.truncate()

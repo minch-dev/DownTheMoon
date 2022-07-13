@@ -25,8 +25,8 @@ asyncTest("decompress something", async function() {
 	try {
 		let base = getRelURI("data/compressed.gz");
 		console.log(base.spec);
-		let file = FileUtils.getFile("TmpD", ["dta-test-compressed.gz"]);
-		let out = FileUtils.getFile("TmpD", ["dta-test-uncompressed"]);
+		let file = FileUtils.getFile("TmpD", ["dtm-test-compressed.gz"]);
+		let out = FileUtils.getFile("TmpD", ["dtm-test-uncompressed"]);
 
 
 		let content = await get(base);

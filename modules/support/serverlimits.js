@@ -12,8 +12,8 @@ const obs = require("./observers");
 const domainprefs = require("./domainprefs");
 
 const TOPIC = 'DTA:serverlimits-changed';
-const PREFS = 'extensions.dta.serverlimit.';
-const LIMITS_PREF  = 'extensions.dta.serverlimit.limits.';
+const PREFS = 'extensions.dtm.serverlimit.';
+const LIMITS_PREF  = 'extensions.dtm.serverlimit.limits.';
 
 const SCHEDULER_DIR = 'dir';
 const SCHEDULER_FAST = 'fast';

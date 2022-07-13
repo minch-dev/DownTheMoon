@@ -2,7 +2,7 @@
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 	<Description about="urn:mozilla:install-manifest">
 
-		<em:id>dta@downthemall.net</em:id>
+		<em:id>dtm@downthemall.net</em:id>
 		<em:name>DownTheMoon! XUL edition</em:name>
 		<em:description>The mass downloader for Pale Moon.</em:description>
 		<em:version>3.14</em:version>
@@ -17,12 +17,12 @@
 		<em:developer>Nils Maier</em:developer>
 		<em:developer>Minch Yoda</em:developer>
 
-		<em:aboutURL>chrome://dta/content/about/about.xul</em:aboutURL>
+		<em:aboutURL>chrome://dtm/content/about/about.xul</em:aboutURL>
 		<em:iconURL>chrome://dtaicon/content/icon.png</em:iconURL>
 		<em:icon64URL>chrome://dtaicon/content/icon64.png</em:icon64URL>
 		<em:homepageURL>https://github.com/minch-yoda/downthemall-archivist-xul</em:homepageURL>
 		<em:homepageURL>http://downthemall.net/</em:homepageURL>
-		<em:optionsURL>chrome://dta/content/preferences/prefs.xul</em:optionsURL>
+		<em:optionsURL>chrome://dtm/content/preferences/prefs.xul</em:optionsURL>
 		<em:updateURL>https://github.com/minch-yoda/downthemall-archivist-xul/raw/master/update.rdf</em:updateURL>
 
 

@@ -4,7 +4,7 @@
 "use strict";
 /* global window, close */
 
-Components.utils.import("chrome://dta-modules/content/glue.jsm", {})
+Components.utils.import("chrome://dtm-modules/content/glue.jsm", {})
 	.require("support/mediator")
 	.showAbout(window.opener);
 close();

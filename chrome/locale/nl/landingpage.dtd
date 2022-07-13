@@ -1,4 +1,4 @@
-<!-- To test this out, open chrome://dta/content/about/index.xml in your browser with dTm! installed -->
+<!-- To test this out, open chrome://dtm/content/about/index.xml in your browser with dTm! installed -->
 <!-- LOCALIZATION NOTE (lp.localedir): UI text direction, either ltr (left-to-right) or rtl (right-to-left); other values not possible -->
 <!ENTITY lp.localedir "ltr">
 <!-- LOCALIZATION NOTE (language): Your language in your language -->
@@ -53,7 +53,7 @@
 <!ENTITY lp.tb.install "Werkbalkknoppen toevoegen">
 <!ENTITY lp.tb.add.title "Werkbalkknoppen toevoegen en gebruiken">
 <!ENTITY lp.tb.add.p1 "DownTheMoon!-functies voor werkbalkknoppen om downloads makkelijker te vinden en in de wachtrij te zetten">
-<!ENTITY lp.tb.add.dta "DownTheMoon!-knop">
+<!ENTITY lp.tb.add.dtm "DownTheMoon!-knop">
 <!ENTITY lp.tb.add.dtadesc "Opent het DownTheMoon!-selectievenster voor het huidige tabblad.">
 <!ENTITY lp.tb.add.tdta "OneClick!-knop">
 <!ENTITY lp.tb.add.tdtadesc "Downloadt alle items van de huidige pagina volgens de laatst gebruikte voorkeuren en filters.">

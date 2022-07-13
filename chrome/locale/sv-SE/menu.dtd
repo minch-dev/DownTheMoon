@@ -1,26 +1,26 @@
 <!-- LOCALIZATION NOTE : FILE Please do NOT translate DownTheMoon! and OneClick -->
-<!ENTITY dta-tbinstall "Alla verktygsfältsknappar">
-<!ENTITY dta-pref.label "Inställningar">
-<!ENTITY dta-about2.label "Om DownTheMoon!">
-<!ENTITY dta-manager-button "Hanterare">
-<!ENTITY dta-manager-button.desc "Öppnar hanterarfönstret.">
-<!ENTITY dta-selector-button2.label "OneClick!-markerare">
-<!ENTITY dta-selector-button.desc "Lägger till objekt genom att vänsterklicka på dem.">
-<!ENTITY dta-tb-all.label "Samtliga flikar">
-<!ENTITY dta-tb-single.label "Aktuell flik">
-<!ENTITY dta-selection2.label "DownTheMoon!-markering">
-<!ENTITY dta-selection-turbo2.label "OneClick!-markering">
-<!ENTITY dta-regular2.label "DownTheMoon!">
-<!ENTITY dta-regular.desc "Öppnar DownTheMoon!-markeringsfönster för aktuell flik.">
-<!ENTITY dta-regular-turbo2.label "dTm! OneClick">
-<!ENTITY dta-regular-turbo.desc "Laddar ned alla objekt från aktuell sida enligt de senast använda inställningarna och filtren.">
-<!ENTITY dta-img-save2.label "Spara bild med DownTheMoon!">
-<!ENTITY dta-img-save-turbo2.label "Spara bild med dTm! OneClick">
-<!ENTITY dta-video-save2.label "Spara video med DownTheMoon!">
-<!ENTITY dta-video-save-turbo2.label "Spara video med dTm! OneClick">
-<!ENTITY dta-audio-save2.label "Spara ljud med DownTheMoon!">
-<!ENTITY dta-audio-save-turbo2.label "Spara ljud med dTm! OneClick">
-<!ENTITY dta-link-save2.label "Spara länk med DownTheMoon!">
-<!ENTITY dta-link-save-turbo2.label "Spara länk med dTm! OneClick">
-<!ENTITY dta-form-save2.label "Spara formulärmål med DownTheMoon!">
-<!ENTITY dta-form-save-turbo2.label "Spara formulärmål med dTm! OneClick">
+<!ENTITY dtm-tbinstall "Alla verktygsfältsknappar">
+<!ENTITY dtm-pref.label "Inställningar">
+<!ENTITY dtm-about2.label "Om DownTheMoon!">
+<!ENTITY dtm-manager-button "Hanterare">
+<!ENTITY dtm-manager-button.desc "Öppnar hanterarfönstret.">
+<!ENTITY dtm-selector-button2.label "OneClick!-markerare">
+<!ENTITY dtm-selector-button.desc "Lägger till objekt genom att vänsterklicka på dem.">
+<!ENTITY dtm-tb-all.label "Samtliga flikar">
+<!ENTITY dtm-tb-single.label "Aktuell flik">
+<!ENTITY dtm-selection2.label "DownTheMoon!-markering">
+<!ENTITY dtm-selection-turbo2.label "OneClick!-markering">
+<!ENTITY dtm-regular2.label "DownTheMoon!">
+<!ENTITY dtm-regular.desc "Öppnar DownTheMoon!-markeringsfönster för aktuell flik.">
+<!ENTITY dtm-regular-turbo2.label "dTm! OneClick">
+<!ENTITY dtm-regular-turbo.desc "Laddar ned alla objekt från aktuell sida enligt de senast använda inställningarna och filtren.">
+<!ENTITY dtm-img-save2.label "Spara bild med DownTheMoon!">
+<!ENTITY dtm-img-save-turbo2.label "Spara bild med dTm! OneClick">
+<!ENTITY dtm-video-save2.label "Spara video med DownTheMoon!">
+<!ENTITY dtm-video-save-turbo2.label "Spara video med dTm! OneClick">
+<!ENTITY dtm-audio-save2.label "Spara ljud med DownTheMoon!">
+<!ENTITY dtm-audio-save-turbo2.label "Spara ljud med dTm! OneClick">
+<!ENTITY dtm-link-save2.label "Spara länk med DownTheMoon!">
+<!ENTITY dtm-link-save-turbo2.label "Spara länk med dTm! OneClick">
+<!ENTITY dtm-form-save2.label "Spara formulärmål med DownTheMoon!">
+<!ENTITY dtm-form-save-turbo2.label "Spara formulärmål med dTm! OneClick">

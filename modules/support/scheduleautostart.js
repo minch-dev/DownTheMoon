@@ -30,7 +30,7 @@ lazy(this, "QueueStore", () => require("manager/queuestore"));
 
 const Observer = {
 	init: function() {
-		Prefs.addObserver("extensions.dta.schedule", this);
+		Prefs.addObserver("extensions.dtm.schedule", this);
 		unload(() => Observer.unload());
 		this.immidiatelyOpened = this.openIfInRange();
 		log(LOG_DEBUG, "scheduler running");

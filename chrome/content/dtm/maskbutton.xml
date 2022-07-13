@@ -9,9 +9,9 @@
 -->
 
 <!DOCTYPE bindings [
-	<!ENTITY % maskDTD SYSTEM "chrome://dta/locale/mask.dtd">
+	<!ENTITY % maskDTD SYSTEM "chrome://dtm/locale/mask.dtd">
 	%maskDTD;
-	<!ENTITY % defmaskDTD SYSTEM "chrome://dta-locale/content/mask.dtd">
+	<!ENTITY % defmaskDTD SYSTEM "chrome://dtm-locale/content/mask.dtd">
 	%defmaskDTD;
 ]>
 

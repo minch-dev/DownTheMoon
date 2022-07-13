@@ -523,7 +523,7 @@ this.LRUMap = LRUMap;
 			logging.setLogLevel(getExt("logging") ? logging.LOG_DEBUG : logging.LOG_NONE);
 		}
 	};
-	addObserver("extensions.dta.logging", LogPrefObs);
+	addObserver("extensions.dtm.logging", LogPrefObs);
 	LogPrefObs.observe();
 	exports.require("version").getInfo(function setupVersion(v) {
 		log(

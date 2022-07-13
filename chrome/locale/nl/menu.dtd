@@ -1,26 +1,26 @@
 <!-- LOCALIZATION NOTE : FILE Please do NOT translate DownTheMoon! and OneClick -->
-<!ENTITY dta-tbinstall "Werkbalkknoppen toevoegen">
-<!ENTITY dta-pref.label "Voorkeuren">
-<!ENTITY dta-about2.label "Over DownTheMoon!">
-<!ENTITY dta-manager-button "Beheerder">
-<!ENTITY dta-manager-button.desc "Opent het venster Beheerder.">
-<!ENTITY dta-selector-button2.label "OneClick!-kiezer">
-<!ENTITY dta-selector-button.desc "Voegt items toe door er met de linkermuisknop op te klikken.">
-<!ENTITY dta-tb-all.label "Alle tabbladen">
-<!ENTITY dta-tb-single.label "Huidige tabblad">
-<!ENTITY dta-selection2.label "DownTheMoon!-selectie">
-<!ENTITY dta-selection-turbo2.label "OneClick-selectie">
-<!ENTITY dta-regular2.label "DownTheMoon!">
-<!ENTITY dta-regular.desc "Opent het DownTheMoon!-selectievenster voor het huidige tabblad.">
-<!ENTITY dta-regular-turbo2.label "dTm! OneClick">
-<!ENTITY dta-regular-turbo.desc "Downloadt alle items van de huidige pagina volgens de laatst gebruikte voorkeuren en filters.">
-<!ENTITY dta-img-save2.label "Afbeelding opslaan met DownTheMoon!">
-<!ENTITY dta-img-save-turbo2.label "Afbeelding opslaan met dTm! OneClick">
-<!ENTITY dta-video-save2.label "Video opslaan met DownTheMoon!">
-<!ENTITY dta-video-save-turbo2.label "Video opslaan met dTm! OneClick">
-<!ENTITY dta-audio-save2.label "Audio opslaan met DownTheMoon!">
-<!ENTITY dta-audio-save-turbo2.label "Audio opslaan met dTm! OneClick">
-<!ENTITY dta-link-save2.label "Koppeling opslaan met DownTheMoon!">
-<!ENTITY dta-link-save-turbo2.label "Koppeling opslaan met dTm! OneClick">
-<!ENTITY dta-form-save2.label "Formulierdoel opslaan met DownTheMoon!">
-<!ENTITY dta-form-save-turbo2.label "Formulierdoel opslaan met dTm! OneClick">
+<!ENTITY dtm-tbinstall "Werkbalkknoppen toevoegen">
+<!ENTITY dtm-pref.label "Voorkeuren">
+<!ENTITY dtm-about2.label "Over DownTheMoon!">
+<!ENTITY dtm-manager-button "Beheerder">
+<!ENTITY dtm-manager-button.desc "Opent het venster Beheerder.">
+<!ENTITY dtm-selector-button2.label "OneClick!-kiezer">
+<!ENTITY dtm-selector-button.desc "Voegt items toe door er met de linkermuisknop op te klikken.">
+<!ENTITY dtm-tb-all.label "Alle tabbladen">
+<!ENTITY dtm-tb-single.label "Huidige tabblad">
+<!ENTITY dtm-selection2.label "DownTheMoon!-selectie">
+<!ENTITY dtm-selection-turbo2.label "OneClick-selectie">
+<!ENTITY dtm-regular2.label "DownTheMoon!">
+<!ENTITY dtm-regular.desc "Opent het DownTheMoon!-selectievenster voor het huidige tabblad.">
+<!ENTITY dtm-regular-turbo2.label "dTm! OneClick">
+<!ENTITY dtm-regular-turbo.desc "Downloadt alle items van de huidige pagina volgens de laatst gebruikte voorkeuren en filters.">
+<!ENTITY dtm-img-save2.label "Afbeelding opslaan met DownTheMoon!">
+<!ENTITY dtm-img-save-turbo2.label "Afbeelding opslaan met dTm! OneClick">
+<!ENTITY dtm-video-save2.label "Video opslaan met DownTheMoon!">
+<!ENTITY dtm-video-save-turbo2.label "Video opslaan met dTm! OneClick">
+<!ENTITY dtm-audio-save2.label "Audio opslaan met DownTheMoon!">
+<!ENTITY dtm-audio-save-turbo2.label "Audio opslaan met dTm! OneClick">
+<!ENTITY dtm-link-save2.label "Koppeling opslaan met DownTheMoon!">
+<!ENTITY dtm-link-save-turbo2.label "Koppeling opslaan met dTm! OneClick">
+<!ENTITY dtm-form-save2.label "Formulierdoel opslaan met DownTheMoon!">
+<!ENTITY dtm-form-save-turbo2.label "Formulierdoel opslaan met dTm! OneClick">

@@ -15,7 +15,7 @@ var Exception = Components.Exception;
 
 // shared state defines
 
-Cu.import("chrome://dta-modules/content/glue.jsm", this);
+Cu.import("chrome://dtm-modules/content/glue.jsm", this);
 (function() {
 	for (let [k,v] in new Iterator(require("constants"))) {
 		Object.defineProperty(this, k, {value: v, enumerable:true});

@@ -14,18 +14,18 @@ test("plain", function() {
 		++i;
 	};
 	var topics = obs.topics;
-	obs.add(o, "dta-test-topic");
-	topics.push("dta-test-topic");
+	obs.add(o, "dtm-test-topic");
+	topics.push("dtm-test-topic");
 	arrayEqual(obs.topics, topics, topics);
 	topics.length -= 1;
 
-	obs.notify(null, "dta-test-topic", null);
+	obs.notify(null, "dtm-test-topic", null);
 
-	obs.remove(o, "dta-test-topic");
+	obs.remove(o, "dtm-test-topic");
 	arrayEqual(obs.topics, topics, topics);
 
 	// must not be observed
-	obs.notify(null, "dta-test-topic", null);
+	obs.notify(null, "dtm-test-topic", null);
 
 	strictEqual(i, 1);
 });
@@ -44,22 +44,22 @@ test("observer", function() {
 			}
 	};
 	var topics = obs.topics;
-	obs.add(o, "dta-test-topic");
-	obs.add(o2, "dta-test-topic");
-	topics.push("dta-test-topic");
+	obs.add(o, "dtm-test-topic");
+	obs.add(o2, "dtm-test-topic");
+	topics.push("dtm-test-topic");
 	arrayEqual(obs.topics, topics, topics);
 	topics.length -= 1;
 
-	Services.obs.notifyObservers(null, "dta-test-topic", null);
-	obs.remove(o, "dta-test-topic");
-	topics.push("dta-test-topic");
+	Services.obs.notifyObservers(null, "dtm-test-topic", null);
+	obs.remove(o, "dtm-test-topic");
+	topics.push("dtm-test-topic");
 	arrayEqual(obs.topics, topics, topics);
 	topics.length -= 1;
-	obs.remove(o2, "dta-test-topic");
+	obs.remove(o2, "dtm-test-topic");
 	arrayEqual(obs.topics, topics, topics);
 
 	// must not be observed
-	Services.obs.notifyObservers(null, "dta-test-topic", null);
+	Services.obs.notifyObservers(null, "dtm-test-topic", null);
 
 	strictEqual(i, 2);
 });
@@ -78,17 +78,17 @@ test("notify/Local", function() {
 			}
 	};
 
-	obs.add(ol, "dta-test-topic");
-	Services.obs.addObserver(og, "dta-test-topic", false);
+	obs.add(ol, "dtm-test-topic");
+	Services.obs.addObserver(og, "dtm-test-topic", false);
 
-	obs.notify(null, "dta-test-topic", null);
-	obs.notifyLocal(null, "dta-test-topic", null);
+	obs.notify(null, "dtm-test-topic", null);
+	obs.notifyLocal(null, "dtm-test-topic", null);
 
-	obs.remove(ol, "dta-test-topic");
-	Services.obs.removeObserver(og, "dta-test-topic");
+	obs.remove(ol, "dtm-test-topic");
+	Services.obs.removeObserver(og, "dtm-test-topic");
 
-	obs.notify(null, "dta-test-topic", null);
-	obs.notifyLocal(null, "dta-test-topic", null);
+	obs.notify(null, "dtm-test-topic", null);
+	obs.notifyLocal(null, "dtm-test-topic", null);
 
 	strictEqual(i, 3);
 });
@@ -103,7 +103,7 @@ test("errors", function() {
 	throws(() => obs.remove(null));
 	throws(() => obs.remove(null, null));
 	throws(() => obs.remove(function() {}, null));
-	notThrows(() => obs.remove({}, "dta-test-not-registered"));
+	notThrows(() => obs.remove({}, "dtm-test-not-registered"));
 });
 
 test("exceptions", function() {
@@ -116,12 +116,12 @@ test("exceptions", function() {
 	};
 	var obs = require("support/observers");
 	notThrows(function badobserver() {
-		obs.add(e, "dta-test-topic");
-		obs.add(r, "dta-test-topic");
-		obs.notify(null, "dta-test-topic", null);
-		obs.remove(e, "dta-test-topic");
-		obs.remove(r, "dta-test-topic");
-		obs.notify(null, "dta-test-topic", null);
+		obs.add(e, "dtm-test-topic");
+		obs.add(r, "dtm-test-topic");
+		obs.notify(null, "dtm-test-topic", null);
+		obs.remove(e, "dtm-test-topic");
+		obs.remove(r, "dtm-test-topic");
+		obs.notify(null, "dtm-test-topic", null);
 	});
 	strictEqual(i, 1, "observed");
 });

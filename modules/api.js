@@ -444,7 +444,7 @@ exports.saveSingleItem = function saveSingleItem(window, turbo, item) {
 	// else open addurl.xul
 	window = window || Mediator.getMostRecent();
 	window.openDialog(
-		"chrome://dta/content/dta/addurl.xul",
+		"chrome://dtm/content/dtm/addurl.xul",
 		"_blank",
 		"chrome, centerscreen, resizable=yes, dialog=no, all, modal=no, dependent=no",
 		item
@@ -487,7 +487,7 @@ exports.saveLinkArray = function saveLinkArray(window, urls, images, error) {
 	}
 	window = window || Mediator.getMostRecent();
 	window.openDialog(
-		"chrome://dta/content/dta/select.xul",
+		"chrome://dtm/content/dtm/select.xul",
 		"_blank",
 		"chrome, centerscreen, resizable=yes, dialog=no, all, modal=no, dependent=no",
 		urls,
@@ -601,7 +601,7 @@ exports.openManager = function openManager(window, quiet, cb) {
 		log(LOG_DEBUG, "manager not open yet; queueing");
 		window = window || Mediator.getMostRecent();
 		win = window.openDialog(
-			"chrome://dta/content/dta/manager.xul",
+			"chrome://dtm/content/dtm/manager.xul",
 			"_blank",
 			"chrome, centerscreen, resizable=yes, dialog=no, all, modal=no, dependent=no",
 			!!cb
@@ -647,7 +647,7 @@ const Series = {
 		this._max = Math.pow(10, this._digits) - 1;
 	}
 };
-Preferences.addObserver("extensions.dta.seriesdigits", Series);
+Preferences.addObserver("extensions.dtm.seriesdigits", Series);
 Series.observe();
 
 exports.currentSeries = function currentSeries() {

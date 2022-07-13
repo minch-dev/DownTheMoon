@@ -38,7 +38,7 @@ function canPrivate(chan) {
 }
 
 const _ = (function() {
-	let bundles = new StringBundles(["chrome://dta/locale/manager.properties"]);
+	let bundles = new StringBundles(["chrome://dtm/locale/manager.properties"]);
 	return function(...args) {
 		if (args.length === 1) {
 			return bundles.getString(args[0]);

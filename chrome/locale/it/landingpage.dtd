@@ -1,4 +1,4 @@
-<!-- To test this out, open chrome://dta/content/about/index.xml in your browser with dTm! installed -->
+<!-- To test this out, open chrome://dtm/content/about/index.xml in your browser with dTm! installed -->
 <!-- LOCALIZATION NOTE (lp.localedir): UI text direction, either ltr (left-to-right) or rtl (right-to-left); other values not possible -->
 <!ENTITY lp.localedir "ltr">
 <!-- LOCALIZATION NOTE (language): Your language in your language -->
@@ -53,7 +53,7 @@
 <!ENTITY lp.tb.install "Aggiungi pulsanti alla barra degli strumenti">
 <!ENTITY lp.tb.add.title "Aggiungere e usare i pulsanti della barra degli strumenti">
 <!ENTITY lp.tb.add.p1 "DownTheMoon! include quattro pulsanti della barra degli strumenti per rendere più facile trovare e accodare i download">
-<!ENTITY lp.tb.add.dta "Il pulsante DownTheMoon!">
+<!ENTITY lp.tb.add.dtm "Il pulsante DownTheMoon!">
 <!ENTITY lp.tb.add.dtadesc "Apre la finestra di selezione di DownTheMoon! per la scheda corrente.">
 <!ENTITY lp.tb.add.tdta "Pulsante OneClick!">
 <!ENTITY lp.tb.add.tdtadesc "Scarica gli elementi della pagina corrente in base alle preferenze e ai filtri usati per ultimi.">

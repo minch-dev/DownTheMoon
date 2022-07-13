@@ -79,10 +79,10 @@ Flasher.prototype = {
 
 		// add the adding icon if the element covers enough space
 		if (Math.min(pos.width, pos.height) >= 36) {
-			div.style.backgroundImage = 'url(chrome://dta-public/skin/integration/added_large.png)';
+			div.style.backgroundImage = 'url(chrome://dtm-public/skin/integration/added_large.png)';
 		}
 		if (Math.min(pos.width, pos.height) >= 18) {
-			div.style.backgroundImage = 'url(chrome://dta-public/skin/integration/added_small.png)';
+			div.style.backgroundImage = 'url(chrome://dtm-public/skin/integration/added_small.png)';
 		}
 
 		this._div = div;

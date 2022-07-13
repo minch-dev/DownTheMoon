@@ -1,5 +1,5 @@
-@import 'chrome://dta/skin/common/style.css';
-@import 'chrome://dta-platform/skin/common.css';
+@import 'chrome://dtm/skin/common/style.css';
+@import 'chrome://dtm-platform/skin/common.css';
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
 window {
@@ -159,11 +159,11 @@ treechildren::-moz-tree-cell-text(fastFiltered) {
 }
 
 #mrenaming {
-	list-style-image: url(chrome://dta/skin/common/mask.png);
+	list-style-image: url(chrome://dtm/skin/common/mask.png);
 }
 
 #selectall, #selectinvert, #selectfiltered {
-	list-style-image: url(chrome://dta/skin/common/selection.png);
+	list-style-image: url(chrome://dtm/skin/common/selection.png);
 }
 #selectall {
 	-moz-image-region: rect(0px, 16px, 16px, 0px);
@@ -175,7 +175,7 @@ treechildren::-moz-tree-cell-text(fastFiltered) {
 	-moz-image-region: rect(0px, 64px, 16px, 48px);
 }
 #mopen {
-	list-style-image: url(chrome://dta/skin/common/openurl.png);
+	list-style-image: url(chrome://dtm/skin/common/openurl.png);
 }
 
 @media (min-resolution: 2dppx) {
@@ -205,7 +205,7 @@ treechildren::-moz-tree-cell-text(fastFiltered) {
 	}
 
 	#selectall, #selectinvert, #selectfiltered {
-		list-style-image: url(chrome://dta/skin/common/selection@2x.png);
+		list-style-image: url(chrome://dtm/skin/common/selection@2x.png);
 	}
 	#selectall {
 		-moz-image-region: rect(0px, 32px, 32px, 0px);

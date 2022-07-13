@@ -1,4 +1,4 @@
-<!-- To test this out, open chrome://dta/content/about/index.xml in your browser with dTm! installed -->
+<!-- To test this out, open chrome://dtm/content/about/index.xml in your browser with dTm! installed -->
 <!-- LOCALIZATION NOTE (lp.localedir): UI text direction, either ltr (left-to-right) or rtl (right-to-left); other values not possible -->
 <!ENTITY lp.localedir "ltr">
 <!-- LOCALIZATION NOTE (language): Your language in your language -->
@@ -53,7 +53,7 @@
 <!ENTITY lp.tb.install "Adaugă butoane">
 <!ENTITY lp.tb.add.title "<font face="Helvetica">Adăugarea și folosirea butoanelor din bara de unelte&quot;&gt;">
 <!ENTITY lp.tb.add.p1 "DownTheMoon! pune la dispoziție patru butoane în bara de unelte pentru a face ușoare căutarea și descărcarea fișierelor:">
-<!ENTITY lp.tb.add.dta "Butonul DownTheMoon!">
+<!ENTITY lp.tb.add.dtm "Butonul DownTheMoon!">
 <!ENTITY lp.tb.add.dtadesc "Deschide caseta DownTheMoon! de selectare surse pentru fila curentă.">
 <!ENTITY lp.tb.add.tdta "Butonul OneClick!">
 <!ENTITY lp.tb.add.tdtadesc "Descarcă toate elementele din pagina curentă în funcție de ultimele preferințe și filtre utilizate.">

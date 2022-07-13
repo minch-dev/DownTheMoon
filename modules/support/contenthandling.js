@@ -3,7 +3,7 @@
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 "use strict";
 
-const PREF_SNIFFVIDEOS = 'extensions.dta.listsniffedvideos';
+const PREF_SNIFFVIDEOS = 'extensions.dtm.listsniffedvideos';
 
 const HEADER_CT = ['Content-Type', 'Content-Disposition'];
 
@@ -85,7 +85,7 @@ exports.ContentHandling = new class {
 		this.getUriJob = 0;
 		this.globalMM = Cc["@mozilla.org/globalmessagemanager;1"]
 			.getService(Ci.nsIMessageListenerManager);
-		let fs = "chrome://dta-modules/content/support/contenthandling-content.js?" + (+new Date());
+		let fs = "chrome://dtm-modules/content/support/contenthandling-content.js?" + (+new Date());
 		this.globalMM.loadFrameScript(fs, true);
 		unload(() => {
 			this.globalMM.broadcastAsyncMessage("DTA:ch:shutdown");
@@ -95,7 +95,7 @@ exports.ContentHandling = new class {
 	}
 
 	_uninit() {
-		Services.prefs.removeObserver('extensions.dta.listsniffedvideos', this);
+		Services.prefs.removeObserver('extensions.dtm.listsniffedvideos', this);
 		if (this.sniffVideos) {
 			this.sniffVideos = false;
 			this.unregisterHttpObservers();

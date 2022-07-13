@@ -1,4 +1,4 @@
-<!-- To test this out, open chrome://dta/content/about/index.xml in your browser with dTm! installed -->
+<!-- To test this out, open chrome://dtm/content/about/index.xml in your browser with dTm! installed -->
 <!-- LOCALIZATION NOTE (lp.localedir): UI text direction, either ltr (left-to-right) or rtl (right-to-left); other values not possible -->
 <!ENTITY lp.localedir "ltr">
 <!-- LOCALIZATION NOTE (language): Your language in your language -->
@@ -53,7 +53,7 @@
 <!ENTITY lp.tb.install "Lägg till verktygsfältsknappar">
 <!ENTITY lp.tb.add.title "Lägga till och använda verktygsfältsknappar">
 <!ENTITY lp.tb.add.p1 "DownTheMoon! erbjuder fyra verktygsfältsknappar som gör det lättare att hitta och kölägga nedladdningar">
-<!ENTITY lp.tb.add.dta "DownTheMoon!-knapp">
+<!ENTITY lp.tb.add.dtm "DownTheMoon!-knapp">
 <!ENTITY lp.tb.add.dtadesc "Öppnar markeringsfönstret för den aktuella fliken.">
 <!ENTITY lp.tb.add.tdta "OneClick!-knapp">
 <!ENTITY lp.tb.add.tdtadesc "Laddar ned alla objekt från den aktuella sidan enligt de senast använda inställningarna och filtren.">

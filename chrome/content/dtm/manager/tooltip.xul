@@ -4,9 +4,9 @@
 	- file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!DOCTYPE overlay [
-	<!ENTITY % managerDTD SYSTEM "chrome://dta/locale/manager.dtd">
+	<!ENTITY % managerDTD SYSTEM "chrome://dtm/locale/manager.dtd">
 	%managerDTD;
-	<!ENTITY % defmanagerDTD SYSTEM "chrome://dta-locale/content/manager.dtd">
+	<!ENTITY % defmanagerDTD SYSTEM "chrome://dtm-locale/content/manager.dtd">
 	%defmanagerDTD;
 ]>
 <overlay

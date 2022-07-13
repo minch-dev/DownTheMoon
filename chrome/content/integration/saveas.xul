@@ -3,8 +3,8 @@
 	 - License, v. 2.0. If a copy of the MPL was not distributed with this
 	 - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<?xml-stylesheet type="text/css" href="chrome://dta/content/common/bindings.css"?>
-<?xml-stylesheet type="text/css" href="chrome://dta/skin/integration/saveas.css"?>
+<?xml-stylesheet type="text/css" href="chrome://dtm/content/common/bindings.css"?>
+<?xml-stylesheet type="text/css" href="chrome://dtm/skin/integration/saveas.css"?>
 
 <overlay id="downthemallDownloadSaveAs" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 	<radiogroup id="mode">

@@ -489,9 +489,9 @@ function _loadBundles(urls) {
 		for (let s of new SimpleIterator(bundle(url), Ci.nsIPropertyElement)) {
 			strings[s.key] = s.value;
 		}
-		if (uri.host === "dta") {
+		if (uri.host === "dtm") {
 			const path = uri.path || uri.pathQueryRef;
-			url = "chrome://dta-locale" + path.replace("/locale/", "/content/");
+			url = "chrome://dtm-locale" + path.replace("/locale/", "/content/");
 			log(LOG_DEBUG, "also loading: " + url);
 			for (let s of new SimpleIterator(bundle(url), Ci.nsIPropertyElement)) {
 				let k = s.key;
@@ -651,7 +651,7 @@ exports.reveal = function reveal(file) {
 
 /**
  * Convert metalink priorities to start from 1 and give more weitage to ones with lower prioroty,
- * to dta preferences
+ * to dtm preferences
  * @param array of DTA.URL
  */
 exports.normalizeMetaPrefs = function(urls) {

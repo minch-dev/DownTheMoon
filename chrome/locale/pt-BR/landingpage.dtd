@@ -1,4 +1,4 @@
-<!-- To test this out, open chrome://dta/content/about/index.xml in your browser with dTm! installed -->
+<!-- To test this out, open chrome://dtm/content/about/index.xml in your browser with dTm! installed -->
 <!-- LOCALIZATION NOTE (lp.localedir): UI text direction, either ltr (left-to-right) or rtl (right-to-left); other values not possible -->
 <!ENTITY lp.localedir "ltr">
 <!-- LOCALIZATION NOTE (language): Your language in your language -->
@@ -53,7 +53,7 @@
 <!ENTITY lp.tb.install "Adicionar botões à barra de ferramentas">
 <!ENTITY lp.tb.add.title "Adicionando e usando botões na barra de ferramentas">
 <!ENTITY lp.tb.add.p1 "DownTheMoon! apresenta quatro botões para a barra de ferramentas para facilitar o encontro e adição de downloads">
-<!ENTITY lp.tb.add.dta "Botão DownTheMoon!">
+<!ENTITY lp.tb.add.dtm "Botão DownTheMoon!">
 <!ENTITY lp.tb.add.dtadesc "Abre a janela de seleção do DownTheMoon! para a aba atual.">
 <!ENTITY lp.tb.add.tdta "Botão OneClick!">
 <!ENTITY lp.tb.add.tdtadesc "Baixa todos os ítens da página atual de acordo com as últimas preferências e filtros usados.">

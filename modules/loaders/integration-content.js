@@ -66,7 +66,7 @@ const require = function require_mini(m) {
 		loaded: false,
 		require: scope.require
 		};
-	let module = "chrome://dta-modules/content/" + m + ".js";
+	let module = "chrome://dtm-modules/content/" + m + ".js";
 	Services.scriptloader.loadSubScript(module, scope);
 	return (scope.module && scope.module.exports) || scope.exports;
 };

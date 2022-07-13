@@ -10,7 +10,7 @@ if (available) {
 	lazy(this, "getUsableFileNameWithFlatten", () => require("./stringfuncs").getUsableFileNameWithFlatten);
 	lazy(this, "utils", () => require("utils"));
 	lazy(this, "bundle",
-		() => new (require("utils").StringBundles)(["chrome://dta/locale/downloadHelper.properties"]));
+		() => new (require("utils").StringBundles)(["chrome://dtm/locale/downloadHelper.properties"]));
 	lazy(this, "isWindowPrivate", () => require("./pbm").isWindowPrivate);
 
 	const core = Cc["@downloadhelper.net/core;1"].getService(Ci.dhICore);
@@ -121,11 +121,11 @@ if (available) {
 	const processors = [];
 
 	processors.push(new ProcessorImpl(
-		false, "dta-regular",
-		bundle.getString('dta-regular'), bundle.getString('dta-regular-desc')
+		false, "dtm-regular",
+		bundle.getString('dtm-regular'), bundle.getString('dtm-regular-desc')
 		));
 	processors.push(new ProcessorImpl(
-		true, "dta-turbo",
-		bundle.getString('dta-turbo'), bundle.getString('dta-turbo-desc')
+		true, "dtm-turbo",
+		bundle.getString('dtm-turbo'), bundle.getString('dtm-turbo-desc')
 		));
 }

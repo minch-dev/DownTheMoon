@@ -31,7 +31,7 @@ var Cu = Components.utils;
 var Exception = Components.Exception;
 
 Cu.import("resource://gre/modules/FileUtils.jsm");
-Cu.import("chrome://dta-modules/content/glue.jsm");
+Cu.import("chrome://dtm-modules/content/glue.jsm");
 
 var DTA = require("api");
 

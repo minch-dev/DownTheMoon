@@ -1,11 +1,11 @@
-@import 'chrome://dta/skin/toolbarbuttons/buttons.css';
+@import 'chrome://dtm/skin/toolbarbuttons/buttons.css';
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 #notification-popup-box[anchorid="downthemall-notification-icon"] > #downthemall-notification-icon {
 	display: -moz-box;
 }
 #downthemall-notification-icon {
-	list-style-image: url(chrome://dta/skin/toolbarbuttons/buttons16.png);
+	list-style-image: url(chrome://dtm/skin/toolbarbuttons/buttons16.png);
 	-moz-image-region: rect(0px,64px,16px,48px);
 }
 
@@ -14,49 +14,49 @@
 }
 
 /* menus */
-.dta-menuitem {
-	list-style-image: url(chrome://dta/skin/toolbarbuttons/buttons16.png);
+.dtm-menuitem {
+	list-style-image: url(chrome://dtm/skin/toolbarbuttons/buttons16.png);
 }
-.dta-normal {
+.dtm-normal {
 	-moz-image-region: rect(0px,32px,16px,16px);
 }
-.dta-turbo {
+.dtm-turbo {
 	-moz-image-region: rect(0px,64px,16px,48px);
 }
-.dta-manager {
+.dtm-manager {
 	-moz-image-region: rect(0px,112px,16px,96px);
 }
-.dta-prefs {
+.dtm-prefs {
 	-moz-image-region: rect(0px,128px,16px,112px);
 }
-.dta-about {
+.dtm-about {
 	-moz-image-region: rect(0px,144px,16px,128px);
 }
 
-.main-window #dta-manager-button image,
-.main-window #dta-turbo-button image,
-.main-window #dta-button image {
+.main-window #dtm-manager-button image,
+.main-window #dtm-turbo-button image,
+.main-window #dtm-button image {
 	padding-top: 2px;
 	padding-bottom: 3px;
 }
 
 @media (min-resolution: 2dppx) {
-	.dta-menuitem {
-		list-style-image: url(chrome://dta/skin/toolbarbuttons/buttons32.png);
+	.dtm-menuitem {
+		list-style-image: url(chrome://dtm/skin/toolbarbuttons/buttons32.png);
 	}
-	.dta-normal {
+	.dtm-normal {
 		-moz-image-region: rect(0px,64px,32px,32px);
 	}
-	.dta-turbo {
+	.dtm-turbo {
 		-moz-image-region: rect(0px,128px,32px,96px);
 	}
-	.dta-manager {
+	.dtm-manager {
 		-moz-image-region: rect(0px,224px,32px,192px);
 	}
-	.dta-prefs {
+	.dtm-prefs {
 		-moz-image-region: rect(0px,256px,32px,224px);
 	}
-	.dta-about {
+	.dtm-about {
 		-moz-image-region: rect(0px,288px,32px,256px);
 	}
 }

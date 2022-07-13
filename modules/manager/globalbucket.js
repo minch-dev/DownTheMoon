@@ -13,4 +13,4 @@ exports.GlobalBucket.Observer = {
 		log(LOG_DEBUG, "new global speed limit " + limit + " " + exports.GlobalBucket.byteRate);
 	}
 };
-addObserver("extensions.dta.speedlimit", exports.GlobalBucket.Observer);
+addObserver("extensions.dtm.speedlimit", exports.GlobalBucket.Observer);

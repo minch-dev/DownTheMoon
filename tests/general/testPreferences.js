@@ -25,23 +25,23 @@ test("exports", function() {
 
 test("read", function() {
 	var p = require("preferences");
-	strictEqual(p.get("extensions.dta.nokeepalive"), !p.hasUserValue("extensions.dta.nokeepalive"), "get() works");
+	strictEqual(p.get("extensions.dtm.nokeepalive"), !p.hasUserValue("extensions.dtm.nokeepalive"), "get() works");
 	strictEqual(p.getExt("nokeepalive"), !p.hasUserValueExt("nokeepalive"), "getExt() works");
-	strictEqual(p.get("extensions.dta.nokeepalive"), p.getExt("nokeepalive"), "get() eq getExt()");
-	strictEqual(p.get("extensions.dta.renaming.default"), p.getExt("renaming.default"),
+	strictEqual(p.get("extensions.dtm.nokeepalive"), p.getExt("nokeepalive"), "get() eq getExt()");
+	strictEqual(p.get("extensions.dtm.renaming.default"), p.getExt("renaming.default"),
 							"get() eq getExt() (string + point)");
 });
 
 test("setters", function() {
 	var p = require("preferences");
-	p.set("extensions.dta.testSet", "test");
+	p.set("extensions.dtm.testSet", "test");
 	equal(p.getExt("testSet"), "test");
-	p.reset("extensions.dta.testSet");
+	p.reset("extensions.dtm.testSet");
 	equal(p.getExt("testSet"), undefined);
 	p.setExt("testSet", "test");
-	equal(p.get("extensions.dta.testSet"), "test");
+	equal(p.get("extensions.dtm.testSet"), "test");
 	p.resetExt("testSet");
-	equal(p.getExt("extensions.dta.testSet"), undefined);
+	equal(p.getExt("extensions.dtm.testSet"), undefined);
 });
 
 test("observers", function() {
@@ -72,9 +72,9 @@ test("observers", function() {
 			}
 	};
 
-	var u1 = p.addObserver("extensions.dta", obs1);
-	var u2 = p.addObserver("extensions.dta", obs2);
-	var u3 = p.addObserver("extensions.dta", obs3);
+	var u1 = p.addObserver("extensions.dtm", obs1);
+	var u2 = p.addObserver("extensions.dtm", obs2);
+	var u3 = p.addObserver("extensions.dtm", obs3);
 	p.setExt("testObs", "yep");
 	ok(obs1.observed && obs1.observed && obs3.observed, "all observers fired");
 

@@ -1,4 +1,4 @@
-@import 'chrome://dta/skin/common/style.css';
+@import 'chrome://dtm/skin/common/style.css';
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 @namespace html url("http://www.w3.org/1999/xhtml");
 
@@ -47,11 +47,11 @@ dialog {
 }
 
 #mirrors > richlistitem {
-	-moz-binding: url(chrome://dta/content/common/bindings.xml#mirror-item);
+	-moz-binding: url(chrome://dtm/content/common/bindings.xml#mirror-item);
 	padding: 3px;
 }
 #mirrors > richlistitem[editing] {
-	-moz-binding: url(chrome://dta/content/common/bindings.xml#mirror-item-editing);
+	-moz-binding: url(chrome://dtm/content/common/bindings.xml#mirror-item-editing);
 }
 
 .mirror-item-url {

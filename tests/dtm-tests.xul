@@ -3,5 +3,5 @@
 	<html:head>
 		<html:link rel="icon" href="chrome://dtaicon/content/icon.png"/>
 	</html:head>
-	<browser flex="1" remote="false" type="chrome" src="chrome://dta-tests/content/index.html"/>
+	<browser flex="1" remote="false" type="chrome" src="chrome://dtm-tests/content/index.html"/>
 </window>

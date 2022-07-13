@@ -171,7 +171,7 @@ function showAbout(window) {
 function showPreferences(window, pane, command) {
 	var instantApply = Prefs.get("browser.preferences.instantApply", false);
 	window.openDialog(
-		'chrome://dta/content/preferences/prefs.xul',
+		'chrome://dtm/content/preferences/prefs.xul',
 		'dtaPrefs',
 		'chrome,titlebar,toolbar,resizable,centerscreen'+ (instantApply ? ',dialog=no' : ''),
 		pane,
@@ -180,7 +180,7 @@ function showPreferences(window, pane, command) {
 }
 function showToolbarInstall(browserWindow) {
 	browserWindow.openDialog(
-		"chrome://dta/content/integration/toolbarinstall.xul",
+		"chrome://dtm/content/integration/toolbarinstall.xul",
 		null,
 		"chrome,dialog,centerscreen");
 }

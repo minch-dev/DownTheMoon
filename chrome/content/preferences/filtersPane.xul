@@ -9,9 +9,9 @@
  *
  * ***** END LICENSE BLOCK ***** -->
 <!DOCTYPE window [
-	<!ENTITY % prefsDTD SYSTEM "chrome://dta/locale/prefpanes.dtd">
+	<!ENTITY % prefsDTD SYSTEM "chrome://dtm/locale/prefpanes.dtd">
 	%prefsDTD;
-	<!ENTITY % defprefsDTD SYSTEM "chrome://dta-locale/content/prefpanes.dtd">
+	<!ENTITY % defprefsDTD SYSTEM "chrome://dtm-locale/content/prefpanes.dtd">
 	%defprefsDTD;
 ]>
 <overlay id="filterspaneoverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">

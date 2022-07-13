@@ -1,26 +1,26 @@
 <!-- LOCALIZATION NOTE : FILE Please do NOT translate DownTheMoon! and OneClick -->
-<!ENTITY dta-tbinstall "Adicionar Botões da Barra de Tarefa">
-<!ENTITY dta-pref.label "Preferências">
-<!ENTITY dta-about2.label "Sobre o DownTheMoon!">
-<!ENTITY dta-manager-button "Gestor">
-<!ENTITY dta-manager-button.desc "Abre a janela do Gestor.">
-<!ENTITY dta-selector-button2.label "Seletor UmClique!">
-<!ENTITY dta-selector-button.desc "Adicionar itens ao clicar neles com o botão esquerdo.">
-<!ENTITY dta-tb-all.label "Todos os separadores">
-<!ENTITY dta-tb-single.label "Separador actual">
-<!ENTITY dta-selection2.label "Seleção DownTheMoon!">
-<!ENTITY dta-selection-turbo2.label "Seleção UmClique">
-<!ENTITY dta-regular2.label "DownTheMoon!">
-<!ENTITY dta-regular.desc "Abre a Janela de Seleção DownTheMoon! para o separador atual.">
-<!ENTITY dta-regular-turbo2.label "dTm! UmCLique">
-<!ENTITY dta-regular-turbo.desc "Transfere todos os itens da página atual de acordo com as últimas preferências e filtros usados.">
-<!ENTITY dta-img-save2.label "Guardar Imagem com o DownTheMoon!">
-<!ENTITY dta-img-save-turbo2.label "Guardar Imagem com o dTm! UmClique">
-<!ENTITY dta-video-save2.label "Guardar vídeo com o DownTheMoon!">
-<!ENTITY dta-video-save-turbo2.label "Guardar Vídeo com o dTm! UmClique">
-<!ENTITY dta-audio-save2.label "Guardar Áudio com o DownTheMoon!">
-<!ENTITY dta-audio-save-turbo2.label "Guardar Áudio com o dTm! UmClique">
-<!ENTITY dta-link-save2.label "Guardar Ligação com o DownTheMoon!">
-<!ENTITY dta-link-save-turbo2.label "Guardar Ligação com o dTm! UmClique">
-<!ENTITY dta-form-save2.label "Guardar Formulário Alvo com o DownTheMoon!">
-<!ENTITY dta-form-save-turbo2.label "Guardar Formulário Alvo com o dTm! UmClique">
+<!ENTITY dtm-tbinstall "Adicionar Botões da Barra de Tarefa">
+<!ENTITY dtm-pref.label "Preferências">
+<!ENTITY dtm-about2.label "Sobre o DownTheMoon!">
+<!ENTITY dtm-manager-button "Gestor">
+<!ENTITY dtm-manager-button.desc "Abre a janela do Gestor.">
+<!ENTITY dtm-selector-button2.label "Seletor UmClique!">
+<!ENTITY dtm-selector-button.desc "Adicionar itens ao clicar neles com o botão esquerdo.">
+<!ENTITY dtm-tb-all.label "Todos os separadores">
+<!ENTITY dtm-tb-single.label "Separador actual">
+<!ENTITY dtm-selection2.label "Seleção DownTheMoon!">
+<!ENTITY dtm-selection-turbo2.label "Seleção UmClique">
+<!ENTITY dtm-regular2.label "DownTheMoon!">
+<!ENTITY dtm-regular.desc "Abre a Janela de Seleção DownTheMoon! para o separador atual.">
+<!ENTITY dtm-regular-turbo2.label "dTm! UmCLique">
+<!ENTITY dtm-regular-turbo.desc "Transfere todos os itens da página atual de acordo com as últimas preferências e filtros usados.">
+<!ENTITY dtm-img-save2.label "Guardar Imagem com o DownTheMoon!">
+<!ENTITY dtm-img-save-turbo2.label "Guardar Imagem com o dTm! UmClique">
+<!ENTITY dtm-video-save2.label "Guardar vídeo com o DownTheMoon!">
+<!ENTITY dtm-video-save-turbo2.label "Guardar Vídeo com o dTm! UmClique">
+<!ENTITY dtm-audio-save2.label "Guardar Áudio com o DownTheMoon!">
+<!ENTITY dtm-audio-save-turbo2.label "Guardar Áudio com o dTm! UmClique">
+<!ENTITY dtm-link-save2.label "Guardar Ligação com o DownTheMoon!">
+<!ENTITY dtm-link-save-turbo2.label "Guardar Ligação com o dTm! UmClique">
+<!ENTITY dtm-form-save2.label "Guardar Formulário Alvo com o DownTheMoon!">
+<!ENTITY dtm-form-save-turbo2.label "Guardar Formulário Alvo com o dTm! UmClique">

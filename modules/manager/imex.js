@@ -70,7 +70,7 @@ exports.exportToHtmlFile = function exportToHtmlFile(aDownloads, aDocument, aFil
 		n = document.createElement('link');
 		n.setAttribute('rel', 'stylesheet');
 		n.setAttribute('type', 'text/css');
-		n.setAttribute('href', 'chrome://dta-public/skin/exporthtml.css');
+		n.setAttribute('href', 'chrome://dtm-public/skin/exporthtml.css');
 		head.appendChild(n);
 
 		root.appendChild(head);

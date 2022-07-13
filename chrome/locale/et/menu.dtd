@@ -1,26 +1,26 @@
 <!-- LOCALIZATION NOTE : FILE Please do NOT translate DownTheMoon! and OneClick -->
-<!ENTITY dta-tbinstall "Lisa tööriistariba nuppe">
-<!ENTITY dta-pref.label "Eelistused">
-<!ENTITY dta-about2.label "DownTheMoon!-i teave">
-<!ENTITY dta-manager-button "Haldur">
-<!ENTITY dta-manager-button.desc "Avab halduri akna.">
-<!ENTITY dta-selector-button2.label "OneClick! valija">
-<!ENTITY dta-selector-button.desc "Lisa üksuseid nendel vasak-klõpsates.">
-<!ENTITY dta-tb-all.label "Kõik kaardid">
-<!ENTITY dta-tb-single.label "Praegune kaart">
-<!ENTITY dta-selection2.label "DownTheMoon! valik">
-<!ENTITY dta-selection-turbo2.label "OneClick valik">
-<!ENTITY dta-regular2.label "DownTheMoon!">
-<!ENTITY dta-regular.desc "Avab DownTheMoon! valiku akna praeguse kaardi jaoks.">
-<!ENTITY dta-regular-turbo2.label "dTm! OneClick">
-<!ENTITY dta-regular-turbo.desc "Laadib alla kõik üksused praeguselt lehelt, vastavalt viimati kasutatud eelistustele ja filtritele.">
-<!ENTITY dta-img-save2.label "Salvesta pilt DownTheMoon!-iga">
-<!ENTITY dta-img-save-turbo2.label "Salvesta pilt dTm! OneClickiga">
-<!ENTITY dta-video-save2.label "Salvesta video DownTheMoon!-iga">
-<!ENTITY dta-video-save-turbo2.label "Salvesta video dTm! OneClickiga">
-<!ENTITY dta-audio-save2.label "Salvesta helifail DownTheMoon!-iga">
-<!ENTITY dta-audio-save-turbo2.label "Salvesta helifail dTm! OneClickiga">
-<!ENTITY dta-link-save2.label "Salvesta link DownTheMoon!-iga">
-<!ENTITY dta-link-save-turbo2.label "Salvesta link dTm! OneClickiga">
-<!ENTITY dta-form-save2.label "Salvesta vormi sihtkoht DownTheMoon!-iga">
-<!ENTITY dta-form-save-turbo2.label "Salvesta vormi sihtkoht dTm! OneClickiga">
+<!ENTITY dtm-tbinstall "Lisa tööriistariba nuppe">
+<!ENTITY dtm-pref.label "Eelistused">
+<!ENTITY dtm-about2.label "DownTheMoon!-i teave">
+<!ENTITY dtm-manager-button "Haldur">
+<!ENTITY dtm-manager-button.desc "Avab halduri akna.">
+<!ENTITY dtm-selector-button2.label "OneClick! valija">
+<!ENTITY dtm-selector-button.desc "Lisa üksuseid nendel vasak-klõpsates.">
+<!ENTITY dtm-tb-all.label "Kõik kaardid">
+<!ENTITY dtm-tb-single.label "Praegune kaart">
+<!ENTITY dtm-selection2.label "DownTheMoon! valik">
+<!ENTITY dtm-selection-turbo2.label "OneClick valik">
+<!ENTITY dtm-regular2.label "DownTheMoon!">
+<!ENTITY dtm-regular.desc "Avab DownTheMoon! valiku akna praeguse kaardi jaoks.">
+<!ENTITY dtm-regular-turbo2.label "dTm! OneClick">
+<!ENTITY dtm-regular-turbo.desc "Laadib alla kõik üksused praeguselt lehelt, vastavalt viimati kasutatud eelistustele ja filtritele.">
+<!ENTITY dtm-img-save2.label "Salvesta pilt DownTheMoon!-iga">
+<!ENTITY dtm-img-save-turbo2.label "Salvesta pilt dTm! OneClickiga">
+<!ENTITY dtm-video-save2.label "Salvesta video DownTheMoon!-iga">
+<!ENTITY dtm-video-save-turbo2.label "Salvesta video dTm! OneClickiga">
+<!ENTITY dtm-audio-save2.label "Salvesta helifail DownTheMoon!-iga">
+<!ENTITY dtm-audio-save-turbo2.label "Salvesta helifail dTm! OneClickiga">
+<!ENTITY dtm-link-save2.label "Salvesta link DownTheMoon!-iga">
+<!ENTITY dtm-link-save-turbo2.label "Salvesta link dTm! OneClickiga">
+<!ENTITY dtm-form-save2.label "Salvesta vormi sihtkoht DownTheMoon!-iga">
+<!ENTITY dtm-form-save-turbo2.label "Salvesta vormi sihtkoht dTm! OneClickiga">

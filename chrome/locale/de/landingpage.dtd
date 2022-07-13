@@ -53,7 +53,7 @@
 <!ENTITY lp.tb.install "Toolbar-Buttons hinzufügen">
 <!ENTITY lp.tb.add.title "Hinzufügen und Benutzen von Symbolleisten-Buttons">
 <!ENTITY lp.tb.add.p1 "DownTheMoon! stellt vier Symbolleisten-Buttons bereit, die es einfach machen, Downloads zu finden und zu starten">
-<!ENTITY lp.tb.add.dta "DownTheMoon! Button">
+<!ENTITY lp.tb.add.dtm "DownTheMoon! Button">
 <!ENTITY lp.tb.add.dtadesc "Offnet das DownTheMoon! Auswahlfenster für den aktuellen Tab.">
 <!ENTITY lp.tb.add.tdta "OneClick! Button">
 <!ENTITY lp.tb.add.tdtadesc "Läd Dinge von der aktuellen Seite herunter und benutzt dabei die zuletzt genutzten Einstellungen und Filter.">

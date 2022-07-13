@@ -734,7 +734,7 @@ class TreeManager {
 							i++);
 					}
 				}
-				transfer.setData("application/x-dta-position", qi.position);
+				transfer.setData("application/x-dtm-position", qi.position);
 				i++;
 			}
 			catch (ex) {
@@ -745,7 +745,7 @@ class TreeManager {
 	}
 
 	canDrop(index, orient, dt) {
-		let rv = dt.types.contains("application/x-dta-position");
+		let rv = dt.types.contains("application/x-dtm-position");
 		if (rv) {
 			dt.dropEffect = "move";
 		}
@@ -1244,7 +1244,7 @@ class TreeManager {
 		}
 		let mirrors = this.current.urlManager.toArray();
 		window.openDialog(
-			'chrome://dta/content/dta/mirrors.xul',
+			'chrome://dtm/content/dtm/mirrors.xul',
 			null,
 			"chrome,dialog,resizable,modal,centerscreen",
 			mirrors

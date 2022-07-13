@@ -9,9 +9,9 @@
  *
  * ***** END LICENSE BLOCK ***** -->
 <!DOCTYPE window [
-	<!ENTITY % prefsDTD SYSTEM "chrome://dta/locale/prefpanes.dtd">
+	<!ENTITY % prefsDTD SYSTEM "chrome://dtm/locale/prefpanes.dtd">
 	%prefsDTD;
-	<!ENTITY % defprefsDTD SYSTEM "chrome://dta-locale/content/prefpanes.dtd">
+	<!ENTITY % defprefsDTD SYSTEM "chrome://dtm-locale/content/prefpanes.dtd">
 	%defprefsDTD;
 ]>
 <overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
@@ -20,19 +20,19 @@
 	<prefpane id="panePrivacy" label="&privacypane.label;"
 		onpaneload="Privacy.load();" orient="vertical">
 		<preferences>
-			<preference id="dtarmcomp" name="extensions.dta.removecompleted"
+			<preference id="dtarmcomp" name="extensions.dtm.removecompleted"
 				type="bool" />
-			<preference id="dtarmcanc" name="extensions.dta.removecanceled"
+			<preference id="dtarmcanc" name="extensions.dtm.removecanceled"
 				type="bool" />
-			<preference id="dtarmabort" name="extensions.dta.removeaborted"
+			<preference id="dtarmabort" name="extensions.dtm.removeaborted"
 				type="bool" />
-			<preference id="dtadonation" name="extensions.dta.infophrases"
+			<preference id="dtadonation" name="extensions.dtm.infophrases"
 				type="bool" />
-			<preference id="dtastatistics" name="extensions.dta.statistics"
+			<preference id="dtastatistics" name="extensions.dtm.statistics"
 				type="bool" />
-			<preference id="dtadump" name="extensions.dta.logging"
+			<preference id="dtadump" name="extensions.dtm.logging"
 				type="bool" />
-			<preference id="dtahistory" name="extensions.dta.history"
+			<preference id="dtahistory" name="extensions.dtm.history"
 				type="int" />
 		</preferences>
 

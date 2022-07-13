@@ -1,181 +1,181 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
-.dta-toolbarbutton {
+.dtm-toolbarbutton {
 	list-style-image: url(buttons16.png) !important;
 }
 
-toolbar[iconsize="large"] .dta-toolbarbutton {
+toolbar[iconsize="large"] .dtm-toolbarbutton {
 	list-style-image: url(buttons24.png) !important;
 }
 
-.dta-toolbarbutton[cui-areatype="menu-panel"],
-#customization-container .dta-toolbarbutton {
+.dtm-toolbarbutton[cui-areatype="menu-panel"],
+#customization-container .dtm-toolbarbutton {
 	list-style-image: url(buttons32.png) !important;
 }
 
-#dta-button {
+#dtm-button {
 	-moz-image-region: rect(0px,32px,16px,16px);
 }
-#dta-button:hover {
+#dtm-button:hover {
 	-moz-image-region: rect(0px,16px,16px,0px);
 }
-toolbar[iconsize="large"] #dta-button {
+toolbar[iconsize="large"] #dtm-button {
 	-moz-image-region: rect(0px,48px,24px,24px);
 }
-toolbar[iconsize="large"] #dta-button:hover {
+toolbar[iconsize="large"] #dtm-button:hover {
 	-moz-image-region: rect(0px,24px,24px,0px);
 }
-#dta-button[cui-areatype="menu-panel"],
-#customization-container #dta-button,
-#customization-container #dta-button:hover {
+#dtm-button[cui-areatype="menu-panel"],
+#customization-container #dtm-button,
+#customization-container #dtm-button:hover {
 	-moz-binding: url("chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton");
 	-moz-box-align: center;
 	-moz-box-orient: vertical !important;
 	-moz-image-region: rect(0px,64px,32px,32px);
 }
-#dta-button[cui-areatype="menu-panel"]:hover {
+#dtm-button[cui-areatype="menu-panel"]:hover {
 	-moz-image-region: rect(0px,32px,32px,0px);
 }
 
-#dta-turbo-button {
+#dtm-turbo-button {
 	-moz-image-region: rect(0px,64px,16px,48px);
 }
-#dta-turbo-button:hover {
+#dtm-turbo-button:hover {
 	-moz-image-region: rect(0px,48px,16px,32px);
 }
-toolbar[iconsize="large"] #dta-turbo-button {
+toolbar[iconsize="large"] #dtm-turbo-button {
 	-moz-image-region: rect(0px,96px,24px,72px);
 }
-toolbar[iconsize="large"] #dta-turbo-button:hover {
+toolbar[iconsize="large"] #dtm-turbo-button:hover {
 	-moz-image-region: rect(0px,72px,24px,48px);
 }
-#dta-turbo-button[cui-areatype="menu-panel"],
-#customization-container #dta-turbo-button,
-#customization-container #dta-turbo-button:hover {
+#dtm-turbo-button[cui-areatype="menu-panel"],
+#customization-container #dtm-turbo-button,
+#customization-container #dtm-turbo-button:hover {
 	-moz-binding: url("chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton");
 	-moz-box-align: center;
 	-moz-box-orient: vertical !important;
 	-moz-image-region: rect(0px,128px,32px,96px);
 }
-#dta-turbo-button[cui-areatype="menu-panel"]:hover {
+#dtm-turbo-button[cui-areatype="menu-panel"]:hover {
 	-moz-image-region: rect(0px,96px,32px,64px);
 }
 
-#dta-turboselect-button {
+#dtm-turboselect-button {
 	-moz-image-region: rect(0px,96px,16px,80px);
 }
-#dta-turboselect-button:hover {
+#dtm-turboselect-button:hover {
 	-moz-image-region: rect(0px,80px,16px,64px);
 }
-toolbar[iconsize="large"] #dta-turboselect-button {
+toolbar[iconsize="large"] #dtm-turboselect-button {
 	-moz-image-region: rect(0px,144px,24px,120px);
 }
-toolbar[iconsize="large"] #dta-turboselect-button:hover {
+toolbar[iconsize="large"] #dtm-turboselect-button:hover {
 	-moz-image-region: rect(0px,120px,24px,96px);
 }
-#dta-turboselect-button[cui-areatype="menu-panel"],
-#customization-container #dta-turboselect-button,
-#customization-container #dta-turboselect-button:hover {
+#dtm-turboselect-button[cui-areatype="menu-panel"],
+#customization-container #dtm-turboselect-button,
+#customization-container #dtm-turboselect-button:hover {
 	-moz-image-region: rect(0px,192px,32px,160px);
 }
-#dta-turboselect-button[cui-areatype="menu-panel"]:hover {
+#dtm-turboselect-button[cui-areatype="menu-panel"]:hover {
 	-moz-image-region: rect(0px,160px,32px,128px);
 }
 
-#dta-manager-button {
+#dtm-manager-button {
 	-moz-image-region: rect(0px, 112px, 16px, 96px);
 }
-toolbar[iconsize="large"] #dta-manager-button {
+toolbar[iconsize="large"] #dtm-manager-button {
 	-moz-image-region: rect(0px,168px,24px,144px);
 }
-#dta-manager-button[cui-areatype="menu-panel"],
-#customization-container #dta-manager-button {
+#dtm-manager-button[cui-areatype="menu-panel"],
+#customization-container #dtm-manager-button {
 	-moz-image-region: rect(0px, 224px,32px,192px);
 }
 
 @media (min-resolution: 2dppx) {
-	.dta-toolbarbutton {
+	.dtm-toolbarbutton {
 		list-style-image: url(buttons32.png)  !important;
 	}
-	toolbar[iconsize="large"] .dta-toolbarbutton {
+	toolbar[iconsize="large"] .dtm-toolbarbutton {
 		list-style-image: url(buttons24.png)  !important;
 	}
-	.dta-toolbarbutton[cui-areatype="menu-panel"],
-	#customization-container .dta-toolbarbutton {
+	.dtm-toolbarbutton[cui-areatype="menu-panel"],
+	#customization-container .dtm-toolbarbutton {
 		list-style-image: url(buttons64.png) !important;
 	}
 
-	#dta-button {
+	#dtm-button {
 		-moz-image-region: rect(0px,64px,32px,32px);
 	}
-	#dta-button:hover {
+	#dtm-button:hover {
 		-moz-image-region: rect(0px,32px,32px,0px);
 	}
-	toolbar[iconsize="large"] #dta-button {
+	toolbar[iconsize="large"] #dtm-button {
 		-moz-image-region: rect(0px,48px,24px,24px);
 	}
-	toolbar[iconsize="large"] #dta-button:hover {
+	toolbar[iconsize="large"] #dtm-button:hover {
 		-moz-image-region: rect(0px,24px,24px,0px);
 	}
-	#dta-button[cui-areatype="menu-panel"],
-	#customization-container #dta-button,
-	#customization-container #dta-button:hover {
+	#dtm-button[cui-areatype="menu-panel"],
+	#customization-container #dtm-button,
+	#customization-container #dtm-button:hover {
 		-moz-image-region: rect(0px,128px,64px,64px);
 	}
-	#dta-button[cui-areatype="menu-panel"]:hover {
+	#dtm-button[cui-areatype="menu-panel"]:hover {
 		-moz-image-region: rect(0px,64px,64px,0px);
 	}
 
-	#dta-turbo-button {
+	#dtm-turbo-button {
 		-moz-image-region: rect(0px,128px,32px,96px);
 	}
-	#dta-turbo-button:hover {
+	#dtm-turbo-button:hover {
 		-moz-image-region: rect(0px,96px,32px,64px);
 	}
-	toolbar[iconsize="large"] #dta-turbo-button {
+	toolbar[iconsize="large"] #dtm-turbo-button {
 		-moz-image-region: rect(0px,96px,24px,72px);
 	}
-	toolbar[iconsize="large"] #dta-turbo-button:hover {
+	toolbar[iconsize="large"] #dtm-turbo-button:hover {
 		-moz-image-region: rect(0px,72px,24px,48px);
 	}
-	#dta-turbo-button[cui-areatype="menu-panel"],
-	#customization-container #dta-turbo-button,
-	#customization-container #dta-turbo-button:hover {
+	#dtm-turbo-button[cui-areatype="menu-panel"],
+	#customization-container #dtm-turbo-button,
+	#customization-container #dtm-turbo-button:hover {
 		-moz-image-region: rect(0px,256px,64px,192px);
 	}
-	#dta-turbo-button[cui-areatype="menu-panel"]:hover {
+	#dtm-turbo-button[cui-areatype="menu-panel"]:hover {
 		-moz-image-region: rect(0px,192px,64px,128px);
 	}
 
-	#dta-turboselect-button {
+	#dtm-turboselect-button {
 		-moz-image-region: rect(0px,192px,32px,160px);
 	}
-	#dta-turboselect-button:hover {
+	#dtm-turboselect-button:hover {
 		-moz-image-region: rect(0px,160px,32px,128px);
 	}
-	toolbar[iconsize="large"] #dta-turboselect-button {
+	toolbar[iconsize="large"] #dtm-turboselect-button {
 		-moz-image-region: rect(0px,144px,24px,120px);
 	}
-	toolbar[iconsize="large"] #dta-turboselect-button:hover {
+	toolbar[iconsize="large"] #dtm-turboselect-button:hover {
 		-moz-image-region: rect(0px,120px,24px,96px);
 	}
-	#dta-turboselect-button[cui-areatype="menu-panel"],
-	#customization-container #dta-turboselect-button,
-	#customization-container #dta-turboselect-button:hover {
+	#dtm-turboselect-button[cui-areatype="menu-panel"],
+	#customization-container #dtm-turboselect-button,
+	#customization-container #dtm-turboselect-button:hover {
 		-moz-image-region: rect(0px,384px,64px,320px);
 	}
-	#dta-turboselect-button[cui-areatype="menu-panel"]:hover {
+	#dtm-turboselect-button[cui-areatype="menu-panel"]:hover {
 		-moz-image-region: rect(0px,320px,64px,256px);
 	}
 
-	#dta-manager-button {
+	#dtm-manager-button {
 		-moz-image-region: rect(0px,224px,32px,192px);
 	}
-	toolbar[iconsize="large"] #dta-manager-button {
+	toolbar[iconsize="large"] #dtm-manager-button {
 		-moz-image-region: rect(0px,168px,24px,144px);
 	}
-	#dta-manager-button[cui-areatype="menu-panel"],
-	#customization-container #dta-manager-button {
+	#dtm-manager-button[cui-areatype="menu-panel"],
+	#customization-container #dtm-manager-button {
 		-moz-image-region: rect(0px,448px,64px,384px);
 	}
 }

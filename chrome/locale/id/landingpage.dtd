@@ -1,4 +1,4 @@
-<!-- To test this out, open chrome://dta/content/about/index.xml in your browser with dTm! installed -->
+<!-- To test this out, open chrome://dtm/content/about/index.xml in your browser with dTm! installed -->
 <!-- LOCALIZATION NOTE (lp.localedir): UI text direction, either ltr (left-to-right) or rtl (right-to-left); other values not possible -->
 <!ENTITY lp.localedir "ltr">
 <!-- LOCALIZATION NOTE (language): Your language in your language -->
@@ -53,7 +53,7 @@
 <!ENTITY lp.tb.install "Tambah tombol bilah alat">
 <!ENTITY lp.tb.add.title "Menambahkan dan menggunakan tombol bilah alat">
 <!ENTITY lp.tb.add.p1 "DownTheMoon! menyediakan empat tombol bilah alat untuk mempermudah menemukan dan menambahkan unduhan">
-<!ENTITY lp.tb.add.dta "Tombol DownTheMoon!">
+<!ENTITY lp.tb.add.dtm "Tombol DownTheMoon!">
 <!ENTITY lp.tb.add.dtadesc "Buka jendela Pemilihan DownTheMoon! untuk tab saat ini.">
 <!ENTITY lp.tb.add.tdta "Tombol OneClick!">
 <!ENTITY lp.tb.add.tdtadesc "Unduh semua item dari halaman saat ini menurut preferensi dan filter yang digunakan terakhir.">

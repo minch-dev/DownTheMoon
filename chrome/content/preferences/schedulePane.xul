@@ -4,18 +4,18 @@
 	- file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!DOCTYPE window [
-	<!ENTITY % prefsDTD SYSTEM "chrome://dta/locale/prefpanes.dtd">
+	<!ENTITY % prefsDTD SYSTEM "chrome://dtm/locale/prefpanes.dtd">
 	%prefsDTD;
-	<!ENTITY % defprefsDTD SYSTEM "chrome://dta-locale/content/prefpanes.dtd">
+	<!ENTITY % defprefsDTD SYSTEM "chrome://dtm-locale/content/prefpanes.dtd">
 	%defprefsDTD;
 ]>
 <overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 	<prefpane id="paneSchedule" label="&schedpane.label;" orient="vertical" onpaneload="Schedule.init();" flex="1">
 		<preferences>
-			<preference id="dtaschedenabled" name="extensions.dta.schedule.enabled" type="bool" />
-			<preference id="dtaschedstart" name="extensions.dta.schedule.start" type="int" />
-			<preference id="dtaschedend" name="extensions.dta.schedule.end" type="int" />
-			<preference id="dtaschedopen" name="extensions.dta.schedule.open" type="bool" />
+			<preference id="dtaschedenabled" name="extensions.dtm.schedule.enabled" type="bool" />
+			<preference id="dtaschedstart" name="extensions.dtm.schedule.start" type="int" />
+			<preference id="dtaschedend" name="extensions.dtm.schedule.end" type="int" />
+			<preference id="dtaschedopen" name="extensions.dtm.schedule.open" type="bool" />
 		</preferences>
 
 		<checkbox id="schedenable" label="&schedpane.enable.label;" preference="dtaschedenabled"/>

@@ -9,12 +9,12 @@
  *
  * ***** END LICENSE BLOCK ***** -->
 <?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
-<?xml-stylesheet href="chrome://dta/skin/common/style.css" type="text/css" ?>
+<?xml-stylesheet href="chrome://dtm/skin/common/style.css" type="text/css" ?>
 
 <!DOCTYPE window [
-	<!ENTITY % conflictsDTD SYSTEM "chrome://dta/locale/conflicts.dtd">
+	<!ENTITY % conflictsDTD SYSTEM "chrome://dtm/locale/conflicts.dtd">
 	%conflictsDTD;
-	<!ENTITY % defconflictsDTD SYSTEM "chrome://dta-locale/content/conflicts.dtd">
+	<!ENTITY % defconflictsDTD SYSTEM "chrome://dtm-locale/content/conflicts.dtd">
 	%defconflictsDTD;
 ]>
 
@@ -29,12 +29,12 @@
 	width="460px"
 	>
 		<stringbundleset xmlns="http://www.downthemall.net/properties#">
-			<stringbundle src="chrome://dta/locale/conflicts.properties"/>
+			<stringbundle src="chrome://dtm/locale/conflicts.properties"/>
 		</stringbundleset>
-		<script type="application/javascript" src="chrome://dta/content/common/internalFunctions.js"/>
+		<script type="application/javascript" src="chrome://dtm/content/common/internalFunctions.js"/>
 		<script type="application/javascript" src="conflicts.js"/>
 
-		<vbox flex="1" style="padding-left: 35px; background: url('chrome://dta/skin/common/alert.png') no-repeat 0 0;">
+		<vbox flex="1" style="padding-left: 35px; background: url('chrome://dtm/skin/common/alert.png') no-repeat 0 0;">
 			<description id="text"/>
 			<description id="question"/>
 

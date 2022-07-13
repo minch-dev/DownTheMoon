@@ -5,7 +5,7 @@
 
 // Base extension branch
 // Third parties reusing this module must specify own branch!
-const EXT = 'extensions.dta.';
+const EXT = 'extensions.dtm.';
 
 const PREF_STRING = Ci.nsIPrefBranch.PREF_STRING;
 const PREF_INT = Ci.nsIPrefBranch.PREF_INT;

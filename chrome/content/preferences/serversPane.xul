@@ -4,18 +4,18 @@
 	- file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!DOCTYPE window [
-	<!ENTITY % prefsDTD SYSTEM "chrome://dta/locale/prefpanes.dtd">
+	<!ENTITY % prefsDTD SYSTEM "chrome://dtm/locale/prefpanes.dtd">
 	%prefsDTD;
-	<!ENTITY % defprefsDTD SYSTEM "chrome://dta-locale/content/prefpanes.dtd">
+	<!ENTITY % defprefsDTD SYSTEM "chrome://dtm-locale/content/prefpanes.dtd">
 	%defprefsDTD;
 ]>
 <overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 	<prefpane id="paneServers" label="&serverspane.label;" orient="vertical" onpaneload="Servers.init();" flex="1">
 		<preferences>
-			<preference id="dtamaxtasks" name="extensions.dta.ntask" type="int" />
-			<preference id="dtamaxtasksperserver" name="extensions.dta.serverlimit.perserver" type="int" />
-			<preference id="dtaarinterval" name="extensions.dta.autoretryinterval" type="int" />
-			<preference id="dtaarmax" name="extensions.dta.maxautoretries" type="int" />
+			<preference id="dtamaxtasks" name="extensions.dtm.ntask" type="int" />
+			<preference id="dtamaxtasksperserver" name="extensions.dtm.serverlimit.perserver" type="int" />
+			<preference id="dtaarinterval" name="extensions.dtm.autoretryinterval" type="int" />
+			<preference id="dtaarmax" name="extensions.dtm.maxautoretries" type="int" />
 		</preferences>
 
 		<groupbox>

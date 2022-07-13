@@ -1,26 +1,26 @@
 <!-- LOCALIZATION NOTE : FILE Please do NOT translate DownTheMoon! and OneClick -->
-<!ENTITY dta-tbinstall "Dodaj gumbe orodne vrstice">
-<!ENTITY dta-pref.label "Nastavitve …">
-<!ENTITY dta-about2.label "O razširitvi">
-<!ENTITY dta-manager-button "Upravitelj">
-<!ENTITY dta-manager-button.desc "Odpre okno upravitelja.">
-<!ENTITY dta-selector-button2.label "Izbirnik OneClick!">
-<!ENTITY dta-selector-button.desc "Dodajte predmete z levim klikom na njih.">
-<!ENTITY dta-tb-all.label "Vsi zavihki">
-<!ENTITY dta-tb-single.label "Trenutni zavihek">
-<!ENTITY dta-selection2.label "Izbira DownTheMoon!">
-<!ENTITY dta-selection-turbo2.label "Izbira OneClick">
-<!ENTITY dta-regular2.label "DownTheMoon!">
-<!ENTITY dta-regular.desc "Odpre DownTheMoon! Okno izbire za trenutni zavihek.">
-<!ENTITY dta-regular-turbo2.label "dTm! OneClick">
-<!ENTITY dta-regular-turbo.desc "Prenese vse predmete s trenutne strani glede na nazadnje uporabljene nastavitve in filtre.">
-<!ENTITY dta-img-save2.label "Shrani sliko z raz. DownTheMoon!">
-<!ENTITY dta-img-save-turbo2.label "Shrani sliko z dTm! OneClickom">
-<!ENTITY dta-video-save2.label "Shrani videoposnetek z raz. DownTheMoon!">
-<!ENTITY dta-video-save-turbo2.label "Shrani videoposnetek z dTm! OneClickom">
-<!ENTITY dta-audio-save2.label "Shrani zvok z raz. DownTheMoon!">
-<!ENTITY dta-audio-save-turbo2.label "Shrani zvok z Ta! OneClickom">
-<!ENTITY dta-link-save2.label "Shrani povezave z raz. DownTheMoon!">
-<!ENTITY dta-link-save-turbo2.label "Shrani povezave z dTm! OneClickom">
-<!ENTITY dta-form-save2.label "Shrani cilj obrazca z raz. DownTheMoon!">
-<!ENTITY dta-form-save-turbo2.label "Shrani cilj obrazca z dTm! OneClickom">
+<!ENTITY dtm-tbinstall "Dodaj gumbe orodne vrstice">
+<!ENTITY dtm-pref.label "Nastavitve …">
+<!ENTITY dtm-about2.label "O razširitvi">
+<!ENTITY dtm-manager-button "Upravitelj">
+<!ENTITY dtm-manager-button.desc "Odpre okno upravitelja.">
+<!ENTITY dtm-selector-button2.label "Izbirnik OneClick!">
+<!ENTITY dtm-selector-button.desc "Dodajte predmete z levim klikom na njih.">
+<!ENTITY dtm-tb-all.label "Vsi zavihki">
+<!ENTITY dtm-tb-single.label "Trenutni zavihek">
+<!ENTITY dtm-selection2.label "Izbira DownTheMoon!">
+<!ENTITY dtm-selection-turbo2.label "Izbira OneClick">
+<!ENTITY dtm-regular2.label "DownTheMoon!">
+<!ENTITY dtm-regular.desc "Odpre DownTheMoon! Okno izbire za trenutni zavihek.">
+<!ENTITY dtm-regular-turbo2.label "dTm! OneClick">
+<!ENTITY dtm-regular-turbo.desc "Prenese vse predmete s trenutne strani glede na nazadnje uporabljene nastavitve in filtre.">
+<!ENTITY dtm-img-save2.label "Shrani sliko z raz. DownTheMoon!">
+<!ENTITY dtm-img-save-turbo2.label "Shrani sliko z dTm! OneClickom">
+<!ENTITY dtm-video-save2.label "Shrani videoposnetek z raz. DownTheMoon!">
+<!ENTITY dtm-video-save-turbo2.label "Shrani videoposnetek z dTm! OneClickom">
+<!ENTITY dtm-audio-save2.label "Shrani zvok z raz. DownTheMoon!">
+<!ENTITY dtm-audio-save-turbo2.label "Shrani zvok z Ta! OneClickom">
+<!ENTITY dtm-link-save2.label "Shrani povezave z raz. DownTheMoon!">
+<!ENTITY dtm-link-save-turbo2.label "Shrani povezave z dTm! OneClickom">
+<!ENTITY dtm-form-save2.label "Shrani cilj obrazca z raz. DownTheMoon!">
+<!ENTITY dtm-form-save-turbo2.label "Shrani cilj obrazca z dTm! OneClickom">

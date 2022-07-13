@@ -1,4 +1,4 @@
-<!-- To test this out, open chrome://dta/content/about/index.xml in your browser with dTm! installed -->
+<!-- To test this out, open chrome://dtm/content/about/index.xml in your browser with dTm! installed -->
 <!-- LOCALIZATION NOTE (lp.localedir): UI text direction, either ltr (left-to-right) or rtl (right-to-left); other values not possible -->
 <!ENTITY lp.localedir "ltr">
 <!-- LOCALIZATION NOTE (language): Your language in your language -->
@@ -53,7 +53,7 @@
 <!ENTITY lp.tb.install "新增工具列按鍵">
 <!ENTITY lp.tb.add.title "新增且使用工具列按鍵">
 <!ENTITY lp.tb.add.p1 "DownTheMoon! 提供了四個按鍵讓您">
-<!ENTITY lp.tb.add.dta "DownTheMoon! 按鍵">
+<!ENTITY lp.tb.add.dtm "DownTheMoon! 按鍵">
 <!ENTITY lp.tb.add.dtadesc "開啟「DownTheMoon! 選擇性下載」視窗">
 <!ENTITY lp.tb.add.tdta "一鍵式下載按鍵">
 <!ENTITY lp.tb.add.tdtadesc "依照上次的設定和條件下載此頁面中所有項目">

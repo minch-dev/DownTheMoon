@@ -1,4 +1,4 @@
-<!-- To test this out, open chrome://dta/content/about/index.xml in your browser with dTm! installed -->
+<!-- To test this out, open chrome://dtm/content/about/index.xml in your browser with dTm! installed -->
 
 <!-- LOCALIZATION NOTE (lp.localedir): UI text direction, either ltr (left-to-right) or rtl (right-to-left); other values not possible -->
 <!ENTITY lp.localedir "ltr">
@@ -62,7 +62,7 @@
 <!ENTITY lp.tb.install "Add toolbar buttons">
 <!ENTITY lp.tb.add.title "Adding and using toolbar buttons">
 <!ENTITY lp.tb.add.p1 "DownTheMoon! features four toolbar buttons to make it easier to find and queue downloads">
-<!ENTITY lp.tb.add.dta "DownTheMoon! button">
+<!ENTITY lp.tb.add.dtm "DownTheMoon! button">
 <!ENTITY lp.tb.add.dtadesc "Opens the DownTheMoon! Selection window for the current tab.">
 <!ENTITY lp.tb.add.tdta "OneClick! button">
 <!ENTITY lp.tb.add.tdtadesc "Downloads all items from the current page according to the last used preferences and filters.">

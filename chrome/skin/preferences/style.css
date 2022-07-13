@@ -1,4 +1,4 @@
-@import 'chrome://dta/skin/common/style.css';
+@import 'chrome://dtm/skin/common/style.css';
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 radio[pane] {
@@ -59,18 +59,18 @@ richlistitem:nth-child(even):not([selected="true"]) {
 
 
 richlistitem.serverlimit {
-	-moz-binding: url(chrome://dta/content/preferences/bindings.xml#serverlimit);
+	-moz-binding: url(chrome://dtm/content/preferences/bindings.xml#serverlimit);
 	padding: 6px;
 	padding-left: 1em;
 	padding-right: 1ex;
 }
 
 richlistitem.serverlimit[selected="true"] {
-	-moz-binding: url(chrome://dta/content/preferences/bindings.xml#serverlimit-selected);
+	-moz-binding: url(chrome://dtm/content/preferences/bindings.xml#serverlimit-selected);
 }
 
 richlistitem.serverlimit[editing="true"] {
-	-moz-binding: url(chrome://dta/content/preferences/bindings.xml#serverlimit-editing);
+	-moz-binding: url(chrome://dtm/content/preferences/bindings.xml#serverlimit-editing);
 }
 
 richlistitem.serverlimit row {
@@ -109,7 +109,7 @@ richlistitem.serverlimit row {
 
 /* rebind to work around bug 637234 */
 timepicker {
-	-moz-binding: url(chrome://dta/content/preferences/bindings.xml#timepicker);
+	-moz-binding: url(chrome://dtm/content/preferences/bindings.xml#timepicker);
 }
 
 .clears > button {

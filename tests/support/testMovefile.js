@@ -13,7 +13,7 @@ for (var i = 0; i < require("support/moveFile").maxWorkers * 2; ++i) {
 		const {OS} = requireJSM("resource://gre/modules/osfile.jsm");
 		const {moveFile} = require("support/movefile");
 		var tmpDir = OS.Constants.Path.tmpDir;
-		var path = OS.Path.join(tmpDir, "dta.tmp");
+		var path = OS.Path.join(tmpDir, "dtm.tmp");
 		var path2 = OS.Path.join(tmpDir, "dta2.tmp");
 		await OS.File.writeAtomic(path, new Uint8Array(1));
 		try {
@@ -39,8 +39,8 @@ for (var i = 0; i < require("support/moveFile").maxWorkers * 2; ++i) {
 		const {OS} = requireJSM("resource://gre/modules/osfile.jsm");
 		const {moveFile} = require("support/movefile");
 		var tmpDir = OS.Constants.Path.tmpDir;
-		var path = OS.Path.join(tmpDir, "dta.tmp");
-		var path2 = OS.Path.join(tmpDir, "doesnotexist", "dta.tmp");
+		var path = OS.Path.join(tmpDir, "dtm.tmp");
+		var path2 = OS.Path.join(tmpDir, "doesnotexist", "dtm.tmp");
 		await OS.File.writeAtomic(path, new Uint8Array(1));
 		try {
 			await moveFile(path, path2);

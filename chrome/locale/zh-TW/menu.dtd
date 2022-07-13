@@ -1,26 +1,26 @@
 <!-- LOCALIZATION NOTE : FILE Please do NOT translate DownTheMoon! and OneClick -->
-<!ENTITY dta-tbinstall "新增工具列按鈕">
-<!ENTITY dta-pref.label "偏好設定">
-<!ENTITY dta-about2.label "關於 DownTheMoon!">
-<!ENTITY dta-manager-button "管理員">
-<!ENTITY dta-manager-button.desc "開啟管理員視窗。">
-<!ENTITY dta-selector-button2.label "單鍵下載! 選擇器">
-<!ENTITY dta-selector-button.desc "以左鍵點擊它們來新增項目。">
-<!ENTITY dta-tb-all.label "所有分頁">
-<!ENTITY dta-tb-single.label "目前分頁">
-<!ENTITY dta-selection2.label "DownTheMoon! 請選擇">
-<!ENTITY dta-selection-turbo2.label "單鍵下載! 請選擇">
-<!ENTITY dta-regular2.label "DownTheMoon!">
-<!ENTITY dta-regular.desc "開啟目前分頁的 DownTheMoon! 勾選視窗。">
-<!ENTITY dta-regular-turbo2.label "dTm! 單鍵下載">
-<!ENTITY dta-regular-turbo.desc "依據上次使用的偏好設定與過濾條件下載目前分頁裡的所有檔案。">
-<!ENTITY dta-img-save2.label "使用 DownTheMoon! 儲存圖片">
-<!ENTITY dta-img-save-turbo2.label "使用 dTm! 單鍵下載儲存圖片">
-<!ENTITY dta-video-save2.label "使用 DownTheMoon! 儲存影片">
-<!ENTITY dta-video-save-turbo2.label "使用 dTm! 單鍵下載儲存影片">
-<!ENTITY dta-audio-save2.label "使用 DownTheMoon! 儲存音訊">
-<!ENTITY dta-audio-save-turbo2.label "使用 dTm! 單鍵下載儲存音訊">
-<!ENTITY dta-link-save2.label "使用 DownTheMoon! 儲存鍵結">
-<!ENTITY dta-link-save-turbo2.label "使用 dTm! 單鍵下載儲存鍵結">
-<!ENTITY dta-form-save2.label "使用 DownTheMoon! 儲存表單">
-<!ENTITY dta-form-save-turbo2.label "使用 dTm! 單鍵下載儲存表單">
+<!ENTITY dtm-tbinstall "新增工具列按鈕">
+<!ENTITY dtm-pref.label "偏好設定">
+<!ENTITY dtm-about2.label "關於 DownTheMoon!">
+<!ENTITY dtm-manager-button "管理員">
+<!ENTITY dtm-manager-button.desc "開啟管理員視窗。">
+<!ENTITY dtm-selector-button2.label "單鍵下載! 選擇器">
+<!ENTITY dtm-selector-button.desc "以左鍵點擊它們來新增項目。">
+<!ENTITY dtm-tb-all.label "所有分頁">
+<!ENTITY dtm-tb-single.label "目前分頁">
+<!ENTITY dtm-selection2.label "DownTheMoon! 請選擇">
+<!ENTITY dtm-selection-turbo2.label "單鍵下載! 請選擇">
+<!ENTITY dtm-regular2.label "DownTheMoon!">
+<!ENTITY dtm-regular.desc "開啟目前分頁的 DownTheMoon! 勾選視窗。">
+<!ENTITY dtm-regular-turbo2.label "dTm! 單鍵下載">
+<!ENTITY dtm-regular-turbo.desc "依據上次使用的偏好設定與過濾條件下載目前分頁裡的所有檔案。">
+<!ENTITY dtm-img-save2.label "使用 DownTheMoon! 儲存圖片">
+<!ENTITY dtm-img-save-turbo2.label "使用 dTm! 單鍵下載儲存圖片">
+<!ENTITY dtm-video-save2.label "使用 DownTheMoon! 儲存影片">
+<!ENTITY dtm-video-save-turbo2.label "使用 dTm! 單鍵下載儲存影片">
+<!ENTITY dtm-audio-save2.label "使用 DownTheMoon! 儲存音訊">
+<!ENTITY dtm-audio-save-turbo2.label "使用 dTm! 單鍵下載儲存音訊">
+<!ENTITY dtm-link-save2.label "使用 DownTheMoon! 儲存鍵結">
+<!ENTITY dtm-link-save-turbo2.label "使用 dTm! 單鍵下載儲存鍵結">
+<!ENTITY dtm-form-save2.label "使用 DownTheMoon! 儲存表單">
+<!ENTITY dtm-form-save-turbo2.label "使用 dTm! 單鍵下載儲存表單">

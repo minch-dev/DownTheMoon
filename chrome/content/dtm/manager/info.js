@@ -206,7 +206,7 @@ var Dialog = {
 		let download = this.downloads[0];
 		let mirrors = download.urlManager.toArray();
 		window.openDialog(
-			'chrome://dta/content/dta/mirrors.xul',
+			'chrome://dtm/content/dtm/mirrors.xul',
 			null,
 			"chrome,dialog,resizable,modal,centerscreen",
 			mirrors

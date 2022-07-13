@@ -130,7 +130,7 @@ var Prefs = {
 		try {
 			this._resetConnPrefs();
 			this._refreshPrefs();
-			let unload = Preferences.addObserver("extensions.dta.", this);
+			let unload = Preferences.addObserver("extensions.dtm.", this);
 			addEventListener("unload", function PrefUnload() {
 				removeEventListener("unload", PrefUnload, false);
 				unload();
@@ -178,8 +178,8 @@ var Prefs = {
 		}
 		this.dirPermissions = perms;
 
-		if (!prefName || prefName === 'extensions.dta.saveTemp' ||
-			prefName === 'extensions.dta.tempLocation') {
+		if (!prefName || prefName === 'extensions.dtm.saveTemp' ||
+			prefName === 'extensions.dtm.tempLocation') {
 			this._constructTemp();
 		}
 		// Make this KB
@@ -255,7 +255,7 @@ var Prefs = {
 				}
 				else {
 					// Hacky way to check if directory is indeed writable
-					tl.append('.dta-check');
+					tl.append('.dtm-check');
 					try {
 						if (!tl.exists()) {
 							tl.create(tl.NORMAL_FILE_TYPE, this.permissions);

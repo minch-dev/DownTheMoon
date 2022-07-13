@@ -9,28 +9,28 @@
  *
  * ***** END LICENSE BLOCK ***** -->
 <!DOCTYPE window [
-	<!ENTITY % prefsDTD SYSTEM "chrome://dta/locale/prefpanes.dtd">
+	<!ENTITY % prefsDTD SYSTEM "chrome://dtm/locale/prefpanes.dtd">
 	%prefsDTD;
-	<!ENTITY % defprefsDTD SYSTEM "chrome://dta-locale/content/prefpanes.dtd">
+	<!ENTITY % defprefsDTD SYSTEM "chrome://dtm-locale/content/prefpanes.dtd">
 	%defprefsDTD;
 ]>
 <overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
 	<prefpane id="paneAdvanced" label="&advancedpane.label;" orient="vertical" onpaneload="Advanced.load();">
 		<preferences>
-			<preference id="dtamaxchunks" name="extensions.dta.maxchunks" type="int" />
-			<preference id="dtatemporary" name="extensions.dta.saveTemp" type="bool" />
-			<preference id="dtatimeout" name="extensions.dta.timeout" type="int" />
-			<preference id="dtatemplocation" name="extensions.dta.tempLocation" type="unichar" />
-			<preference id="dtapermissions" name="extensions.dta.permissions" type="int" />
-			<preference id="dtaloadendfirst" name="extensions.dta.loadendfirst" type="int" />
-			<preference id="dtascheduler" name="extensions.dta.serverlimit.connectionscheduler" type="string" />
-			<preference id="dtaexposeinua" name="extensions.dta.exposeInUA" type="bool" />
-			<preference id="dtasettime" name="extensions.dta.settime" type="bool" />
-			<preference id="dtarememberoneclick" name="extensions.dta.rememberoneclick" type="bool" />
-			<preference id="dtaconfirmremove" name="extensions.dta.confirmremove" type="bool" />
-			<preference id="dtasparsefiles" name="extensions.dta.sparsefiles" type="bool" />
-			<preference id="dtaautosegments" name="extensions.dta.autosegments" type="bool" />
+			<preference id="dtamaxchunks" name="extensions.dtm.maxchunks" type="int" />
+			<preference id="dtatemporary" name="extensions.dtm.saveTemp" type="bool" />
+			<preference id="dtatimeout" name="extensions.dtm.timeout" type="int" />
+			<preference id="dtatemplocation" name="extensions.dtm.tempLocation" type="unichar" />
+			<preference id="dtapermissions" name="extensions.dtm.permissions" type="int" />
+			<preference id="dtaloadendfirst" name="extensions.dtm.loadendfirst" type="int" />
+			<preference id="dtascheduler" name="extensions.dtm.serverlimit.connectionscheduler" type="string" />
+			<preference id="dtaexposeinua" name="extensions.dtm.exposeInUA" type="bool" />
+			<preference id="dtasettime" name="extensions.dtm.settime" type="bool" />
+			<preference id="dtarememberoneclick" name="extensions.dtm.rememberoneclick" type="bool" />
+			<preference id="dtaconfirmremove" name="extensions.dtm.confirmremove" type="bool" />
+			<preference id="dtasparsefiles" name="extensions.dtm.sparsefiles" type="bool" />
+			<preference id="dtaautosegments" name="extensions.dtm.autosegments" type="bool" />
 		</preferences>
 
 		<tabbox>

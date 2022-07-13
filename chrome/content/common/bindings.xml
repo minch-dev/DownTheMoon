@@ -5,9 +5,9 @@
 <!DOCTYPE bindings [
 	<!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.dtd">
 	%globalDTD;
-	<!ENTITY % mirrorsDTD SYSTEM "chrome://dta/locale/mirrors.dtd">
+	<!ENTITY % mirrorsDTD SYSTEM "chrome://dtm/locale/mirrors.dtd">
 	%mirrorsDTD;
-	<!ENTITY % defmirrorsDTD SYSTEM "chrome://dta-locale/content/mirrors.dtd">
+	<!ENTITY % defmirrorsDTD SYSTEM "chrome://dtm-locale/content/mirrors.dtd">
 	%defmirrorsDTD;
 ]>
 
@@ -109,7 +109,7 @@
 				<body><![CDATA[
 					try {
 						let glue = {};
-						Components.utils.import("chrome://dta-modules/content/glue.jsm", glue);
+						Components.utils.import("chrome://dtm-modules/content/glue.jsm", glue);
 						this.hist = glue.require("support/historymanager").getHistory(this._pref, this.isPrivate);
 					}
 					catch (ex) {
@@ -517,7 +517,7 @@
 			<property name="charset" onget="return this.getAttribute('charset');"/>
 		</implementation>
 	</binding>
-	<binding id="mirror-item" extends="chrome://dta/content/common/bindings.xml#mirror-item-base">
+	<binding id="mirror-item" extends="chrome://dtm/content/common/bindings.xml#mirror-item-base">
 		<content>
 			<xul:vbox pack="center">
 				<xul:hbox pack="center">
@@ -557,7 +557,7 @@
 			]]></handler>
 		</handlers>
 	</binding>
-	<binding id="mirror-item-editing" extends="chrome://dta/content/common/bindings.xml#mirror-item-base">
+	<binding id="mirror-item-editing" extends="chrome://dtm/content/common/bindings.xml#mirror-item-base">
 		<content>
 			<xul:vbox pack="center">
 				<xul:hbox pack="center">

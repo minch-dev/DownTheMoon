@@ -40,7 +40,7 @@ class Base {
 		switch (prefix) {
 		case 'html':
 			return NS_HTML;
-		case 'dta':
+		case 'dtm':
 			return NS_DTA;
 		}
 		return this._NS;

@@ -7,7 +7,7 @@
 const Cu = Components.utils;
 const EXPORTED_SYMBOLS = [];
 
-Cu.import("chrome://dta-modules/content/glue.jsm");
+Cu.import("chrome://dtm-modules/content/glue.jsm");
 let api = require("api");
 
 let wrap = (_k, _v) => {

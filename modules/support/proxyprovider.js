@@ -187,7 +187,7 @@ class PrefProxyProvider extends ProxyProvider {
 	constructor() {
 		super();
 		this._info = null;
-		Preferences.addObserver("extensions.dta.proxy", this);
+		Preferences.addObserver("extensions.dtm.proxy", this);
 		this.observe();
 	}
 	observe() {

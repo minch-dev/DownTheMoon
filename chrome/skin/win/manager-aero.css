@@ -69,7 +69,7 @@ window[sizemode="maximized"] #titlebar-max {
 }
 
 #actionsbox:-moz-lwtheme {
-	-moz-binding: url(chrome://dta/content/common/bindings.xml#toolbar-lwauto);
+	-moz-binding: url(chrome://dtm/content/common/bindings.xml#toolbar-lwauto);
 }
 window[sizemode="maximized"] #titlebar {
 	margin-bottom: -14px;
@@ -112,7 +112,7 @@ treecol:-moz-lwtheme-brighttext {
 		-moz-box-pack: end;
 	}
 	window[sizemode="maximized"] #tooldonate {
-		list-style-image: url(chrome://dta/skin/manager/donate16.png) !important;
+		list-style-image: url(chrome://dtm/skin/manager/donate16.png) !important;
 		-moz-image-region: rect(0px,74px,16px,0px) !important;
 		-moz-margin-end: 4px;
 	}
@@ -202,7 +202,7 @@ treecol:-moz-lwtheme-brighttext {
 	}
 	#tooldonate {
 		-moz-box-pack: end;
-		list-style-image: url(chrome://dta/skin/manager/donate16.png) !important;
+		list-style-image: url(chrome://dtm/skin/manager/donate16.png) !important;
 		-moz-image-region: rect(0px,74px,16px,0px) !important;
 	}
 	#tooldonate:hover {

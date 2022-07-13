@@ -1,48 +1,48 @@
 ## actual content packages ##
-content	dta	chrome/content/
+content	dtm	chrome/content/
 content	dtaicon	./
-skin	dta	classic/1.0 chrome/skin/
-content	dta-locale chrome/locale/en-US/
-locale	dta	en-US	chrome/locale/en-US/
-content dta-public	chrome/public/ contentaccessible
-skin	dta-public	classic/1.0 chrome/public/
+skin	dtm	classic/1.0 chrome/skin/
+content	dtm-locale chrome/locale/en-US/
+locale	dtm	en-US	chrome/locale/en-US/
+content dtm-public	chrome/public/ contentaccessible
+skin	dtm-public	classic/1.0 chrome/public/
 
 ## aux packages ##
-content dta-tests tests/
-content	dta-modules	modules/
+content dtm-tests tests/
+content	dtm-modules	modules/
 
 ## additional locales
-locale dta de chrome/locale/de/
-locale dta es-ES chrome/locale/es-ES/
-locale dta et chrome/locale/et/
-locale dta fr chrome/locale/fr/
-locale dta gl chrome/locale/gl/
-locale dta gl-ES chrome/locale/gl-ES/
-locale dta id chrome/locale/id/
-locale dta it chrome/locale/it/
-locale dta ja chrome/locale/ja/
-locale dta nl chrome/locale/nl/
-locale dta pl chrome/locale/pl/
-locale dta pt-BR chrome/locale/pt-BR/
-locale dta pt-PT chrome/locale/pt-PT/
-locale dta ro chrome/locale/ro/
-locale dta ru chrome/locale/ru/
-locale dta sl-SI chrome/locale/sl-SI/
-locale dta sv-SE chrome/locale/sv-SE/
-locale dta tr chrome/locale/tr/
-locale dta zh-CN chrome/locale/zh-CN/
-locale dta zh-TW chrome/locale/zh-TW/
+locale dtm de chrome/locale/de/
+locale dtm es-ES chrome/locale/es-ES/
+locale dtm et chrome/locale/et/
+locale dtm fr chrome/locale/fr/
+locale dtm gl chrome/locale/gl/
+locale dtm gl-ES chrome/locale/gl-ES/
+locale dtm id chrome/locale/id/
+locale dtm it chrome/locale/it/
+locale dtm ja chrome/locale/ja/
+locale dtm nl chrome/locale/nl/
+locale dtm pl chrome/locale/pl/
+locale dtm pt-BR chrome/locale/pt-BR/
+locale dtm pt-PT chrome/locale/pt-PT/
+locale dtm ro chrome/locale/ro/
+locale dtm ru chrome/locale/ru/
+locale dtm sl-SI chrome/locale/sl-SI/
+locale dtm sv-SE chrome/locale/sv-SE/
+locale dtm tr chrome/locale/tr/
+locale dtm zh-CN chrome/locale/zh-CN/
+locale dtm zh-TW chrome/locale/zh-TW/
 
 ## platform package ##
-content dta-platform	chrome/content/unix/
-content dta-platform	chrome/content/mac/ os=Darwin
-content dta-platform	chrome/content/win/ os=WINNT
-skin dta-platform	classic/1.0 chrome/skin/unix/
-skin dta-platform	classic/1.0 chrome/skin/mac/ os=Darwin
-skin dta-platform	classic/1.0 chrome/skin/win/ os=WINNT
+content dtm-platform	chrome/content/unix/
+content dtm-platform	chrome/content/mac/ os=Darwin
+content dtm-platform	chrome/content/win/ os=WINNT
+skin dtm-platform	classic/1.0 chrome/skin/unix/
+skin dtm-platform	classic/1.0 chrome/skin/mac/ os=Darwin
+skin dtm-platform	classic/1.0 chrome/skin/win/ os=WINNT
 
-override chrome://dta/content/dta/manager.xul chrome://dta/content/dta/manager-aero.xul os=WINNT osversion=6
-override chrome://dta/content/dta/manager.xul chrome://dta/content/dta/manager-newer.xul os=WINNT osversion>6
-override chrome://dta/content/dta/manager.xul chrome://dta/content/dta/manager-aero.xul os=WINNT osversion=6.1
-override chrome://dta-platform/skin/common.css chrome://dta-platform/skin/common-aero.css os=WINNT osversion>=6
-override chrome://dta/skin/manager/netstatus.png chrome://dta-platform/skin/netstatus-aero.png os=WINNT osversion>=6
+override chrome://dtm/content/dtm/manager.xul chrome://dtm/content/dtm/manager-aero.xul os=WINNT osversion=6
+override chrome://dtm/content/dtm/manager.xul chrome://dtm/content/dtm/manager-newer.xul os=WINNT osversion>6
+override chrome://dtm/content/dtm/manager.xul chrome://dtm/content/dtm/manager-aero.xul os=WINNT osversion=6.1
+override chrome://dtm-platform/skin/common.css chrome://dtm-platform/skin/common-aero.css os=WINNT osversion>=6
+override chrome://dtm/skin/manager/netstatus.png chrome://dtm-platform/skin/netstatus-aero.png os=WINNT osversion>=6

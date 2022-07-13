@@ -1,26 +1,26 @@
 <!-- LOCALIZATION NOTE : FILE Please do NOT translate DownTheMoon! and OneClick -->
-<!ENTITY dta-tbinstall "ツールバーにボタンを追加">
-<!ENTITY dta-pref.label "設定">
-<!ENTITY dta-about2.label "DownTheMoon! について">
-<!ENTITY dta-manager-button "マネージャー">
-<!ENTITY dta-manager-button.desc "マネージャー画面を開きます。">
-<!ENTITY dta-selector-button2.label "セレクター">
-<!ENTITY dta-selector-button.desc "クリックした項目を追加します。">
-<!ENTITY dta-tb-all.label "すべてのタブ">
-<!ENTITY dta-tb-single.label "現在のタブ">
-<!ENTITY dta-selection2.label "選択範囲をダウンロード...">
-<!ENTITY dta-selection-turbo2.label "選択範囲を OneClick ダウンロード...">
-<!ENTITY dta-regular2.label "DownTheMoon!">
-<!ENTITY dta-regular.desc "現在のタブについて DownTheMoon! の選択ウィンドウを開きます。">
-<!ENTITY dta-regular-turbo2.label "dTm! OneClick">
-<!ENTITY dta-regular-turbo.desc "最後に使用した設定とフィルターを使用して、このページにあるダウンロード可能なすべての項目をダウンロードします。">
-<!ENTITY dta-img-save2.label "DownTheMoon! で画像を保存">
-<!ENTITY dta-img-save-turbo2.label "OneClick で画像を保存">
-<!ENTITY dta-video-save2.label "DownTheMoon! で動画を保存">
-<!ENTITY dta-video-save-turbo2.label "dTm! OneClick で動画を保存">
-<!ENTITY dta-audio-save2.label "DownTheMoon! で音声を保存">
-<!ENTITY dta-audio-save-turbo2.label "dTm! OneClick で音声を保存">
-<!ENTITY dta-link-save2.label "DownTheMoon! でリンクを保存">
-<!ENTITY dta-link-save-turbo2.label "OneClick でリンクを保存">
-<!ENTITY dta-form-save2.label "DownTheMoon! でフォームの転送先を保存">
-<!ENTITY dta-form-save-turbo2.label "dTm! OneClick でフォームの転送先を保存">
+<!ENTITY dtm-tbinstall "ツールバーにボタンを追加">
+<!ENTITY dtm-pref.label "設定">
+<!ENTITY dtm-about2.label "DownTheMoon! について">
+<!ENTITY dtm-manager-button "マネージャー">
+<!ENTITY dtm-manager-button.desc "マネージャー画面を開きます。">
+<!ENTITY dtm-selector-button2.label "セレクター">
+<!ENTITY dtm-selector-button.desc "クリックした項目を追加します。">
+<!ENTITY dtm-tb-all.label "すべてのタブ">
+<!ENTITY dtm-tb-single.label "現在のタブ">
+<!ENTITY dtm-selection2.label "選択範囲をダウンロード...">
+<!ENTITY dtm-selection-turbo2.label "選択範囲を OneClick ダウンロード...">
+<!ENTITY dtm-regular2.label "DownTheMoon!">
+<!ENTITY dtm-regular.desc "現在のタブについて DownTheMoon! の選択ウィンドウを開きます。">
+<!ENTITY dtm-regular-turbo2.label "dTm! OneClick">
+<!ENTITY dtm-regular-turbo.desc "最後に使用した設定とフィルターを使用して、このページにあるダウンロード可能なすべての項目をダウンロードします。">
+<!ENTITY dtm-img-save2.label "DownTheMoon! で画像を保存">
+<!ENTITY dtm-img-save-turbo2.label "OneClick で画像を保存">
+<!ENTITY dtm-video-save2.label "DownTheMoon! で動画を保存">
+<!ENTITY dtm-video-save-turbo2.label "dTm! OneClick で動画を保存">
+<!ENTITY dtm-audio-save2.label "DownTheMoon! で音声を保存">
+<!ENTITY dtm-audio-save-turbo2.label "dTm! OneClick で音声を保存">
+<!ENTITY dtm-link-save2.label "DownTheMoon! でリンクを保存">
+<!ENTITY dtm-link-save-turbo2.label "OneClick でリンクを保存">
+<!ENTITY dtm-form-save2.label "DownTheMoon! でフォームの転送先を保存">
+<!ENTITY dtm-form-save-turbo2.label "dTm! OneClick でフォームの転送先を保存">

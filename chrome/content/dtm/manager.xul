@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<?xul-overlay href="chrome://dta/content/dta/manager/manager.xul"?>
+<?xul-overlay href="chrome://dtm/content/dtm/manager/manager.xul"?>
 <!DOCTYPE dialog>
 
 <window id="DownTheMoon" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"/>

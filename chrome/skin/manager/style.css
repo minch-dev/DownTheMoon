@@ -1,6 +1,6 @@
 @import 'chrome://global/skin/';
 @import 'chrome://global/skin/toolbar.css';
-@import 'chrome://dta/skin/common/style.css';
+@import 'chrome://dtm/skin/common/style.css';
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 @namespace html url("http://www.w3.org/1999/xhtml");
 
@@ -55,7 +55,7 @@ toolbox {
 	min-width: 5px;
 }
 #tools toolbarspacer.visible {
-	background: url(chrome://dta/skin/common/toolbarspacer.png) no-repeat 50% 50%;
+	background: url(chrome://dtm/skin/common/toolbarspacer.png) no-repeat 50% 50%;
 	min-width: 13px;
 	padding: 0;
 	margin: 0;
@@ -657,11 +657,11 @@ treechildren::-moz-tree-cell-text(private) {
 
 /* menuitem common */
 toolbarbutton.listselectall,  menuitem#listselectall {
-	list-style-image: url(chrome://dta/skin/common/selection.png);
+	list-style-image: url(chrome://dtm/skin/common/selection.png);
 	-moz-image-region: rect(0px, 16px, 16px, 0px);
 }
 toolbarbutton.listselectinv, menuitem#listselectinv {
-	list-style-image: url(chrome://dta/skin/common/selection.png);
+	list-style-image: url(chrome://dtm/skin/common/selection.png);
 	-moz-image-region: rect(0px, 48px, 16px, 32px);
 }
 
@@ -867,11 +867,11 @@ toolbarbutton.listselectinv, menuitem#listselectinv {
 
 	/* menuitem common */
 	toolbarbutton.listselectall,  menuitem#listselectall {
-		list-style-image: url(chrome://dta/skin/common/selection@2x.png);
+		list-style-image: url(chrome://dtm/skin/common/selection@2x.png);
 		-moz-image-region: rect(0px, 32px, 32px, 0px);
 	}
 	toolbarbutton.listselectinv, menuitem#listselectinv {
-		list-style-image: url(chrome://dta/skin/common/selection@2x.png);
+		list-style-image: url(chrome://dtm/skin/common/selection@2x.png);
 		-moz-image-region: rect(0px, 96px, 32px, 64px);
 	}
 
@@ -973,7 +973,7 @@ statusbarpanel#schedule:not([running]) {
 
 /* search */
 #search {
-	-moz-binding: url(chrome://dta/content/common/bindings.xml#downloadsearch);
+	-moz-binding: url(chrome://dtm/content/common/bindings.xml#downloadsearch);
 	-moz-box-flex: 1;
 	min-width: 5em;
 	max-width: 15em;
@@ -1022,7 +1022,7 @@ statusbarpanel#schedule:not([running]) {
 }
 
 treecol[matcher] {
-	-moz-binding: url(chrome://dta/content/common/bindings.xml#treecol-matcher);
+	-moz-binding: url(chrome://dtm/content/common/bindings.xml#treecol-matcher);
 }
 .treecol-marker {
 	padding: 1px;

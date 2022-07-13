@@ -1,7 +1,7 @@
 <!-- LOCALIZATION NOTE (fulltranslation): Your credit and language combined -->
 <!-- LOCALIZATION NOTE (language): Your language in your language -->
 <!ENTITY lp.localedir "ltr">
-<!-- To test this out, open chrome://dta/content/about/index.xml in your browser with dTm! installed -->
+<!-- To test this out, open chrome://dtm/content/about/index.xml in your browser with dTm! installed -->
 <!ENTITY language "日本語">
 <!-- LOCALIZATION NOTE (lp.localedir): UI text direction, either ltr (left-to-right) or rtl (right-to-left); other values not possible -->
 <!ENTITY transAuthor "norah, HirekatsuOishi, takinoshita, yasushi, mar">
@@ -53,7 +53,7 @@
 <!ENTITY lp.tb.install "ツールバーボタンを追加">
 <!ENTITY lp.tb.add.title "ツールバーにボタンを追加して使用する方法">
 <!ENTITY lp.tb.add.p1 "DownTheMoon! にはダウンロードをより簡単にするために、ツールバー用のボタンが4つ用意されています">
-<!ENTITY lp.tb.add.dta "DownTheMoon! ボタン">
+<!ENTITY lp.tb.add.dtm "DownTheMoon! ボタン">
 <!ENTITY lp.tb.add.dtadesc "表示中のタブから DownTheMoon! でダウンロードするための選択ウィンドウが開きます。">
 <!ENTITY lp.tb.add.tdta "OneClick! ボタン">
 <!ENTITY lp.tb.add.tdtadesc "最後に使用した設定とフィルターを使用して、表示中のタブ内にあるすべてのアイテムをダウンロードします。">

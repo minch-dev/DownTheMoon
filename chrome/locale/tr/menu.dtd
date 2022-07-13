@@ -1,26 +1,26 @@
 <!-- LOCALIZATION NOTE : FILE Please do NOT translate DownTheMoon! and OneClick -->
-<!ENTITY dta-tbinstall "Araç Çubuğu Tuşlarını Ekle">
-<!ENTITY dta-pref.label "Tercihler">
-<!ENTITY dta-about2.label "DownTheMoon! Hakkında">
-<!ENTITY dta-manager-button "Yönetici">
-<!ENTITY dta-manager-button.desc "Yönetici penceresini açar.">
-<!ENTITY dta-selector-button2.label "OneClick! Seçici">
-<!ENTITY dta-selector-button.desc "Sol tuşla üstlerine tıklayarak öğeleri ekler.">
-<!ENTITY dta-tb-all.label "Tüm Sekmeler">
-<!ENTITY dta-tb-single.label "Geçerli Sekme">
-<!ENTITY dta-selection2.label "DownTheMoon! Seçimi">
-<!ENTITY dta-selection-turbo2.label "OneClick Seçimi">
-<!ENTITY dta-regular2.label "DownTheMoon!">
-<!ENTITY dta-regular.desc "Geçerli sekmede DownTheMoon! Seçim penceresini açar.">
-<!ENTITY dta-regular-turbo2.label "dTm! OneClick">
-<!ENTITY dta-regular-turbo.desc "Son kullanılan tercih ve süzgeçlere göre geçerli sayfadan tüm öğreleri indirir.">
-<!ENTITY dta-img-save2.label "DownTheMoon! ile Görüntü Kaydet">
-<!ENTITY dta-img-save-turbo2.label "dTm! OneClick ile Görüntü Kaydet">
-<!ENTITY dta-video-save2.label "DownTheMoon! ile Video Kaydet">
-<!ENTITY dta-video-save-turbo2.label "dTm! OneClik ile Video Kaydet">
-<!ENTITY dta-audio-save2.label "DownTheMoon! ile Ses Kaydet">
-<!ENTITY dta-audio-save-turbo2.label "dTm! OneClick ile Ses Kaydet">
-<!ENTITY dta-link-save2.label "DownTheMoon! ile Bağlantı Kaydet">
-<!ENTITY dta-link-save-turbo2.label "dTm! OneClick ile Bağlantı Kaydet">
-<!ENTITY dta-form-save2.label "DownTheMoon! ile Hedef Formunu Kaydet">
-<!ENTITY dta-form-save-turbo2.label "dTm! OneClick ile Hedef Formunu Kaydet">
+<!ENTITY dtm-tbinstall "Araç Çubuğu Tuşlarını Ekle">
+<!ENTITY dtm-pref.label "Tercihler">
+<!ENTITY dtm-about2.label "DownTheMoon! Hakkında">
+<!ENTITY dtm-manager-button "Yönetici">
+<!ENTITY dtm-manager-button.desc "Yönetici penceresini açar.">
+<!ENTITY dtm-selector-button2.label "OneClick! Seçici">
+<!ENTITY dtm-selector-button.desc "Sol tuşla üstlerine tıklayarak öğeleri ekler.">
+<!ENTITY dtm-tb-all.label "Tüm Sekmeler">
+<!ENTITY dtm-tb-single.label "Geçerli Sekme">
+<!ENTITY dtm-selection2.label "DownTheMoon! Seçimi">
+<!ENTITY dtm-selection-turbo2.label "OneClick Seçimi">
+<!ENTITY dtm-regular2.label "DownTheMoon!">
+<!ENTITY dtm-regular.desc "Geçerli sekmede DownTheMoon! Seçim penceresini açar.">
+<!ENTITY dtm-regular-turbo2.label "dTm! OneClick">
+<!ENTITY dtm-regular-turbo.desc "Son kullanılan tercih ve süzgeçlere göre geçerli sayfadan tüm öğreleri indirir.">
+<!ENTITY dtm-img-save2.label "DownTheMoon! ile Görüntü Kaydet">
+<!ENTITY dtm-img-save-turbo2.label "dTm! OneClick ile Görüntü Kaydet">
+<!ENTITY dtm-video-save2.label "DownTheMoon! ile Video Kaydet">
+<!ENTITY dtm-video-save-turbo2.label "dTm! OneClik ile Video Kaydet">
+<!ENTITY dtm-audio-save2.label "DownTheMoon! ile Ses Kaydet">
+<!ENTITY dtm-audio-save-turbo2.label "dTm! OneClick ile Ses Kaydet">
+<!ENTITY dtm-link-save2.label "DownTheMoon! ile Bağlantı Kaydet">
+<!ENTITY dtm-link-save-turbo2.label "dTm! OneClick ile Bağlantı Kaydet">
+<!ENTITY dtm-form-save2.label "DownTheMoon! ile Hedef Formunu Kaydet">
+<!ENTITY dtm-form-save-turbo2.label "dTm! OneClick ile Hedef Formunu Kaydet">

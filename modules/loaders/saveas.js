@@ -134,7 +134,7 @@ function load(window, document) {
 		// Overlay dialog.initDialog as it might be called... somewhen... after us,
 		// reverting our revertUI changed, which causes
 		// https://github.com/downthemall/downthemall/issues/36
-		// dta-2 did not have this problem as it was quaranteed we run after
+		// dtm-2 did not have this problem as it was quaranteed we run after
 		// initDialog due to the different loading mechanism
 		window.dialog = Object.create(dialog, {
 			"initDialog": {
