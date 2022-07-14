@@ -3,27 +3,27 @@
 	<Description about="urn:mozilla:install-manifest">
 
 		<em:id>dtm@downthemoon.nope</em:id>
-		<em:name>DownTheMoon! XUL edition</em:name>
+		<em:name>DownTheMoon!</em:name>
 		<em:description>The mass downloader for Pale Moon.</em:description>
 		<em:version>3.14</em:version>
 		<em:bootstrap>true</em:bootstrap>
 		<em:multiprocessCompatible>true</em:multiprocessCompatible>
 		<em:type>2</em:type>
 
-		<em:creator>Federico Parodi, Stefano Verna, Nils Maier, Minch Yoda</em:creator>
+		<em:creator>Federico Parodi, Stefano Verna, Nils Maier, Minch Yoda, Xul</em:creator>
 
 		<em:developer>Federico Parodi</em:developer>
 		<em:developer>Stefano Verna</em:developer>
 		<em:developer>Nils Maier</em:developer>
 		<em:developer>Minch Yoda</em:developer>
+		<em:developer>Xul</em:developer>
 
 		<em:aboutURL>chrome://dtm/content/about/about.xul</em:aboutURL>
 		<em:iconURL>chrome://dtmicon/content/icon.png</em:iconURL>
 		<em:icon64URL>chrome://dtmicon/content/icon64.png</em:icon64URL>
-		<em:homepageURL>https://github.com/minch-yoda/downthemoon-archivist-xul</em:homepageURL>
-		<em:homepageURL>http://downthemoon.nope/</em:homepageURL>
+		<em:homepageURL>https://github.com/minch-yoda/downthemoon</em:homepageURL>
 		<em:optionsURL>chrome://dtm/content/preferences/prefs.xul</em:optionsURL>
-		<em:updateURL>https://github.com/minch-yoda/downthemoon-archivist-xul/raw/master/update.rdf</em:updateURL>
+		<em:updateURL>https://github.com/minch-yoda/downthemoon/raw/master/update.rdf</em:updateURL>
 
 
 		<!-- Firefox, Firefox ESR, Firefox DEV Edition, Basilisk, Waterfox Classic -->
@@ -44,14 +44,14 @@
 			</Description>
 		</em:targetApplication>
 
-		<!-- Seamonkey -->
+		<!-- Seamonkey >
 		<em:targetApplication>
 			<Description>
 				<em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
 				<em:minVersion>2.40</em:minVersion>
 				<em:maxVersion>2.53.*</em:maxVersion>
 			</Description>
-		</em:targetApplication>
+		</em:targetApplication-->
 
 		<em:localized><Description><em:description>The mass downloader for Pale Moon.</em:description><em:locale>en-US</em:locale><em:name>DownTheMoon!</em:name><em:translator>The dTm Team</em:translator></Description></em:localized>
 		<em:localized><Description><em:description>Der Massen-Download-Manager für Pale Moon</em:description><em:locale>de</em:locale><em:name>DownTheMoon!</em:name><em:translator>Nils Maier</em:translator></Description></em:localized>
