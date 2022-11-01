@@ -2,7 +2,7 @@
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 	<Description about="urn:mozilla:install-manifest">
 
-		<em:id>dtm@downthemoon.nope</em:id>
+		<em:id>dtm@downthemoon.xul</em:id>
 		<em:name>DownTheMoon!</em:name>
 		<em:description>The mass downloader for Pale Moon.</em:description>
 		<em:version>3.14</em:version>

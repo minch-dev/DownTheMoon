@@ -3,7 +3,7 @@
  * You can obtain one at http://mozilla.org/MPL/2.0/ */
 "use strict";
 
-const ID = 'dtm@downthemoon.nope';
+const ID = 'dtm@downthemoon.xul';
 let _callbacks = [];
 
 Object.defineProperties(exports, {

@@ -21,7 +21,7 @@ from zipfile import ZipFile, ZIP_STORED, ZIP_DEFLATED
 NS_RDF = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 NS_EM = "http://www.mozilla.org/2004/em-rdf#"
 
-RELEASE_ID = "{DDC359D1-844A-42a7-9AA1-88A850A938A8}"
+RELEASE_ID = "dtm@downthemoon.xul"
 
 FILES = (
     "install.rdf",
