@@ -336,6 +336,8 @@ exports.formatFilter = function formatFilter(_){
 	let copyDirTree = !!_.copyDirTree;
 	let ignoreProxyPath = !!_.ignoreProxyPath;
 	let ignoreWWW = !!_.ignoreWWW;
+	let addURLparams = !!_.addURLparams;
+	let formatFilter = !!_.formatFilter;
 	
 	let hasSite = filter.indexOf('*site') == -1 ? false : true;
 	let hasDirs = filter.indexOf('*subdirs') == -1 ? false : true;
@@ -375,6 +377,11 @@ exports.formatFilter = function formatFilter(_){
 				prepend += '*subdirs*';
 			}
 		}
+
+		filter = prepend + filter;
+		
+	}
+    if(addURLparams){
 		let append = '';
 		if(filter.indexOf('*qstring*')==-1){
 			if(filter.indexOf('*qmark*')==-1){
@@ -382,9 +389,12 @@ exports.formatFilter = function formatFilter(_){
 			}
 			append += '*qstring*';
 		}
-		filter = prepend + filter + append;
-		
-	}
+        filter = filter + append;
+    } else {
+        filter = filter
+		.replace(/\*qmark*\*/gi,'')
+		.replace(/\*qstring*\*/gi,'');
+    }
 	return filter;
 }
 

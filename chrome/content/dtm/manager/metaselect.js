@@ -31,6 +31,7 @@ var MetaSelect = {
 		let copyDirTree = $("copyDirTree");
 		let ignoreProxyPath = $("ignoreProxyPath");
 		let ignoreWWW = $("ignoreWWW");
+        let addURLparams = $("addURLparams");
 		
 		if(ignoreDirSaveMeta.checked){
 			copyDirTree.disabled=false;
@@ -49,7 +50,8 @@ var MetaSelect = {
 			filter: this.ddRenaming.value,
 			copyDirTree: copyDirTree.checked && !copyDirTree.disabled,
 			ignoreProxyPath: ignoreProxyPath.checked,
-			ignoreWWW: ignoreWWW.checked
+			ignoreWWW: ignoreWWW.checked,
+			addURLparams: addURLparams.checked
 		});
 		
 		this.ddRenaming.value = filter;

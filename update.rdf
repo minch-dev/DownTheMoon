@@ -13,7 +13,7 @@
         <!-- Each RDF:li is a different version of the same add-on -->
         <RDF:li>
           <RDF:Description>
-            <em:version>3.14</em:version> <!-- This is the version number of the add-on -->
+            <em:version>3.141</em:version> <!-- This is the version number of the add-on -->
 
             <!-- One targetApplication for each application the add-on is compatible with -->
 			<!-- Firefox, Firefox ESR, Firefox DEV Edition, Basilisk, Waterfox Classic -->
@@ -23,10 +23,10 @@
 					<em:minVersion>45.0</em:minVersion>
 					<em:maxVersion>56.*</em:maxVersion>
 					<!-- This is where this version of the add-on will be downloaded from -->
-					<em:updateLink>https://github.com/minch-yoda/downthemoon-archivist-xul/releases/download/3.14/down-the-mall.xpi</em:updateLink>
+					<em:updateLink>https://github.com/minch-dev/DownTheMoon/releases/download/latest/down-the-moon.xpi</em:updateLink>
 
 					<!-- A page describing what is new in this updated version -->
-					<!--em:updateInfoURL>https://github.com/minch-yoda/downthemoon-archivist-xul/raw/3.14/README.md</em:updateInfoURL-->
+					<!--em:updateInfoURL>https://raw.githubusercontent.com/minch-dev/DownTheMoon/master/README.md</em:updateInfoURL-->
 				</Description>
 			</em:targetApplication>
 			
@@ -36,10 +36,10 @@
 					<em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id>
 					<em:minVersion>0.0</em:minVersion>
 					<em:maxVersion>31.*</em:maxVersion>
-					<em:updateLink>https://github.com/minch-yoda/downthemoon-archivist-xul/releases/download/3.14/down-the-mall.xpi</em:updateLink>
+					<em:updateLink>https://github.com/minch-dev/DownTheMoon/releases/download/latest/down-the-moon.xpi</em:updateLink>
 
 					<!-- A page describing what is new in this updated version -->
-					<!--em:updateInfoURL>https://github.com/minch-yoda/downthemoon-archivist-xul/raw/3.14/README.md</em:updateInfoURL-->
+					<!--em:updateInfoURL>https://raw.githubusercontent.com/minch-dev/DownTheMoon/master/README.md</em:updateInfoURL-->
 				</Description>
 			</em:targetApplication>
 

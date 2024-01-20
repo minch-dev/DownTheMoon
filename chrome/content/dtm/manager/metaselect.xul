@@ -93,6 +93,8 @@
 				<checkbox persist="checked" oncommand="MetaSelect.change();" id="copyDirTree" label="&directory.copy.structure;"/>
 				<checkbox persist="checked" oncommand="MetaSelect.change();" id="ignoreProxyPath" label="&directory.ignore.proxy;"/>
 				<checkbox persist="checked" oncommand="MetaSelect.change();" id="ignoreWWW" label="ignore www."/>
+				<checkbox persist="checked" oncommand="MetaSelect.change();" id="addURLparams" label="add URL params to name"/>
+                
 			</hbox>
 		</vbox>
 

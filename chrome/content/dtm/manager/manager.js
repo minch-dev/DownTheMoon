@@ -1107,6 +1107,30 @@ var Dialog = {
 		if (this.offline) {
 			return false;
 		}
+        //
+        let cr = Prefs.conflictResolution;
+		if (cr == 3) {
+            if (download.shouldOverwrite) {
+                cr = 1;
+            } else if ('_sessionSetting' in this) {
+                cr = this._sessionSetting;
+            } else if ('_conflictSetting' in download) {
+                cr = download._conflictSetting;
+            }
+        } 
+        //console.log(download.fileName,download.destinationFile);
+        if(cr == 2){
+            try {
+				if (new Instances.LocalFile(download.destinationFile).exists()) {
+                    download.fail(_("accesserror"), _("accesserror.long"), _("accesserror"));
+                    return true;
+				}
+			}
+			catch (ex) {
+                log(LOG_INFO, download.destinationFile);
+			}
+        }
+
 		download.forced = !!forced;
 		download.status = TextCache_STARTING;
 		if (download.partialSize) {

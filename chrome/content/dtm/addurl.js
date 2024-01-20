@@ -22,12 +22,14 @@ var Dialog = {
 		let copyDirTree = $("copyDirTree");
 		let ignoreProxyPath = $("ignoreProxyPath");
 		let ignoreWWW = $("ignoreWWW");
+		let addURLparams = $("addURLparams");
 		
 		let filter = DTM.formatFilter({
 			filter: this.ddRenaming.value,
 			copyDirTree: copyDirTree.checked,
 			ignoreProxyPath: ignoreProxyPath.checked,
-			ignoreWWW: ignoreWWW.checked
+			ignoreWWW: ignoreWWW.checked,
+			addURLparams: addURLparams.checked
 		});
 		
 		if(copyDirTree.checked){
