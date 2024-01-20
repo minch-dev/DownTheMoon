@@ -48,14 +48,21 @@ const Renamer = {
 	get sitenowww() { return this.site.replace(xwww,''); },
 	get sitenoproxy() {
 		let url = this.urlnoproxy;
+        // removing first proxy
 		url = url.substring(url.indexOf("://")+3, url.length);
-		let endDomain = url.indexOf(":");
-		if(endDomain == -1){
-			endDomain = url.indexOf("/");
-		}
-		if(endDomain != -1){
-			url = url.substring(0, endDomain);
-		}
+		
+        // either first slash or end of line
+        let endDomain = url.indexOf("/");
+        endDomain = (endDomain == -1) ? url.length : endDomain;
+        
+        // either first colon or end of line
+        let portStart = url.indexOf(":");
+        portStart = (portStart == -1) ? url.length : portStart;
+        
+        //whichever comes first is the actual end of a domain name
+		endDomain = (portStart < endDomain) ? portStart : endDomain;
+        url = url.substring(0, endDomain);
+        //log('INFO',url); log('INFO',endDomain);
 		return url;
 	},
 	get sitenoproxynowww() { return this.sitenoproxy.replace(xwww,''); },
@@ -80,12 +87,12 @@ const Renamer = {
 	},
 	get urlnoproxy() {
 		let url = this._o.urlManager.usable;//this._o.urlManager.usable;
-		//log('INFO',this._o.urlManager.usable,this._o.urlManager.url);
-		let endProxy = url.lastIndexOf("://");
-		url = 'https' + url.substring(endProxy, url.length);
+        url = url.substring(url.indexOf("://")+3, url.length);
+		url = 'https' + url.substring(url.indexOf("://"), url.length); //lastIndexOf is too greedy
 		if(url.endsWith('/')){
 			url = url+'index.htm';
 		}
+        //log('INFO',url);
 		return url; //RAW!!!
 	},
 	get flatcurl() { return getUsableFileNameWithFlatten(this._o.maskCURL); },

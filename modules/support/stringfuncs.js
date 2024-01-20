@@ -99,11 +99,14 @@ exports.getUsablePath = function getUsablePath(str) {
 };
 
 exports.getUsableFileName = function getUsableFileName(str) {
+    //log('INFO',str);
 	let i = str.indexOf("?");
 	let t = exports.normalizeSlashes(~i ? str.substr(0, i) : str).trim();
 	t = exports.removeFinalSlash(t);
 	i = t.lastIndexOf(SYSTEMSLASH);
-	return exports.removeBadChars(~i ? t.substr(i + 1) : t).trim();
+    t = exports.removeBadChars(~i ? t.substr(i + 1) : t).trim();
+    //log('INFO',t);
+	return t;
 };
 
 exports.getUsableFileNameWithFlatten = function getUsableFileNameWithFlatten(str) {

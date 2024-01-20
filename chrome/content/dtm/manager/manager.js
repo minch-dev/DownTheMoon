@@ -2354,16 +2354,18 @@ var QueueItem = class QueueItem {
 			let mask = Utils.removeFinalSlash(Utils.normalizeSlashes(Utils.removeFinalChar(
 					this.rebuildDestination_renamer(this.mask), "."
 					)));
+            //pathName is base local path (folder to save)
 			let file = new Instances.LocalFile(this.pathName);
-			if (!~mask.indexOf(Utils.SYSTEMSLASH)) {
+			
+            if (!~mask.indexOf(Utils.SYSTEMSLASH)) {
 				file.append(Utils.removeBadChars(mask).trim());
-			}
-			else {
+			} else {
 				mask = mask.split(Utils.SYSTEMSLASH);
 				for (let i = 0, e = mask.length; i < e; ++i) {
 					file.append(Utils.removeBadChars(mask[i]).trim());
 				}
 			}
+            log('INFO',file);
 			this._destinationName = file.leafName;
 			let pd = file.parent;
 			this._destinationPath = identity(pd.path);
