@@ -21,9 +21,9 @@
 		<em:aboutURL>chrome://dtm/content/about/about.xul</em:aboutURL>
 		<em:iconURL>chrome://dtmicon/content/icon.png</em:iconURL>
 		<em:icon64URL>chrome://dtmicon/content/icon64.png</em:icon64URL>
-		<em:homepageURL>https://github.com/minch-yoda/downthemoon</em:homepageURL>
+		<em:homepageURL>https://github.com/minch-dev/DownTheMoon</em:homepageURL>
 		<em:optionsURL>chrome://dtm/content/preferences/prefs.xul</em:optionsURL>
-		<em:updateURL>https://github.com/minch-yoda/downthemoon/raw/master/update.rdf</em:updateURL>
+		<em:updateURL>https://github.com/minch-dev/DownTheMoon/raw/master/update.rdf</em:updateURL>
 
 
 		<!-- Firefox, Firefox ESR, Firefox DEV Edition, Basilisk, Waterfox Classic -->
