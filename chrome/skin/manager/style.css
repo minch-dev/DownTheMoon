@@ -239,6 +239,7 @@ toolbox {
 	-moz-box-pack: center;
 }
 #tooldonate {
+    display:none;
 	list-style-image: url(donate51.png);
 	-moz-image-region: rect(0px,360px,51px,180px);
 	cursor: pointer;

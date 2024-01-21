@@ -2745,8 +2745,8 @@ var QueueItem = class QueueItem {
 		let rv = Object.create(null);
 		let p = Object.getPrototypeOf(this);
 		for (let u of Dialog_serialize_props) {
-			// only save what is changed
-			if ( !!p[u] && !!this[u] && (p[u] !== this[u])) {
+			// only save what is changed [for some reason these changes break queue saving]
+			if (p[u] !== this[u]) { //if ( !!p[u] && !!this[u] && (p[u] !== this[u])) {
 				rv[u] = this[u];
 			}
 		}

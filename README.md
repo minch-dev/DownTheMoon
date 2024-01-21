@@ -5,7 +5,7 @@ Probably the first and only download manager/accelerator built inside Pale Moon!
 
 `Logo is not ready yet, so there are generic empty arrows in place for now. I can't use the original branded graphics according to the license, so I have to come up with my own before release.`
 
-This fork is a direct continuation of the original XUL-based DownThemAll! extension. It's an update of the last upstream pre-release 3.1.1pre version from 2017. XUL version is unique as it supports setting original file modified dates of downloaded files. I've changed extension id and all settings, so it should work alongside other forks. A few features were added in this version:
+This fork is a direct continuation of the original XUL-based DownThemAll! extension. It's an update of the last upstream pre-release 3.1.1pre version from 2017. Until recently XUL version was unique as it supports setting original file modified dates of downloaded files. I've changed extension id and all settings, so it should work alongside other forks. A few features were added in this version:
 - takes "x-archive-orig-last-modified" http header property of WebArchive.org as file's modification date (or "x-archive-orig-date" / "memento-datetime" when not available)
 - allows to export/import relative local save paths in a download list
 - allows to copy a remote website's directory structure (easier and with more options)
@@ -14,20 +14,22 @@ This fork is a direct continuation of the original XUL-based DownThemAll! extens
 - replaces illegal symbols with their full-width counterparts: 	：＊？＂＜＞｜
 - all of the above works in DTM OneClick mode via the most recent filter used (as expected)
 
-You can run this extension in Pale Moon, Waterfox *Classic*, Basilisk, Firefox ESR 52.x & Firefox Developer Edition 56.x. _Live_ version of Waterfox kinda supports XUL, but not  XPCOM, so of no use for us. SeaMonkey needs some fixes, so maybe [later].
-(Note that WebArchive's search results pages might not work in those Firefox versions though, that's a reoccuring issue with some of the webarchive's libraries, sometimes one of the components breaks the show for the older browsers)
+You can run this extension in Pale Moon, Waterfox *Classic*, Basilisk, Firefox ESR 52.x & Firefox Developer Edition 56.x. Relevant version of Waterfox doesn't support XPCOM, so won't work. SeaMonkey needs some fixes, so maybe later.
 
 Installation
 ==================
 Pale Moon, Waterfox Classic, Basilisk
 -------------------
 
-Simply install .xpi from releases section of this page.
+Simply download and install .xpi file from `releases` section of this page. As with any other extension these methods should work:
+- right click .xpi file and choose `open with` -> [your browser]
+- drag and drop .xpi file into a browser window
+- at the `about:addons` page click ⚙️ -> `install from file`
 
 Firefox ESR 52.x, Firefox Developer Edition 56.x
 -------------------
 
-Open `about:config`, find `xpinstall.signatures.required` and switch it to `false`. Now you can download the .xpi from `releases` section and install it.
+Open `about:config`, find `xpinstall.signatures.required` and switch it to `false`. Now you can install an .xpi file using one of the aforementioned methods.
 
 Firefox 56.x
 -------------------
@@ -37,14 +39,17 @@ If `xpinstall.signatures.required` is not available, one can install an unpacked
 SeaMonkey
 -------------------
 
-Not supported (yet).
+Not supported.
 
 Waterfox
 -------------------
 
-Live version is incompatible, use Waterfox Classic.
+Not supported. Only `Waterfox Classic` works.
 
+Updates
+==================
 
+Update is available as an .xpi file hosted under `latest` release tag at github. You can conviniently smack that `check for updates` button or even turn on an autoupdate.
 
 The legacy text below might still be relevant, although it's not maintaned by me.
 ==================

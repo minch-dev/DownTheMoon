@@ -14,7 +14,7 @@ pref("extensions.dtm.timeout", 300);
 pref("extensions.dtm.maxchunks", 4);
 pref("extensions.dtm.history", 5);
 pref("extensions.dtm.alertbox", 2);
-pref("extensions.dtm.removecompleted", true);
+pref("extensions.dtm.removecompleted", false);
 pref("extensions.dtm.removecanceled", false);
 pref("extensions.dtm.removeaborted", false);
 pref("extensions.dtm.infophrases", true);

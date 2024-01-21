@@ -5,7 +5,7 @@
 		<em:id>dtm@downthemoon.xul</em:id>
 		<em:name>DownTheMoon!</em:name>
 		<em:description>The mass downloader for Pale Moon.</em:description>
-		<em:version>3.141</em:version>
+		<em:version>3.1415</em:version>
 		<em:bootstrap>true</em:bootstrap>
 		<em:multiprocessCompatible>true</em:multiprocessCompatible>
 		<em:type>2</em:type>
@@ -54,21 +54,36 @@
 		</em:targetApplication-->
 
 		<em:localized><Description><em:description>The mass downloader for Pale Moon.</em:description><em:locale>en-US</em:locale><em:name>DownTheMoon!</em:name><em:translator>The dTm Team</em:translator></Description></em:localized>
-		<em:localized><Description><em:description>Der Massen-Download-Manager für Pale Moon</em:description><em:locale>de</em:locale><em:name>DownTheMoon!</em:name><em:translator>Nils Maier</em:translator></Description></em:localized>
-		<em:localized><Description><em:description>El descargador masivo para Pale Moon</em:description><em:locale>es-ES</em:locale><em:name>DownTheMoon!</em:name><em:translator>Urko - Babelzilla.org</em:translator></Description></em:localized>
-		<em:localized><Description><em:description>Failide massallalaadija Pale Moonile.</em:description><em:locale>et</em:locale><em:name>DownTheMoon!</em:name><em:translator>Maidur</em:translator></Description></em:localized>
-		<em:localized><Description><em:description>L'extension de téléchargement par lot pour Pale Moon.</em:description><em:locale>fr</em:locale><em:name>DownTheMoon!</em:name><em:translator>L'équipe dTm</em:translator></Description></em:localized>
-		<em:localized><Description><em:description>Descargador masivo para Pale Moon.</em:description><em:locale>gl</em:locale><em:name>DownTheMoon!</em:name><em:translator>O equipo de dTm</em:translator></Description></em:localized>
-		<em:localized><Description><em:description>Descargador masivo para Pale Moon.</em:description><em:locale>gl-ES</em:locale><em:name>DownTheMoon!</em:name><em:translator>O equipo de dTm</em:translator></Description></em:localized>
-		<em:localized><Description><em:description>Lo scaricatore di massa per Pale Moon</em:description><em:locale>it</em:locale><em:name>DownTheMoon!</em:name><em:translator>Il team dTm, Alessandro Menti</em:translator></Description></em:localized>
-		<em:localized><Description><em:description>De bulkdownloader voor Pale Moon.</em:description><em:locale>nl</em:locale><em:name>DownTheMoon!</em:name><em:translator>Het dTm-team</em:translator></Description></em:localized>
-		<em:localized><Description><em:description>Menedżer pobierania plików dla Firefoksa.</em:description><em:locale>pl</em:locale><em:name>DownTheMoon!</em:name><em:translator>Leszek(teo)Życzkowski</em:translator></Description></em:localized>
-		<em:localized><Description><em:description>O transferidor em massa para o Pale Moon.</em:description><em:locale>pt-PT</em:locale><em:name>DownTheMoon!</em:name><em:translator>A Equipa dTm</em:translator></Description></em:localized>
-		<em:localized><Description><em:description>Менеджер загрузок для Pale Moon.</em:description><em:locale>ru</em:locale><em:name>DownTheMoon!</em:name><em:translator>Sergeys - Russian Mozilla Team</em:translator></Description></em:localized>
-		<em:localized><Description><em:description>Množični prenašalnik za Pale Moon.</em:description><em:locale>sl-SI</em:locale><em:name>DownTheMoon!</em:name><em:translator>Ekipa dTm</em:translator></Description></em:localized>
-		<em:localized><Description><em:description>Pale Moon için toplu indirme aracı.</em:description><em:locale>tr</em:locale><em:name>DownTheMoon!</em:name><em:translator>S.K.Yerli ve dTm takımı</em:translator></Description></em:localized>
-		<em:localized><Description><em:description>Pale Moon 的批量下载工具。</em:description><em:locale>zh-CN</em:locale><em:name>DownTheMoon!</em:name><em:translator>Cye3s &amp; Blacko</em:translator></Description></em:localized>
-		<em:localized><Description><em:description>Pale Moon 的大量下載工具</em:description><em:locale>zh-TW</em:locale><em:name>DownTheMoon!</em:name><em:translator>rayx000, scsi, tiffblue, Sakura3814, Goldie Lin.</em:translator></Description></em:localized>
+
+		<em:localized><Description><em:description>Der Massen-Download-Manager für Pale Moon</em:description><em:locale>de</em:locale><em:name>DownTheMoon!</em:name><em:translator>Nils Maier</em:translator></Description></em:localized>
+
+		<em:localized><Description><em:description>El descargador masivo para Pale Moon</em:description><em:locale>es-ES</em:locale><em:name>DownTheMoon!</em:name><em:translator>Urko - Babelzilla.org</em:translator></Description></em:localized>
+
+		<em:localized><Description><em:description>Failide massallalaadija Pale Moonile.</em:description><em:locale>et</em:locale><em:name>DownTheMoon!</em:name><em:translator>Maidur</em:translator></Description></em:localized>
+
+		<em:localized><Description><em:description>L'extension de téléchargement par lot pour Pale Moon.</em:description><em:locale>fr</em:locale><em:name>DownTheMoon!</em:name><em:translator>L'équipe dTm</em:translator></Description></em:localized>
+
+		<em:localized><Description><em:description>Descargador masivo para Pale Moon.</em:description><em:locale>gl</em:locale><em:name>DownTheMoon!</em:name><em:translator>O equipo de dTm</em:translator></Description></em:localized>
+
+		<em:localized><Description><em:description>Descargador masivo para Pale Moon.</em:description><em:locale>gl-ES</em:locale><em:name>DownTheMoon!</em:name><em:translator>O equipo de dTm</em:translator></Description></em:localized>
+
+		<em:localized><Description><em:description>Lo scaricatore di massa per Pale Moon</em:description><em:locale>it</em:locale><em:name>DownTheMoon!</em:name><em:translator>Il team dTm, Alessandro Menti</em:translator></Description></em:localized>
+
+		<em:localized><Description><em:description>De bulkdownloader voor Pale Moon.</em:description><em:locale>nl</em:locale><em:name>DownTheMoon!</em:name><em:translator>Het dTm-team</em:translator></Description></em:localized>
+
+		<em:localized><Description><em:description>Menedżer pobierania plików dla Firefoksa.</em:description><em:locale>pl</em:locale><em:name>DownTheMoon!</em:name><em:translator>Leszek(teo)Życzkowski</em:translator></Description></em:localized>
+
+		<em:localized><Description><em:description>O transferidor em massa para o Pale Moon.</em:description><em:locale>pt-PT</em:locale><em:name>DownTheMoon!</em:name><em:translator>A Equipa dTm</em:translator></Description></em:localized>
+
+		<em:localized><Description><em:description>Менеджер загрузок для Pale Moon.</em:description><em:locale>ru</em:locale><em:name>DownTheMoon!</em:name><em:translator>Sergeys - Russian Mozilla Team</em:translator></Description></em:localized>
+
+		<em:localized><Description><em:description>Množični prenašalnik za Pale Moon.</em:description><em:locale>sl-SI</em:locale><em:name>DownTheMoon!</em:name><em:translator>Ekipa dTm</em:translator></Description></em:localized>
+
+		<em:localized><Description><em:description>Pale Moon için toplu indirme aracı.</em:description><em:locale>tr</em:locale><em:name>DownTheMoon!</em:name><em:translator>S.K.Yerli ve dTm takımı</em:translator></Description></em:localized>
+
+		<em:localized><Description><em:description>Pale Moon 的批量下载工具。</em:description><em:locale>zh-CN</em:locale><em:name>DownTheMoon!</em:name><em:translator>Cye3s &amp; Blacko</em:translator></Description></em:localized>
+
+		<em:localized><Description><em:description>Pale Moon 的大量下載工具</em:description><em:locale>zh-TW</em:locale><em:name>DownTheMoon!</em:name><em:translator>rayx000, scsi, tiffblue, Sakura3814, Goldie Lin.</em:translator></Description></em:localized>
 
 	</Description>
 </RDF>

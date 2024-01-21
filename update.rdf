@@ -13,7 +13,7 @@
         <!-- Each RDF:li is a different version of the same add-on -->
         <RDF:li>
           <RDF:Description>
-            <em:version>3.141</em:version> <!-- This is the version number of the add-on -->
+            <em:version>3.1415</em:version> <!-- This is the version number of the add-on -->
 
             <!-- One targetApplication for each application the add-on is compatible with -->
 			<!-- Firefox, Firefox ESR, Firefox DEV Edition, Basilisk, Waterfox Classic -->
