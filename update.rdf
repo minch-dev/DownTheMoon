@@ -5,8 +5,8 @@
 
   <!-- This Description resource includes all the update and compatibility information for
        a single add-on with the id foobar@developer.mozilla.org. You can list multiple
-       add-ons information in the same RDF file. -->
-  <RDF:Description about="urn:mozilla:extension:{DDC359D1-844A-42a7-9AA1-88A850A938A8}">
+       add-ons information in the same RDF file.{DDC359D1-844A-42a7-9AA1-88A850A938A8} -->
+  <RDF:Description about="urn:mozilla:extension:dtm@downthemoon.xul">
     <em:updates>
       <RDF:Seq>
 
