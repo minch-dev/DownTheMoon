@@ -5,14 +5,17 @@ Probably the first and only download manager/accelerator built inside Pale Moon!
 
 `Logo is not ready yet, so there are generic empty arrows in place for now. I can't use the original branded graphics according to the license, so I have to come up with my own before release.`
 
-This fork is a direct continuation of the original XUL-based DownThemAll! extension. It's an update of the last upstream pre-release 3.1.1pre version from 2017. Until recently XUL version was unique as it supports setting original file modified dates of downloaded files. I've changed extension id and all settings, so it should work alongside other forks. A few features were added in this version:
+This fork is a direct continuation of the original XUL-based DownThemAll! extension. It's an update of the last upstream pre-release 3.1.1pre version from 2017. Until recently XUL version was unique in it's support of setting the original date modified timestamps of downloaded files. I've changed extension id and all settings' names, so it works alongside other forks. A few features were added in this version:
 - takes "x-archive-orig-last-modified" http header property of WebArchive.org as file's modification date (or "x-archive-orig-date" / "memento-datetime" when not available)
 - allows to export/import relative local save paths in a download list
 - allows to copy a remote website's directory structure (easier and with more options)
 - allows to ignore the 'proxy' part and "www." part of the url while replicating
 - differentiates between files without extension `\example` and folder indexes `\example\`, providing the correct `index.htm` name and local path.
 - replaces illegal symbols with their full-width counterparts: 	：＊？＂＜＞｜
+- checks if file exists before downloading it if conflict resolution is set to "skip"
 - all of the above works in DTM OneClick mode via the most recent filter used (as expected)
+- some UI/UX improvements been made like those ultra small non resizable dialogue windows are now less small and more resizable
+
 
 You can run this extension in Pale Moon, Waterfox *Classic*, Basilisk, Firefox ESR 52.x & Firefox Developer Edition 56.x. Relevant version of Waterfox doesn't support XPCOM, so won't work. SeaMonkey needs some fixes, so maybe later.
 
@@ -49,7 +52,7 @@ Not supported. Only `Waterfox Classic` works.
 Updates
 ==================
 
-Update is available as an .xpi file hosted under `latest` release tag at github. You can conviniently smack that `check for updates` button or even turn on an autoupdate.
+Update is available as an .xpi file hosted under `latest` release tag at github. You can conviniently smack that `Find updates` menu option or even turn on an autoupdate.
 
 The legacy text below might still be relevant, although it's not maintaned by me.
 ==================
