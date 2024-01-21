@@ -6,7 +6,7 @@ Probably the first and only download manager/accelerator built inside Pale Moon!
 `Logo is not ready yet, so there are generic empty arrows in place for now. I can't use the original branded graphics according to the license, so I have to come up with my own before release.`
 
 This fork is a direct continuation of the original XUL-based DownThemAll! extension. It's an update of the last upstream pre-release 3.1.1pre version from 2017. Until recently XUL version was unique in it's ability to preserve original `date modified` timestamps of downloaded files. I've changed extension ID and all settings' names, so it works without conflicts alongside other forks. A few features were added in this version:
-- preserves original timestamps on any archived files from WebArchive.org. Takes the date-time from "x-archive-orig-last-modified" http header property (or "x-archive-orig-date" / "memento-datetime" when not available)
+- preserves original timestamps on any files from WebArchive.org by taking 'em from "x-archive-orig-last-modified" http header property (or "x-archive-orig-date" / "memento-datetime" when not available)
 - allows to export/import relative local save paths in a download list
 - allows to copy a remote website's directory structure (easier and with more options)
 - allows to ignore the 'proxy' part and "www." part of the url while replicating
@@ -52,7 +52,7 @@ Not supported. Only `Waterfox Classic` works.
 Updates
 ==================
 
-Update is available as an .xpi file hosted under `latest` release tag at github. You can conviniently smack that `Find updates` menu option or even turn on an autoupdate.
+Updates are provided by an .xpi file hosted under `latest` release tag at github. You can conveniently smack that `Find updates` menu option or even turn on an autoupdate if you have enough courage :3.
 
 The legacy text below might still be relevant, although it's not maintaned by me.
 ==================
