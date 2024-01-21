@@ -23,7 +23,7 @@
 		<em:icon64URL>chrome://dtmicon/content/icon64.png</em:icon64URL>
 		<em:homepageURL>https://github.com/minch-dev/DownTheMoon</em:homepageURL>
 		<em:optionsURL>chrome://dtm/content/preferences/prefs.xul</em:optionsURL>
-		<em:updateURL>https://raw.githubusercontent.com/minch-dev/DownTheMoon/master/update.rdf</em:updateURL>
+		<em:updateURL>https://github.com/minch-dev/DownTheMoon/raw/master/update.rdf</em:updateURL>
 
 
 		<!-- Firefox, Firefox ESR, Firefox DEV Edition, Basilisk, Waterfox Classic -->
