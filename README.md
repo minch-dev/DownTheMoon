@@ -7,7 +7,7 @@ Probably the first and only download manager/accelerator built inside Pale Moon!
 
 This fork is a direct continuation of the original XUL-based DownThemAll! extension. It's an update of the last upstream pre-release 3.1.1pre version from 2017. Until recently XUL version was unique in it's ability to preserve original `date modified` timestamps of downloaded files. I've changed extension ID and all settings' names, so it works without conflicts alongside other forks. A few features were added in this version:
 - preserves original timestamps on any files from WebArchive.org by taking 'em from "x-archive-orig-last-modified" http header property (or "x-archive-orig-date" / "memento-datetime" when not available)
-- allows to export/import relative local save paths in a download list
+- allows to export/import relative local save paths from/to a download list
 - allows to copy a remote website's directory structure (easier and with more options)
 - allows to ignore the 'proxy' part and "www." part of the url while replicating
 - differentiates between files without extension `\example` and folder indexes `\example\`, providing the correct `index.htm` name and local path.
@@ -24,7 +24,7 @@ Installation
 Pale Moon, Waterfox Classic, Basilisk
 -------------------
 
-Simply download and install .xpi file from `releases` section of this page. As with any other extension these methods should work:
+Simply download (https://github.com/minch-dev/DownTheMoon/releases/download/latest/down-the-moon.xpi) and install .xpi file. As with any other extension these methods should work:
 - right click .xpi file and choose `open with` -> [your browser]
 - drag and drop .xpi file into a browser window
 - at the `about:addons` page click ⚙️ -> `install from file`
