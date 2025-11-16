@@ -314,6 +314,7 @@ Dialog = {
 			// initialize or link lists
 			let links = window.arguments[0];
 			let images = window.arguments[1];
+			let all = links.concat(images);
 
 			let isPrivate = this.isPrivate =
 				links.some(e => e.isPrivate) || images.some(e => e.isPrivate);
@@ -338,28 +339,25 @@ Dialog = {
 
 			// initialize the labels
 			$("viewlinks").label = $("viewlinks").label + " ("+ links.length + ")";
-			if (!links.length) {
+			/* if (!links.length) {
 				$('viewlinks').disabled = true;
-			}
-			$("viewpics").label = $("viewpics").label + " ("+ images.length + ")";
-			if (!images.length) {
-				$('viewpics').disabled = true;
-			}
+			} */
+			$("viewimages").label = $("viewimages").label + " ("+ images.length + ")";
+			/* if (!images.length) {
+				$('viewimages').disabled = true;
+			} */
+			$("viewall").label = $("viewall").label + " ("+ all.length + ")";
 
 			// intialize our Trees (nsITreeview)
 			// type parameter corresponds to Filter types
-			this.links = new Tree(links, 1);
+			this.links = new Tree(links, 1);	//Components.utils.reportError(JSON.stringify(links));
 			this.images = new Tree(images, 2);
+			this.all = new Tree(all,1);
 
 			// changeTab will initialize the filters and do the selection for us
-			let preferredTab = Preferences.getExt("seltab", 0);
+			let changeToTab = Preferences.getExt("seltab", 0) || 'links';
 			FilterManager.ready((function() {
-				if (preferredTab) {
-					this.changeTab(!!images.length ? 'images' : 'links');
-				}
-				else {
-					this.changeTab(!!links.length ? 'links': 'images');
-				}
+				this.changeTab(changeToTab);
 			}).bind(this));
 
 			$("urlList").addEventListener(
@@ -708,7 +706,7 @@ Dialog = {
 		// first of all: remember the currently selected/displayed tab
 		if (this.current) {
 			this.current.removeSortMarker();
-		}
+		}		Components.utils.reportError(tab); //Components.utils.reportError(JSON.stringify(this));
 		this.current = this[tab];
 		this.current.tab = tab;
 
@@ -718,22 +716,22 @@ Dialog = {
 
 		// ... and update the UI
 		let type = this.current.type;
-		if (type === 1) {
-			$("viewlinks").setAttribute("selected", true);
-			$("viewpics").setAttribute("selected", false);
-		}
-		else {
 			$("viewlinks").setAttribute("selected", false);
-			$("viewpics").setAttribute("selected", true);
-		}
+			$("viewimages").setAttribute("selected", false);
+			$("viewall").setAttribute("selected", false);
+			$("view"+tab).setAttribute("selected", true);
 
 		let boxes = [];
 		let checkCmd = function(evt) {
 			Dialog.toggleBox(evt.target);
 		};
 		for (let f of FilterManager.enumAll()) {
-			if (!(f.type & type)) {
-				continue;
+			if(tab=='viewall'){
+				
+			} else {
+				if (!(f.type & type)) {
+					continue;
+				}
 			}
 			let checkbox = document.createElement("checkbox");
 			checkbox.setAttribute("checked", f.active);
